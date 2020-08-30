@@ -1,0 +1,948 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   inkscape:export-ydpi="96"
+   inkscape:export-xdpi="96"
+   inkscape:export-filename="C:\Users\luiso\Desktop\DB Financinha.png"
+   sodipodi:docname="DB Financinha.svg"
+   inkscape:version="1.0 (4035a4fb49, 2020-05-01)"
+   id="svg8"
+   version="1.1"
+   viewBox="0 0 264.58333 264.58334"
+   height="1000"
+   width="1000">
+  <defs
+     id="defs2" />
+  <sodipodi:namedview
+     units="px"
+     inkscape:window-maximized="1"
+     inkscape:window-y="-9"
+     inkscape:window-x="-9"
+     inkscape:window-height="1001"
+     inkscape:window-width="1920"
+     showgrid="false"
+     inkscape:document-rotation="0"
+     inkscape:current-layer="layer1"
+     inkscape:document-units="mm"
+     inkscape:cy="585.13569"
+     inkscape:cx="366.52932"
+     inkscape:zoom="0.7"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     borderopacity="1.0"
+     bordercolor="#666666"
+     pagecolor="#ffffff"
+     id="base" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     id="layer1"
+     inkscape:groupmode="layer"
+     inkscape:label="Layer 1">
+    <rect
+       y="68.529938"
+       x="72.759232"
+       height="26.022821"
+       width="48.745544"
+       id="rect10"
+       style="fill:#1a1a1a;stroke:#800000;stroke-width:0.128354" />
+    <text
+       id="text14"
+       y="67.390045"
+       x="72.804688"
+       style="font-size:3.73851px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;stroke-width:0.0934625"
+       xml:space="preserve"><tspan
+         style="stroke-width:0.0934625"
+         y="67.390045"
+         x="72.804688"
+         id="tspan12"
+         sodipodi:role="line">pessoa</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:3.73851px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;stroke-width:0.0934625"
+       x="21.469934"
+       y="62.662605"
+       id="text14-9"><tspan
+         sodipodi:role="line"
+         id="tspan12-0"
+         x="21.469934"
+         y="62.662605"
+         style="stroke-width:0.0934625">token</tspan></text>
+    <text
+       id="text14-9-6"
+       y="35.35508"
+       x="139.8678"
+       style="font-size:3.73851px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;stroke-width:0.0934625"
+       xml:space="preserve"><tspan
+         style="stroke-width:0.0934625"
+         y="35.35508"
+         x="139.8678"
+         id="tspan12-0-6"
+         sodipodi:role="line">presente</tspan></text>
+    <text
+       id="text14-9-1"
+       y="95.18441"
+       x="140.55324"
+       style="font-size:3.73851px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;stroke-width:0.0934625"
+       xml:space="preserve"><tspan
+         style="stroke-width:0.0934625"
+         y="95.18441"
+         x="140.55324"
+         id="tspan12-0-67"
+         sodipodi:role="line">causa</tspan></text>
+    <text
+       id="text62"
+       y="171.29199"
+       x="76.527092"
+       style="font-size:3.73851px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;stroke-width:0.0934625"
+       xml:space="preserve"><tspan
+         style="stroke-width:0.0934625"
+         y="171.29199"
+         x="76.527092"
+         id="tspan60"
+         sodipodi:role="line">transação</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:3.73851px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;stroke-width:0.0934625"
+       x="14.255043"
+       y="177.9046"
+       id="text62-7"><tspan
+         id="tspan82"
+         sodipodi:role="line"
+         x="14.255043"
+         y="177.9046"
+         style="stroke-width:0.0934625">carteira</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:3.7385px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;stroke-width:0.0934625"
+       x="158.77968"
+       y="169.85475"
+       id="text14-6"><tspan
+         sodipodi:role="line"
+         id="tspan12-6"
+         x="158.77968"
+         y="169.85475"
+         style="stroke-width:0.0934625">parentesco</tspan></text>
+    <text
+       id="text14-6-8"
+       y="174.95"
+       x="206.19792"
+       style="font-size:3.7385px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;stroke-width:0.0934625"
+       xml:space="preserve"><tspan
+         style="stroke-width:0.0934625"
+         y="174.95"
+         x="206.19792"
+         id="tspan12-6-4"
+         sodipodi:role="line">grau_parentesco</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:3.7385px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;stroke-width:0.0934625"
+       x="77.410042"
+       y="217.32736"
+       id="text62-1"><tspan
+         sodipodi:role="line"
+         id="tspan60-8"
+         x="77.410042"
+         y="217.32736"
+         style="stroke-width:0.0934625">transferência</tspan></text>
+    <text
+       id="text178"
+       y="15.497023"
+       x="5.6696439"
+       style="font-size:10.5833px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;stroke-width:0.264583"
+       xml:space="preserve"><tspan
+         style="stroke-width:0.264583"
+         y="15.497023"
+         x="5.6696439"
+         id="tspan176"
+         sodipodi:role="line">BANCO DE DADOS - FINANCINHA</tspan></text>
+    <rect
+       style="fill:#1a1a1a;stroke:#800000;stroke-width:0.105006"
+       id="rect10-6"
+       width="38.706676"
+       height="21.933821"
+       x="21.124805"
+       y="63.87252" />
+    <text
+       id="text14-97-4"
+       y="67.577599"
+       x="21.700933"
+       style="font-size:3.7385px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;stroke-width:0.0934625"
+       xml:space="preserve"><tspan
+         style="fill:#ffffff;stroke-width:0.0934625"
+         y="67.577599"
+         x="21.700933"
+         id="tspan12-07-9"
+         sodipodi:role="line">[PK] (int) id</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:3.7385px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;stroke-width:0.0934625"
+       x="21.786894"
+       y="72.539642"
+       id="text14-97-4-5"><tspan
+         sodipodi:role="line"
+         id="tspan12-07-9-3"
+         x="21.786894"
+         y="72.539642"
+         style="fill:#ffffff;stroke-width:0.0934625">[FK] (int) id_pessoa</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:3.7385px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;stroke-width:0.0934625"
+       x="21.890749"
+       y="77.939987"
+       id="text14-97-4-7"><tspan
+         sodipodi:role="line"
+         id="tspan12-07-9-1"
+         x="21.890749"
+         y="77.939987"
+         style="fill:#ffffff;stroke-width:0.0934625">(data) criado_em </tspan></text>
+    <text
+       id="text14-97-4-7-7"
+       y="83.177223"
+       x="21.614155"
+       style="font-size:3.7385px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;stroke-width:0.0934625"
+       xml:space="preserve"><tspan
+         style="fill:#ffffff;stroke-width:0.0934625"
+         y="83.177223"
+         x="21.614155"
+         id="tspan12-07-9-1-4"
+         sodipodi:role="line">(varchar) token 128</tspan></text>
+    <rect
+       y="36.725956"
+       x="139.81361"
+       height="51.647022"
+       width="52.283306"
+       id="rect10-6-5"
+       style="fill:#1a1a1a;stroke:#800000;stroke-width:0.18727" />
+    <text
+       xml:space="preserve"
+       style="font-size:3.7385px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;stroke-width:0.0934625"
+       x="140.34862"
+       y="40.3899"
+       id="text14-97-4-1"><tspan
+         sodipodi:role="line"
+         id="tspan12-07-9-0"
+         x="140.34862"
+         y="40.3899"
+         style="fill:#ffffff;stroke-width:0.0934625">[PK] (int) id</tspan></text>
+    <text
+       id="text14-97-4-5-5"
+       y="45.35194"
+       x="140.43459"
+       style="font-size:3.7385px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;stroke-width:0.0934625"
+       xml:space="preserve"><tspan
+         style="fill:#ffffff;stroke-width:0.0934625"
+         y="45.35194"
+         x="140.43459"
+         id="tspan12-07-9-3-3"
+         sodipodi:role="line">[FK] (int) id_pessoa</tspan></text>
+    <text
+       id="text14-97-4-7-0"
+       y="50.752293"
+       x="140.53844"
+       style="font-size:3.7385px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;stroke-width:0.0934625"
+       xml:space="preserve"><tspan
+         style="fill:#ffffff;stroke-width:0.0934625"
+         y="50.752293"
+         x="140.53844"
+         id="tspan12-07-9-1-6"
+         sodipodi:role="line">(date) criado_em </tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:3.7385px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;stroke-width:0.0934625"
+       x="140.26184"
+       y="55.989529"
+       id="text14-97-4-7-7-9"><tspan
+         sodipodi:role="line"
+         id="tspan12-07-9-1-4-3"
+         x="140.26184"
+         y="55.989529"
+         style="fill:#ffffff;stroke-width:0.0934625">(varchar) nome 64</tspan></text>
+    <text
+       id="text14-97-4-7-7-9-7"
+       y="60.923347"
+       x="140.05132"
+       style="font-size:3.7385px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;stroke-width:0.0934625"
+       xml:space="preserve"><tspan
+         style="fill:#ffffff;stroke-width:0.0934625"
+         y="60.923347"
+         x="140.05132"
+         id="tspan12-07-9-1-4-3-1"
+         sodipodi:role="line">(varchar) comentário 128</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:3.7385px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;stroke-width:0.0934625"
+       x="140.29112"
+       y="66.432388"
+       id="text14-97-4-7-7-9-7-2"><tspan
+         sodipodi:role="line"
+         id="tspan12-07-9-1-4-3-1-4"
+         x="140.29112"
+         y="66.432388"
+         style="fill:#ffffff;stroke-width:0.0934625">(double) valor</tspan></text>
+    <text
+       id="text14-97-4-1-0"
+       y="72.062653"
+       x="72.747711"
+       style="font-size:3.7385px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;stroke-width:0.0934625"
+       xml:space="preserve"><tspan
+         style="fill:#ffffff;stroke-width:0.0934625"
+         y="72.062653"
+         x="72.747711"
+         id="tspan12-07-9-0-6"
+         sodipodi:role="line">[PK] (int) id</tspan></text>
+    <text
+       id="text14-97-4-7-7-9-8"
+       y="76.909363"
+       x="72.609329"
+       style="font-size:3.7385px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;stroke-width:0.0934625"
+       xml:space="preserve"><tspan
+         style="fill:#ffffff;stroke-width:0.0934625"
+         y="76.909363"
+         x="72.609329"
+         id="tspan12-07-9-1-4-3-9"
+         sodipodi:role="line">(varchar) nome 128</tspan></text>
+    <path
+       id="path356"
+       d="M 72.18593,71.145926 H 60.289481"
+       style="fill:none;stroke:#000000;stroke-width:0.188871px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    <rect
+       style="fill:#1a1a1a;stroke:#800000;stroke-width:0.163861"
+       id="rect10-6-5-8"
+       width="54.362888"
+       height="38.030628"
+       x="140.44984"
+       y="96.548103" />
+    <text
+       id="text14-97-4-1-02"
+       y="100.22375"
+       x="140.99658"
+       style="font-size:3.7385px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;stroke-width:0.0934625"
+       xml:space="preserve"><tspan
+         style="fill:#ffffff;stroke-width:0.0934625"
+         y="100.22375"
+         x="140.99658"
+         id="tspan12-07-9-0-5"
+         sodipodi:role="line">[PK] (int) id</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:3.7385px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;stroke-width:0.0934625"
+       x="141.08252"
+       y="105.18579"
+       id="text14-97-4-5-5-8"><tspan
+         sodipodi:role="line"
+         id="tspan12-07-9-3-3-6"
+         x="141.08252"
+         y="105.18579"
+         style="fill:#ffffff;stroke-width:0.0934625">[FK] (int) id_pessoa</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:3.7385px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;stroke-width:0.0934625"
+       x="141.18637"
+       y="110.58617"
+       id="text14-97-4-7-0-0"><tspan
+         sodipodi:role="line"
+         id="tspan12-07-9-1-6-1"
+         x="141.18637"
+         y="110.58617"
+         style="fill:#ffffff;stroke-width:0.0934625">(data) criada_em </tspan></text>
+    <text
+       id="text14-97-4-7-7-9-6"
+       y="115.82338"
+       x="140.90979"
+       style="font-size:3.7385px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;stroke-width:0.0934625"
+       xml:space="preserve"><tspan
+         style="fill:#ffffff;stroke-width:0.0934625"
+         y="115.82338"
+         x="140.90979"
+         id="tspan12-07-9-1-4-3-98"
+         sodipodi:role="line">(varchar) nome 128</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:3.7385px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;stroke-width:0.0934625"
+       x="140.69925"
+       y="120.75721"
+       id="text14-97-4-7-7-9-7-4"><tspan
+         sodipodi:role="line"
+         id="tspan12-07-9-1-4-3-1-45"
+         x="140.69925"
+         y="120.75721"
+         style="fill:#ffffff;stroke-width:0.0934625">(varchar) comentário 128</tspan></text>
+    <text
+       id="text14-97-4-7-7-9-7-2-6"
+       y="126.26624"
+       x="140.93907"
+       style="font-size:3.7385px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;stroke-width:0.0934625"
+       xml:space="preserve"><tspan
+         style="fill:#ffffff;stroke-width:0.0934625"
+         y="126.26624"
+         x="140.93907"
+         id="tspan12-07-9-1-4-3-1-4-1"
+         sodipodi:role="line">(double) valor</tspan></text>
+    <rect
+       y="218.57755"
+       x="77.121574"
+       height="27.538208"
+       width="43.103527"
+       id="rect10-6-5-8-5"
+       style="fill:#1a1a1a;stroke:#800000;stroke-width:0.124161" />
+    <text
+       xml:space="preserve"
+       style="font-size:3.7385px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;stroke-width:0.0934625"
+       x="77.688126"
+       y="222.27306"
+       id="text14-97-4-1-02-4"><tspan
+         sodipodi:role="line"
+         id="tspan12-07-9-0-5-1"
+         x="77.688126"
+         y="222.27306"
+         style="fill:#ffffff;stroke-width:0.0934625">[PK] (int) id</tspan></text>
+    <text
+       id="text14-97-4-5-5-8-7"
+       y="227.23509"
+       x="77.774086"
+       style="font-size:3.7385px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;stroke-width:0.0934625"
+       xml:space="preserve"><tspan
+         style="fill:#ffffff;stroke-width:0.0934625"
+         y="227.23509"
+         x="77.774086"
+         id="tspan12-07-9-3-3-6-0"
+         sodipodi:role="line">[FK] (int) id_carteira</tspan></text>
+    <text
+       id="text14-97-4-7-0-0-2"
+       y="238.21651"
+       x="77.877953"
+       style="font-size:3.7385px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;stroke-width:0.0934625"
+       xml:space="preserve"><tspan
+         style="fill:#ffffff;stroke-width:0.0934625"
+         y="238.21651"
+         x="77.877953"
+         id="tspan12-07-9-1-6-1-1"
+         sodipodi:role="line">(int) tipo</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:3.7385px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;stroke-width:0.0934625"
+       x="77.630623"
+       y="243.09595"
+       id="text14-97-4-7-7-9-7-2-6-7"><tspan
+         sodipodi:role="line"
+         id="tspan12-07-9-1-4-3-1-4-1-5"
+         x="77.630623"
+         y="243.09595"
+         style="fill:#ffffff;stroke-width:0.0934625">(double) valor</tspan></text>
+    <rect
+       style="fill:#1a1a1a;stroke:#800000;stroke-width:0.137849"
+       id="rect10-6-5-8-5-7"
+       width="43.089836"
+       height="33.956001"
+       x="76.911354"
+       y="172.64551" />
+    <text
+       id="text14-97-4-1-02-4-9"
+       y="176.33415"
+       x="77.471077"
+       style="font-size:3.7385px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;stroke-width:0.0934625"
+       xml:space="preserve"><tspan
+         style="fill:#ffffff;stroke-width:0.0934625"
+         y="176.33415"
+         x="77.471077"
+         id="tspan12-07-9-0-5-1-7"
+         sodipodi:role="line">[PK] (int) id</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:3.7385px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;stroke-width:0.0934625"
+       x="77.557037"
+       y="181.29622"
+       id="text14-97-4-5-5-8-7-8"><tspan
+         sodipodi:role="line"
+         id="tspan12-07-9-3-3-6-0-5"
+         x="77.557037"
+         y="181.29622"
+         style="fill:#ffffff;stroke-width:0.0934625">[FK] (int) id_carteira</tspan></text>
+    <text
+       id="text14-97-4-7-0-0-2-4-8"
+       y="191.11664"
+       x="77.724823"
+       style="font-size:3.7385px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;stroke-width:0.0934625"
+       xml:space="preserve"><tspan
+         style="fill:#ffffff;stroke-width:0.0934625"
+         y="191.11664"
+         x="77.724823"
+         id="tspan12-07-9-1-6-1-1-9-2"
+         sodipodi:role="line">(data) criada_em </tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:3.7385px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;stroke-width:0.0934625"
+       x="77.477509"
+       y="195.99609"
+       id="text14-97-4-7-7-9-7-2-6-7-6-8"><tspan
+         sodipodi:role="line"
+         id="tspan12-07-9-1-4-3-1-4-1-5-5-7"
+         x="77.477509"
+         y="195.99609"
+         style="fill:#ffffff;stroke-width:0.0934625">(double) valor</tspan></text>
+    <text
+       id="text14-97-4-7-7-9-7-2-6-7-6-8-5"
+       y="201.24538"
+       x="77.424095"
+       style="font-size:3.7385px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;stroke-width:0.0934625"
+       xml:space="preserve"><tspan
+         style="fill:#ffffff;stroke-width:0.0934625"
+         y="201.24538"
+         x="77.424095"
+         id="tspan12-07-9-1-4-3-1-4-1-5-5-7-2"
+         sodipodi:role="line">(varchar) motivo 128</tspan></text>
+    <rect
+       y="178.55826"
+       x="14.047852"
+       height="17.545305"
+       width="43.128551"
+       id="rect10-6-5-8-5-7-8"
+       style="fill:#1a1a1a;stroke:#800000;stroke-width:0.099134" />
+    <text
+       xml:space="preserve"
+       style="font-size:3.7385px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;stroke-width:0.0934625"
+       x="14.626947"
+       y="182.2663"
+       id="text14-97-4-1-02-4-9-6"><tspan
+         sodipodi:role="line"
+         id="tspan12-07-9-0-5-1-7-0"
+         x="14.626947"
+         y="182.2663"
+         style="fill:#ffffff;stroke-width:0.0934625">[PK] (int) id</tspan></text>
+    <text
+       id="text14-97-4-5-5-8-7-8-2"
+       y="187.22835"
+       x="14.712907"
+       style="font-size:3.7385px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;stroke-width:0.0934625"
+       xml:space="preserve"><tspan
+         style="fill:#ffffff;stroke-width:0.0934625"
+         y="187.22835"
+         x="14.712907"
+         id="tspan12-07-9-3-3-6-0-5-8"
+         sodipodi:role="line">[FK] (int) id_pessoa</tspan></text>
+    <text
+       id="text14-97-4-7-7-9-7-2-6-7-6-8-6"
+       y="192.82231"
+       x="14.486519"
+       style="font-size:3.7385px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;stroke-width:0.0934625"
+       xml:space="preserve"><tspan
+         style="fill:#ffffff;stroke-width:0.0934625"
+         y="192.82231"
+         x="14.486519"
+         id="tspan12-07-9-1-4-3-1-4-1-5-5-7-0"
+         sodipodi:role="line">(double) valor</tspan></text>
+    <text
+       id="text14-97-4-5-5-8-7-8-4"
+       y="186.35204"
+       x="77.821121"
+       style="font-size:3.7385px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;stroke-width:0.0934625"
+       xml:space="preserve"><tspan
+         style="fill:#ffffff;stroke-width:0.0934625"
+         y="186.35204"
+         x="77.821121"
+         id="tspan12-07-9-3-3-6-0-5-3"
+         sodipodi:role="line">(int) tipo</tspan></text>
+    <text
+       id="text62-7-5"
+       y="228.34662"
+       x="15.895662"
+       style="font-size:3.7385px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;stroke-width:0.0934625"
+       xml:space="preserve"><tspan
+         style="stroke-width:0.0934625"
+         y="228.34662"
+         x="15.895662"
+         sodipodi:role="line"
+         id="tspan82-5">cofrinho</tspan></text>
+    <rect
+       style="fill:#1a1a1a;stroke:#800000;stroke-width:0.091438"
+       id="rect10-6-5-8-5-7-8-5"
+       width="38.982147"
+       height="16.514479"
+       x="15.684619"
+       y="228.99644" />
+    <text
+       id="text14-97-4-1-02-4-9-6-5"
+       y="232.70833"
+       x="16.267569"
+       style="font-size:3.7385px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;stroke-width:0.0934625"
+       xml:space="preserve"><tspan
+         style="fill:#ffffff;stroke-width:0.0934625"
+         y="232.70833"
+         x="16.267569"
+         id="tspan12-07-9-0-5-1-7-0-3"
+         sodipodi:role="line">[PK] (int) id</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:3.7385px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;stroke-width:0.0934625"
+       x="16.353527"
+       y="237.67036"
+       id="text14-97-4-5-5-8-7-8-2-1"><tspan
+         sodipodi:role="line"
+         id="tspan12-07-9-3-3-6-0-5-8-9"
+         x="16.353527"
+         y="237.67036"
+         style="fill:#ffffff;stroke-width:0.0934625">[FK] (int) id_pessoa</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:3.7385px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;stroke-width:0.0934625"
+       x="16.12714"
+       y="243.26433"
+       id="text14-97-4-7-7-9-7-2-6-7-6-8-6-4"><tspan
+         sodipodi:role="line"
+         id="tspan12-07-9-1-4-3-1-4-1-5-5-7-0-1"
+         x="16.12714"
+         y="243.26433"
+         style="fill:#ffffff;stroke-width:0.0934625">(double) valor</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:3.7385px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;stroke-width:0.0934625"
+       x="77.440895"
+       y="232.59946"
+       id="text14-97-4-5-5-8-7-0"><tspan
+         sodipodi:role="line"
+         id="tspan12-07-9-3-3-6-0-6"
+         x="77.440895"
+         y="232.59946"
+         style="fill:#ffffff;stroke-width:0.0934625">[FK] (int) id_cofrinho</tspan></text>
+    <rect
+       style="fill:#1a1a1a;stroke:#800000;stroke-width:0.10909"
+       id="rect10-5"
+       width="39.658886"
+       height="23.104692"
+       x="158.75392"
+       y="171.41943" />
+    <text
+       xml:space="preserve"
+       style="font-size:3.7385px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;stroke-width:0.0934625"
+       x="159.78012"
+       y="175.69615"
+       id="text14-97-4-1-0-4"><tspan
+         sodipodi:role="line"
+         id="tspan12-07-9-0-6-3"
+         x="159.78012"
+         y="175.69615"
+         style="fill:#ffffff;stroke-width:0.0934625">[PK] (int) id</tspan></text>
+    <text
+       id="text14-97-4-1-0-4-7"
+       y="181.20815"
+       x="159.90521"
+       style="font-size:3.7385px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;stroke-width:0.0934625"
+       xml:space="preserve"><tspan
+         style="fill:#ffffff;stroke-width:0.0934625"
+         y="181.20815"
+         x="159.90521"
+         id="tspan12-07-9-0-6-3-3"
+         sodipodi:role="line">[PFK] (int) grau</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:3.7385px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;stroke-width:0.0934625"
+       x="159.77008"
+       y="186.35306"
+       id="text14-97-4-1-0-4-7-6"><tspan
+         sodipodi:role="line"
+         id="tspan12-07-9-0-6-3-3-7"
+         x="159.77008"
+         y="186.35306"
+         style="fill:#ffffff;stroke-width:0.0934625">[PF] (int) pessoa_1</tspan></text>
+    <text
+       id="text14-97-4-1-0-4-7-6-8"
+       y="191.14775"
+       x="159.52574"
+       style="font-size:3.7385px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;stroke-width:0.0934625"
+       xml:space="preserve"><tspan
+         style="fill:#ffffff;stroke-width:0.0934625"
+         y="191.14775"
+         x="159.52574"
+         id="tspan12-07-9-0-6-3-3-7-4"
+         sodipodi:role="line">[PF] (int) pessoa_2</tspan></text>
+    <rect
+       y="176.83952"
+       x="205.83031"
+       height="12.705106"
+       width="39.68705"
+       id="rect10-5-0"
+       style="fill:#1a1a1a;stroke:#800000;stroke-width:0.0809241" />
+    <text
+       id="text14-97-4-1-0-4-2"
+       y="181.13033"
+       x="206.87057"
+       style="font-size:3.7385px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;stroke-width:0.0934625"
+       xml:space="preserve"><tspan
+         style="fill:#ffffff;stroke-width:0.0934625"
+         y="181.13033"
+         x="206.87057"
+         id="tspan12-07-9-0-6-3-9"
+         sodipodi:role="line">[PK] (int) id</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:3.7385px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;stroke-width:0.0934625"
+       x="206.99567"
+       y="186.64232"
+       id="text14-97-4-1-0-4-7-7"><tspan
+         sodipodi:role="line"
+         id="tspan12-07-9-0-6-3-3-3"
+         x="206.99567"
+         y="186.64232"
+         style="fill:#ffffff;stroke-width:0.0934625">(varchar) grau 128</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:3.7385px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;stroke-width:0.0934625"
+       x="72.756195"
+       y="81.902931"
+       id="text14-97-4-7-7-9-8-2"><tspan
+         sodipodi:role="line"
+         id="tspan12-07-9-1-4-3-9-1"
+         x="72.756195"
+         y="81.902931"
+         style="fill:#ffffff;stroke-width:0.0934625">(varchar) level 128</tspan></text>
+    <text
+       id="text14-97-4-7-7-9-8-2-2"
+       y="86.749619"
+       x="72.879799"
+       style="font-size:3.7385px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;stroke-width:0.0934625"
+       xml:space="preserve"><tspan
+         style="fill:#ffffff;stroke-width:0.0934625"
+         y="86.749619"
+         x="72.879799"
+         id="tspan12-07-9-1-4-3-9-1-0"
+         sodipodi:role="line">(int) permissões</tspan><tspan
+         id="tspan903"
+         style="fill:#ffffff;stroke-width:0.0934625"
+         y="91.422745"
+         x="72.879799"
+         sodipodi:role="line" /></text>
+    <text
+       xml:space="preserve"
+       style="font-size:3.7385px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;stroke-width:0.0934625"
+       x="72.799515"
+       y="91.548798"
+       id="text14-97-4-7-0-1"><tspan
+         sodipodi:role="line"
+         id="tspan12-07-9-1-6-8"
+         x="72.799515"
+         y="91.548798"
+         style="fill:#ffffff;stroke-width:0.0934625">(data) registrado_em </tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:3.7385px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;stroke-width:0.0934625"
+       x="11.505798"
+       y="117.17943"
+       id="text14-9-1-4"><tspan
+         sodipodi:role="line"
+         id="tspan12-0-67-5"
+         x="11.505798"
+         y="117.17943"
+         style="stroke-width:0.0934625">regras</tspan></text>
+    <rect
+       y="118.53691"
+       x="11.396227"
+       height="37.455528"
+       width="47.178635"
+       id="rect10-6-5-8-7"
+       style="fill:#1a1a1a;stroke:#800000;stroke-width:0.151493" />
+    <text
+       xml:space="preserve"
+       style="font-size:3.7385px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;stroke-width:0.0934625"
+       x="11.949105"
+       y="122.21876"
+       id="text14-97-4-1-02-47"><tspan
+         sodipodi:role="line"
+         id="tspan12-07-9-0-5-7"
+         x="11.949105"
+         y="122.21876"
+         style="fill:#ffffff;stroke-width:0.0934625">[PK] (int) id</tspan></text>
+    <text
+       id="text14-97-4-5-5-8-4"
+       y="127.18079"
+       x="12.035066"
+       style="font-size:3.7385px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;stroke-width:0.0934625"
+       xml:space="preserve"><tspan
+         style="fill:#ffffff;stroke-width:0.0934625"
+         y="127.18079"
+         x="12.035066"
+         id="tspan12-07-9-3-3-6-9"
+         sodipodi:role="line">[FK] (int) criada_por</tspan></text>
+    <text
+       id="text14-97-4-7-0-0-1"
+       y="132.58115"
+       x="12.138931"
+       style="font-size:3.7385px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;stroke-width:0.0934625"
+       xml:space="preserve"><tspan
+         style="fill:#ffffff;stroke-width:0.0934625"
+         y="132.58115"
+         x="12.138931"
+         id="tspan12-07-9-1-6-1-7"
+         sodipodi:role="line">(data) criada_em </tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:3.7385px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;stroke-width:0.0934625"
+       x="11.862323"
+       y="137.81836"
+       id="text14-97-4-7-7-9-6-3"><tspan
+         sodipodi:role="line"
+         id="tspan12-07-9-1-4-3-98-4"
+         x="11.862323"
+         y="137.81836"
+         style="fill:#ffffff;stroke-width:0.0934625">(varchar) nome 128</tspan></text>
+    <text
+       id="text14-97-4-7-7-9-7-4-9"
+       y="142.75221"
+       x="11.651784"
+       style="font-size:3.7385px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;stroke-width:0.0934625"
+       xml:space="preserve"><tspan
+         style="fill:#ffffff;stroke-width:0.0934625"
+         y="142.75221"
+         x="11.651784"
+         id="tspan12-07-9-1-4-3-1-45-5"
+         sodipodi:role="line">(varchar) descrição 128</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:3.7385px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;stroke-width:0.0934625"
+       x="11.891625"
+       y="148.26123"
+       id="text14-97-4-7-7-9-7-2-6-5"><tspan
+         sodipodi:role="line"
+         id="tspan12-07-9-1-4-3-1-4-1-4"
+         x="11.891625"
+         y="148.26123"
+         style="fill:#ffffff;stroke-width:0.0934625">(double) valor</tspan></text>
+    <text
+       id="text14-97-4-7-7-9-7-2-6-5-3"
+       y="153.46547"
+       x="12.178954"
+       style="font-size:3.7385px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;stroke-width:0.0934625"
+       xml:space="preserve"><tspan
+         style="fill:#ffffff;stroke-width:0.0934625"
+         y="153.46547"
+         x="12.178954"
+         id="tspan12-07-9-1-4-3-1-4-1-4-2"
+         sodipodi:role="line">(bool) penalidade</tspan></text>
+    <text
+       id="text1000"
+       y="183.09084"
+       x="122.26517"
+       style="font-size:1.9699px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;stroke-width:0.0492477"
+       xml:space="preserve"><tspan
+         style="stroke-width:0.0492477"
+         y="183.09084"
+         x="122.26517"
+         id="tspan998"
+         sodipodi:role="line">tipo:</tspan><tspan
+         id="tspan1002"
+         style="stroke-width:0.0492477"
+         y="185.55321"
+         x="122.26517"
+         sodipodi:role="line">0 - lançamento</tspan><tspan
+         id="tspan1004"
+         style="stroke-width:0.0492477"
+         y="188.01558"
+         x="122.26517"
+         sodipodi:role="line">1 - despesa</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:1.9699px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;stroke-width:0.0492477"
+       x="122.85069"
+       y="239.24774"
+       id="text1000-0"><tspan
+         sodipodi:role="line"
+         id="tspan998-9"
+         x="122.85069"
+         y="239.24774"
+         style="stroke-width:0.0492477">tipo:</tspan><tspan
+         sodipodi:role="line"
+         x="122.85069"
+         y="241.71011"
+         style="stroke-width:0.0492477"
+         id="tspan1002-9">0 - carteira para cofrinho</tspan><tspan
+         sodipodi:role="line"
+         x="122.85069"
+         y="244.17249"
+         style="stroke-width:0.0492477"
+         id="tspan1004-1">1 - cofrinho para carteira</tspan></text>
+    <path
+       id="path1030"
+       d="M 122.43687,71.335089 138.56606,44.493016"
+       style="fill:none;stroke:#000000;stroke-width:0.200493px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    <path
+       id="path1032"
+       d="M 138.77071,90.438997 122.1543,73.822589"
+       style="fill:none;stroke:#000000;stroke-width:0.205617px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    <path
+       id="path1034"
+       d="M 75.356005,180.64531 H 58.53188"
+       style="fill:none;stroke:#000000;stroke-width:0.205617px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    <path
+       id="path1036"
+       d="M 75.148302,226.34045 58.947301,185.42252"
+       style="fill:none;stroke:#000000;stroke-width:0.205617px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.205617px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 75.252153,231.32538 H 58.428041"
+       id="path1034-5" />
+    <path
+       id="path1055"
+       d="m 204.74705,179.79178 h -5.72792"
+       style="fill:none;stroke:#000000;stroke-width:0.205617px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    <text
+       id="text14-97-4-7-7-9-7-2-5"
+       y="72.549347"
+       x="140.28264"
+       style="font-size:3.7385px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;stroke-width:0.0934625"
+       xml:space="preserve"><tspan
+         style="fill:#ffffff;stroke-width:0.0934625"
+         y="72.549347"
+         x="140.28264"
+         id="tspan12-07-9-1-4-3-1-4-0"
+         sodipodi:role="line">(double) valor_semana</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:3.7385px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;stroke-width:0.0934625"
+       x="140.15752"
+       y="78.332924"
+       id="text14-97-4-7-7-9-7-2-5-3"><tspan
+         sodipodi:role="line"
+         id="tspan12-07-9-1-4-3-1-4-0-8"
+         x="140.15752"
+         y="78.332924"
+         style="fill:#ffffff;stroke-width:0.0934625">(date) data_compra</tspan></text>
+    <text
+       id="text14-97-4-7-7-9-7-2-5-3-3"
+       y="84.35218"
+       x="140.33185"
+       style="font-size:3.7385px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;stroke-width:0.0934625"
+       xml:space="preserve"><tspan
+         style="fill:#ffffff;stroke-width:0.0934625"
+         y="84.35218"
+         x="140.33185"
+         id="tspan12-07-9-1-4-3-1-4-0-8-2"
+         sodipodi:role="line">(varchar) caminho_imagem</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:3.7385px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;stroke-width:0.0934625"
+       x="140.98663"
+       y="131.35049"
+       id="text14-97-4-7-7-9-7-2-5-3-3-9"><tspan
+         sodipodi:role="line"
+         id="tspan12-07-9-1-4-3-1-4-0-8-2-5"
+         x="140.98663"
+         y="131.35049"
+         style="fill:#ffffff;stroke-width:0.0934625">(varchar) caminho_imagem</tspan></text>
+  </g>
+</svg>

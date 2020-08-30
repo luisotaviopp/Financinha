@@ -1,0 +1,13 @@
+LVL	VEÍCULO				CENÁRIO
+01 	skate				Fazenda
+02 	roller				Fazenda
+03 	balão com ventilador		Núvens
+04 	balão com motor			?
+05 	skate voador			?
+06 	skate voador 2			?
+07 	jetpack (rústico)		?
+08 	jetpack com hélice		?
+09 	asas / capatece espacial	?
+10 	nave espacial			?
+
+	pegar x moedas
