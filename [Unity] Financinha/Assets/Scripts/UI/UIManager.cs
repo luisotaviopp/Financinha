@@ -9,7 +9,7 @@ public class UIManager : MonoBehaviour
         panel.SetActive(true);
     }
 
-    public void CloseScnene(GameObject panel)
+    public void CloseScene(GameObject panel)
     {
         panel.SetActive(false);
     }
