@@ -28,6 +28,13 @@ public class TokenValidator : MonoBehaviour
             //Pega o token retornado pela API
             string token = www.downloadHandler.text;
             tokenDisplay.text = token;
-        }
+            GameManager.token = token;
+            Debug.Log(GameManager.token);
+
+            GameManager.token += "BANANA"; 
+
+            Debug.Log(GameManager.token);
+
+        } 
     }
 }

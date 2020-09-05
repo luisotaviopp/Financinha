@@ -44,26 +44,31 @@ public class Login : MonoBehaviour
         {
             //Retorna o estado do login
             string result = System.Text.Encoding.UTF8.GetString(www.downloadHandler.data);
-            PlayerList listaDosPlayers = JsonUtility.FromJson<PlayerList>("{\"players\":" + result + "}");
+          /*  PlayerList listaDosPlayers = JsonUtility.FromJson<PlayerList>("{\"players\":" + result + "}");*/
             statusDisplay.text = www.downloadHandler.text;
-            //Debug.Log(www.downloadHandler.text);
+            Debug.Log(www.downloadHandler.text);
             //Debug.Log(listaDosPlayers.players[0].username);
-            PlayerPrefs.SetString("username", listaDosPlayers.players[0].username);
-            PlayerPrefs.SetString("token", listaDosPlayers.players[0].token);
-            PlayerPrefs.SetInt("id", listaDosPlayers.players[0].id);
-            PlayerPrefs.SetInt("best_distance_single", listaDosPlayers.players[0].best_distance_single);
-            PlayerPrefs.SetInt("best_distance_coop", listaDosPlayers.players[0].best_distance_coop);
-            PlayerPrefs.SetInt("victories_versus", listaDosPlayers.players[0].victories_versus);
-            PlayerPrefs.SetInt("victories_deathmatch", listaDosPlayers.players[0].victories_deathmatch);
-            PlayerPrefs.SetInt("losts_versus", listaDosPlayers.players[0].losts_versus);
-            PlayerPrefs.SetInt("losts_deathmatch", listaDosPlayers.players[0].losts_deathmatch);
-            PlayerPrefs.Save();
+            /*  PlayerPrefs.SetString("username", listaDosPlayers.players[0].username);
+              PlayerPrefs.SetString("token", listaDosPlayers.players[0].token);
+              PlayerPrefs.SetInt("id", listaDosPlayers.players[0].id);
+              PlayerPrefs.SetInt("best_distance_single", listaDosPlayers.players[0].best_distance_single);
+              PlayerPrefs.SetInt("best_distance_coop", listaDosPlayers.players[0].best_distance_coop);
+              PlayerPrefs.SetInt("victories_versus", listaDosPlayers.players[0].victories_versus);
+              PlayerPrefs.SetInt("victories_deathmatch", listaDosPlayers.players[0].victories_deathmatch);
+              PlayerPrefs.SetInt("losts_versus", listaDosPlayers.players[0].losts_versus);
+              PlayerPrefs.SetInt("losts_deathmatch", listaDosPlayers.players[0].losts_deathmatch);
+              PlayerPrefs.Save();*/
 
             //Debug.Log(PlayerPrefs.GetString("username"));
 
-
+            PlayerPrefs.SetString("Token", www.downloadHandler.text);
         }
 
+    }
+
+    public void Logout() {
+        PlayerPrefs.DeleteKey("Token");
+        UIManager.OpenLogin();
     }
 
 }
