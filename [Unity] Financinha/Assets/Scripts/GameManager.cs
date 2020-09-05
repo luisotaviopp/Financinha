@@ -5,27 +5,35 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     public static string token;
-   // Start is called before the first frame update
+
+    public GameObject menuPanel;
+    public GameObject loginPanel;
+    // Start is called before the first frame update
     void Awake()
     {
         DontDestroyOnLoad(this.gameObject);
         if (PlayerPrefs.HasKey("Token")) {
-            UIManager.OpenMenu();
-        } else {
-            UIManager.OpenLogin();
+            OpenMenu();
+            Debug.Log(PlayerPrefs.GetString("Token"));
         }
-
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        else {
+            OpenLogin();
+            Debug.Log("Usuário não está logado");
+        }
     }
 
     public static string getToken() {
         return token;
     }
 
-
+    public void OpenMenu()
+    {
+        menuPanel.SetActive(true);
+        loginPanel.SetActive(false);
+    }
+    public void OpenLogin()
+    {
+        loginPanel.SetActive(true);
+        menuPanel.SetActive(false);
+    }
 }

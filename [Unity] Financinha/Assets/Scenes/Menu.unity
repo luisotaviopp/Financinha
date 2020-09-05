@@ -2589,6 +2589,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c5efe5159948a41408c47a6a229006ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  menuPanel: {fileID: 1975890185}
+  loginPanel: {fileID: 1574905890}
 --- !u!4 &461772705
 Transform:
   m_ObjectHideFlags: 0

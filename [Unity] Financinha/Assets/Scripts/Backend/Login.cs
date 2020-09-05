@@ -68,7 +68,7 @@ public class Login : MonoBehaviour
 
     public void Logout() {
         PlayerPrefs.DeleteKey("Token");
-        UIManager.OpenLogin();
+        Debug.Log("Token deletado");
     }
 
 }
