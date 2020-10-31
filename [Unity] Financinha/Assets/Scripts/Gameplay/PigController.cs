@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PigController : MonoBehaviour
 {
@@ -22,7 +23,12 @@ public class PigController : MonoBehaviour
             {
                 pigRb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);                
             }
-        }   
+        }
+
+        if(Input.GetKeyDown(KeyCode.Escape))
+        {
+            SceneManager.LoadScene(0);
+        }
     }
 
     private void OnCollisionEnter2D(Collision2D collision)

@@ -8,6 +8,9 @@ public class GameManager : MonoBehaviour
 
     public GameObject menuPanel;
     public GameObject loginPanel;
+
+    public static bool gameIsPlaying = false;
+
     // Start is called before the first frame update
     void Awake()
     {
@@ -36,4 +39,6 @@ public class GameManager : MonoBehaviour
         loginPanel.SetActive(true);
         menuPanel.SetActive(false);
     }
+
+
 }

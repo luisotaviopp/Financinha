@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: NewProject_Data
   m_EditorClassIdentifier: 
   dataName: NewProject
-  dragonBonesJSON: {fileID: 4900000, guid: 21e0d0bd63ca43c43b94bff9692d5546, type: 3}
+  dragonBonesJSON: {fileID: 4900000, guid: a5e0f385be320cc40bd3f04e02211fbe, type: 3}
   textureAtlas:
-  - textureAtlasJSON: {fileID: 4900000, guid: 90e3690938075a848b5d04425f56ced0, type: 3}
-    texture: {fileID: 2800000, guid: 0029648f8b548634ca87db2706b8a63c, type: 3}
-    material: {fileID: 2100000, guid: aac5d45bdeabace479e346f544c95b50, type: 2}
+  - textureAtlasJSON: {fileID: 4900000, guid: 0770f6658ac483c41a532e2dafb9bc11, type: 3}
+    texture: {fileID: 2800000, guid: 11c6e7dc05591e345841535b4b9c0a6a, type: 3}
+    material: {fileID: 2100000, guid: dc45585d61056f442bde836fd26b4fbe, type: 2}
     uiMaterial: {fileID: 0}
