@@ -70,5 +70,4 @@ public class Login : MonoBehaviour
         PlayerPrefs.DeleteKey("Token");
         Debug.Log("Token deletado");
     }
-
 }

@@ -14,6 +14,6 @@ public class Background : MonoBehaviour
             parallaxSpeed += Time.deltaTime / 110;
         }
 
-        bgMaterial.material.mainTextureOffset += new Vector2(0, parallaxSpeed * Time.deltaTime);
+        bgMaterial.material.mainTextureOffset += new Vector2(parallaxSpeed * Time.deltaTime, 0);
     }
 }

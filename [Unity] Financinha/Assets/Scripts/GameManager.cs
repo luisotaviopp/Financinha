@@ -20,7 +20,7 @@ public class GameManager : MonoBehaviour
             Debug.Log(PlayerPrefs.GetString("Token"));
         }
         else {
-            OpenLogin();
+            //OpenLogin();
             Debug.Log("Usuário não está logado");
         }
     }
