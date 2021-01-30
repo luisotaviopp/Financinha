@@ -1,0 +1,93 @@
+user
+	id
+	name
+	level
+	permission
+	created_at
+	username
+	password
+
+objective (presente)
+	id
+	user_id
+	created_at
+	name
+	description
+	value
+	weekly_value
+	buying_date
+	image
+
+rule
+	id
+	created_by
+	name
+	description
+	value
+	penality
+
+token
+	id
+	user_id
+	created_at
+	token
+
+transaction (quando a criança usa o dinheiro)
+	id
+	wallet_id
+	kind
+	created_at
+	value
+	reason
+
+transfer_saving_to_wallet
+	id
+	wallet_id
+	saving_id
+	value
+	created_at
+
+transfer_wallet_to_saving
+	id
+	wallet_id
+	savings_id
+	value
+	created_at
+
+wallet
+	id
+	user_id
+	value
+
+philantrophy
+	id
+	user_id
+	created_at
+	name
+	description
+	value
+	image
+
+saving (cofrinho)
+	id
+	user_id
+	value
+
+relationship (parentesco)
+	id
+	relation_type
+	user_a
+	user_b
+
+relation_type
+	id
+	relation
+		1 filho
+		2 filha
+		3 pai
+		4 mãe
+		5 avó
+		6 avô
+		7 tio
+		8 tia
+

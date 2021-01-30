@@ -12,6 +12,8 @@ public class UIManager : MonoBehaviour
     public GameObject panelFamily;
     public GameObject panelSettings;
     public GameObject panelRules;
+    public GameObject panelSavings;
+    public GameObject panelPhilantrophy;
     public GameObject panelQuizz;
     public GameObject panelLevelSelector;
     public GameObject panelPreQuizz;
