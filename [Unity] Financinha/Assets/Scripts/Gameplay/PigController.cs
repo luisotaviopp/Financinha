@@ -5,12 +5,17 @@ using UnityEngine.SceneManagement;
 
 public class PigController : MonoBehaviour
 {
-    private Rigidbody2D pigRb;
+    
+    [SerializeField]private Rigidbody2D pigRb;
+    
+    
     public float jumpForce = 5f;
     public bool isOnGround;
 
     private void Start()
     {
+        
+        
         pigRb = GetComponent<Rigidbody2D>();        
     }
 
