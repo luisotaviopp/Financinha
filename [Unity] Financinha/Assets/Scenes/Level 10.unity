@@ -661,7 +661,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4f79525fad7930a4fa19969e0c049a1f, type: 3}
---- !u!1001 &827719720
+--- !u!1001 &886442459
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -671,7 +671,7 @@ PrefabInstance:
     - target: {fileID: 3111659529158735850, guid: 7845569c50b12d649996995c134b64bf,
         type: 3}
       propertyPath: m_Name
-      value: Pig
+      value: PigOvni
       objectReference: {fileID: 0}
     - target: {fileID: 3111659529158735852, guid: 7845569c50b12d649996995c134b64bf,
         type: 3}
