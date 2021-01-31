@@ -13,9 +13,8 @@ GameObject:
   - component: {fileID: 3111659529158735855}
   - component: {fileID: 3111659529158735854}
   - component: {fileID: 3111659529158735841}
-  - component: {fileID: 3111659529158735840}
   m_Layer: 0
-  m_Name: Pig
+  m_Name: PigSkate
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -74,7 +73,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 10
-  m_Sprite: {fileID: 21300000, guid: 077fbeae51a483245bc4243e64e4e50e, type: 3}
+  m_Sprite: {fileID: 21300000, guid: b4836bc4c15e09b4c8c706aa5972bf34, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -102,7 +101,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.86, y: 1.06}
+    oldSize: {x: 1.12, y: 1.03}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -148,22 +147,4 @@ MonoBehaviour:
   pigAnim: {fileID: 0}
   jumpForce: 7
   isOnGround: 0
---- !u!95 &3111659529158735840
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3111659529158735850}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 8197ce63cefde3a4ea25fe8269771561, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  TESTE_PARA_PULAR_FAZES: 0

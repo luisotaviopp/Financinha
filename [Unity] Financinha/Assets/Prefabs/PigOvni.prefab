@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 3111659529158735841}
   - component: {fileID: 3111659529158735840}
   m_Layer: 0
-  m_Name: Pig
+  m_Name: PigOvni
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -74,7 +74,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 10
-  m_Sprite: {fileID: 21300000, guid: 077fbeae51a483245bc4243e64e4e50e, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 1097d2cf83176e64e9c3e78ad56e21c6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -102,7 +102,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.86, y: 1.06}
+    oldSize: {x: 2.72, y: 1.54}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -148,6 +148,7 @@ MonoBehaviour:
   pigAnim: {fileID: 0}
   jumpForce: 7
   isOnGround: 0
+  TESTE_PARA_PULAR_FAZES: 0
 --- !u!95 &3111659529158735840
 Animator:
   serializedVersion: 3
