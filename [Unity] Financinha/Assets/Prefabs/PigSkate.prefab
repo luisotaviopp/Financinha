@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 3111659529158735855}
   - component: {fileID: 3111659529158735854}
   - component: {fileID: 3111659529158735841}
+  - component: {fileID: -3892197312032849762}
   m_Layer: 0
   m_Name: PigSkate
   m_TagString: Untagged
@@ -148,3 +149,22 @@ MonoBehaviour:
   jumpForce: 7
   isOnGround: 0
   TESTE_PARA_PULAR_FAZES: 0
+--- !u!95 &-3892197312032849762
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3111659529158735850}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 8197ce63cefde3a4ea25fe8269771561, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 3111659529158735841}
   - component: {fileID: 3111659529158735840}
   m_Layer: 0
-  m_Name: Pig
+  m_Name: PigHoverBoard
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -148,6 +148,7 @@ MonoBehaviour:
   pigAnim: {fileID: 0}
   jumpForce: 7
   isOnGround: 0
+  TESTE_PARA_PULAR_FAZES: 0
 --- !u!95 &3111659529158735840
 Animator:
   serializedVersion: 3
@@ -158,7 +159,7 @@ Animator:
   m_GameObject: {fileID: 3111659529158735850}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 8197ce63cefde3a4ea25fe8269771561, type: 2}
+  m_Controller: {fileID: 9100000, guid: 50352bd9bd12aca45a32bd264c0dd91e, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
