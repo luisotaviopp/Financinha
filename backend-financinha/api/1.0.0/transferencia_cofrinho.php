@@ -1,6 +1,5 @@
 <?php
 	require_once('../../connection.php');
-	require_once('../../TokenGenerator.php');
 
 	$sql = "SELECT * FROM transferencia t
             INNER JOIN cofrinho c on c.id_cofrinho = t.id_cofrinho

@@ -1,7 +1,7 @@
 <?php
 
     function random_str(
-        int $length = 128,
+        int $length = 127,
         string $keyspace = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ!@#$%&'
     ): string {
         if ($length < 1) {
@@ -16,5 +16,4 @@
     }   
    // date_default_timezone_set('America/Sao_Paulo');
    // echo "O dia de hoje é ". date("d-m-Y G:i:s"); em Java > dd-MM-yyyy hh:mm:ss
-   echo random_str();
 ?>

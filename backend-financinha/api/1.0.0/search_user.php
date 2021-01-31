@@ -1,14 +1,9 @@
 <?php
 	require_once('../../connection.php');
-	require_once('../../TokenGenerator.php');
 
-    $pessoa = 2;
+	$sql = "SELECT * FROM user WHERE name LIKE %" . $_POST['user_name'] . " %";
 
-	$sql = "SELECT SUM(c.valor) FROM carteira c
-            INNER JOIN pessoa p on p.id_pessoa = c.id_pessoa
-            WHERE p.id_pessoa = $pessoa ";
-
-    $result = $conn->query($sql);
+	$result = $conn->query($sql);
 
 	if ($result->num_rows > 0) {
 
