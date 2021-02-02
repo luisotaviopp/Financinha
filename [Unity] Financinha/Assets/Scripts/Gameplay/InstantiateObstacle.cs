@@ -8,7 +8,8 @@ public class InstantiateObstacle : MonoBehaviour
     public float cooldownTimer;
     public GameObject[] obstacles;
     public int selectedObstacleIndex;
-
+    public float spawnPosNegative;
+    public float spawnPosPositive;
     private void Start()
     {
         cooldownTimer = Random.Range(1f, 6f);
@@ -31,7 +32,12 @@ public class InstantiateObstacle : MonoBehaviour
             currentTimer = cooldownTimer;
 
             //Instancia o novo obstáculo
-            Instantiate(obstacles[selectedObstacleIndex], this.transform.position, Quaternion.identity);
+            Instantiate(obstacles[selectedObstacleIndex],
+                        new Vector3(transform.position.x, 
+                                   Random.Range(this.transform.position.y - spawnPosNegative, 
+                                                this.transform.position.y + spawnPosPositive)
+                                                ),   
+                                            Quaternion.identity);
         }
     }
 }
