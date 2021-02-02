@@ -18,12 +18,12 @@ public class Quiz : MonoBehaviour
     private int score = 0;
 
     GameObject questionsPanel;
-    GameObject openQuestionInput;
+    GameObject openQuestionInput; 
 
     private void Start()
     {
         questionsPanel.SetActive(true);
-        openQuestionInput.SetActive(false);
+        openQuestionInput.SetActive(false); 
         score = 0;
         selectedQuestion = 0;
         RenderQuestion();

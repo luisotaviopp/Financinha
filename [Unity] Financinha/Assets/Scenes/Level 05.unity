@@ -131,7 +131,7 @@ PrefabInstance:
     - target: {fileID: 6259184776440380168, guid: de0be78466f448043b4c58a1daaec126,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 53.35
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 6259184776440380168, guid: de0be78466f448043b4c58a1daaec126,
         type: 3}
@@ -188,6 +188,23 @@ PrefabInstance:
       propertyPath: m_Name
       value: Instantiator
       objectReference: {fileID: 0}
+    - target: {fileID: 6259184776440380175, guid: de0be78466f448043b4c58a1daaec126,
+        type: 3}
+      propertyPath: obstacles.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6259184776440380175, guid: de0be78466f448043b4c58a1daaec126,
+        type: 3}
+      propertyPath: obstacles.Array.data[0]
+      value: 
+      objectReference: {fileID: 877411846762557276, guid: 8cdadbe4548ce49428fb95988ddbfd3e,
+        type: 3}
+    - target: {fileID: 6259184776440380175, guid: de0be78466f448043b4c58a1daaec126,
+        type: 3}
+      propertyPath: obstacles.Array.data[1]
+      value: 
+      objectReference: {fileID: 6104072212601603508, guid: da4644dba3bcf8a4b8d9a4dfae992499,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: de0be78466f448043b4c58a1daaec126, type: 3}
 --- !u!1 &665506273
@@ -617,7 +634,7 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1243724530}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0

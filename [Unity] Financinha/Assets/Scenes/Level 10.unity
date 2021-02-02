@@ -740,7 +740,7 @@ PrefabInstance:
     - target: {fileID: 6259184776440380168, guid: de0be78466f448043b4c58a1daaec126,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 53.35
+      value: 8.7
       objectReference: {fileID: 0}
     - target: {fileID: 6259184776440380168, guid: de0be78466f448043b4c58a1daaec126,
         type: 3}
@@ -797,6 +797,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: Instantiator (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 6259184776440380175, guid: de0be78466f448043b4c58a1daaec126,
+        type: 3}
+      propertyPath: obstacles.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6259184776440380175, guid: de0be78466f448043b4c58a1daaec126,
+        type: 3}
+      propertyPath: obstacles.Array.data[0]
+      value: 
+      objectReference: {fileID: 1633444604170084633, guid: d17b99456317f0e479c3613df101f7a0,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: de0be78466f448043b4c58a1daaec126, type: 3}
 --- !u!1 &1243724530
