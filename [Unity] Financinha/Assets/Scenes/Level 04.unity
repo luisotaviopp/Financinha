@@ -951,7 +951,22 @@ PrefabInstance:
     - target: {fileID: 2042850927706316175, guid: 32ba89b77f411754baa59a4d3ecdd1bd,
         type: 3}
       propertyPath: jumpForce
-      value: 50
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 2042850927706316175, guid: 32ba89b77f411754baa59a4d3ecdd1bd,
+        type: 3}
+      propertyPath: currentTimer
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2042850927706316175, guid: 32ba89b77f411754baa59a4d3ecdd1bd,
+        type: 3}
+      propertyPath: cooldownTimer
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2042850927706316175, guid: 32ba89b77f411754baa59a4d3ecdd1bd,
+        type: 3}
+      propertyPath: cooldownTimerFixe
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 3111659529158735850, guid: 32ba89b77f411754baa59a4d3ecdd1bd,
         type: 3}

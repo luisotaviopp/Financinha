@@ -62,7 +62,7 @@ Transform:
   m_GameObject: {fileID: 3111659529158735850}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -5.52, y: -0.68, z: 0}
-  m_LocalScale: {x: 2, y: 2, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 7556885221598579413}
   - {fileID: 9029264731209930737}
@@ -132,6 +132,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pigRb: {fileID: 0}
+  canJump: 0
   jumpForce: 9
   isOnGroundBackWheel: 1
   isOnGroundFrontWheel: 1
