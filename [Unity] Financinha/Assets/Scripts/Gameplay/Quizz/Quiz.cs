@@ -12,7 +12,6 @@ public class Quiz : MonoBehaviour
     public Text questionText2;
     public Text questionText3;
     public Text questionText4;
-
     public Text openQuestion;
 
     private int score = 0;
