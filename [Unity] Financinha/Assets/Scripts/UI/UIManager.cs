@@ -18,6 +18,11 @@ public class UIManager : MonoBehaviour
     public GameObject panelLevelSelector;
     public GameObject panelPreQuizz;
 
+    public GameObject panelPreGame;
+    public Image nuvem;
+    public Image pig;
+    public Sprite[] nuvemLevel;
+    public Sprite[] pigLevel;
 
     public void OpenLogin()
     {
@@ -143,6 +148,7 @@ public class UIManager : MonoBehaviour
         panelQuizz.SetActive(false);
         panelLevelSelector.SetActive(true);
         panelPreQuizz.SetActive(false);
+        panelPreGame.SetActive(false);
     }
 
     public void OpenPreQuizz()
@@ -158,4 +164,12 @@ public class UIManager : MonoBehaviour
         panelLevelSelector.SetActive(false);
         panelPreQuizz.SetActive(true);
     }
+    public void OpenPreLevel(int level)
+    {
+        SceneLoader.refLevel = level;
+        nuvem.sprite = nuvemLevel[level];
+        pig.sprite = pigLevel[level];
+        panelPreGame.SetActive(true);
+    }
+
 }

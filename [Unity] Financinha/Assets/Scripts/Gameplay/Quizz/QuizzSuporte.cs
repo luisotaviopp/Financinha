@@ -29,7 +29,23 @@ public class QuizzSuporte : MonoBehaviour
         {         
             quiz.score++;
         }
-        quiz.Set_Quizz(1);
+        if (quiz.questaoAtual < quiz.respostass.Count-1)
+        {
+            quiz.questaoAtual++;
+        }
+        quiz.Set_Quizz();
     }
-    
+    public void Previous_Button()
+    {
+        if (ID == quiz.respostaCorreta)
+        {
+            quiz.score--;
+        }
+        if (quiz.questaoAtual > 0)
+        {
+            quiz.questaoAtual--;
+        }
+        quiz.Set_Quizz();
+    }
+
 }

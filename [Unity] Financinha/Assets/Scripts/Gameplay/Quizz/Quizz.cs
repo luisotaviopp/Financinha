@@ -19,23 +19,25 @@ public class Quizz : MonoBehaviour
         public string repostaE;
         public int respostaCorretaID;
         public int idQuiz;
+
     }
     public void Start()
     {
-        Set_Quizz(questaoAtual);
+        Set_Quizz();
        
     }
-    public void Set_Quizz(int escolhendoQuestao)
+    public void Set_Quizz()
     {
+       
             foreach(QuizzSuporte quizsup in quiz_GO)
             {
-                quizsup.pergunta.text = respostass[questaoAtual + escolhendoQuestao].pergunta;
-                quizsup.respostaA.text = respostass[questaoAtual + escolhendoQuestao].repostaA;
-                quizsup.respostaB.text = respostass[questaoAtual + escolhendoQuestao].repostaB;
-                quizsup.respostaC.text = respostass[questaoAtual + escolhendoQuestao].repostaC;
-                quizsup.respostaD.text = respostass[questaoAtual + escolhendoQuestao].repostaD;
-                quizsup.respostaE.text = respostass[questaoAtual + escolhendoQuestao].repostaE;
-                respostaCorreta = respostass[questaoAtual + escolhendoQuestao].respostaCorretaID;
+                quizsup.pergunta.text = respostass[questaoAtual ].pergunta;
+                quizsup.respostaA.text = respostass[questaoAtual ].repostaA;
+                quizsup.respostaB.text = respostass[questaoAtual ].repostaB;
+                quizsup.respostaC.text = respostass[questaoAtual ].repostaC;
+                quizsup.respostaD.text = respostass[questaoAtual ].repostaD;
+                quizsup.respostaE.text = respostass[questaoAtual ].repostaE;
+                respostaCorreta = respostass[questaoAtual].respostaCorretaID;
             }
     }  
 

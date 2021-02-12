@@ -5,8 +5,10 @@ using UnityEngine.SceneManagement;
 
 public class SceneLoader : MonoBehaviour  
 {
-    public void LoadScene(int scene)
+    public static int refLevel;
+    public void LoadScene(int scene = 0)
     {
+        scene = refLevel;
         SceneManager.LoadSceneAsync(scene);
     }
 }
