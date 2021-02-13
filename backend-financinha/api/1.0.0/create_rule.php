@@ -1,7 +1,10 @@
 <?php
 	require 'connection.php';
 
-	$token = $_POST['post_token'];
+	$token          = $_POST['post_token'];
+	$name           = $_POST['post_name'];
+	$description    = $_POST['post_description'];
+	$value          = $_POST['post_value'];
 
     $sql = "SELECT user.id
             FROM user
@@ -15,9 +18,8 @@
 	{
 		while($row = mysqli_fetch_assoc($result))
 		{
-            $sql2 = "UPDATE user
-                    SET level = level + 1
-                    WHERE user.id = ".$row['id'];
+            $id = $row['id'];
+            $sql2 = "INSERT INTO rule (created_by, name, description, value) VALUES ($id, '$name', '$description', $value)";
             $conn->query($sql2);
 		}
         echo "Ok";

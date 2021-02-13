@@ -2,6 +2,7 @@
 	require 'connection.php';
 
 	$token = $_POST['post_token'];
+	$value = $_POST['post_value'];
 
     $sql = "SELECT user.id
             FROM user
@@ -15,9 +16,8 @@
 	{
 		while($row = mysqli_fetch_assoc($result))
 		{
-            $sql2 = "UPDATE user
-                    SET level = level + 1
-                    WHERE user.id = ".$row['id'];
+            $sql2 = "UPDATE wallet
+                     SET wallet.amount = (wallet.amount + $value) WHERE wallet.user_id = ". $row['id'];
             $conn->query($sql2);
 		}
         echo "Ok";

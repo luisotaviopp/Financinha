@@ -1,24 +1,45 @@
 <?php
-	require_once('../../connection.php');
+	require 'connection.php';
 
-	$sql = "SELECT * FROM user WHERE name LIKE %" . $_POST['user_name'] . " %";
+	$token = $_POST['post_token'];
+	$username = $_POST['post_username'];
 
+    $sql = "SELECT user.id
+            FROM user
+            INNER JOIN token
+            ON user.id = token.user_id
+            WHERE token.token = '$token'";
+            
 	$result = $conn->query($sql);
 
-	if ($result->num_rows > 0) {
-
+	if ($result->num_rows > 0)
+	{
 		$emparray = array();
 
-		while($row = mysqli_fetch_assoc($result))
+		$sql2 = "SELECT user.id, user.username
+				FROM user
+				WHERE user.username LIKE '%$username%'";
+		
+		$result2 = $conn->query($sql2);
+
+		if ($result2->num_rows > 0)
 		{
-			$emparray[] = $row;
+			while($row2 = mysqli_fetch_assoc($result2))
+			{
+				$emparray[] = $row2;
+			}
+		} 
+		else
+		{
+			echo "Nenhum usuário encontrado.";
 		}
 
-	} else {
-		echo "0 results";
+        echo json_encode($emparray);
+	} 
+	else
+	{
+		echo "Invalid Token";
 	}
-
-	echo json_encode($emparray);
 
 	$conn->close();
 ?>
