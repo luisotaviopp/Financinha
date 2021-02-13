@@ -15,7 +15,6 @@
 		}
 
         echo json_encode($emparray);
-
 	} 
 	else 
 	{
