@@ -170,6 +170,9 @@
 		<br><h3>Cadastrar objetivo. *</h3>
 
 		<br><h3>Cadastrar causa. *</h3>
+		<p>Causa é 10% do valor do presente.</p>
+		<p>Conquista é o valor da causa + valor do presente.</p>
+		
 
 		<br><br><br><br>
 	</body>
