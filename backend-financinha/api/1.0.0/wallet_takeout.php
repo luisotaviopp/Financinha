@@ -3,6 +3,8 @@
 
 	$token = $_POST['post_token'];
 	$value = $_POST['post_value'];
+	$reason = $_POST['post_reason'];
+
 
 	$sql = "SELECT user.id
 			FROM user
@@ -19,8 +21,14 @@
 			$sql2 = "UPDATE wallet
 					 SET wallet.amount = (wallet.amount - $value) WHERE wallet.user_id = ". $row['id'];
 			$conn->query($sql2);
+
+			// Gera o evento para pegar no extrato depois.
+			$id =  $row['id'];
+			$sql3 = "INSERT INTO event (user_id, type, value, reason) VALUES ($id, 'w_takeout', $value, '$reason')";
+			$conn->query($sql3);
+			
+			echo 'Ok';
 		}
-		echo "Ok";
 	} 
 	else
 	{

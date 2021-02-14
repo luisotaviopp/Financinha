@@ -3,15 +3,11 @@
 
 	$token = $_POST['post_token'];
 
-	$sql = "SELECT user.name as de, relation_type.relation as relacao, notification.id
+	$sql = "SELECT  value, type, reason, event.created_at
 			FROM token
-			INNER JOIN notification
-			ON token.user_id = notification.to_user
-			INNER JOIN user
-			ON notification.from_user = user.id
-			INNER JOIN relation_type
-			on relation_type.id = notification.relation_type
-			WHERE token.token =  '$token'";
+			INNER JOIN event
+			ON token.user_id = event.user_id
+			WHERE token = '$token'";
 
 	$result = $conn->query($sql);
 

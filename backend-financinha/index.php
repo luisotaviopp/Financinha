@@ -75,6 +75,7 @@
 		<form action="api/1.0.0/wallet_deposit.php" method="post" autocomplete="off">
 			<input type="text" placeholder="Token" name="post_token" maxlength="128">
 			<input type="number" placeholder="Valor" name="post_value">
+			<input type="text" placeholder="Motivo" name="post_reason">
 			<input type="submit" value="DALE">
 		</form>
 
@@ -82,6 +83,7 @@
 		<form action="api/1.0.0/wallet_takeout.php" method="post" autocomplete="off">
 			<input type="text" placeholder="Token" name="post_token" maxlength="128">
 			<input type="number" placeholder="Valor" name="post_value">
+			<input type="text" placeholder="Motivo" name="post_reason">
 			<input type="submit" value="DALE">
 		</form>
 
@@ -89,6 +91,7 @@
 		<form action="api/1.0.0/wallet_to_savings.php" method="post" autocomplete="off">
 			<input type="text" placeholder="Token" name="post_token" maxlength="128">
 			<input type="number" placeholder="Valor" name="post_value">
+			<input type="text" placeholder="Motivo" name="post_reason">
 			<input type="submit" value="DALE">
 		</form>
 
@@ -96,6 +99,7 @@
 		<form action="api/1.0.0/savings_to_wallet.php" method="post" autocomplete="off">
 			<input type="text" placeholder="Token" name="post_token" maxlength="128">
 			<input type="number" placeholder="Valor" name="post_value">
+			<input type="text" placeholder="Motivo" name="post_reason">
 			<input type="submit" value="DALE">
 		</form>
 
@@ -176,7 +180,15 @@
 		<br><h3 class="finalizado">Aceitar a solicitação.</h3>
 		<form action="api/1.0.0/accept_relation.php" method="post" autocomplete="off">
 			<input type="text" placeholder="Token" name="post_token">
-			<input type="text" placeholder="Token" name="post_notification_id">
+			<input type="text" placeholder="Id da notificação" name="post_notification_id">
+			<input type="submit" value="DALE">
+		</form>
+
+
+		<br><h3 class="finalizado">Cancelar/recusar a solicitação.</h3>
+		<form action="api/1.0.0/refuse_request.php" method="post" autocomplete="off">
+			<input type="text" placeholder="Token" name="post_token">
+			<input type="text" placeholder="Id da notificação" name="post_notification_id">
 			<input type="submit" value="DALE">
 		</form>
 
@@ -185,25 +197,54 @@
 
 
 
-		<br><h3 class="fazer">Cancelar/recusar a solicitação. *</h3>
-		
 
 
 
-		
-		<br><h3 class="fazer">Listando os familiáres de um usuário. *</h3>
-		<form action="api/1.0.0/search_user.php" method="post" autocomplete="off">
+
+		<br><h3 class="finalizado">Listando os familiáres de um usuário (precisa dar uma pequena atenção nesse).</h3>
+		<form action="api/1.0.0/list_family.php" method="post" autocomplete="off">
 			<input type="text" placeholder="Token" name="post_token">
 			<input type="submit" value="DALE">
 		</form>
 
 
-		<br><h3 class="fazer">Retirando (usando) o dinheiro da carteira. *</h3>
-		<form action="api/1.0.0/search_user.php" method="post" autocomplete="off">
-			<input type="text" placeholder="Motivo">
-			<input type="number" placeholder="Valor">
+		<br><h3 class="finalizado">Extrato.</h3>
+		<form action="api/1.0.0/timeline.php" method="post" autocomplete="off">
+			<input type="text" placeholder="Token" name="post_token">
 			<input type="submit" value="DALE">
 		</form>
+
+
+
+
+		<br><h3 class="finalizado">(Apenas filhos) - Cadastrando uma resposta para uma pergunta.</h3>
+		<form action="api/1.0.0/insert_open_answer.php" method="post" autocomplete="off">
+			<input type="text" placeholder="Token" name="post_token"><br><br>
+			<textarea name="post_answer" id="" cols="30" rows="10"></textarea>
+			<br><input type="submit" value="DALE">
+		</form>
+
+
+
+		<br><h3 class="fazer">Cadastrar objetivo. *</h3>
+
+		<br><h3 class="fazer">Cadastrar causa. *</h3>
+		<p>Causa é 10% do valor do presente.</p>
+		<p>Conquista é o valor da causa + valor do presente.</p>
+
+
+
+
+		<br><h3 class="fazer">(Apenas pais) - Vendo as respostas para as perguntas. *</h3>
+		<form action="api/1.0.0/search_user.php" method="post" autocomplete="off">
+			<input type="text" placeholder="Nome">
+			<input type="submit" value="DALE">
+		</form>
+
+
+
+
+
 
 
 		<br><h3 class="fazer">Listando penalidades de um usuário. *</h3>
@@ -212,32 +253,12 @@
 			<input type="submit" value="DALE">
 		</form>
 
-		<br><h3 class="fazer">Extrato. *</h3>
-		<form action="api/1.0.0/search_user.php" method="post" autocomplete="off">
-			<input type="text" placeholder="Token">
-			<input type="submit" value="DALE">
-		</form>
 
-		<br><h3 class="fazer">(Apenas filhos) - Cadastrando uma resposta para uma pergunta. *</h3>
-		<form action="api/1.0.0/search_user.php" method="post" autocomplete="off">
-			<textarea name="answer" id="" cols="30" rows="10"></textarea>
-			<br><input type="submit" value="DALE">
-		</form>
 
-		<br><h3 class="fazer">(Apenas pais) - Vendo as respostas para as perguntas. *</h3>
-		<form action="api/1.0.0/search_user.php" method="post" autocomplete="off">
-			<input type="text" placeholder="Nome">
-			<input type="submit" value="DALE">
-		</form>
 
 		<br><h3 class="fazer">Simulação de semanada. *</h3>
 		<p>valor do objetivo, data para conseguir o objetivo... (tá pronto lá na unity)</p>
 
-		<br><h3 class="fazer">Cadastrar objetivo. *</h3>
-
-		<br><h3 class="fazer">Cadastrar causa. *</h3>
-		<p>Causa é 10% do valor do presente.</p>
-		<p>Conquista é o valor da causa + valor do presente.</p>
 		
 
 		<br><br><br><br>
