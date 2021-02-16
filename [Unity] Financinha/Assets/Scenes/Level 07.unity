@@ -246,6 +246,33 @@ MeshRenderer:
     type: 3}
   m_PrefabInstance: {fileID: 1786003641}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &648080922 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6259184776440380169, guid: de0be78466f448043b4c58a1daaec126,
+    type: 3}
+  m_PrefabInstance: {fileID: 1306803372}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &648080923
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 648080922}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbaf4657b26670f43aee4e8baf40d321, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentTimer: 2
+  cooldownTimer: 2
+  obstacles:
+  - {fileID: 5200499472932998341, guid: bb989c2b4f81bfd4e808d3c59a15be81, type: 3}
+  - {fileID: 1374200433236312993, guid: 7321eb1683a8c0f4fb3045b587b0d29b, type: 3}
+  - {fileID: 6495701254518003797, guid: e8f976695f8fd854ba1a3c7721a4e965, type: 3}
+  selectedObstacleIndex: 0
+  spawnPosNegative: 3
+  spawnPosPositive: 5
 --- !u!1 &665506273
 GameObject:
   m_ObjectHideFlags: 0
@@ -343,7 +370,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bgMaterial: {fileID: 24092878}
-  parallaxSpeed: 0
+  parallaxSpeed: 0.1
 --- !u!1 &1243724530
 GameObject:
   m_ObjectHideFlags: 0
@@ -776,6 +803,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: BG4
       objectReference: {fileID: 0}
+    - target: {fileID: 6066646256906315832, guid: 7c8e22a3d2b799146a3ac9938098ee02,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: bdcf00cb49c051a48a5b66b975f8ce31, type: 2}
     - target: {fileID: 6066646256906315833, guid: 7c8e22a3d2b799146a3ac9938098ee02,
         type: 3}
       propertyPath: m_LocalPosition.x

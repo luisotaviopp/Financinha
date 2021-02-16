@@ -34,7 +34,7 @@ public class InstantiateObstacle : MonoBehaviour
             //Instancia o novo obstáculo
             Instantiate(obstacles[selectedObstacleIndex],
                         new Vector3(transform.position.x, 
-                                   Random.Range(this.transform.position.y - spawnPosNegative, 
+                                   Random.Range(this.transform.position.y + spawnPosNegative, 
                                                 this.transform.position.y + spawnPosPositive)
                                                 ),   
                                             Quaternion.identity);

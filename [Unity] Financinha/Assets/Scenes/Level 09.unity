@@ -704,6 +704,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: BG5
       objectReference: {fileID: 0}
+    - target: {fileID: 6066646256906315832, guid: 4f79525fad7930a4fa19969e0c049a1f,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 356891e302f4aa140a2a6689046e328b, type: 2}
     - target: {fileID: 6066646256906315833, guid: 4f79525fad7930a4fa19969e0c049a1f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -924,3 +929,30 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2073428849 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6259184776440380169, guid: de0be78466f448043b4c58a1daaec126,
+    type: 3}
+  m_PrefabInstance: {fileID: 931250259}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2073428850
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2073428849}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbaf4657b26670f43aee4e8baf40d321, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentTimer: 2
+  cooldownTimer: 2
+  obstacles:
+  - {fileID: 5200499472932998341, guid: bb989c2b4f81bfd4e808d3c59a15be81, type: 3}
+  - {fileID: 1374200433236312993, guid: 7321eb1683a8c0f4fb3045b587b0d29b, type: 3}
+  - {fileID: 6495701254518003797, guid: e8f976695f8fd854ba1a3c7721a4e965, type: 3}
+  selectedObstacleIndex: 0
+  spawnPosNegative: 3
+  spawnPosPositive: 5
