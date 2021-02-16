@@ -14,6 +14,10 @@ public class PigSkateController : PigController
     {
       //  MantendoEquilibrio();
         Jumpp();
+        if(!canDMG)
+        {
+            CanDMGConter();
+        }
         
     }
     private void FixedUpdate()
@@ -50,4 +54,6 @@ public class PigSkateController : PigController
         Gizmos.DrawSphere(backWheel.position, WheelRadius);
         Gizmos.DrawSphere(frontWheel.position, WheelRadius);
     }
+
+   
 }

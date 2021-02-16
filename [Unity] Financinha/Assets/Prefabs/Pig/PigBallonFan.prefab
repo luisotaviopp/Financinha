@@ -47,7 +47,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c43224cfb6d539d45ac66acbf50c79d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  life1: {fileID: 0}
+  life2: {fileID: 0}
+  life3: {fileID: 0}
   pigRb: {fileID: 0}
+  life: 3
+  canDMG: 0
+  currentTime: 1
+  time: 1
   canJump: 1
   jumpForce: 10
   currentTimer: 1

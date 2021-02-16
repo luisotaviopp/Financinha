@@ -10,6 +10,10 @@ public class PigBallonController : PigController
     public float cooldownTimerFixe;
     private void Update()
     {
+        if (!canDMG)
+        {
+            CanDMGConter();
+        }
         Jump();
         TransitarEntreOsLevels();
         if (!canJump)

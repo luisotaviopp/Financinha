@@ -2,17 +2,34 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class PigController : MonoBehaviour
 {
-    
+    // UI
+   
+    public Image life1;
+    public Image life2;
+    public Image life3; 
+
     [SerializeField]protected Rigidbody2D pigRb;
+
+    public int life;
+    public bool canDMG;
+    public float currentTime;
+    public float time;
+   
     public bool canJump;
     public float jumpForce;
     
     protected void Start()
     {
-        pigRb = GetComponent<Rigidbody2D>();   
+        
+        life1.sprite = GetComponent<SpriteRenderer>().sprite;
+        life2.sprite = GetComponent<SpriteRenderer>().sprite;
+        life3.sprite = GetComponent<SpriteRenderer>().sprite;
+        pigRb = GetComponent<Rigidbody2D>();
+        currentTime = time;
     }
     protected void TransitarEntreOsLevels()
     {
@@ -31,4 +48,63 @@ public class PigController : MonoBehaviour
 
     }
 
+    public void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("enemy"))
+        {
+            if(life > 0)
+            {
+                if (canDMG)
+                {
+                    canDMG = false;
+                    life--;
+                    switch (life)
+                    {
+                        case 2:
+                            life3.enabled = false;
+                            return;
+                        case 1:
+                            life2.enabled = false;
+                            return;
+                        case 0:
+                            life1.enabled = false;
+                            GameManager.lose = true;
+                            SceneManager.LoadSceneAsync(0);
+                            return;
+
+                    }                
+               
+                }
+                GetComponent<SpriteRenderer>().enabled = false;
+                gameObject.layer = 12;
+            }
+        }
+        if (collision.gameObject.CompareTag("coin"))
+        {
+
+        }
+    }
+    public void OnCollisionExit2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("enemy"))
+        {
+            if (life > 0)
+            {
+                GetComponent<SpriteRenderer>().enabled = true;
+                gameObject.layer = 10;
+            }
+        }
+    }
+    public void CanDMGConter()
+    {
+        currentTime -= Time.deltaTime;
+        if (currentTime < 0)
+           
+        {
+            
+            canDMG = true;
+            currentTime = time;
+            
+        }
+    }
 }

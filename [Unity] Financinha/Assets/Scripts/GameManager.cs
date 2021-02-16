@@ -15,6 +15,9 @@ public class GameManager : MonoBehaviour
     public GameObject extratosPanel;
     public GameObject cofrinhoPanel;
 
+    // REGRAS DO GAME;
+    public static bool win;
+    public static bool lose;
     public static bool gameIsPlaying = false;
 
     // Start is called before the first frame update
@@ -130,4 +133,5 @@ public class GameManager : MonoBehaviour
         extratosPanel.SetActive(false);
         cofrinhoPanel.SetActive(true);
     }
+    // REGRAS DO GAME
 }

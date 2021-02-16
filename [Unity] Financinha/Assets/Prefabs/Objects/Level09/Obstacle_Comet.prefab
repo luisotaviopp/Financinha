@@ -13,9 +13,9 @@ GameObject:
   - component: {fileID: 3455024619304320323}
   - component: {fileID: 7680060768465025679}
   - component: {fileID: 4591739486661768941}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Obstacle_Comet
-  m_TagString: Untagged
+  m_TagString: enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7556885221598579413}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -46,7 +46,7 @@ GameObject:
   - component: {fileID: 1622145225}
   - component: {fileID: 1622145228}
   - component: {fileID: 1622145229}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: PigSkate
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -131,7 +131,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4b184ab30f13f1c4fafedd49490c17dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  life1: {fileID: 0}
+  life2: {fileID: 0}
+  life3: {fileID: 0}
   pigRb: {fileID: 0}
+  life: 3
+  canDMG: 0
+  currentTime: 1
+  time: 1
   canJump: 0
   jumpForce: 9
   isOnGroundBackWheel: 1
@@ -277,7 +284,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9029264731209930737}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: GameObject (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
