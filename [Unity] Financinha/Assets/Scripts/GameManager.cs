@@ -14,6 +14,7 @@ public class GameManager : MonoBehaviour
     public GameObject regrasPanel;
     public GameObject extratosPanel;
     public GameObject cofrinhoPanel;
+    public GameObject pregamePanel;
 
     // REGRAS DO GAME;
     public static bool win;
@@ -48,6 +49,7 @@ public class GameManager : MonoBehaviour
         regrasPanel.SetActive(false);
         extratosPanel.SetActive(false);
         cofrinhoPanel.SetActive(false);
+        pregamePanel.SetActive(false);
     }
 
     public void OpenLogin()
@@ -60,6 +62,7 @@ public class GameManager : MonoBehaviour
         regrasPanel.SetActive(false);
         extratosPanel.SetActive(false);
         cofrinhoPanel.SetActive(false);
+        pregamePanel.SetActive(false);
     }
 
     public void OpenCarteira()
@@ -72,6 +75,7 @@ public class GameManager : MonoBehaviour
         regrasPanel.SetActive(false);
         extratosPanel.SetActive(false);
         cofrinhoPanel.SetActive(false);
+        pregamePanel.SetActive(false);
     }
 
     public void OpenPresente()
@@ -84,6 +88,7 @@ public class GameManager : MonoBehaviour
         regrasPanel.SetActive(false);
         extratosPanel.SetActive(false);
         cofrinhoPanel.SetActive(false);
+        pregamePanel.SetActive(false);
     }
 
     public void OpenCausas()
@@ -96,6 +101,7 @@ public class GameManager : MonoBehaviour
         regrasPanel.SetActive(false);
         extratosPanel.SetActive(false);
         cofrinhoPanel.SetActive(false);
+        pregamePanel.SetActive(false);
     }
 
     public void OpenRegras()
@@ -108,6 +114,7 @@ public class GameManager : MonoBehaviour
         regrasPanel.SetActive(true);
         extratosPanel.SetActive(false);
         cofrinhoPanel.SetActive(false);
+        pregamePanel.SetActive(false);
     }
 
     public void OpenExtratos()
@@ -120,6 +127,7 @@ public class GameManager : MonoBehaviour
         regrasPanel.SetActive(false);
         extratosPanel.SetActive(true);
         cofrinhoPanel.SetActive(false);
+        pregamePanel.SetActive(false);
     }
 
     public void OpenCofrinho()
@@ -132,6 +140,7 @@ public class GameManager : MonoBehaviour
         regrasPanel.SetActive(false);
         extratosPanel.SetActive(false);
         cofrinhoPanel.SetActive(true);
+        pregamePanel.SetActive(false);
     }
     // REGRAS DO GAME
 }
