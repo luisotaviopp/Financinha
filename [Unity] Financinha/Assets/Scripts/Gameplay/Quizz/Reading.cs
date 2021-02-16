@@ -2,12 +2,15 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 public class Reading : MonoBehaviour
 {
     public GameObject quiz;
     public GameObject btn_Quiz;
     public GameObject btn_Reading;
     public GameObject reading;
+
+
 
     public Image readHistory;
     public Sprite[] img;
@@ -35,10 +38,13 @@ public class Reading : MonoBehaviour
     }
     public void Set_PreviousImg()
     {
-        
-        if (imgSelect > 0)
-        {
+
             imgSelect--;
+            if (imgSelect < 0)
+                {
+                    SceneManager.LoadSceneAsync(SceneLoader.refLevel);
+                }
+            
             readHistory.sprite = img[imgSelect];       
             if (imgSelect < img.Length - 1)
             {
@@ -46,7 +52,7 @@ public class Reading : MonoBehaviour
                 btn_Reading.SetActive(true);
             }
             return;
-        }
+        
        
 
     }

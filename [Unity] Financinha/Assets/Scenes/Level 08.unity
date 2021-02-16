@@ -142,9 +142,14 @@ MonoBehaviour:
   currentTimer: 2
   cooldownTimer: 2
   obstacles:
-  - {fileID: 5200499472932998341, guid: bb989c2b4f81bfd4e808d3c59a15be81, type: 3}
-  - {fileID: 1374200433236312993, guid: 7321eb1683a8c0f4fb3045b587b0d29b, type: 3}
-  - {fileID: 6495701254518003797, guid: e8f976695f8fd854ba1a3c7721a4e965, type: 3}
+  - {fileID: 3817419998973667588, guid: fa654bceda70eee4f9d617c37fda7999, type: 3}
+  - {fileID: 7988538163133243678, guid: a20f9658cb5d3364d974196150934b43, type: 3}
+  - {fileID: 3817041828424446783, guid: dd30fe87cad71fc4ea62bed9c36ff03c, type: 3}
+  - {fileID: 8268393018057924719, guid: b8df03d2279597d4389096061a359f43, type: 3}
+  - {fileID: 8268393018057924719, guid: b8df03d2279597d4389096061a359f43, type: 3}
+  - {fileID: 8268393018057924719, guid: b8df03d2279597d4389096061a359f43, type: 3}
+  - {fileID: 8268393018057924719, guid: b8df03d2279597d4389096061a359f43, type: 3}
+  - {fileID: 8268393018057924719, guid: b8df03d2279597d4389096061a359f43, type: 3}
   selectedObstacleIndex: 0
   spawnPosNegative: 3
   spawnPosPositive: 5
@@ -340,6 +345,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2906645357982552177, guid: 1ea462443c8310c4a85cbc7a71ba6b9f,
+        type: 3}
+      propertyPath: coin_text
+      value: 
+      objectReference: {fileID: 1027562273}
+    - target: {fileID: 2906645357982552177, guid: 1ea462443c8310c4a85cbc7a71ba6b9f,
+        type: 3}
+      propertyPath: life1
+      value: 
+      objectReference: {fileID: 1027562272}
+    - target: {fileID: 2906645357982552177, guid: 1ea462443c8310c4a85cbc7a71ba6b9f,
+        type: 3}
+      propertyPath: life2
+      value: 
+      objectReference: {fileID: 1027562271}
+    - target: {fileID: 2906645357982552177, guid: 1ea462443c8310c4a85cbc7a71ba6b9f,
+        type: 3}
+      propertyPath: life3
+      value: 
+      objectReference: {fileID: 1027562270}
     - target: {fileID: 3111659529158735850, guid: 1ea462443c8310c4a85cbc7a71ba6b9f,
         type: 3}
       propertyPath: m_Name
@@ -521,6 +546,54 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 775ed57662884504c87c1f255e1a5194, type: 3}
+--- !u!114 &1027562270 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1230758710, guid: 775ed57662884504c87c1f255e1a5194,
+    type: 3}
+  m_PrefabInstance: {fileID: 1027562269}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1027562271 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 251427116, guid: 775ed57662884504c87c1f255e1a5194,
+    type: 3}
+  m_PrefabInstance: {fileID: 1027562269}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1027562272 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 209578106, guid: 775ed57662884504c87c1f255e1a5194,
+    type: 3}
+  m_PrefabInstance: {fileID: 1027562269}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1027562273 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1299168993531273545, guid: 775ed57662884504c87c1f255e1a5194,
+    type: 3}
+  m_PrefabInstance: {fileID: 1027562269}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1243724530
 GameObject:
   m_ObjectHideFlags: 0

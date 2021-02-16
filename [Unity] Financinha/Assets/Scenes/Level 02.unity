@@ -1112,11 +1112,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3111659529158735854, guid: ac86e6cb1ee591141b01879b27c4e7f5,
-        type: 3}
-      propertyPath: m_GravityScale
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 3926198555232372808, guid: ac86e6cb1ee591141b01879b27c4e7f5,
         type: 3}
       propertyPath: life1
@@ -1134,19 +1129,9 @@ PrefabInstance:
       objectReference: {fileID: 928414323}
     - target: {fileID: 3926198555232372808, guid: ac86e6cb1ee591141b01879b27c4e7f5,
         type: 3}
-      propertyPath: currentTime
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3926198555232372808, guid: ac86e6cb1ee591141b01879b27c4e7f5,
-        type: 3}
-      propertyPath: time
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3926198555232372808, guid: ac86e6cb1ee591141b01879b27c4e7f5,
-        type: 3}
-      propertyPath: life
-      value: 3
-      objectReference: {fileID: 0}
+      propertyPath: coin_text
+      value: 
+      objectReference: {fileID: 1668442126}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ac86e6cb1ee591141b01879b27c4e7f5, type: 3}
 --- !u!1 &1508353622
@@ -1300,7 +1285,7 @@ PrefabInstance:
     - target: {fileID: 6259184776440380175, guid: de0be78466f448043b4c58a1daaec126,
         type: 3}
       propertyPath: obstacles.Array.size
-      value: 4
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 6259184776440380175, guid: de0be78466f448043b4c58a1daaec126,
         type: 3}
@@ -1326,8 +1311,61 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 6201919508988578119, guid: fed6e0f7afb7ffd47aeee0497e6ecf7e,
         type: 3}
+    - target: {fileID: 6259184776440380175, guid: de0be78466f448043b4c58a1daaec126,
+        type: 3}
+      propertyPath: obstacles.Array.data[4]
+      value: 
+      objectReference: {fileID: 8268393018057924719, guid: b8df03d2279597d4389096061a359f43,
+        type: 3}
+    - target: {fileID: 6259184776440380175, guid: de0be78466f448043b4c58a1daaec126,
+        type: 3}
+      propertyPath: obstacles.Array.data[5]
+      value: 
+      objectReference: {fileID: 8268393018057924719, guid: b8df03d2279597d4389096061a359f43,
+        type: 3}
+    - target: {fileID: 6259184776440380175, guid: de0be78466f448043b4c58a1daaec126,
+        type: 3}
+      propertyPath: obstacles.Array.data[6]
+      value: 
+      objectReference: {fileID: 8268393018057924719, guid: b8df03d2279597d4389096061a359f43,
+        type: 3}
+    - target: {fileID: 6259184776440380175, guid: de0be78466f448043b4c58a1daaec126,
+        type: 3}
+      propertyPath: obstacles.Array.data[7]
+      value: 
+      objectReference: {fileID: 8268393018057924719, guid: b8df03d2279597d4389096061a359f43,
+        type: 3}
+    - target: {fileID: 6259184776440380175, guid: de0be78466f448043b4c58a1daaec126,
+        type: 3}
+      propertyPath: obstacles.Array.data[8]
+      value: 
+      objectReference: {fileID: 8268393018057924719, guid: b8df03d2279597d4389096061a359f43,
+        type: 3}
+    - target: {fileID: 6259184776440380175, guid: de0be78466f448043b4c58a1daaec126,
+        type: 3}
+      propertyPath: obstacles.Array.data[9]
+      value: 
+      objectReference: {fileID: 8268393018057924719, guid: b8df03d2279597d4389096061a359f43,
+        type: 3}
+    - target: {fileID: 6259184776440380175, guid: de0be78466f448043b4c58a1daaec126,
+        type: 3}
+      propertyPath: spawnPosPositive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: de0be78466f448043b4c58a1daaec126, type: 3}
+--- !u!114 &1668442126 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1299168993531273545, guid: 775ed57662884504c87c1f255e1a5194,
+    type: 3}
+  m_PrefabInstance: {fileID: 928414322}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1698023445
 GameObject:
   m_ObjectHideFlags: 0

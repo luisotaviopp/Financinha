@@ -14,9 +14,9 @@ GameObject:
   - component: {fileID: 3111659529158735854}
   - component: {fileID: 2964328597571733559}
   - component: {fileID: 3111659529158735840}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: PigHelicopter
-  m_TagString: Untagged
+  m_TagString: player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -147,6 +147,8 @@ MonoBehaviour:
   life1: {fileID: 0}
   life2: {fileID: 0}
   life3: {fileID: 0}
+  coin_text: {fileID: 0}
+  coin_Game: 0
   pigRb: {fileID: 0}
   life: 3
   canDMG: 0

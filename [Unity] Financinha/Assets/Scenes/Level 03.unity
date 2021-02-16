@@ -545,21 +545,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4702514458197151407, guid: 6a9fbe5e68729e748adea1ac0d1740ab,
         type: 3}
-      propertyPath: jumpForce
-      value: 12
-      objectReference: {fileID: 0}
-    - target: {fileID: 4702514458197151407, guid: 6a9fbe5e68729e748adea1ac0d1740ab,
-        type: 3}
-      propertyPath: currentTime
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4702514458197151407, guid: 6a9fbe5e68729e748adea1ac0d1740ab,
-        type: 3}
-      propertyPath: time
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4702514458197151407, guid: 6a9fbe5e68729e748adea1ac0d1740ab,
-        type: 3}
       propertyPath: life1
       value: 
       objectReference: {fileID: 1507939724}
@@ -575,9 +560,9 @@ PrefabInstance:
       objectReference: {fileID: 1507939722}
     - target: {fileID: 4702514458197151407, guid: 6a9fbe5e68729e748adea1ac0d1740ab,
         type: 3}
-      propertyPath: canDMG
-      value: 1
-      objectReference: {fileID: 0}
+      propertyPath: coin_text
+      value: 
+      objectReference: {fileID: 1507939725}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6a9fbe5e68729e748adea1ac0d1740ab, type: 3}
 --- !u!1 &1243724530
@@ -712,6 +697,11 @@ MonoBehaviour:
   - {fileID: 3817419998973667588, guid: fa654bceda70eee4f9d617c37fda7999, type: 3}
   - {fileID: 7988538163133243678, guid: a20f9658cb5d3364d974196150934b43, type: 3}
   - {fileID: 3817041828424446783, guid: dd30fe87cad71fc4ea62bed9c36ff03c, type: 3}
+  - {fileID: 8268393018057924719, guid: b8df03d2279597d4389096061a359f43, type: 3}
+  - {fileID: 8268393018057924719, guid: b8df03d2279597d4389096061a359f43, type: 3}
+  - {fileID: 8268393018057924719, guid: b8df03d2279597d4389096061a359f43, type: 3}
+  - {fileID: 8268393018057924719, guid: b8df03d2279597d4389096061a359f43, type: 3}
+  - {fileID: 8268393018057924719, guid: b8df03d2279597d4389096061a359f43, type: 3}
   selectedObstacleIndex: 0
   spawnPosNegative: 3
   spawnPosPositive: 5
@@ -868,6 +858,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1507939725 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1299168993531273545, guid: 775ed57662884504c87c1f255e1a5194,
+    type: 3}
+  m_PrefabInstance: {fileID: 1507939721}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1698023445

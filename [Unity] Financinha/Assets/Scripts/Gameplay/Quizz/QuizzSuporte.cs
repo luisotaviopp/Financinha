@@ -23,23 +23,24 @@ public class QuizzSuporte : MonoBehaviour
 
     public GameObject quizz_GO;
     public GameObject quizz_FivePoints;
+    public GameObject quizFinalyImg;
     public void ApertoToggle(int numero)
     {
         ID = numero;
-        if(numero == quiz.respostaCorreta)
+        if (numero == quiz.respostaCorreta)
         {
             pergunta.text += " ___" + "ACERTOMIZERAVI";
             return;
         }
-        pergunta.text += " ___"+ "ERRO";
+        pergunta.text += " ___" + "ERRO";
     }
     public void Next_Button()
     {
         if (ID == quiz.respostaCorreta)
-        {         
+        {
             quiz.score++;
         }
-        if (quiz.questaoAtual < quiz.respostass.Count-1)
+        if (quiz.questaoAtual < quiz.respostass.Count - 1)
         {
             quiz.questaoAtual++;
             if (quiz.questaoAtual == quiz.respostass.Count - 1)
@@ -53,22 +54,22 @@ public class QuizzSuporte : MonoBehaviour
                 quizz_GO.SetActive(false);
                 quizz_FivePoints.SetActive(true);
                 quiz.Set_Five_Points_Quiz();
-            } 
-             if(pointsIndex < points.Length)
+            }
+            if (pointsIndex < points.Length)
             {
                 pointsIndex++;
-            points_Img.sprite = points[pointsIndex];
+                points_Img.sprite = points[pointsIndex];
             }
         }
         quiz.Set_Quizz();
-       
+
     }
     public void Previous_Button()
     {
 
         if (quiz.questaoAtual > 0)
         {
-            if(pointsIndex > 0)
+            if (pointsIndex > 0)
             {
                 pointsIndex--;
                 points_Img.sprite = points[pointsIndex];
@@ -79,9 +80,18 @@ public class QuizzSuporte : MonoBehaviour
         quiz.Set_Quizz();
     }
 
-    public void FinishQuiz()
+    public void FinishQuizImg()
     {
         quiz.Set_Five_Points_Quiz();
+        quizz_FivePoints.SetActive(false);
+        quizz_GO.SetActive(false);
+        quizFinalyImg.SetActive(true);
+
+
+    }
+    public void FinishQuiz()
+    {
         SceneManager.LoadSceneAsync(0);
+
     }
 }

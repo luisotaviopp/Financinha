@@ -46,7 +46,9 @@ MonoBehaviour:
   currentTimer: 5
   cooldownTimer: 5
   obstacles:
-  - {fileID: 2420185540260256288, guid: 70bdc43c70d75e240a406c29804c1b16, type: 3}
-  - {fileID: 5150230691508143593, guid: 5e63b577e397130499e06e1f3a708cce, type: 3}
-  - {fileID: 3276310640495606475, guid: 82d5d6b91769ded44a194f1c963eb9d9, type: 3}
-  selectedObstacleIndex: 0
+  - {fileID: 1633444604170084633, guid: d17b99456317f0e479c3613df101f7a0, type: 3}
+  - {fileID: 8268393018057924719, guid: b8df03d2279597d4389096061a359f43, type: 3}
+  - {fileID: 8268393018057924719, guid: b8df03d2279597d4389096061a359f43, type: 3}
+  selectedObstacleIndex: 2
+  spawnPosNegative: 0
+  spawnPosPositive: 5
