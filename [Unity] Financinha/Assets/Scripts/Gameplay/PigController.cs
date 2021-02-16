@@ -10,8 +10,10 @@ public class PigController : MonoBehaviour
    
     public Image life1;
     public Image life2;
-    public Image life3; 
+    public Image life3;
 
+    public Text coin_text;
+    public float coin_Game;
     [SerializeField]protected Rigidbody2D pigRb;
 
     public int life;
@@ -81,7 +83,14 @@ public class PigController : MonoBehaviour
         }
         if (collision.gameObject.CompareTag("coin"))
         {
-
+            coin_Game += 100;
+            coin_text.text = coin_Game.ToString();
+            
+            if(coin_Game == 300)
+            {
+                SceneManager.LoadSceneAsync("Quiz");
+            }
+            Destroy(collision.gameObject);
         }
     }
     public void OnCollisionExit2D(Collision2D collision)
@@ -92,6 +101,7 @@ public class PigController : MonoBehaviour
             {
                 GetComponent<SpriteRenderer>().enabled = true;
                 gameObject.layer = 10;
+                
             }
         }
     }

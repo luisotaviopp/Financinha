@@ -17,10 +17,21 @@ public class Quizz : MonoBehaviour
         public string repostaC;
         public string repostaD;
         public string repostaE;
+        public Sprite quizImg;
         public int respostaCorretaID;
-        public int idQuiz;
+        public bool imagem;
 
     }
+    [System.Serializable]
+    public class FivePoints
+    {
+        public string pergunta;
+        public string repostaA;
+        public Sprite quizImg;
+        public bool imagem;
+
+    }
+
     public void Start()
     {
         Set_Quizz();
@@ -38,7 +49,35 @@ public class Quizz : MonoBehaviour
                 quizsup.respostaD.text = respostass[questaoAtual ].repostaD;
                 quizsup.respostaE.text = respostass[questaoAtual ].repostaE;
                 respostaCorreta = respostass[questaoAtual].respostaCorretaID;
+                if (respostass[questaoAtual].imagem)
+                {
+                    quizsup.img.sprite = respostass[questaoAtual].quizImg;
+                }
+                else
+                {
+                quizsup.img.sprite = null;
+                }
+
+                
             }
     }  
+    public void Set_Five_Points_Quiz()
+    {
+        foreach (QuizzSuporte quizsup in quiz_GO)
+        {
+            quizsup.pergunta.text = respostass[questaoAtual].pergunta;
+            quizsup.respostaA.text = respostass[questaoAtual].repostaA;
+            if (respostass[questaoAtual].imagem)
+            {
+                quizsup.img.sprite = respostass[questaoAtual].quizImg;
+            }
+            else
+            {
+                quizsup.img.sprite = null;
+            }
+
+
+        }
+    }
 
 }

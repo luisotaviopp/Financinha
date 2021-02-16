@@ -4,6 +4,9 @@ using UnityEngine;
 using UnityEngine.UI;
 public class QuizzSuporte : MonoBehaviour
 {
+    public Sprite[] points;
+    public Image points_Img;
+    public int pointsIndex;
     public Quizz quiz;
     public int ID;
     public Text pergunta;
@@ -12,7 +15,10 @@ public class QuizzSuporte : MonoBehaviour
     public Text respostaC;
     public Text respostaD;
     public Text respostaE;
+    public Image img;
 
+    public GameObject quizz_GO;
+    public GameObject quizz_FivePoints;
     public void ApertoToggle(int numero)
     {
         ID = numero;
@@ -32,18 +38,38 @@ public class QuizzSuporte : MonoBehaviour
         if (quiz.questaoAtual < quiz.respostass.Count-1)
         {
             quiz.questaoAtual++;
+            if (quiz.questaoAtual == quiz.respostass.Count - 1)
+            {
+                if (pointsIndex == points.Length - 1)
+
+                {
+                    pointsIndex++;
+                    points_Img.sprite = points[pointsIndex];
+                }
+                quizz_GO.SetActive(false);
+                quizz_FivePoints.SetActive(true);
+            } 
+            else if(pointsIndex < points.Length)
+            {
+                pointsIndex++;
+            points_Img.sprite = points[pointsIndex];
+            }
         }
         quiz.Set_Quizz();
+       
     }
     public void Previous_Button()
     {
-        if (ID == quiz.respostaCorreta)
-        {
-            quiz.score--;
-        }
+
         if (quiz.questaoAtual > 0)
         {
+            if(pointsIndex > 0)
+            {
+                pointsIndex--;
+                points_Img.sprite = points[pointsIndex];
+            }
             quiz.questaoAtual--;
+            quiz.score--;
         }
         quiz.Set_Quizz();
     }
