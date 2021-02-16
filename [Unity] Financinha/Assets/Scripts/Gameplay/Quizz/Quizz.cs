@@ -7,8 +7,11 @@ public class Quizz : MonoBehaviour
     public int score;
     public  int respostaCorreta;
     public int questaoAtual;
+
+    public int questaoAtual2;
     public List<QuizzSuporte> quiz_GO= new List<QuizzSuporte>();
     public List<Respostas> respostass = new List<Respostas>();
+    public List<FivePoints> fivePoints = new List<FivePoints>();
     [System.Serializable]public class Respostas 
     {
         public string pergunta;
@@ -65,11 +68,12 @@ public class Quizz : MonoBehaviour
     {
         foreach (QuizzSuporte quizsup in quiz_GO)
         {
-            quizsup.pergunta.text = respostass[questaoAtual].pergunta;
-            quizsup.respostaA.text = respostass[questaoAtual].repostaA;
-            if (respostass[questaoAtual].imagem)
+            quizsup.pergunta2.text = fivePoints[questaoAtual2].pergunta;
+            fivePoints[questaoAtual2].repostaA = quizsup.respostaAA.text;
+
+            if (fivePoints[questaoAtual2].imagem)
             {
-                quizsup.img.sprite = respostass[questaoAtual].quizImg;
+                quizsup.img.sprite = fivePoints[questaoAtual2].quizImg;
             }
             else
             {

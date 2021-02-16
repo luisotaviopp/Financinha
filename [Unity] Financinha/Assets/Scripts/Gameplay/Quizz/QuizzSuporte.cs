@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 public class QuizzSuporte : MonoBehaviour
 {
     public Sprite[] points;
@@ -16,6 +17,9 @@ public class QuizzSuporte : MonoBehaviour
     public Text respostaD;
     public Text respostaE;
     public Image img;
+
+    public Text pergunta2;
+    public Text respostaAA;
 
     public GameObject quizz_GO;
     public GameObject quizz_FivePoints;
@@ -48,8 +52,9 @@ public class QuizzSuporte : MonoBehaviour
                 }
                 quizz_GO.SetActive(false);
                 quizz_FivePoints.SetActive(true);
+                quiz.Set_Five_Points_Quiz();
             } 
-            else if(pointsIndex < points.Length)
+             if(pointsIndex < points.Length)
             {
                 pointsIndex++;
             points_Img.sprite = points[pointsIndex];
@@ -74,4 +79,9 @@ public class QuizzSuporte : MonoBehaviour
         quiz.Set_Quizz();
     }
 
+    public void FinishQuiz()
+    {
+        quiz.Set_Five_Points_Quiz();
+        SceneManager.LoadSceneAsync(0);
+    }
 }
