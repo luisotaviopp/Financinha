@@ -27,6 +27,10 @@ public class PigBallonController : PigController
                 currentTimer = cooldownTimer;
             }
         }
+        if (blinking_Can)
+        {
+            Blinking();
+        }
     }
     protected void Jump()
     {

@@ -6,14 +6,20 @@ using UnityEngine.UI;
 
 public class PigController : MonoBehaviour
 {
-    // UI
-   
+    // H U D
+    public Sprite life_Grey_Sprite_UI;
+    public Sprite life_Sprite_UI;
     public Image life1;
     public Image life2;
     public Image life3;
+    public float blinking_Current_time;
+    public float blinking_Time;
+    public int  blinking_Controler;
+    public bool blinking_Can;
 
     public Text coin_text;
     public float coin_Game;
+
     [SerializeField]protected Rigidbody2D pigRb;
 
     public int life;
@@ -27,9 +33,9 @@ public class PigController : MonoBehaviour
     protected void Start()
     {
         
-        life1.sprite = GetComponent<SpriteRenderer>().sprite;
-        life2.sprite = GetComponent<SpriteRenderer>().sprite;
-        life3.sprite = GetComponent<SpriteRenderer>().sprite;
+        life1.sprite = life_Sprite_UI;
+        life2.sprite = life_Sprite_UI;
+        life3.sprite = life_Sprite_UI;
         pigRb = GetComponent<Rigidbody2D>();
         currentTime = time;
     }
@@ -63,21 +69,20 @@ public class PigController : MonoBehaviour
                     switch (life)
                     {
                         case 2:
-                            life3.enabled = false;
+                            life3.sprite = life_Grey_Sprite_UI;
                             return;
                         case 1:
-                            life2.enabled = false;
+                            life2.sprite = life_Grey_Sprite_UI;
                             return;
                         case 0:
-                            life1.enabled = false;
+                            life1.sprite = life_Grey_Sprite_UI;
                             GameManager.lose = true;
                             SceneManager.LoadSceneAsync(0);
                             return;
-
-                    }                
-               
+                    }                         
                 }
                 GetComponent<SpriteRenderer>().enabled = false;
+                blinking_Can = true;
                 gameObject.layer = 12;
             }
         }
@@ -100,8 +105,7 @@ public class PigController : MonoBehaviour
             if (life > 0)
             {
                 GetComponent<SpriteRenderer>().enabled = true;
-                gameObject.layer = 10;
-                
+                gameObject.layer = 10;               
             }
         }
     }
@@ -115,6 +119,39 @@ public class PigController : MonoBehaviour
             canDMG = true;
             currentTime = time;
             
+        }
+    }
+    public void Blinking()
+    {
+        blinking_Current_time -= Time.deltaTime;
+        if(blinking_Current_time <= 0)
+        {
+            Debug.Log("entrei");
+            blinking_Controler++;
+            GetComponent<SpriteRenderer>().enabled = false;
+            if(blinking_Controler == 1)
+            {
+                GetComponent<SpriteRenderer>().enabled = true;
+            }
+            if(blinking_Controler == 2)
+            {
+                GetComponent<SpriteRenderer>().enabled = false;
+            }
+            if (blinking_Controler == 3)
+            {
+                GetComponent<SpriteRenderer>().enabled = true;
+            }
+            if (blinking_Controler == 4)
+            {
+                GetComponent<SpriteRenderer>().enabled = false;
+            }
+            if (blinking_Controler == 5)
+            {
+                GetComponent<SpriteRenderer>().enabled = true;
+                blinking_Can = false;
+                blinking_Controler = 0;
+            }
+            blinking_Current_time = blinking_Time;
         }
     }
 }

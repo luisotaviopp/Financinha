@@ -18,7 +18,10 @@ public class PigSkateController : PigController
         {
             CanDMGConter();
         }
-        
+        if (blinking_Can)
+        {
+            Blinking();
+        }
     }
     private void FixedUpdate()
     {
