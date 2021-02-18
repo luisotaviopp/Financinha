@@ -24,9 +24,12 @@ public class QuizzSuporte : MonoBehaviour
     public GameObject quizz_GO;
     public GameObject quizz_FivePoints;
     public GameObject quizFinalyImg;
+
+    public Button next;
     public void ApertoToggle(int numero)
     {
         ID = numero;
+        next.interactable = true;
         if (numero == quiz.respostaCorreta)
         {
             pergunta.text += " ___" + "ACERTOMIZERAVI";
@@ -36,14 +39,15 @@ public class QuizzSuporte : MonoBehaviour
     }
     public void Next_Button()
     {
+        next.interactable = false;
         if (ID == quiz.respostaCorreta)
         {
             quiz.score++;
         }
-        if (quiz.questaoAtual < quiz.respostass.Count - 1)
+        if (quiz.questaoAtual < quiz.respostass.Count - 1 || quiz.questaoAtual < quiz.respostass.Count)
         {
             quiz.questaoAtual++;
-            if (quiz.questaoAtual == quiz.respostass.Count - 1)
+            if (quiz.questaoAtual == quiz.respostass.Count - 1 )
             {
                 if (pointsIndex == points.Length - 1)
 
@@ -88,6 +92,14 @@ public class QuizzSuporte : MonoBehaviour
         quizFinalyImg.SetActive(true);
 
 
+    }
+    public void previousQuiz2()
+    {
+        pointsIndex--;
+        points_Img.sprite = points[pointsIndex];
+        quiz.questaoAtual--;
+        quizz_GO.SetActive(true);
+        quizz_FivePoints.SetActive(false);
     }
     public void FinishQuiz()
     {
