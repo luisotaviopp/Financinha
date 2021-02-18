@@ -10,6 +10,10 @@ public class PigBallonController : PigController
     public float cooldownTimerFixe;
     private void Update()
     {
+        if (blinking_Can)
+        {
+            Blinking();
+        }
         if (!canDMG)
         {
             CanDMGConter();
@@ -27,10 +31,7 @@ public class PigBallonController : PigController
                 currentTimer = cooldownTimer;
             }
         }
-        if (blinking_Can)
-        {
-            Blinking();
-        }
+        
     }
     protected void Jump()
     {

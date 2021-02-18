@@ -9,7 +9,7 @@ public class PigController : MonoBehaviour
     // H U D
     public Sprite coin_On;
     public Sprite coin_Off;
-    public Image[] coinImg;
+    public HUD coinImg;
 
     public Sprite life_Grey_Sprite_UI;
     public Sprite life_Sprite_UI;
@@ -38,7 +38,7 @@ public class PigController : MonoBehaviour
     {
         for (int i = 0; i < 5; i++)
         {
-            coinImg[i].sprite = coin_Off;
+            coinImg.coin[i].sprite = coin_Off;
         }
         life1.sprite = life_Sprite_UI;
         life2.sprite = life_Sprite_UI;
@@ -71,6 +71,10 @@ public class PigController : MonoBehaviour
             {
                 if (canDMG)
                 {
+                    GetComponent<SpriteRenderer>().enabled = false;
+
+                    blinking_Can = true;
+                    gameObject.layer = 12;
                     canDMG = false;
                     life--;
                     switch (life)
@@ -86,11 +90,10 @@ public class PigController : MonoBehaviour
                             GameManager.lose = true;
                             SceneManager.LoadSceneAsync(0);
                             return;
-                    }                         
+                    }
+                    
                 }
-                GetComponent<SpriteRenderer>().enabled = false;
-                blinking_Can = true;
-                gameObject.layer = 12;
+                
             }
         }
         if (collision.gameObject.CompareTag("coin"))
@@ -99,23 +102,23 @@ public class PigController : MonoBehaviour
             coin_text.text = coin_Game.ToString();
             if(coin_Game == 100)
             {
-                coinImg[0].sprite = coin_On;
+                coinImg.coin[0].sprite = coin_On;
             }
             if (coin_Game == 200)
             {
-                coinImg[1].sprite = coin_On;
+                coinImg.coin[1].sprite = coin_On;
             }
             if (coin_Game == 300)
             {
-                coinImg[2].sprite = coin_On;
+                coinImg.coin[2].sprite = coin_On;
             }
             if (coin_Game == 400)
             {
-                coinImg[3].sprite = coin_On;
+                coinImg.coin[3].sprite = coin_On;
             }
             if (coin_Game == 500)
             {
-                coinImg[4].sprite = coin_On;
+                coinImg.coin[4].sprite = coin_On;
                 SceneManager.LoadSceneAsync("Quiz");
             }
             Destroy(collision.gameObject);
@@ -149,28 +152,33 @@ public class PigController : MonoBehaviour
         blinking_Current_time -= Time.deltaTime;
         if(blinking_Current_time <= 0)
         {
-            Debug.Log("entrei");
+            Debug.Log(gameObject.GetComponent<SpriteRenderer>().enabled);
             blinking_Controler++;
-            GetComponent<SpriteRenderer>().enabled = false;
+            gameObject.GetComponent<SpriteRenderer>().enabled = false;
             if(blinking_Controler == 1)
             {
-                GetComponent<SpriteRenderer>().enabled = true;
+                Debug.Log(gameObject.GetComponent<SpriteRenderer>().enabled);
+                gameObject.GetComponent<SpriteRenderer>().enabled = true;
             }
             if(blinking_Controler == 2)
             {
-                GetComponent<SpriteRenderer>().enabled = false;
+                Debug.Log(gameObject.GetComponent<SpriteRenderer>().enabled);
+                gameObject.GetComponent<SpriteRenderer>().enabled = false;
             }
             if (blinking_Controler == 3)
             {
-                GetComponent<SpriteRenderer>().enabled = true;
+                Debug.Log(gameObject.GetComponent<SpriteRenderer>().enabled);
+                gameObject.GetComponent<SpriteRenderer>().enabled = true;
             }
             if (blinking_Controler == 4)
             {
-                GetComponent<SpriteRenderer>().enabled = false;
+                Debug.Log(gameObject.GetComponent<SpriteRenderer>().enabled);
+                gameObject.GetComponent<SpriteRenderer>().enabled = false;
             }
             if (blinking_Controler == 5)
             {
-                GetComponent<SpriteRenderer>().enabled = true;
+                Debug.Log(gameObject.GetComponent<SpriteRenderer>().enabled);
+                gameObject.GetComponent<SpriteRenderer>().enabled = true;
                 blinking_Can = false;
                 blinking_Controler = 0;
             }

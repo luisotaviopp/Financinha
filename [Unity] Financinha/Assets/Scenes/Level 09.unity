@@ -148,6 +148,11 @@ PrefabInstance:
       propertyPath: coin_text
       value: 
       objectReference: {fileID: 385071900}
+    - target: {fileID: -3091518979937608807, guid: c0946efd8afebe940bae70ab025573b8,
+        type: 3}
+      propertyPath: coinImg
+      value: 
+      objectReference: {fileID: 385071901}
     - target: {fileID: 3111659529158735850, guid: c0946efd8afebe940bae70ab025573b8,
         type: 3}
       propertyPath: m_Name
@@ -467,6 +472,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &385071901 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1299168992014509454, guid: 775ed57662884504c87c1f255e1a5194,
+    type: 3}
+  m_PrefabInstance: {fileID: 385071896}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 11dd2952b80f329459bd73d516540d8a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &665506273

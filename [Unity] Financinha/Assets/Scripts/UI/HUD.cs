@@ -2,9 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-
+using UnityEngine.UI;
 public class HUD : MonoBehaviour
 {
+    public Image[] coin;
     public GameObject Hud;
     public GameObject PauseMenu;
 
@@ -34,5 +35,5 @@ public class HUD : MonoBehaviour
         PauseMenu.SetActive(false);
 
         SceneManager.LoadScene(0);
-    }
+    }    
 }
