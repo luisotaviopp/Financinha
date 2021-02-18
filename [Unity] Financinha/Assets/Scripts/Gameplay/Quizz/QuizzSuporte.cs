@@ -24,7 +24,8 @@ public class QuizzSuporte : MonoBehaviour
     public GameObject quizz_GO;
     public GameObject quizz_FivePoints;
     public GameObject quizFinalyImg;
-
+    public GameObject quizAll;
+    public GameObject reading;
     public Button next;
     public void ApertoToggle(int numero)
     {
@@ -73,6 +74,7 @@ public class QuizzSuporte : MonoBehaviour
 
         if (quiz.questaoAtual > 0)
         {
+
             if (pointsIndex > 0)
             {
                 pointsIndex--;
@@ -80,8 +82,16 @@ public class QuizzSuporte : MonoBehaviour
             }
             quiz.questaoAtual--;
             quiz.score--;
+            quiz.Set_Quizz();
+            return;
         }
-        quiz.Set_Quizz();
+        if (quiz.questaoAtual == 0)
+        {
+            quizAll.SetActive(false);
+            reading.SetActive(true);
+        }
+
+       
     }
 
     public void FinishQuizImg()

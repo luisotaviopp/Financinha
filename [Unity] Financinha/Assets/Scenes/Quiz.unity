@@ -265,7 +265,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &62137593
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3210,6 +3210,8 @@ MonoBehaviour:
   quizz_GO: {fileID: 2139890402}
   quizz_FivePoints: {fileID: 1507315717}
   quizFinalyImg: {fileID: 1110864799}
+  quizAll: {fileID: 62137592}
+  reading: {fileID: 1441534828}
   next: {fileID: 700646860}
 --- !u!1 &1201503142
 GameObject:
@@ -3731,7 +3733,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1441534829
 RectTransform:
   m_ObjectHideFlags: 0
