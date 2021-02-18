@@ -71,10 +71,8 @@ public class QuizzSuporte : MonoBehaviour
     }
     public void Previous_Button()
     {
-
         if (quiz.questaoAtual > 0)
         {
-
             if (pointsIndex > 0)
             {
                 pointsIndex--;
@@ -89,9 +87,7 @@ public class QuizzSuporte : MonoBehaviour
         {
             quizAll.SetActive(false);
             reading.SetActive(true);
-        }
-
-       
+        }  
     }
 
     public void FinishQuizImg()
@@ -100,8 +96,6 @@ public class QuizzSuporte : MonoBehaviour
         quizz_FivePoints.SetActive(false);
         quizz_GO.SetActive(false);
         quizFinalyImg.SetActive(true);
-
-
     }
     public void previousQuiz2()
     {

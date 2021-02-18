@@ -7,6 +7,10 @@ using UnityEngine.UI;
 public class PigController : MonoBehaviour
 {
     // H U D
+    public Sprite coin_On;
+    public Sprite coin_Off;
+    public Image[] coinImg;
+
     public Sprite life_Grey_Sprite_UI;
     public Sprite life_Sprite_UI;
     public Image life1;
@@ -32,7 +36,10 @@ public class PigController : MonoBehaviour
     
     protected void Start()
     {
-        
+        for (int i = 0; i < 5; i++)
+        {
+            coinImg[i].sprite = coin_Off;
+        }
         life1.sprite = life_Sprite_UI;
         life2.sprite = life_Sprite_UI;
         life3.sprite = life_Sprite_UI;
@@ -90,9 +97,25 @@ public class PigController : MonoBehaviour
         {
             coin_Game += 100;
             coin_text.text = coin_Game.ToString();
-            
-            if(coin_Game == 300)
+            if(coin_Game == 100)
             {
+                coinImg[0].sprite = coin_On;
+            }
+            if (coin_Game == 200)
+            {
+                coinImg[1].sprite = coin_On;
+            }
+            if (coin_Game == 300)
+            {
+                coinImg[2].sprite = coin_On;
+            }
+            if (coin_Game == 400)
+            {
+                coinImg[3].sprite = coin_On;
+            }
+            if (coin_Game == 500)
+            {
+                coinImg[4].sprite = coin_On;
                 SceneManager.LoadSceneAsync("Quiz");
             }
             Destroy(collision.gameObject);
