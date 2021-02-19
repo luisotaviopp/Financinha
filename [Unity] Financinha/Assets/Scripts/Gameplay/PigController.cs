@@ -9,7 +9,7 @@ public class PigController : MonoBehaviour
     // H U D
     public Sprite coin_On;
     public Sprite coin_Off;
-    public HUD coinImg;
+    public HUD coinHud;
 
     public Sprite life_Grey_Sprite_UI;
     public Sprite life_Sprite_UI;
@@ -38,7 +38,7 @@ public class PigController : MonoBehaviour
     {
         for (int i = 0; i < 5; i++)
         {
-            coinImg.coin[i].sprite = coin_Off;
+            coinHud.coin[i].sprite = coin_Off;
         }
         life1.sprite = life_Sprite_UI;
         life2.sprite = life_Sprite_UI;
@@ -88,7 +88,8 @@ public class PigController : MonoBehaviour
                         case 0:
                             life1.sprite = life_Grey_Sprite_UI;
                             GameManager.lose = true;
-                            SceneManager.LoadSceneAsync(0);
+                            coinHud.OpenLoseMenu();
+                            Time.timeScale = 0;
                             return;
                     }
                     
@@ -102,24 +103,26 @@ public class PigController : MonoBehaviour
             coin_text.text = coin_Game.ToString();
             if(coin_Game == 100)
             {
-                coinImg.coin[0].sprite = coin_On;
+                coinHud.coin[0].sprite = coin_On;
             }
             if (coin_Game == 200)
             {
-                coinImg.coin[1].sprite = coin_On;
+                coinHud.coin[1].sprite = coin_On;
             }
             if (coin_Game == 300)
             {
-                coinImg.coin[2].sprite = coin_On;
+                coinHud.coin[2].sprite = coin_On;
             }
             if (coin_Game == 400)
             {
-                coinImg.coin[3].sprite = coin_On;
+                coinHud.coin[3].sprite = coin_On;
             }
             if (coin_Game == 500)
             {
-                coinImg.coin[4].sprite = coin_On;
-                SceneManager.LoadSceneAsync("Quiz");
+                coinHud.coin[4].sprite = coin_On;
+                GameManager.win = true;
+                Time.timeScale = 0;
+                coinHud.OpenWinMenu();
             }
             Destroy(collision.gameObject);
         }

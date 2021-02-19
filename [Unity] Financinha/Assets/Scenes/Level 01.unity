@@ -1234,6 +1234,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1663019716, guid: 775ed57662884504c87c1f255e1a5194, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1299168992014509449, guid: 775ed57662884504c87c1f255e1a5194,
         type: 3}
       propertyPath: m_Name
@@ -1462,6 +1466,11 @@ PrefabInstance:
     - target: {fileID: 1131375761468694803, guid: af7bfc9d51099104190fc1e6145bd42f,
         type: 3}
       propertyPath: coinImg
+      value: 
+      objectReference: {fileID: 1926905196}
+    - target: {fileID: 1131375761468694803, guid: af7bfc9d51099104190fc1e6145bd42f,
+        type: 3}
+      propertyPath: coinHud
       value: 
       objectReference: {fileID: 1926905196}
     - target: {fileID: 3111659529158735850, guid: af7bfc9d51099104190fc1e6145bd42f,

@@ -8,7 +8,8 @@ public class HUD : MonoBehaviour
     public Image[] coin;
     public GameObject Hud;
     public GameObject PauseMenu;
-
+    public GameObject LoseMenu;
+    public GameObject WinMenu;
     private void Start()
     {
         ClosePauseMenu();
@@ -36,4 +37,26 @@ public class HUD : MonoBehaviour
 
         SceneManager.LoadScene(0);
     }    
+    public void OpenLoseMenu()
+    {
+        PauseMenu.SetActive(false);
+        WinMenu.SetActive(false);
+        LoseMenu.SetActive(true);
+
+    }
+    public void OpenWinMenu()
+    {
+        PauseMenu.SetActive(false);
+        LoseMenu.SetActive(false);
+        WinMenu.SetActive(true);
+
+    }
+    public void OpenSceneQuiz()
+    {
+        SceneManager.LoadSceneAsync("Quiz");
+    }
+    public void RestartGame()
+    {
+        SceneManager.LoadSceneAsync(SceneManager.GetActiveScene().buildIndex);
+    }
 }

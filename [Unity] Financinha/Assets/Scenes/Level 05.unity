@@ -362,6 +362,11 @@ PrefabInstance:
       propertyPath: coinImg
       value: 
       objectReference: {fileID: 1299168992500650157}
+    - target: {fileID: 2964328597571733559, guid: bfeb09a6739df4a42bbf612498eeaf5f,
+        type: 3}
+      propertyPath: coinHud
+      value: 
+      objectReference: {fileID: 1299168992500650157}
     - target: {fileID: 3111659529158735850, guid: bfeb09a6739df4a42bbf612498eeaf5f,
         type: 3}
       propertyPath: m_Name
@@ -897,6 +902,11 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.x
       value: -5
       objectReference: {fileID: 0}
+    - target: {fileID: 1663019718, guid: 775ed57662884504c87c1f255e1a5194, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: d856e9c67cfeb5b4089f2762fd8f7304,
+        type: 3}
     - target: {fileID: 1299168992014509449, guid: 775ed57662884504c87c1f255e1a5194,
         type: 3}
       propertyPath: m_Name
