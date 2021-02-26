@@ -856,7 +856,12 @@ PrefabInstance:
     - target: {fileID: 2061843154006577639, guid: 8152d495e9da236489335b326b22f2c3,
         type: 3}
       propertyPath: parallaxSpeed
-      value: 0.1
+      value: 0.0001
+      objectReference: {fileID: 0}
+    - target: {fileID: 2061843154006577639, guid: 8152d495e9da236489335b326b22f2c3,
+        type: 3}
+      propertyPath: dividos
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6066646256906315815, guid: 8152d495e9da236489335b326b22f2c3,
         type: 3}
@@ -1585,6 +1590,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bgMaterial: {fileID: 2081887512}
   parallaxSpeed: 0.1
+  dividos: 1
 --- !u!23 &2081887512
 MeshRenderer:
   m_ObjectHideFlags: 0
