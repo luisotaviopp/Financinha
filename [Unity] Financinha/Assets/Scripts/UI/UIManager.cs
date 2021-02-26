@@ -364,12 +364,32 @@ public class UIManager : MonoBehaviour
         panelPreQuizz.SetActive(true);
         panelSettings.SetActive(false);
     }
+    public void OpenPreGame()
+    {
+        panelLogin.SetActive(false);
+        panelRegistration.SetActive(false);
+        panelBanco_da_Casa.SetActive(false);
+        panelBanco_da_Casa_Lancar.SetActive(false);
+        panelCarteira.SetActive(false);
+        panelCarteiraLancar.SetActive(false);
+        panelRegras.SetActive(false);
+        panelRegras_Cadastrar.SetActive(false);
+        panelSemanadas.SetActive(false);
+        panelConquista.SetActive(false);
+        panelConquista_editar.SetActive(false);
+        panelAvaliacao.SetActive(false);
+        panelQuizz.SetActive(false);
+        panelLevelSelector.SetActive(false);
+        panelPreQuizz.SetActive(false);
+        panelPreGame.SetActive(true);
+        panelSettings.SetActive(false);
+    }
     public void OpenPreLevel(int level)
     {
         SceneLoader.refLevel = level;
-        nuvem.sprite = nuvemLevel[level];
+        
         pig.sprite = pigLevel[level];
-        panelPreGame.SetActive(true);
+        OpenPreGame();
     }
 
 }
