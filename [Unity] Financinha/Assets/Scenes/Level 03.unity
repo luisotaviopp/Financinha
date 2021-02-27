@@ -294,6 +294,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bgMaterial: {fileID: 519959456}
   parallaxSpeed: 0.1
+  dividos: 1
 --- !u!1 &691333954
 GameObject:
   m_ObjectHideFlags: 0
@@ -793,7 +794,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1663019716, guid: 775ed57662884504c87c1f255e1a5194, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1663019718, guid: 775ed57662884504c87c1f255e1a5194, type: 3}
       propertyPath: m_Sprite
