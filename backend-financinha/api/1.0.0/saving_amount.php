@@ -15,14 +15,10 @@
 
 	if ($result->num_rows > 0)
 	{
-		$emparray = array();
-		
 		while($row = mysqli_fetch_assoc($result))
 		{
-			$emparray[] = $row;
+			echo $row['amount'];
 		}
-
-		echo json_encode($emparray);
 	} else {
 		echo "Invalid Token";
 	}

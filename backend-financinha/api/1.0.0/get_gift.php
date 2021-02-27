@@ -3,10 +3,10 @@
 
 	$token = $_POST['post_token'];
 
-	$sql = "SELECT user.username, user.level
-			FROM user 
-			INNER JOIN token 
-			ON token.user_id = user.id 
+	$sql = "SELECT objective.name, objective.description, objective.value, objective.weekly_value
+            FROM objective 
+            INNER JOIN token 
+            ON token.user_id = objective.user_id 
 			WHERE token.token = '$token'";
 			
 	$result = $conn->query($sql);
@@ -17,8 +17,10 @@
 		
 		while($row = mysqli_fetch_assoc($result))
 		{
-			echo $row['level'];
+			$emparray[] = $row;
 		}
+
+        echo json_encode($emparray);
 
 	} else {
 		echo "Invalid Token";

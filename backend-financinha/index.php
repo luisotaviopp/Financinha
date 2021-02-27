@@ -131,7 +131,7 @@
 		<br><h3 class="finalizado">Procurando um usuário.</h3>
 		<form action="api/1.0.0/search_user.php" method="post" autocomplete="off">
 			<input type="text" placeholder="Token" name="post_token">
-			<input type="text" placeholder="Nome" name="post_token">
+			<input type="text" placeholder="Nome" name="post_username">
 			<input type="submit" value="DALE">
 		</form>
 
@@ -226,11 +226,64 @@
 
 
 
-		<br><h3 class="fazer">Cadastrar objetivo. *</h3>
 
-		<br><h3 class="fazer">Cadastrar causa. *</h3>
+
+
+
+
+
+
+		<br><h3 class="">Cadastrar presente. *</h3>
+		<form action="api/1.0.0/create_gift.php" method="post" autocomplete="off">
+			<input type="text" placeholder="Token" name="post_token">
+			<input type="text" placeholder="Nome" name="post_name">
+			<input type="text" placeholder="Descricao" name="post_description">
+			<input type="number" placeholder="Valor" name="post_value">
+			<input type="number" placeholder="Valor Semanada" name="post_weekly_value"><br><br>
+			<br><input type="submit" value="DALE">
+		</form>
+
+		<br><h3 class="">Cadastrar causa. *</h3>
+		<form action="api/1.0.0/create_cause.php" method="post" autocomplete="off">
+			<input type="text" placeholder="Token" name="post_token">
+			<input type="text" placeholder="Nome" name="post_name">
+			<input type="text" placeholder="Descrição" name="post_description"><br><br>
+			<br><input type="submit" value="DALE">
+		</form>
+
 		<p>Causa é 10% do valor do presente.</p>
 		<p>Conquista é o valor da causa + valor do presente.</p>
+
+
+
+
+
+		<br><h3 class="">Pegando o presente do usuário</h3>
+		<form action="api/1.0.0/get_gift.php" method="post" autocomplete="off">
+			<input type="text" placeholder="Token" name="post_token" maxlength="128">
+			<input type="submit" value="DALE">
+		</form>
+
+		<br><h3 class="">Pegando a causa do usuário</h3>
+		<form action="api/1.0.0/get_cause.php" method="post" autocomplete="off">
+			<input type="text" placeholder="Token" name="post_token" maxlength="128">
+			<input type="submit" value="DALE">
+		</form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

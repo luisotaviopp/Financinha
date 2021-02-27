@@ -5,7 +5,7 @@
 	$stmt = $conn->prepare("INSERT INTO user (username, name, password) VALUES (?, ?, ?)");
 	$stmt->bind_param("sss", $username, $post_name, $password);
 
-	$username = $_POST['post_user'];
+	$username = $_POST['post_username'];
 	$post_name = $_POST['post_name'];
 	$password = sha1($_POST['post_password']);
 	$stmt->execute();
