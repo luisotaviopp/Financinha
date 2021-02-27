@@ -8,6 +8,11 @@ public class GetRules : MonoBehaviour
 {
     public Text statusDisplay;
 
+    private void Start()
+    {
+        GetInfo();
+    }
+
     public void GetInfo()
     {
         StartCoroutine(GetRulesCorroutine());
@@ -32,7 +37,6 @@ public class GetRules : MonoBehaviour
 
             Debug.Log(www.downloadHandler.text);
 
-
             //Retorna o estado do login
             string result = System.Text.Encoding.UTF8.GetString(www.downloadHandler.data);
             RulesList rulesList = JsonUtility.FromJson<RulesList>("{\"rules\":" + result + "}");
@@ -42,10 +46,17 @@ public class GetRules : MonoBehaviour
             
             statusDisplay.text = "";
 
-            foreach (Rule rule in rulesList.rules)
+            GameObject template = transform.GetChild(0).gameObject;
+            GameObject g;
+
+            for (int i = 0; i < rulesList.rules.Count; i++)
             {
-                statusDisplay.text += "Regra: " + rule.name + " \nDescrição: " + rule.description + "\n\n";
+                g = Instantiate(template, transform);
+                g.transform.GetChild(0).GetComponent<Text>().text = rulesList.rules[i].name;
+                g.transform.GetChild(1).GetComponent<Text>().text = rulesList.rules[i].value.ToString();
             }
+
+            Destroy(template.gameObject);
         }
     }
 }

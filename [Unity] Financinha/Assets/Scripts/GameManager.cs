@@ -142,5 +142,4 @@ public class GameManager : MonoBehaviour
         cofrinhoPanel.SetActive(true);
         pregamePanel.SetActive(false);
     }
-    // REGRAS DO GAME
 }
