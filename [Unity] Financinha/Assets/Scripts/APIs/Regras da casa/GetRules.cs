@@ -6,7 +6,7 @@ using UnityEngine.UI;
 
 public class GetRules : MonoBehaviour
 {
-    public Text statusDisplay;
+    //public Text statusDisplay;
 
     private void Start()
     {
@@ -29,11 +29,11 @@ public class GetRules : MonoBehaviour
         if (www.isNetworkError || www.isHttpError)
         {
             Debug.Log(www.error);
-            statusDisplay.text = "Erro ao Logar";
+            //statusDisplay.text = "Erro ao carregar.";
         }
         else
         {
-            statusDisplay.text = www.downloadHandler.text;
+            //statusDisplay.text = www.downloadHandler.text;
 
             Debug.Log(www.downloadHandler.text);
 
@@ -42,9 +42,9 @@ public class GetRules : MonoBehaviour
             RulesList rulesList = JsonUtility.FromJson<RulesList>("{\"rules\":" + result + "}");
 
             //Texto de Retorno
-            statusDisplay.text = www.downloadHandler.text;
+            //statusDisplay.text = www.downloadHandler.text;
             
-            statusDisplay.text = "";
+            //statusDisplay.text = "";
 
             GameObject template = transform.GetChild(0).gameObject;
             GameObject g;
@@ -52,8 +52,8 @@ public class GetRules : MonoBehaviour
             for (int i = 0; i < rulesList.rules.Count; i++)
             {
                 g = Instantiate(template, transform);
-                g.transform.GetChild(0).GetComponent<Text>().text = rulesList.rules[i].name;
-                g.transform.GetChild(1).GetComponent<Text>().text = rulesList.rules[i].value.ToString();
+                g.transform.GetChild(1).GetComponent<Text>().text = rulesList.rules[i].name;
+                g.transform.GetChild(3).GetComponent<Text>().text = rulesList.rules[i].value.ToString();
             }
 
             Destroy(template.gameObject);

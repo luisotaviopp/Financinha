@@ -6,6 +6,7 @@ using UnityEngine;
 public class Player
 {
     public string token;
+    public string permission;
     public int level;
 }
 

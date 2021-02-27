@@ -21,8 +21,6 @@ public class Login : MonoBehaviour
         form.AddField("post_username", username);
         form.AddField("post_password", password);
 
-        //Debug.Log(username + "  " + password);
-
         UnityWebRequest www = UnityWebRequest.Post(ApiConfig.LOGIN_URL, form);
         yield return www.SendWebRequest();
 
@@ -43,6 +41,7 @@ public class Login : MonoBehaviour
             //Salvando PlayerPrefs
             PlayerPrefs.SetString("token", listaDosPlayers.players[0].token);
             PlayerPrefs.SetInt("level", listaDosPlayers.players[0].level);
+            PlayerPrefs.SetString("permission", listaDosPlayers.players[0].permission);
             PlayerPrefs.Save();
             
             //Zerando Campos Login
@@ -50,9 +49,12 @@ public class Login : MonoBehaviour
             passInput.text = "";
 
             Debug.Log("Level: " + PlayerPrefs.GetInt("level")); 
+            Debug.Log("Permission: " + PlayerPrefs.GetString("permission"));
             Debug.Log("Token: " + PlayerPrefs.GetString("token"));
 
             statusDisplay.text = "Logado com Sucesso";
+
+            GameObject.Find("UIManager").GetComponent<UIManager>().OpenLevelSelector();
         }
     }
 }

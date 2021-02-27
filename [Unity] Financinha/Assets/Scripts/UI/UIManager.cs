@@ -31,6 +31,20 @@ public class UIManager : MonoBehaviour
     public Sprite[] nuvemLevel;
     public Sprite[] pigLevel;
 
+    public void Awake()
+    {
+        if (PlayerPrefs.HasKey("token"))
+        {
+            Debug.Log(PlayerPrefs.GetString("token"));
+            OpenLevelSelector();
+        }
+        else
+        {
+            Debug.Log("Usuário não está logado");
+            OpenLogin();
+        }
+    }
+
     public void OpenLogin()
     {
         panelLogin.SetActive(true);
