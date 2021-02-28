@@ -10,6 +10,7 @@ public class GiftGetter : MonoBehaviour
     public Text giftNameTxt;
     public Text causeValueTxt;
     public Text causeNameTxt;
+    public Text sumTxt;
 
     private void Start()
     {
@@ -49,10 +50,11 @@ public class GiftGetter : MonoBehaviour
             foreach (Gift gift in giftList.gifts)
             {
                 //statusDisplay.text += gift.cause_name + "\n" + gift.cause_value + "\nR$" + gift.gift_name + "\nR$" + gift.gift_value +"\n\n";
-                giftValueTxt.text   = gift.gift_value.ToString();
+                giftValueTxt.text   = "R$" + gift.gift_value.ToString();
                 giftNameTxt.text    = gift.gift_name.ToString();
-                causeValueTxt.text  = gift.cause_value.ToString();
+                causeValueTxt.text  = "R$" + gift.cause_value.ToString();
                 causeNameTxt.text   = gift.cause_name.ToString();
+                sumTxt.text = "R$" + (gift.cause_value + gift.gift_value).ToString();
             }
         }
     }

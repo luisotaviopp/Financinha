@@ -45,7 +45,7 @@ public class ExtratoGetter : MonoBehaviour
             {
                 g = Instantiate(template, transform);
                 g.transform.GetChild(0).GetComponent<Text>().text = listaDeTransacoes.transacao[i].created_at;
-                g.transform.GetChild(1).GetComponent<Text>().text = listaDeTransacoes.transacao[i].type;
+                g.transform.GetChild(1).GetComponent<Text>().text = listaDeTransacoes.transacao[i].reason;
                 g.transform.GetChild(3).GetComponent<Text>().text = listaDeTransacoes.transacao[i].value.ToString();
             }
 

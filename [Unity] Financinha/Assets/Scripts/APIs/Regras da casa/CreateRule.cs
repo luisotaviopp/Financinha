@@ -7,13 +7,13 @@ using UnityEngine.UI;
 public class CreateRule : MonoBehaviour
 {
     public InputField nameInput;
-    public InputField descriptionInput;
+    // public InputField descriptionInput;
     public InputField valueInput;
     public Text statusDisplay;
 
     public void GetInfo()
     {
-        StartCoroutine(Upload(nameInput.text, descriptionInput.text, valueInput.text));
+        StartCoroutine(Upload(nameInput.text, "descrição", valueInput.text));
     }
 
     IEnumerator Upload(string name, string description, string value)

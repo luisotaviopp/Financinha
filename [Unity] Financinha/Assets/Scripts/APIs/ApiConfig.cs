@@ -17,9 +17,7 @@ public class ApiConfig : MonoBehaviour
 
     public static string INCREASE_LEVEL_URL = API_URL+"increase_level.php";         // Aumentar level do jogador.
 
-    public static string WALLET_DEPOSIT_URL = API_URL + "wallet_deposit.php";       // Inserindo grana na carteira -> post_value, post_reason
-
-    public static string WALLET_TAKEOUT_URL = API_URL + "wallet_takeout.php";       // Retirando grana da carteira
+    public static string WALLET_OPERATION_URL = API_URL + "wallet_operation.php";       // Inserindo grana na carteira -> post_value, post_reason
 
     public static string WALLET_TO_SAVINGS_URL = API_URL + "wallet_to_savings.php"; // Transferência -> carteira para cofrinho
 

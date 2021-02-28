@@ -22,7 +22,7 @@ public class WalletTakeout : MonoBehaviour
         form.AddField("post_reason", reason);
         form.AddField("post_value", value);
 
-        UnityWebRequest www = UnityWebRequest.Post(ApiConfig.WALLET_TAKEOUT_URL, form);
+        UnityWebRequest www = UnityWebRequest.Post(ApiConfig.WALLET_OPERATION_URL, form);
         yield return www.SendWebRequest();
 
         if (www.isNetworkError || www.isHttpError)

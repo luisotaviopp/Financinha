@@ -7,6 +7,11 @@ public class WalletGetter : MonoBehaviour
 {
     public Text amountDisplay;
 
+    private void Start()
+    {
+        GetAmount();
+    }
+
     public void GetAmount()
     {
         StartCoroutine(GetAmountCorroutine());
@@ -28,10 +33,10 @@ public class WalletGetter : MonoBehaviour
         else
         {
             // Sempre que algo retornar como texto, basta pegar o www.downloadHandler.text, ao invés de converter o json em uma lista.
-            PlayerPrefs.SetInt("level", int.Parse(www.downloadHandler.text));
+            PlayerPrefs.SetInt("wallet_amount", int.Parse(www.downloadHandler.text));
             PlayerPrefs.Save();
 
-            amountDisplay.text = "Carteira: R$" + PlayerPrefs.GetInt("level");
+            amountDisplay.text = "R$" + PlayerPrefs.GetInt("wallet_amount");
         }
     }
 }
