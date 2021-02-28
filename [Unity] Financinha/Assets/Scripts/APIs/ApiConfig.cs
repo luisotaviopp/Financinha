@@ -43,16 +43,13 @@ public class ApiConfig : MonoBehaviour
 
     public static string EXTRATO_URL = API_URL+"timeline.php";                      // Pegar o extrato do jogador.
 
-    public static string INSERT_OPEN_ANSWER = API_URL + "insert_open_answer.php";  // Cadastrando uma resposta para uma pergunta
+    public static string INSERT_OPEN_ANSWER = API_URL + "insert_open_answer.php";   // Cadastrando uma resposta para uma pergunta
 
-    // Cadastrar objetivo
+    public static string INSERT_OBJECTIVE = API_URL + "create_objective.php";       // Cadastrar objetivo
 
-    // Cadastrar causa
+    public static string GET_GIFT_URL = API_URL + "get_objective.php";                   // Pegar objetivo
 
-
-    public static string GET_GIFT_URL = API_URL + "get_gift.php";// Pegar objetivo
-
-    public static string GET_CAUSE_URL = API_URL + "get_cause.php"; // Pegar causa
+    public static string GET_CAUSE_URL = API_URL + "get_cause.php";                 // Pegar causa
 
     // Apenas responsáveis -> Vendo as respostas para as perguntas
 

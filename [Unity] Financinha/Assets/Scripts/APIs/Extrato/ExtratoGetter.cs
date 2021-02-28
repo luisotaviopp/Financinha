@@ -6,7 +6,11 @@ using UnityEngine.UI;
 
 public class ExtratoGetter : MonoBehaviour
 {
-    public Text statusDisplay;
+    //public Text statusDisplay;
+    private void Start()
+    {
+        GetInfo();
+    }
 
     public void GetInfo()
     {
@@ -18,15 +22,13 @@ public class ExtratoGetter : MonoBehaviour
         WWWForm form = new WWWForm();
         form.AddField("post_token", PlayerPrefs.GetString("token"));
 
-        //Debug.Log(username + "  " + password);
-
         UnityWebRequest www = UnityWebRequest.Post(ApiConfig.EXTRATO_URL, form);
         yield return www.SendWebRequest();
 
         if (www.isNetworkError || www.isHttpError)
         {
             Debug.Log(www.error);
-            statusDisplay.text = www.downloadHandler.text;
+            //statusDisplay.text = www.downloadHandler.text;
         }
         else
         {
@@ -34,15 +36,20 @@ public class ExtratoGetter : MonoBehaviour
             string result = System.Text.Encoding.UTF8.GetString(www.downloadHandler.data);
             TransacaoList listaDeTransacoes = JsonUtility.FromJson<TransacaoList>("{\"transacao\":" + result + "}");
 
-            statusDisplay.text = "";
+            //statusDisplay.text = "";
 
-            foreach (Transacao tr in listaDeTransacoes.transacao)
+            GameObject template = transform.GetChild(0).gameObject;
+            GameObject g;
+
+            for (int i = 0; i < listaDeTransacoes.transacao.Count; i++)
             {
-                statusDisplay.text += "R$" + tr.value.ToString() + " - " + tr.type + "\n" + tr.reason + "\n\n";
+                g = Instantiate(template, transform);
+                g.transform.GetChild(0).GetComponent<Text>().text = listaDeTransacoes.transacao[i].created_at;
+                g.transform.GetChild(1).GetComponent<Text>().text = listaDeTransacoes.transacao[i].type;
+                g.transform.GetChild(3).GetComponent<Text>().text = listaDeTransacoes.transacao[i].value.ToString();
             }
 
-            Debug.Log("Level: " + PlayerPrefs.GetInt("level"));
-            Debug.Log("Token: " + PlayerPrefs.GetString("token"));
+            Destroy(template.gameObject);
         }
     }
 }

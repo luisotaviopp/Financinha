@@ -5,8 +5,8 @@ using UnityEngine;
 [System.Serializable]
 public class Gift
 {
-    public string name;
-    public string description;
-    public string value;
-    public string weekly_value;
+    public string gift_name;
+    public float gift_value;
+    public string cause_name;
+    public float cause_value;
 }

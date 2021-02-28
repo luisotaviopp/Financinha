@@ -6,7 +6,15 @@ using UnityEngine.UI;
 
 public class GiftGetter : MonoBehaviour
 {
-    public Text statusDisplay;
+    public Text giftValueTxt;
+    public Text giftNameTxt;
+    public Text causeValueTxt;
+    public Text causeNameTxt;
+
+    private void Start()
+    {
+        GetInfo();
+    }
 
     public void GetInfo()
     {
@@ -24,24 +32,27 @@ public class GiftGetter : MonoBehaviour
         if (www.isNetworkError || www.isHttpError)
         {
             Debug.Log(www.error);
-            statusDisplay.text = "Erro ao Logar";
+            //statusDisplay.text = "Erro na solicitação";
         }
         else
         {
-
             string result = System.Text.Encoding.UTF8.GetString(www.downloadHandler.data);
             GiftList giftList = JsonUtility.FromJson<GiftList>("{\"gifts\":" + result + "}");
 
             //Texto de Retorno
-            statusDisplay.text = www.downloadHandler.text;
+            //statusDisplay.text = www.downloadHandler.text;
 
             Debug.Log(www.downloadHandler.text);
 
-            statusDisplay.text = "";
+            //statusDisplay.text = "";
 
             foreach (Gift gift in giftList.gifts)
             {
-                statusDisplay.text += gift.name + "\n" + gift.description + "\nR$" + gift.value + "\nR$" + gift.weekly_value +"\n\n";
+                //statusDisplay.text += gift.cause_name + "\n" + gift.cause_value + "\nR$" + gift.gift_name + "\nR$" + gift.gift_value +"\n\n";
+                giftValueTxt.text   = gift.gift_value.ToString();
+                giftNameTxt.text    = gift.gift_name.ToString();
+                causeValueTxt.text  = gift.cause_value.ToString();
+                causeNameTxt.text   = gift.cause_name.ToString();
             }
         }
     }
