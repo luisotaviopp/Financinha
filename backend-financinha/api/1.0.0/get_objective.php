@@ -3,10 +3,10 @@
 
 	$token = $_POST['post_token'];
 
-	$sql = "SELECT objective.name, objective.description, objective.value, objective.weekly_value
+	$sql = "SELECT objective.gift_name, objective.gift_value, objective.cause_name, objective.cause_value
             FROM objective 
             INNER JOIN token 
-            ON token.user_id = objective.user_id 
+            ON token.user_id = objective.user_id
 			WHERE token.token = '$token'";
 			
 	$result = $conn->query($sql);
@@ -21,7 +21,6 @@
 		}
 
         echo json_encode($emparray);
-
 	} else {
 		echo "Invalid Token";
 	}

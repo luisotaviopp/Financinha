@@ -259,7 +259,7 @@
 
 
 		<br><h3 class="">Pegando o presente do usuário</h3>
-		<form action="api/1.0.0/get_gift.php" method="post" autocomplete="off">
+		<form action="api/1.0.0/get_objective.php" method="post" autocomplete="off">
 			<input type="text" placeholder="Token" name="post_token" maxlength="128">
 			<input type="submit" value="DALE">
 		</form>

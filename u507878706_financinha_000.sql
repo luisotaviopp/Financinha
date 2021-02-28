@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.0.1
+-- version 4.9.5
 -- https://www.phpmyadmin.net/
 --
--- Host: 127.0.0.1
--- Generation Time: Feb 27, 2021 at 08:19 PM
--- Server version: 10.4.11-MariaDB
--- PHP Version: 7.4.1
+-- Host: 127.0.0.1:3306
+-- Generation Time: Feb 28, 2021 at 03:05 AM
+-- Server version: 10.4.14-MariaDB-cll-lve
+-- PHP Version: 7.2.34
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -19,7 +19,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `financinha_000`
+-- Database: `u507878706_financinha_000`
 --
 
 -- --------------------------------------------------------
@@ -65,7 +65,14 @@ CREATE TABLE `event` (
 --
 
 INSERT INTO `event` (`id`, `user_id`, `type`, `created_at`, `value`, `reason`) VALUES
-(20, 6, 'w_deposit', '2021-02-16 15:22:59', 20, 'Semanada');
+(20, 6, 'w_deposit', '2021-02-16 15:22:59', 20, 'Semanada'),
+(21, 6, 'w2s', '2021-02-27 23:04:40', 123, '123'),
+(22, 6, 's2w', '2021-02-27 23:04:45', 123, '123'),
+(23, 6, 'w_deposit', '2021-02-28 01:48:24', 120, '120'),
+(24, 6, 'w_takeout', '2021-02-28 02:11:29', 100, 'teste ganho'),
+(25, 6, 'w_takeout', '2021-02-28 02:11:40', 200, 'teste gasto'),
+(26, 6, 'w_takeout', '2021-02-28 02:47:07', 1, 'gagagagaga'),
+(27, 6, 'w_takeout', '2021-02-28 02:47:16', 2, 'gagagaga');
 
 -- --------------------------------------------------------
 
@@ -89,10 +96,11 @@ CREATE TABLE `notification` (
 CREATE TABLE `objective` (
   `id` int(11) NOT NULL,
   `user_id` int(11) NOT NULL,
-  `created_at` datetime NOT NULL,
-  `name` varchar(200) NOT NULL,
-  `description` varchar(200) NOT NULL,
-  `value` double NOT NULL,
+  `created_at` datetime NOT NULL DEFAULT current_timestamp(),
+  `gift_name` varchar(100) NOT NULL,
+  `cause_name` varchar(100) NOT NULL,
+  `gift_value` double NOT NULL,
+  `cause_value` double NOT NULL,
   `weekly_value` double NOT NULL,
   `buying_date` date NOT NULL,
   `image` varchar(65) NOT NULL
@@ -102,8 +110,8 @@ CREATE TABLE `objective` (
 -- Dumping data for table `objective`
 --
 
-INSERT INTO `objective` (`id`, `user_id`, `created_at`, `name`, `description`, `value`, `weekly_value`, `buying_date`, `image`) VALUES
-(3, 6, '0000-00-00 00:00:00', 'Drone', 'Drone voador', 400, 70, '0000-00-00', '');
+INSERT INTO `objective` (`id`, `user_id`, `created_at`, `gift_name`, `cause_name`, `gift_value`, `cause_value`, `weekly_value`, `buying_date`, `image`) VALUES
+(6, 6, '0000-00-00 00:00:00', 'teste', 'teste', 500, 50, 0, '0000-00-00', '');
 
 -- --------------------------------------------------------
 
@@ -130,7 +138,8 @@ INSERT INTO `quiz_open_answer` (`id`, `user_id`, `created_at`, `level`, `answer`
 (4, 11, '2021-02-15 23:53:35', 0, 'testeeee'),
 (5, 11, '2021-02-15 23:54:27', 0, 'teste 2222'),
 (6, 6, '2021-02-16 10:36:07', 18, 'No céu tem pão?'),
-(7, 6, '2021-02-16 15:20:16', 18, 'Teste Marcio');
+(7, 6, '2021-02-16 15:20:16', 18, 'Teste Marcio'),
+(8, 6, '2021-02-28 02:57:02', 18, 'asdasdasdsad');
 
 -- --------------------------------------------------------
 
@@ -205,7 +214,9 @@ INSERT INTO `rule` (`id`, `created_by`, `name`, `description`, `value`) VALUES
 (3, 11, 'te-te-te-te-teste', 'te-te-te-te-teste', 20),
 (4, 6, 'Teste 16/02', 'Teste 16/02', 20),
 (5, 6, 'Teste', 'Teste Unity', 50),
-(6, 6, 'Tentou burlar o jogo', 'Mentiu para o pai', 20);
+(6, 6, 'Tentou burlar o jogo', 'Mentiu para o pai', 20),
+(7, 6, 'lalala', 'descrição', 111),
+(8, 6, 'teste', 'descrição', 15);
 
 -- --------------------------------------------------------
 
@@ -252,7 +263,7 @@ CREATE TABLE `token` (
 --
 
 INSERT INTO `token` (`id`, `user_id`, `created_at`, `token`) VALUES
-(2, 6, '2021-02-16 15:38:08', '!Psm25vo7zYwN15DqHy3#m26YvshT3xdhGz&7&ZgsM06Q#KJTGDwkEghYenVXM0u4wf2%8Pksvi0WKz0GZXFvY2LrngaWZF8%dOSIQyuYOkwAz0cV&7V41DE!4dXinM'),
+(2, 6, '2021-02-28 02:44:51', 'gehXhRFKVzIhZgHY2qE$S6#NvMmPxc2dXIHUgmAhT2%3$vl$QGw1$S!c66JWwQFZFOspgdtqa3oMG!KV2leZ2mBWj8tzE8dzGkXwiAVoILSrj9kQlc9F#NDwDg20YBb'),
 (3, 7, '2021-02-13 09:50:35', '7sb56G0LSgg6T@F5c8GXT7AMB0%bUbpd!bNW#7i6eYPxSvWOmHX9zAsQYnPeNgxTwc#46u71hb3NYc22hSbdl0e%3h@l89Z%lMRz8sy8TBWdk0f5$KeFU!yIVCzYYsR'),
 (4, 8, '2021-02-13 10:05:04', '8zLjfJ6Q75%EERnr2o7bjY4FX0QUocHPTjQ6ybT&EQRU#UVq$r8YL2&aSK9!2DUb2XAYuwINEiaUR4r3iOxpyLsL6ijc@wAQniycZ2168%GkUTaF5zg6rojiC1Q9bye'),
 (5, 9, '2021-02-15 21:17:20', '5%Aq!PN!1HtKxW@K7KaD3MqyIKXn%M5SCcik9du0YzallwzlgcPbFfjEH#N5f0M@GpDGQtA#H7wcR2#kZj7hPv&DvWcz6ZBBBRPJNlSoMrZgdDK@W&2wb8WsUl9&6c7'),
@@ -270,7 +281,7 @@ CREATE TABLE `user` (
   `id` int(11) NOT NULL,
   `name` varchar(65) NOT NULL,
   `level` int(11) NOT NULL DEFAULT 0,
-  `permission` int(11) NOT NULL DEFAULT 0,
+  `permission` varchar(5) NOT NULL DEFAULT 'resp',
   `created_at` datetime NOT NULL DEFAULT current_timestamp(),
   `username` varchar(30) NOT NULL,
   `password` varchar(128) NOT NULL
@@ -281,10 +292,10 @@ CREATE TABLE `user` (
 --
 
 INSERT INTO `user` (`id`, `name`, `level`, `permission`, `created_at`, `username`, `password`) VALUES
-(6, 'Luis', 18, 0, '2021-01-30 22:32:27', 'luis', '8cb2237d0679ca88db6464eac60da96345513964'),
-(9, 'Marcio', 3, 0, '2021-02-13 10:18:52', 'marcio', '8cb2237d0679ca88db6464eac60da96345513964'),
-(10, 'teste', 0, 0, '2021-02-13 16:18:52', 'teste', '2e6f9b0d5885b6010f9167787445617f553a735f'),
-(11, 'Luis', 0, 0, '2021-02-15 23:21:03', 'luis2', '8cb2237d0679ca88db6464eac60da96345513964');
+(6, 'Luis', 18, 'resp', '2021-01-30 22:32:27', 'luis', '8cb2237d0679ca88db6464eac60da96345513964'),
+(9, 'Marcio', 3, '0', '2021-02-13 10:18:52', 'marcio', '8cb2237d0679ca88db6464eac60da96345513964'),
+(10, 'teste', 0, 'apr', '2021-02-13 16:18:52', 'teste', '2e6f9b0d5885b6010f9167787445617f553a735f'),
+(11, 'Luis', 0, '0', '2021-02-15 23:21:03', 'luis2', '8cb2237d0679ca88db6464eac60da96345513964');
 
 -- --------------------------------------------------------
 
@@ -303,7 +314,7 @@ CREATE TABLE `wallet` (
 --
 
 INSERT INTO `wallet` (`id`, `user_id`, `amount`) VALUES
-(5, 6, 9957),
+(5, 6, 9774),
 (8, 9, 4255),
 (9, 10, 0),
 (10, 10, 0),
@@ -399,7 +410,7 @@ ALTER TABLE `cause`
 -- AUTO_INCREMENT for table `event`
 --
 ALTER TABLE `event`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=28;
 
 --
 -- AUTO_INCREMENT for table `notification`
@@ -411,13 +422,13 @@ ALTER TABLE `notification`
 -- AUTO_INCREMENT for table `objective`
 --
 ALTER TABLE `objective`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT for table `quiz_open_answer`
 --
 ALTER TABLE `quiz_open_answer`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
 -- AUTO_INCREMENT for table `relation`
@@ -435,7 +446,7 @@ ALTER TABLE `relation_type`
 -- AUTO_INCREMENT for table `rule`
 --
 ALTER TABLE `rule`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
 -- AUTO_INCREMENT for table `saving`

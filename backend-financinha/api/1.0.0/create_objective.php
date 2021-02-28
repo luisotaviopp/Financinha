@@ -1,11 +1,11 @@
 <?php
 	require 'connection.php';
 
-	$token          = $_POST['post_token'];
-	$name           = $_POST['post_name'];
-	$description    = $_POST['post_description'];
-	$value          = $_POST['post_value'];
-	$weekly         = $_POST['post_weekly_value'];
+	$token              = $_POST['post_token'];
+	$gift_name          = $_POST['post_gift_name'];
+	$gift_value         = $_POST['post_gift_value'];
+	$cause_name         = $_POST['post_cause_name'];
+	$cause_value        = $_POST['post_cause_value'];
 
     $sql = "SELECT user.id
             FROM user
@@ -20,7 +20,7 @@
 		while($row = mysqli_fetch_assoc($result))
 		{
             $id = $row['id'];
-            $sql2 = "INSERT INTO objective (user_id, name, description, value, weekly_value)  VALUES ($id, '$name', '$description', $value, $weekly)";
+            $sql2 = "INSERT INTO objective (user_id, gift_name, gift_value, cause_name, cause_value)  VALUES ($id, '$gift_name', $gift_value, '$cause_name', $cause_value)";
             $conn->query($sql2);
 		}
         echo "Ok";

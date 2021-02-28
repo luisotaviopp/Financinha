@@ -28,7 +28,7 @@
                 $conn->query($sql2);
 			
 				//Getting user data
-				$sql3 = "SELECT user.level as level, token.token
+				$sql3 = "SELECT user.level as level, user.permission as permission, token.token
                         FROM user INNER JOIN token  
                         ON user.id = token.user_id
                         WHERE user_id =". $row['id'];
