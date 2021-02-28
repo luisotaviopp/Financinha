@@ -7,7 +7,7 @@ using UnityEngine.UI;
 public class OpenAnswer : MonoBehaviour
 {
     public InputField answerInput;
-    public Text statusDisplay;
+//    public Text statusDisplay;
 
     public void GetInfo()
     {
@@ -30,7 +30,7 @@ public class OpenAnswer : MonoBehaviour
         else
         {
             //Retorna o estado do registro
-            statusDisplay.text = www.downloadHandler.text;
+            //statusDisplay.text = www.downloadHandler.text;
             answerInput.text = "";
         }
     }

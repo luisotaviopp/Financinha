@@ -2,7 +2,8 @@
 
 public class ApiConfig : MonoBehaviour
 {
-    //                              http://fluxfacility.com/backend-financinha/api/1.0.0/
+    // http://localhost/backend-financinha/api/1.0.0/
+
     public static string API_URL = "http://fluxfacility.com/backend-financinha/api/1.0.0/";
 
     public static string REGISTER_URL = API_URL+ "create_user.php";                 // Cadastrar jogador novo. *****
