@@ -10,6 +10,8 @@ public class InstantiateObstacle : MonoBehaviour
     public int selectedObstacleIndex;
     public float spawnPosNegative;
     public float spawnPosPositive;
+
+    public int formation;
     private void Start()
     {
         cooldownTimer = Random.Range(1f, 6f);
@@ -26,18 +28,62 @@ public class InstantiateObstacle : MonoBehaviour
         {
             // Seleciona um dos obstáculos
             selectedObstacleIndex = Random.Range(0, obstacles.Length);
-
+            formation = 1;
             //Renova o contador
-            cooldownTimer = Random.Range(3f, 8f);
+            cooldownTimer = 20;
             currentTimer = cooldownTimer;
 
             //Instancia o novo obstáculo
-            Instantiate(obstacles[selectedObstacleIndex],
-                        new Vector3(transform.position.x, 
-                                   Random.Range(this.transform.position.y + spawnPosNegative, 
-                                                this.transform.position.y + spawnPosPositive)
-                                                ),   
-                                            Quaternion.identity);
+            if(formation == 1)
+            {
+               
+                Instantiate(obstacles[Random.Range(0, obstacles.Length)],
+                            new Vector3(transform.position.x, 
+                                       Random.Range(this.transform.position.y + spawnPosNegative, 
+                                                    this.transform.position.y + spawnPosPositive)
+                                                    ),   
+                                                Quaternion.identity);
+                Instantiate(obstacles[Random.Range(0, obstacles.Length)],
+                            new Vector3(transform.position.x+18,
+                                       Random.Range(this.transform.position.y + spawnPosNegative,
+                                                    this.transform.position.y + spawnPosPositive)
+                                                    ),
+                                                Quaternion.identity);
+                Instantiate(obstacles[Random.Range(0, obstacles.Length)],
+                            new Vector3(transform.position.x +18+9,
+                                       Random.Range(this.transform.position.y + spawnPosNegative,
+                                                    this.transform.position.y + spawnPosPositive)
+                                                    ),
+                                                Quaternion.identity);
+                Instantiate(obstacles[Random.Range(0, obstacles.Length)],
+            new Vector3(transform.position.x + 18 + 9 + 18,
+                       Random.Range(this.transform.position.y + spawnPosNegative,
+                                    this.transform.position.y + spawnPosPositive)
+                                    ),
+                                Quaternion.identity);
+                Instantiate(obstacles[Random.Range(0, obstacles.Length)],
+                            new Vector3(transform.position.x + 18 + 9 + 18 + 9,
+                                       Random.Range(this.transform.position.y + spawnPosNegative,
+                                                    this.transform.position.y + spawnPosPositive)
+                                                    ),
+                                                Quaternion.identity);
+                Instantiate(obstacles[Random.Range(0, obstacles.Length)],
+                            new Vector3(transform.position.x + 18 + 9 + 18 + 9 + 9,
+                                       Random.Range(this.transform.position.y + spawnPosNegative,
+                                                    this.transform.position.y + spawnPosPositive)
+                                                    ),
+                                                Quaternion.identity);
+            }
+            if (formation == 2)
+            {
+
+                
+            }
+            if (formation == 3)
+            {
+
+               
+            }
         }
     }
 }
