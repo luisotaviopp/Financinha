@@ -5,6 +5,7 @@ using UnityEngine;
 public class PigBallonController : PigController
 {
     
+    
     public float currentTimer;
     public float cooldownTimer;
     public float cooldownTimerFixe;
@@ -28,6 +29,7 @@ public class PigBallonController : PigController
                 //Renova o contador
                 cooldownTimer = cooldownTimerFixe;
                 canJump = true;
+                pigAnim.SetBool("fly", false);
                 currentTimer = cooldownTimer;
             }
         }
@@ -35,10 +37,11 @@ public class PigBallonController : PigController
     }
     protected void Jump()
     {
-        if (Input.GetMouseButtonDown(0) && canJump)
+        if (Input.GetMouseButtonDown(0) )
         {
             {
-                Debug.Log("entrei");
+
+                pigAnim.SetBool("fly", true);
                 pigRb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
                 canJump = false;
             }

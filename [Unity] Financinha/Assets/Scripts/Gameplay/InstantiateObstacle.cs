@@ -6,15 +6,30 @@ public class InstantiateObstacle : MonoBehaviour
 {
     public float currentTimer;
     public float cooldownTimer;
+    [Header("obstaculos")]
     public GameObject[] obstacles;
-    public int selectedObstacleIndex;
+    [Header("posição dos obstaculos")]
+    public Transform[] position;
+    [Header("selecionando obstaculo")]
+    public int[] selectedObstacleIndex;
+    [Header("Quantidade de objeto")]
+    public int amount;
+    public int amountRandommin;
+    public int amountRandomMax;
+    [Header("POSICAO DO OBJETO")]
+    public int[] selectedObstacleTransformIndex;
+
+    [Header("NOMEAR")]
     public float spawnPosNegative;
     public float spawnPosPositive;
+
+
+
 
     public int formation;
     private void Start()
     {
-        cooldownTimer = Random.Range(1f, 6f);
+        //cooldownTimer = Random.Range(1f, 6f);
         currentTimer = cooldownTimer;
 
         Debug.Log(obstacles.Length + " obstáculos cadastrados");
@@ -27,52 +42,16 @@ public class InstantiateObstacle : MonoBehaviour
         if (currentTimer < 0)
         {
             // Seleciona um dos obstáculos
-            selectedObstacleIndex = Random.Range(0, obstacles.Length);
+            //selectedObstacleIndex = Random.Range(0, obstacles.Length);
             formation = 1;
             //Renova o contador
-            cooldownTimer = 20;
+            
             currentTimer = cooldownTimer;
 
             //Instancia o novo obstáculo
             if(formation == 1)
             {
-               
-                Instantiate(obstacles[Random.Range(0, obstacles.Length)],
-                            new Vector3(transform.position.x, 
-                                       Random.Range(this.transform.position.y + spawnPosNegative, 
-                                                    this.transform.position.y + spawnPosPositive)
-                                                    ),   
-                                                Quaternion.identity);
-                Instantiate(obstacles[Random.Range(0, obstacles.Length)],
-                            new Vector3(transform.position.x+18,
-                                       Random.Range(this.transform.position.y + spawnPosNegative,
-                                                    this.transform.position.y + spawnPosPositive)
-                                                    ),
-                                                Quaternion.identity);
-                Instantiate(obstacles[Random.Range(0, obstacles.Length)],
-                            new Vector3(transform.position.x +18+9,
-                                       Random.Range(this.transform.position.y + spawnPosNegative,
-                                                    this.transform.position.y + spawnPosPositive)
-                                                    ),
-                                                Quaternion.identity);
-                Instantiate(obstacles[Random.Range(0, obstacles.Length)],
-            new Vector3(transform.position.x + 18 + 9 + 18,
-                       Random.Range(this.transform.position.y + spawnPosNegative,
-                                    this.transform.position.y + spawnPosPositive)
-                                    ),
-                                Quaternion.identity);
-                Instantiate(obstacles[Random.Range(0, obstacles.Length)],
-                            new Vector3(transform.position.x + 18 + 9 + 18 + 9,
-                                       Random.Range(this.transform.position.y + spawnPosNegative,
-                                                    this.transform.position.y + spawnPosPositive)
-                                                    ),
-                                                Quaternion.identity);
-                Instantiate(obstacles[Random.Range(0, obstacles.Length)],
-                            new Vector3(transform.position.x + 18 + 9 + 18 + 9 + 9,
-                                       Random.Range(this.transform.position.y + spawnPosNegative,
-                                                    this.transform.position.y + spawnPosPositive)
-                                                    ),
-                                                Quaternion.identity);
+                Spawn();
             }
             if (formation == 2)
             {
@@ -86,4 +65,15 @@ public class InstantiateObstacle : MonoBehaviour
             }
         }
     }
+    public void Spawn()
+    {
+        amount = Random.Range(amountRandommin, amountRandomMax);
+        for (int i = 0; i < amount; i++)
+        {
+            Instantiate(obstacles[Random.Range(0, obstacles.Length)],
+                        position[selectedObstacleTransformIndex[i]].position,
+                        Quaternion.identity);
+        }
+    }
+  
 }

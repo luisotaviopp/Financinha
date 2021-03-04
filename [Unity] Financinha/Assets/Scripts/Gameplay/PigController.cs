@@ -21,11 +21,11 @@ public class PigController : MonoBehaviour
     public int  blinking_Controler;
     public bool blinking_Can;
 
-    public Text coin_text;
+
     public float coin_Game;
 
     [SerializeField]protected Rigidbody2D pigRb;
-
+    protected Animator pigAnim;
     public int life;
     public bool canDMG;
     public float currentTime;
@@ -44,6 +44,7 @@ public class PigController : MonoBehaviour
         life2.sprite = life_Sprite_UI;
         life3.sprite = life_Sprite_UI;
         pigRb = GetComponent<Rigidbody2D>();
+        pigAnim = GetComponent<Animator>();
         currentTime = time;
     }
     protected void TransitarEntreOsLevels()
@@ -100,7 +101,7 @@ public class PigController : MonoBehaviour
         if (collision.gameObject.CompareTag("coin"))
         {
             coin_Game += 100;
-            coin_text.text = coin_Game.ToString();
+
             if(coin_Game == 100)
             {
                 coinHud.coin[0].sprite = coin_On;

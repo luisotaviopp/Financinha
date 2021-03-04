@@ -10,10 +10,11 @@ namespace Assets.Scripts.Gameplay
         public bool spawnCan;
         void Update()
         {
+            speed += Time.deltaTime / 110;
             transform.Translate(Vector2.left * speed * Time.deltaTime);
             if (transform.position.x <= -19.85f)
             {
-                transform.position = new Vector2(20, transform.position.y);
+                transform.position = new Vector2(21.65f, transform.position.y);
             }
            
         }

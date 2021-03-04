@@ -32,7 +32,7 @@ Transform:
   m_GameObject: {fileID: 3111659529158735850}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -5.52, y: -0.68, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.9815124, y: 1.8309431, z: 1}
   m_Children:
   - {fileID: 9151856162267871727}
   - {fileID: 2233208270023171175}
@@ -103,18 +103,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   coin_On: {fileID: 21300000, guid: 6992ab0e40b81ac4aa2016e30659fced, type: 3}
   coin_Off: {fileID: 21300000, guid: 869f963f07101aa448ac282ec2b5dd03, type: 3}
-  coinImg: []
+  coinHud: {fileID: 0}
   life_Grey_Sprite_UI: {fileID: 21300000, guid: c0dc16b76b1dfcb41b51a0e5c626d8ad,
     type: 3}
   life_Sprite_UI: {fileID: 21300000, guid: 860d8d2334b578948a4f6d0a97b019a0, type: 3}
   life1: {fileID: 0}
   life2: {fileID: 0}
   life3: {fileID: 0}
-  blinking_Current_time: 0
-  blinking_Time: 0
+  blinking_Current_time: 0.5
+  blinking_Time: 0.5
   blinking_Controler: 0
   blinking_Can: 0
-  coin_text: {fileID: 0}
   coin_Game: 0
   pigRb: {fileID: 0}
   life: 3

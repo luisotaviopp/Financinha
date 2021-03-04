@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 7939038908996888043}
   - component: {fileID: 5260309124430799796}
   - component: {fileID: 4995953858137565228}
-  - component: {fileID: 4555878785082905549}
+  - component: {fileID: -280798937113808052}
   m_Layer: 9
   m_Name: BALAO MAIOR
   m_TagString: enemy
@@ -160,7 +160,7 @@ PolygonCollider2D:
       - {x: 0.13499999, y: -0.145}
       - {x: 0.044999998, y: -0.145}
       - {x: 0.055, y: -0.145}
---- !u!114 &4555878785082905549
+--- !u!114 &-280798937113808052
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -169,7 +169,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 877411846762557276}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0bbd6ce7ca8764448165cb92156c3a6, type: 3}
+  m_Script: {fileID: 11500000, guid: c444d1f4a2947ab45bcf0667c1ed40c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
+  speed: 1
+  speedx: 1
+  rang1: 1
+  rang2: 4
