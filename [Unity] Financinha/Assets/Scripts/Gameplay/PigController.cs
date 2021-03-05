@@ -72,12 +72,20 @@ public class PigController : MonoBehaviour
             {
                 if (canDMG)
                 {
+                    if(transform.position.y <= -5.6)
+                    {
+                        transform.position = new Vector2(transform.position.x, 0);
+                    }
                     GetComponent<SpriteRenderer>().enabled = false;
 
                     blinking_Can = true;
                     gameObject.layer = 12;
                     canDMG = false;
                     life--;
+                    for(int i = 0; i < 5; i++)
+                    {
+
+                    }
                     switch (life)
                     {
                         case 2:
@@ -159,7 +167,22 @@ public class PigController : MonoBehaviour
             Debug.Log(gameObject.GetComponent<SpriteRenderer>().enabled);
             blinking_Controler++;
             gameObject.GetComponent<SpriteRenderer>().enabled = false;
-            if(blinking_Controler == 1)
+            for (int i = 0; i < 5; i++)
+            {
+                if (gameObject.GetComponent<SpriteRenderer>().enabled)
+                {
+                    gameObject.GetComponent<SpriteRenderer>().enabled = false;
+                }
+                if (!gameObject.GetComponent<SpriteRenderer>().enabled)
+                {
+                        
+                gameObject.GetComponent<SpriteRenderer>().enabled = true;
+                    gameObject.GetComponent<SpriteRenderer>().color = Color.grey;
+                }
+
+
+            }
+            if (blinking_Controler == 1)
             {
                 Debug.Log(gameObject.GetComponent<SpriteRenderer>().enabled);
                 gameObject.GetComponent<SpriteRenderer>().enabled = true;
@@ -183,6 +206,7 @@ public class PigController : MonoBehaviour
             {
                 Debug.Log(gameObject.GetComponent<SpriteRenderer>().enabled);
                 gameObject.GetComponent<SpriteRenderer>().enabled = true;
+                gameObject.GetComponent<SpriteRenderer>().color = Color.white;
                 blinking_Can = false;
                 blinking_Controler = 0;
             }

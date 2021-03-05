@@ -17,6 +17,7 @@ public class OvniBehavior : MonoBehaviour
     void Update()
     {
 
-        transform.RotateAround(a.position, 10 * Time.deltaTime);
+        transform.RotateAround(a.position, Vector3.forward, 100*Time.deltaTime);
+        transform.eulerAngles = new Vector3(0, 0, 0);
     }
 }
