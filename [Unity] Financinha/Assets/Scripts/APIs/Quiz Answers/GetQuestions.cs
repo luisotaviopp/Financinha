@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Networking;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class GetQuestions : MonoBehaviour
 {
@@ -17,8 +18,9 @@ public class GetQuestions : MonoBehaviour
         public GameObject levelPanel;
         public GameObject quizPanel;
         public GameObject openAnswerPanel;
+        public GameObject finalPanel;
 
-        private int questionIndex = 0;
+    private int questionIndex = 0;
 
         public List<SelectedAnswer> selectedAnswers;
 
@@ -27,18 +29,15 @@ public class GetQuestions : MonoBehaviour
 
     public void GetInfo(int level)
     {
-        quizPanel.SetActive(true);
-        levelPanel.SetActive(false);
-        StartCoroutine(GetQuestionsCorroutine(level));
+        StartCoroutine(GetQuestionsCorroutine());
     }
 
-    IEnumerator GetQuestionsCorroutine(int level)
+    IEnumerator GetQuestionsCorroutine()
     {
 
         WWWForm form = new WWWForm();
 
-        //form.AddField("post_token", PlayerPrefs.GetString("token"));
-        form.AddField("post_level", level);
+        form.AddField("post_level", 1);
 
         UnityWebRequest www = UnityWebRequest.Post(ApiConfig.GET_QUESTIONS_BY_LEVEL, form);
         yield return www.SendWebRequest();
@@ -77,6 +76,12 @@ public class GetQuestions : MonoBehaviour
             option3Text.text = questionsList.questions[questionIndex].option_3;
             option4Text.text = questionsList.questions[questionIndex].option_4;
             option5Text.text = questionsList.questions[questionIndex].option_5;
+        } 
+        else
+        {
+            openAnswerPanel.SetActive(true);
+            levelPanel.SetActive(false);
+            quizPanel.SetActive(false);
         }
     }
 
@@ -146,8 +151,10 @@ public class GetQuestions : MonoBehaviour
             StartCoroutine(SendSelectedAnswers(x));
         });
 
-        levelPanel.SetActive(true);
+        levelPanel.SetActive(false);
         quizPanel.SetActive(false);
+        openAnswerPanel.SetActive(false);
+        finalPanel.SetActive(true);
 
         selectedAnswers.Clear();
     }
@@ -156,7 +163,6 @@ public class GetQuestions : MonoBehaviour
     {
         WWWForm form = new WWWForm();
 
-        //form.AddField("post_token", PlayerPrefs.GetString("token"));
         form.AddField("post_question_id", answer.questionId);
         form.AddField("post_selected_option", answer.selectedAnswer);
 
@@ -171,5 +177,9 @@ public class GetQuestions : MonoBehaviour
         {
             Debug.Log(www.downloadHandler.text);
         }
+    }
+
+    public void BackToMenu() {
+        SceneManager.LoadSceneAsync(0);
     }
 }

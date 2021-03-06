@@ -60,8 +60,6 @@ public class Quizz : MonoBehaviour
                 {
                 quizsup.img.sprite = null;
                 }
-
-                
             }
     }  
     public void Set_Five_Points_Quiz()
@@ -79,9 +77,6 @@ public class Quizz : MonoBehaviour
             {
                 quizsup.img.sprite = null;
             }
-
-
         }
     }
-
 }

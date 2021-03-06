@@ -25,6 +25,8 @@ public class UIManager : MonoBehaviour
     public GameObject panelConquista_editar;
     public GameObject panelAvaliacao;
 
+    public GameObject panelSubMenu;
+
     public GameObject panelPreGame;
     public Image nuvem;
     public Image pig;
@@ -401,9 +403,19 @@ public class UIManager : MonoBehaviour
     public void OpenPreLevel(int level)
     {
         SceneLoader.refLevel = level;
-        
+
         pig.sprite = pigLevel[level];
         OpenPreGame();
     }
 
+    public void ToogleSubMenu()
+    {
+        if (panelSubMenu.activeInHierarchy)
+        {
+            panelSubMenu.SetActive(false);
+        }
+        else {
+            panelSubMenu.SetActive(true);
+        }
+    }
 }

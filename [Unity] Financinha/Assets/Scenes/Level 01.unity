@@ -1383,6 +1383,16 @@ PrefabInstance:
       propertyPath: ynegative
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 2942519721203004561, guid: 5a783b98c825e2a41b962a40f2e54cdd,
+        type: 3}
+      propertyPath: currentTimer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2942519721203004561, guid: 5a783b98c825e2a41b962a40f2e54cdd,
+        type: 3}
+      propertyPath: timeToback
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2942519721203004562, guid: 5a783b98c825e2a41b962a40f2e54cdd,
         type: 3}
       propertyPath: m_LocalPosition.x

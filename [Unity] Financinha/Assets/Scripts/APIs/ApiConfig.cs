@@ -30,19 +30,11 @@ public class ApiConfig : MonoBehaviour
 
     public static string LIST_USERS_URL = API_URL + "search_user.php";                          // Procurando um usuário
 
-    // Solicitando relação com outro usuário
-
     // Listar as notificações
-
-    // Aceitar a solicitação
-
-    // Cancelar a solicitação
 
     // Listar os familiares de um usuário
 
     public static string EXTRATO_URL = API_URL+"timeline.php";                                  // Pegar o extrato do jogador.
-
-    public static string INSERT_OPEN_ANSWER = API_URL + "insert_open_answer.php";               // Cadastrando uma resposta para uma pergunta
 
     public static string INSERT_OBJECTIVE = API_URL + "create_objective.php";                   // Cadastrar objetivo
 
@@ -53,13 +45,10 @@ public class ApiConfig : MonoBehaviour
     public static string GET_QUESTIONS_BY_LEVEL = API_URL + "quiz/get_questions_level.php";     // Pega as questões por level
 
     public static string INSERT_QUESTION_RESPONSES = API_URL + "quiz/insert_selection.php";     // Envia as respostas pro servidor
-
     
+    public static string INSERT_OPEN_ANSWER = API_URL + "insert_open_answer.php";               // Cadastrando uma resposta para uma pergunta
+
     // Apenas responsáveis -> Vendo as respostas para as perguntas
 
-    // Listar as penalidades de um usuário
-
     // Simular semanada
-
-    // Enviar respostas do Quiz
 }

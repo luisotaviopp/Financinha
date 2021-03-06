@@ -192,7 +192,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &62137593
 RectTransform:
   m_ObjectHideFlags: 0
@@ -206,9 +206,8 @@ RectTransform:
   m_Children:
   - {fileID: 193801484}
   - {fileID: 2139890403}
-  - {fileID: 1507315718}
   m_Father: {fileID: 1162804796}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -335,8 +334,8 @@ MonoBehaviour:
   onValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1162804798}
-        m_MethodName: ApertoToggle
+      - m_Target: {fileID: 1162804797}
+        m_MethodName: SelectAnswer
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -869,8 +868,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1162804798}
-        m_MethodName: Previous_Button
+      - m_Target: {fileID: 1162804797}
+        m_MethodName: PreviousQuestion
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1224,13 +1223,13 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1441534830}
-        m_MethodName: OpenQuiz
-        m_Mode: 1
+      - m_Target: {fileID: 1162804797}
+        m_MethodName: GetInfo
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 1
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -1506,8 +1505,8 @@ MonoBehaviour:
   onValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1162804798}
-        m_MethodName: ApertoToggle
+      - m_Target: {fileID: 1162804797}
+        m_MethodName: SelectAnswer
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1723,13 +1722,13 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 0
+  m_Interactable: 1
   m_TargetGraphic: {fileID: 700646861}
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1162804798}
-        m_MethodName: Next_Button
+      - m_Target: {fileID: 1162804797}
+        m_MethodName: NextQuestion
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1856,7 +1855,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1507315719}
+      - m_Target: {fileID: 1162804798}
         m_MethodName: GetInfo
         m_Mode: 1
         m_Arguments:
@@ -1867,8 +1866,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1162804798}
-        m_MethodName: FinishQuizImg
+      - m_Target: {fileID: 1162804797}
+        m_MethodName: SendAnswersToServer
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2208,8 +2207,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1162804798}
-        m_MethodName: FinishQuiz
+      - m_Target: {fileID: 1162804797}
+        m_MethodName: BackToMenu
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2369,7 +2368,7 @@ RectTransform:
   m_Children:
   - {fileID: 1026764334}
   m_Father: {fileID: 1162804796}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 0.9843555}
@@ -2793,9 +2792,11 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
+  - {fileID: 1507315718}
   - {fileID: 62137593}
   - {fileID: 1441534829}
   - {fileID: 1110864800}
+  - {fileID: 1843630425}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2813,79 +2814,20 @@ MonoBehaviour:
   m_GameObject: {fileID: 1162804792}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b763e0f634062e241b36a9ef43f05258, type: 3}
+  m_Script: {fileID: 11500000, guid: 676a6912a250b3046a0e95f7cc8bf321, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  score: 0
-  respostaCorreta: 0
-  questaoAtual: 0
-  questaoAtual2: 0
-  quiz_GO:
-  - {fileID: 1162804798}
-  respostass:
-  - pergunta: "O que \xE8 escambo?"
-    repostaA: Uma forma de comprar mais barato
-    repostaB: Moedas de valor
-    repostaC: "Uma forma de trocar alguma coisa com algu\xE9m"
-    repostaD: Um sistema financeiro baseado na bolsa de valores
-    repostaE: Quando o vendedor tem troco
-    quizImg: {fileID: 0}
-    respostaCorretaID: 3
-    imagem: 0
-  - pergunta: Antes do escambo, como uma pessoa faria se quisesse ter alguma coisa?
-    repostaA: Compraria no site
-    repostaB: "Lutaria por ela, can\xE7ando, pescando"
-    repostaC: Juntaria dinheiro
-    repostaD: Depositaria na conta do banco
-    repostaE: Economizava mesada
-    quizImg: {fileID: 0}
-    respostaCorretaID: 2
-    imagem: 0
-  - pergunta: "O que \xE8 escambo?"
-    repostaA: Uma forma de comprar mais barato
-    repostaB: Moedas de valor
-    repostaC: "Uma forma de trocar alguma coisa com algu\xE9m"
-    repostaD: Um sistema financeiro baseado na bolsa de valores
-    repostaE: Quando o vendedor tem troco
-    quizImg: {fileID: 0}
-    respostaCorretaID: 1
-    imagem: 0
-  - pergunta: "Em um dia de escambo, quantos escambos Barn fez at\xE9 conseguir sua
-      panela?"
-    repostaA: Um
-    repostaB: Dois
-    repostaC: "Tr\xEAs"
-    repostaD: Quatro
-    repostaE: Cinco
-    quizImg: {fileID: 0}
-    respostaCorretaID: 2
-    imagem: 0
-  - pergunta: 'RESPONDA: Marque a alternativa INCORRETA.'
-    repostaA: "No escambo nem sempre era f\xE1cil conseguir o que queria"
-    repostaB: "O escambo era r\xE1pido e sempre dava certo"
-    repostaC: os dois lados tinham que entrar em acordo para fazer escambo
-    repostaD: "Continuamos fazendo escambo at\xE9 hoje"
-    repostaE: "O escambo come\xE7ous antes do dinheiro  existir"
-    quizImg: {fileID: 21300000, guid: 0586e4ffa163be84ebf0133f07971730, type: 3}
-    respostaCorretaID: 4
-    imagem: 1
-  - pergunta: 'RESPONDA: Marque a alternativa INCORRETA.'
-    repostaA: "No escambo nem sempre era f\xE1cil conseguir o que queria"
-    repostaB: "O escambo era r\xE1pido e sempre dava certo"
-    repostaC: os dois lados tinham que entrar em acordo para fazer escambo
-    repostaD: "Continuamos fazendo escambo at\xE9 hoje"
-    repostaE: "O escambo come\xE7ous antes do dinheiro  existir"
-    quizImg: {fileID: 21300000, guid: 0586e4ffa163be84ebf0133f07971730, type: 3}
-    respostaCorretaID: 4
-    imagem: 1
-  fivePoints:
-  - pergunta: "Pense e escreva 3 coisas que voc\xEA tem guardadas e que poderiam
-      ser trocadas em um escambo com um vizinho ou amigo.(brinquedo,roupa,t\xEAnis,mochila,livros...) 
-      Dica: Procure coisas que voc\xEA n\xE3o usa mais e  que estejam s\xF3 ocupando
-      espa\xE7o."
-    repostaA: 
-    quizImg: {fileID: 0}
-    imagem: 0
+  questionText: {fileID: 1668056315}
+  option1Text: {fileID: 1663769395}
+  option2Text: {fileID: 133016068}
+  option3Text: {fileID: 2114510438}
+  option4Text: {fileID: 1117711456}
+  option5Text: {fileID: 1732361225}
+  levelPanel: {fileID: 1441534828}
+  quizPanel: {fileID: 62137592}
+  openAnswerPanel: {fileID: 1507315717}
+  finalPanel: {fileID: 1110864799}
+  selectedAnswers: []
 --- !u!114 &1162804798
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2895,35 +2837,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1162804792}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c3cfa68ea0a559c45ad1fb4d648ea13e, type: 3}
+  m_Script: {fileID: 11500000, guid: fcbda238424c68844899052c7f0a17ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  points:
-  - {fileID: 21300000, guid: cac88f315d5e1d241a3de41c63513273, type: 3}
-  - {fileID: 21300000, guid: 82fffc40de356164d88284244f72cede, type: 3}
-  - {fileID: 21300000, guid: 8d2c63913958ab44c8c0dc8f232330e0, type: 3}
-  - {fileID: 21300000, guid: 5afb76de5c9855148a7089549d3cc5ed, type: 3}
-  - {fileID: 21300000, guid: 43fffc4b9e951354f80961ce1ba92b82, type: 3}
-  - {fileID: 21300000, guid: d35fd3df386380d469c14271fc4b2969, type: 3}
-  points_Img: {fileID: 193801485}
-  pointsIndex: 0
-  quiz: {fileID: 1162804797}
-  ID: 0
-  pergunta: {fileID: 1258979203}
-  respostaA: {fileID: 1663769395}
-  respostaB: {fileID: 133016068}
-  respostaC: {fileID: 2114510438}
-  respostaD: {fileID: 1117711456}
-  respostaE: {fileID: 1732361225}
-  img: {fileID: 1292856408}
-  pergunta2: {fileID: 596318334}
-  respostaAA: {fileID: 450184680}
-  quizz_GO: {fileID: 2139890402}
-  quizz_FivePoints: {fileID: 1507315717}
-  quizFinalyImg: {fileID: 1110864799}
-  quizAll: {fileID: 62137592}
-  reading: {fileID: 1441534828}
-  next: {fileID: 700646860}
+  answerInput: {fileID: 947842743}
 --- !u!1 &1201503142
 GameObject:
   m_ObjectHideFlags: 0
@@ -3078,7 +2995,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1162804798}
+      - m_Target: {fileID: 0}
         m_MethodName: previousQuiz2
         m_Mode: 1
         m_Arguments:
@@ -3444,7 +3361,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1441534829
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3458,7 +3375,7 @@ RectTransform:
   m_Children:
   - {fileID: 425106373}
   m_Father: {fileID: 1162804796}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -3626,7 +3543,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1507315718
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3634,7 +3551,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1507315717}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -3642,8 +3559,8 @@ RectTransform:
   - {fileID: 1207365653}
   - {fileID: 947842742}
   - {fileID: 1122217223}
-  m_Father: {fileID: 62137593}
-  m_RootOrder: 2
+  m_Father: {fileID: 1162804796}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.011308562, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -3824,8 +3741,8 @@ MonoBehaviour:
   onValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1162804798}
-        m_MethodName: ApertoToggle
+      - m_Target: {fileID: 1162804797}
+        m_MethodName: SelectAnswer
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4221,8 +4138,8 @@ MonoBehaviour:
   onValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1162804798}
-        m_MethodName: ApertoToggle
+      - m_Target: {fileID: 1162804797}
+        m_MethodName: SelectAnswer
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4362,6 +4279,76 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1829680529}
   m_CullTransparentMesh: 0
+--- !u!1 &1843630422
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1843630425}
+  - component: {fileID: 1843630424}
+  - component: {fileID: 1843630423}
+  m_Layer: 5
+  m_Name: RawImage
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!114 &1843630423
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1843630422}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1344c3c82d62a2a41a3576d8abb8e3ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Texture: {fileID: 0}
+  m_UVRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+--- !u!222 &1843630424
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1843630422}
+  m_CullTransparentMesh: 0
+--- !u!224 &1843630425
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1843630422}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1162804796}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 50.000004}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1907779614
 GameObject:
   m_ObjectHideFlags: 0
@@ -4446,8 +4433,8 @@ MonoBehaviour:
   onValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1162804798}
-        m_MethodName: ApertoToggle
+      - m_Target: {fileID: 1162804797}
+        m_MethodName: SelectAnswer
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4921,7 +4908,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &2139890403
 RectTransform:
   m_ObjectHideFlags: 0
