@@ -54,6 +54,7 @@ public class Login : MonoBehaviour
 
             statusDisplay.text = "Logado com Sucesso";
 
+            GameObject.Find("UIManager").GetComponent<PermissionCheck>().ShowHideButtons();
             GameObject.Find("UIManager").GetComponent<UIManager>().OpenLevelSelector();
         }
     }

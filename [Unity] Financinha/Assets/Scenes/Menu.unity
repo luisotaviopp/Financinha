@@ -415,7 +415,7 @@ GameObject:
   - component: {fileID: 21157752}
   - component: {fileID: 21157754}
   m_Layer: 5
-  m_Name: cadeado (23)
+  m_Name: ponto
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1047,6 +1047,7 @@ GameObject:
   - component: {fileID: 50948059}
   - component: {fileID: 50948061}
   - component: {fileID: 50948062}
+  - component: {fileID: 50948063}
   m_Layer: 0
   m_Name: UIManager
   m_TagString: Untagged
@@ -1162,6 +1163,33 @@ MonoBehaviour:
   pos8: 885.6
   pos9: 1285.8
   pos10: 1682.9
+--- !u!114 &50948063
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 50948058}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 764f8cca61b4d1246a0d4c2e014f6d3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  buttons:
+  - {fileID: 630667853}
+  - {fileID: 593303426}
+  - {fileID: 242713840}
+  - {fileID: 1045678182}
+  - {fileID: 923070547}
+  - {fileID: 918287002}
+  - {fileID: 529343109}
+  - {fileID: 582015898}
+  - {fileID: 1315954449}
+  - {fileID: 2080956818}
+  - {fileID: 631631970}
+  - {fileID: 21157750}
+  - {fileID: 1450778976}
+  - {fileID: 1772712328}
 --- !u!1 &61393427
 GameObject:
   m_ObjectHideFlags: 0
@@ -5343,7 +5371,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "configura\xE7\xF5es"
+  m_Text: logout
 --- !u!222 &310884617
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -8184,7 +8212,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &523067422
 RectTransform:
   m_ObjectHideFlags: 0
@@ -8548,7 +8576,7 @@ GameObject:
   - component: {fileID: 529343111}
   - component: {fileID: 529343113}
   m_Layer: 5
-  m_Name: cadeado (15)
+  m_Name: ponto
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9199,7 +9227,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: login
+  m_Text: aprendiz
 --- !u!222 &555090313
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -9937,7 +9965,7 @@ GameObject:
   - component: {fileID: 582015900}
   - component: {fileID: 582015902}
   m_Layer: 5
-  m_Name: cadeado (17)
+  m_Name: ponto
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10244,7 +10272,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 37, y: 62}
+  m_AnchoredPosition: {x: 37, y: 60}
   m_SizeDelta: {x: 434, y: 200}
   m_Pivot: {x: 0, y: 0}
 --- !u!114 &593303428
@@ -11017,7 +11045,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -51, y: 99.94}
+  m_AnchoredPosition: {x: -51, y: 60}
   m_SizeDelta: {x: 434, y: 200}
   m_Pivot: {x: 1, y: 0}
 --- !u!114 &630667855
@@ -11123,7 +11151,7 @@ GameObject:
   - component: {fileID: 631631972}
   - component: {fileID: 631631974}
   m_Layer: 5
-  m_Name: cadeado (21)
+  m_Name: ponto
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -15156,7 +15184,7 @@ GameObject:
   - component: {fileID: 918287004}
   - component: {fileID: 918287006}
   m_Layer: 5
-  m_Name: cadeado (13)
+  m_Name: ponto
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -15284,7 +15312,7 @@ GameObject:
   - component: {fileID: 923070549}
   - component: {fileID: 923070551}
   m_Layer: 5
-  m_Name: cadeado (11)
+  m_Name: ponto
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -17055,17 +17083,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 50948062}
-        m_MethodName: ChangeCofrinhoPosition
-        m_Mode: 3
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 2
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!114 &1043681655
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17188,7 +17205,7 @@ GameObject:
   - component: {fileID: 1045678185}
   - component: {fileID: 1045678184}
   m_Layer: 5
-  m_Name: btn_Login
+  m_Name: btn_aprendiz
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -22873,7 +22890,7 @@ GameObject:
   - component: {fileID: 1315954451}
   - component: {fileID: 1315954453}
   m_Layer: 5
-  m_Name: cadeado (19)
+  m_Name: ponto
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -25488,7 +25505,7 @@ GameObject:
   - component: {fileID: 1450778978}
   - component: {fileID: 1450778980}
   m_Layer: 5
-  m_Name: cadeado (25)
+  m_Name: ponto
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -25827,7 +25844,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: aprendiz
+  m_Text: "configura\xE7\xF5es"
 --- !u!222 &1459576335
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -28416,7 +28433,7 @@ GameObject:
   - component: {fileID: 1692392229}
   - component: {fileID: 1692392228}
   m_Layer: 5
-  m_Name: btn_aprendiz
+  m_Name: btn_logout
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -28486,7 +28503,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 50948059}
-        m_MethodName: OpenSemanadas
+        m_MethodName: OpenLogin
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -29112,7 +29129,7 @@ GameObject:
   - component: {fileID: 1772712330}
   - component: {fileID: 1772712332}
   m_Layer: 5
-  m_Name: cadeado (27)
+  m_Name: ponto
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -30383,7 +30400,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1887610852
 RectTransform:
   m_ObjectHideFlags: 0
@@ -33696,7 +33713,7 @@ GameObject:
   - component: {fileID: 2080956820}
   - component: {fileID: 2080956822}
   m_Layer: 5
-  m_Name: cadeado (9)
+  m_Name: ponto
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
