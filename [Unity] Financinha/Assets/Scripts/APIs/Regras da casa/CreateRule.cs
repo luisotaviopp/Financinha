@@ -20,9 +20,13 @@ public class CreateRule : MonoBehaviour
     {
         WWWForm form = new WWWForm();
         form.AddField("post_token", PlayerPrefs.GetString("token"));
+        form.AddField("post_id", PlayerPrefs.GetInt("id_aprendiz"));
         form.AddField("post_name", name);
         form.AddField("post_description", description);
         form.AddField("post_value", value);
+
+
+        Debug.Log(PlayerPrefs.GetInt("id_aprendiz"));
 
         UnityWebRequest www = UnityWebRequest.Post(ApiConfig.CREATE_RULE_URL, form);
         yield return www.SendWebRequest();

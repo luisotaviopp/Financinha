@@ -7,7 +7,7 @@ using UnityEngine.UI;
 public class ExtratoGetter : MonoBehaviour
 {
     //public Text statusDisplay;
-    private void Start()
+    private void OnEnable()
     {
         GetInfo();
     }
@@ -20,7 +20,7 @@ public class ExtratoGetter : MonoBehaviour
     IEnumerator GetExtratoList()
     {
         WWWForm form = new WWWForm();
-        form.AddField("post_token", PlayerPrefs.GetString("token"));
+        form.AddField("post_id", PlayerPrefs.GetInt("id_aprendiz"));
 
         UnityWebRequest www = UnityWebRequest.Post(ApiConfig.EXTRATO_URL, form);
         yield return www.SendWebRequest();

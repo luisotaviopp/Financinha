@@ -60,8 +60,19 @@ public class Login : MonoBehaviour
             // Muda a altura do cofrinho, de acordo com o level do aprendiz.
             GameObject.Find("UIManager").GetComponent<LevelCheck>().ChangeCofrinhoPosition(PlayerPrefs.GetInt("level"));
 
-            // Fecha o painel de login.
-            GameObject.Find("UIManager").GetComponent<UIManager>().OpenLevelSelector();
+            if (listaDosPlayers.players[0].permission != "resp")
+            {
+                PlayerPrefs.SetInt("id_aprendiz", listaDosPlayers.players[0].id);
+                PlayerPrefs.Save();
+
+                // Fecha o painel de login.
+                GameObject.Find("UIManager").GetComponent<UIManager>().OpenLevelSelector();
+            }
+            else
+            {
+                GameObject.Find("UIManager").GetComponent<UIManager>().OpenListaAprendizes();
+            }
+
         }
     }
 }

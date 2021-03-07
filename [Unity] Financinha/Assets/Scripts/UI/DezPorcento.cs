@@ -10,7 +10,6 @@ public class DezPorcento : MonoBehaviour
 
     public void ConverteTexto()
     {
-        Debug.Log(input.text);
-        display.text = (float.Parse(input.text) * 0.1).ToString();
+        display.text = (float.Parse(input.text, System.Globalization.NumberStyles.AllowDecimalPoint) * 0.1).ToString();
     }
 }

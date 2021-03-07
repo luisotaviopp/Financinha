@@ -20,13 +20,16 @@ public class CreateObjective : MonoBehaviour
     IEnumerator PostObjective(string post_gift_name, string post_gift_value, string post_cause_name, string post_cause_value)
     {
         WWWForm form = new WWWForm();
-        form.AddField("post_token", PlayerPrefs.GetString("token"));
+        form.AddField("post_id", PlayerPrefs.GetInt("id_aprendiz"));
         form.AddField("post_gift_name", post_gift_name);
         form.AddField("post_gift_value", post_gift_value);
         form.AddField("post_cause_name", post_cause_name);
         form.AddField("post_cause_value", post_cause_value);
 
         UnityWebRequest www = UnityWebRequest.Post(ApiConfig.INSERT_OBJECTIVE, form);
+
+        statusDisplay.text = "";
+
         yield return www.SendWebRequest();
 
         if (www.isNetworkError || www.isHttpError)
@@ -38,12 +41,12 @@ public class CreateObjective : MonoBehaviour
         {
             //Texto de Retorno
             statusDisplay.text = www.downloadHandler.text;
-
-            //Zerando Campos Login
-            giftName.text = "";
-            giftValue.text = "";
-            causeName.text = "";
-            causeValue.text = "";
         }
+
+        //Zerando Campos Login
+        giftName.text = "";
+        giftValue.text = "";
+        causeName.text = "";
+        causeValue.text = "";
     }
 }

@@ -12,7 +12,7 @@ public class GiftGetter : MonoBehaviour
     public Text causeNameTxt;
     public Text sumTxt;
 
-    private void Start()
+    private void OnEnable()
     {
         GetInfo();
     }
@@ -25,7 +25,7 @@ public class GiftGetter : MonoBehaviour
     IEnumerator GetGift()
     {
         WWWForm form = new WWWForm();
-        form.AddField("post_token", PlayerPrefs.GetString("token"));
+        form.AddField("post_id", PlayerPrefs.GetInt("id_aprendiz"));
 
         UnityWebRequest www = UnityWebRequest.Post(ApiConfig.GET_GIFT_URL, form);
         yield return www.SendWebRequest();

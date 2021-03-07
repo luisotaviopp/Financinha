@@ -20,6 +20,7 @@ public class WalletOperation : MonoBehaviour
     {
         WWWForm form = new WWWForm();
         form.AddField("post_token", PlayerPrefs.GetString("token"));
+        form.AddField("post_id", PlayerPrefs.GetInt("id_aprendiz"));
         form.AddField("post_reason", reason);
         form.AddField("post_value", value);
         form.AddField("post_operation", post_operation);

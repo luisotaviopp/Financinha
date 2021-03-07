@@ -21,7 +21,7 @@ public class GetRules : MonoBehaviour
     IEnumerator GetRulesCorroutine()
     {
         WWWForm form = new WWWForm();
-        form.AddField("post_token", PlayerPrefs.GetString("token"));
+        form.AddField("post_id", PlayerPrefs.GetInt("id_aprendiz"));
 
         UnityWebRequest www = UnityWebRequest.Post(ApiConfig.LIST_RULES_URL, form);
         yield return www.SendWebRequest();

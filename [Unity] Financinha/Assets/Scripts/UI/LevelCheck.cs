@@ -21,7 +21,6 @@ public class LevelCheck : MonoBehaviour
     void Start()
     {
         level = PlayerPrefs.GetInt("level");
-        Debug.Log(level);
         ChangeCofrinhoPosition(level);
     }
 

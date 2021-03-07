@@ -30,6 +30,8 @@ public class ApiConfig : MonoBehaviour
 
     public static string LIST_USERS_URL = API_URL + "search_user.php";                          // Procurando um usuário
 
+    public static string MENU_UPDATE_VALUES = API_URL + "menu_values.php";                      // Pega os valores para o menu
+
     // Listar as notificações
 
     public static string LIST_USER_APPRENDICES = API_URL + "list_aprendiz.php";                 // Listar os aprendizes de um usuário

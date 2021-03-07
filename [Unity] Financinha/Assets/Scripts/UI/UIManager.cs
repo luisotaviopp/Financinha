@@ -36,12 +36,10 @@ public class UIManager : MonoBehaviour
     {
         if (PlayerPrefs.HasKey("token"))
         {
-            Debug.Log(PlayerPrefs.GetString("token"));
             OpenLevelSelector();
         }
         else
         {
-            Debug.Log("Usuário não está logado");
             OpenLogin();
         }
     }
@@ -361,7 +359,6 @@ public class UIManager : MonoBehaviour
         panelConquista_editar.SetActive(false);
         panelAvaliacao.SetActive(false);
         panelLevelSelector.SetActive(true);
-        panelPreQuizz.SetActive(false);
         panelPreGame.SetActive(false);
         panelSettings.SetActive(false);
         panelListaAprendizes.SetActive(false);
@@ -442,7 +439,6 @@ public class UIManager : MonoBehaviour
         panelConquista_editar.SetActive(false);
         panelAvaliacao.SetActive(false);
         panelLevelSelector.SetActive(false);
-        panelPreQuizz.SetActive(false);
         panelPreGame.SetActive(false);
         panelSettings.SetActive(false);
         panelRegistrarAprendiz.SetActive(false);
