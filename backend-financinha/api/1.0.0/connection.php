@@ -1,6 +1,6 @@
 <?php
 	header('Access-Control-Allow-Origin: *');
-	header('Access-Control-Allow-Methods: GET, POST');
+	header('Access-Control-Allow-Methods: GET, POST, PATCH');
 
 	$servername = "31.170.161.64";
 	$username = "u507878706_financinha_usr";

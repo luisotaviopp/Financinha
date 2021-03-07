@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Generation Time: Feb 28, 2021 at 03:05 AM
+-- Generation Time: Mar 07, 2021 at 01:50 AM
 -- Server version: 10.4.14-MariaDB-cll-lve
 -- PHP Version: 7.2.34
 
@@ -72,7 +72,8 @@ INSERT INTO `event` (`id`, `user_id`, `type`, `created_at`, `value`, `reason`) V
 (24, 6, 'w_takeout', '2021-02-28 02:11:29', 100, 'teste ganho'),
 (25, 6, 'w_takeout', '2021-02-28 02:11:40', 200, 'teste gasto'),
 (26, 6, 'w_takeout', '2021-02-28 02:47:07', 1, 'gagagagaga'),
-(27, 6, 'w_takeout', '2021-02-28 02:47:16', 2, 'gagagaga');
+(27, 6, 'w_takeout', '2021-02-28 02:47:16', 2, 'gagagaga'),
+(28, 6, 'w_takeout', '2021-03-01 04:48:26', 9, 'daniel teste haha');
 
 -- --------------------------------------------------------
 
@@ -116,6 +117,37 @@ INSERT INTO `objective` (`id`, `user_id`, `created_at`, `gift_name`, `cause_name
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `question`
+--
+
+CREATE TABLE `question` (
+  `id` int(11) NOT NULL,
+  `level` int(11) NOT NULL,
+  `question` varchar(300) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `option_1` varchar(300) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `option_2` varchar(300) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `option_3` varchar(300) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `option_4` varchar(300) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `option_5` varchar(300) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `right_answer` int(11) NOT NULL,
+  `created_at` datetime NOT NULL DEFAULT current_timestamp(),
+  `is_active` tinyint(1) NOT NULL DEFAULT 1
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Dumping data for table `question`
+--
+
+INSERT INTO `question` (`id`, `level`, `question`, `option_1`, `option_2`, `option_3`, `option_4`, `option_5`, `right_answer`, `created_at`, `is_active`) VALUES
+(1, 1, 'aaaaaa', 'Teste', 'Teste', 'teste', 'teste', 'teste', 5, '2021-03-06 20:05:28', 1),
+(2, 1, '2', '2', '2', '2', '2', '2', 2, '2021-03-06 20:07:26', 1),
+(3, 1, '1', '1', '1', '1', '1', '1', 1, '2021-03-06 21:48:16', 1),
+(4, 1, 'aaa', 'aaa', 'aaa', 'aaa', 'aaa', 'aaa', 3, '2021-03-06 21:48:43', 1),
+(5, 1, 'CCC', 'CCC', 'CCC', 'CCC', 'CCC', 'CCC', 4, '2021-03-06 21:49:09', 1);
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `quiz_open_answer`
 --
 
@@ -132,14 +164,8 @@ CREATE TABLE `quiz_open_answer` (
 --
 
 INSERT INTO `quiz_open_answer` (`id`, `user_id`, `created_at`, `level`, `answer`) VALUES
-(1, 6, '2021-02-13 20:49:40', 1, 'TESTE'),
-(2, 9, '2021-02-13 20:56:57', 1, 'lalalalalala'),
-(3, 9, '2021-02-13 20:57:46', 3, 'é 3?'),
-(4, 11, '2021-02-15 23:53:35', 0, 'testeeee'),
-(5, 11, '2021-02-15 23:54:27', 0, 'teste 2222'),
-(6, 6, '2021-02-16 10:36:07', 18, 'No céu tem pão?'),
-(7, 6, '2021-02-16 15:20:16', 18, 'Teste Marcio'),
-(8, 6, '2021-02-28 02:57:02', 18, 'asdasdasdsad');
+(12, 6, '2021-03-06 22:15:27', 1, ''),
+(13, 6, '2021-03-06 22:22:41', 1, '');
 
 -- --------------------------------------------------------
 
@@ -150,15 +176,15 @@ INSERT INTO `quiz_open_answer` (`id`, `user_id`, `created_at`, `level`, `answer`
 CREATE TABLE `relation` (
   `id` int(11) NOT NULL,
   `relation_type` int(11) NOT NULL,
-  `user_a` int(11) NOT NULL,
-  `user_b` int(11) NOT NULL
+  `resp` int(11) NOT NULL,
+  `apr` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data for table `relation`
 --
 
-INSERT INTO `relation` (`id`, `relation_type`, `user_a`, `user_b`) VALUES
+INSERT INTO `relation` (`id`, `relation_type`, `resp`, `apr`) VALUES
 (5, 5, 10, 6);
 
 -- --------------------------------------------------------
@@ -263,7 +289,7 @@ CREATE TABLE `token` (
 --
 
 INSERT INTO `token` (`id`, `user_id`, `created_at`, `token`) VALUES
-(2, 6, '2021-02-28 02:44:51', 'gehXhRFKVzIhZgHY2qE$S6#NvMmPxc2dXIHUgmAhT2%3$vl$QGw1$S!c66JWwQFZFOspgdtqa3oMG!KV2leZ2mBWj8tzE8dzGkXwiAVoILSrj9kQlc9F#NDwDg20YBb'),
+(2, 6, '2021-03-07 01:37:04', '6XhxlT2%102p9%XaisBM@@7IeliM8wA#RLVrF7RpczjC5@%3IR7$Q2LRbHtedM8ZBtuq1GMjyvj1BpDJgehr$2O3CTBc4Vxho#AHFSs9nY9nQpfrXJuOXN1aRHwn%gz'),
 (3, 7, '2021-02-13 09:50:35', '7sb56G0LSgg6T@F5c8GXT7AMB0%bUbpd!bNW#7i6eYPxSvWOmHX9zAsQYnPeNgxTwc#46u71hb3NYc22hSbdl0e%3h@l89Z%lMRz8sy8TBWdk0f5$KeFU!yIVCzYYsR'),
 (4, 8, '2021-02-13 10:05:04', '8zLjfJ6Q75%EERnr2o7bjY4FX0QUocHPTjQ6ybT&EQRU#UVq$r8YL2&aSK9!2DUb2XAYuwINEiaUR4r3iOxpyLsL6ijc@wAQniycZ2168%GkUTaF5zg6rojiC1Q9bye'),
 (5, 9, '2021-02-15 21:17:20', '5%Aq!PN!1HtKxW@K7KaD3MqyIKXn%M5SCcik9du0YzallwzlgcPbFfjEH#N5f0M@GpDGQtA#H7wcR2#kZj7hPv&DvWcz6ZBBBRPJNlSoMrZgdDK@W&2wb8WsUl9&6c7'),
@@ -292,10 +318,40 @@ CREATE TABLE `user` (
 --
 
 INSERT INTO `user` (`id`, `name`, `level`, `permission`, `created_at`, `username`, `password`) VALUES
-(6, 'Luis', 18, 'resp', '2021-01-30 22:32:27', 'luis', '8cb2237d0679ca88db6464eac60da96345513964'),
+(6, 'Luis', 10, 'resp', '2021-01-30 22:32:27', 'luis', '8cb2237d0679ca88db6464eac60da96345513964'),
 (9, 'Marcio', 3, '0', '2021-02-13 10:18:52', 'marcio', '8cb2237d0679ca88db6464eac60da96345513964'),
 (10, 'teste', 0, 'apr', '2021-02-13 16:18:52', 'teste', '2e6f9b0d5885b6010f9167787445617f553a735f'),
 (11, 'Luis', 0, '0', '2021-02-15 23:21:03', 'luis2', '8cb2237d0679ca88db6464eac60da96345513964');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `user_answer`
+--
+
+CREATE TABLE `user_answer` (
+  `id` int(11) NOT NULL,
+  `user_id` int(11) NOT NULL,
+  `question_id` int(11) NOT NULL,
+  `selected_option` int(11) NOT NULL,
+  `created_at` datetime NOT NULL DEFAULT current_timestamp()
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Dumping data for table `user_answer`
+--
+
+INSERT INTO `user_answer` (`id`, `user_id`, `question_id`, `selected_option`, `created_at`) VALUES
+(5, 1, 3, 4, '2021-03-06 22:15:27'),
+(6, 1, 1, 1, '2021-03-06 22:15:27'),
+(7, 1, 2, 2, '2021-03-06 22:15:27'),
+(8, 1, 5, 3, '2021-03-06 22:15:27'),
+(9, 1, 4, 2, '2021-03-06 22:15:27'),
+(10, 1, 2, 4, '2021-03-06 22:22:42'),
+(11, 1, 1, 1, '2021-03-06 22:22:42'),
+(12, 1, 4, 2, '2021-03-06 22:22:42'),
+(13, 1, 3, 5, '2021-03-06 22:22:42'),
+(14, 1, 5, 1, '2021-03-06 22:22:42');
 
 -- --------------------------------------------------------
 
@@ -314,7 +370,7 @@ CREATE TABLE `wallet` (
 --
 
 INSERT INTO `wallet` (`id`, `user_id`, `amount`) VALUES
-(5, 6, 9774),
+(5, 6, 9765),
 (8, 9, 4255),
 (9, 10, 0),
 (10, 10, 0),
@@ -346,6 +402,12 @@ ALTER TABLE `notification`
 -- Indexes for table `objective`
 --
 ALTER TABLE `objective`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `question`
+--
+ALTER TABLE `question`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -391,6 +453,12 @@ ALTER TABLE `user`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indexes for table `user_answer`
+--
+ALTER TABLE `user_answer`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indexes for table `wallet`
 --
 ALTER TABLE `wallet`
@@ -410,7 +478,7 @@ ALTER TABLE `cause`
 -- AUTO_INCREMENT for table `event`
 --
 ALTER TABLE `event`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=28;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=29;
 
 --
 -- AUTO_INCREMENT for table `notification`
@@ -425,10 +493,16 @@ ALTER TABLE `objective`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
+-- AUTO_INCREMENT for table `question`
+--
+ALTER TABLE `question`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+
+--
 -- AUTO_INCREMENT for table `quiz_open_answer`
 --
 ALTER TABLE `quiz_open_answer`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 
 --
 -- AUTO_INCREMENT for table `relation`
@@ -465,6 +539,12 @@ ALTER TABLE `token`
 --
 ALTER TABLE `user`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+
+--
+-- AUTO_INCREMENT for table `user_answer`
+--
+ALTER TABLE `user_answer`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
 
 --
 -- AUTO_INCREMENT for table `wallet`
