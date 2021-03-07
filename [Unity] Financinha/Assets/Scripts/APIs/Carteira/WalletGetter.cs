@@ -1,4 +1,5 @@
 ﻿using System.Collections;
+using System;
 using UnityEngine;
 using UnityEngine.Networking;
 using UnityEngine.UI;
@@ -33,10 +34,10 @@ public class WalletGetter : MonoBehaviour
         else
         {
             // Sempre que algo retornar como texto, basta pegar o www.downloadHandler.text, ao invés de converter o json em uma lista.
-            PlayerPrefs.SetInt("wallet_amount", int.Parse(www.downloadHandler.text));
+            PlayerPrefs.SetFloat("wallet_amount", float.Parse(www.downloadHandler.text));
             PlayerPrefs.Save();
 
-            amountDisplay.text = "R$" + PlayerPrefs.GetInt("wallet_amount");
+            amountDisplay.text = "R$" + Math.Round(PlayerPrefs.GetFloat("wallet_amount"), 2);
         }
     }
 }

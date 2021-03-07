@@ -5,11 +5,13 @@ using UnityEngine.UI;
 
 public class Logout : MonoBehaviour
 {
-    public Text statusDisplay;
-
     public void PlayerLogout()
     {
-        PlayerPrefs.DeleteKey("token");
-        statusDisplay.text = "Logout Efetuado com Sucesso!";
+        PlayerPrefs.DeleteAll();
+
+        GameObject.Find("UIManager").GetComponent<UIManager>().ToogleSubMenu();
+
+        // Volta para o login.
+        GameObject.Find("UIManager").GetComponent<UIManager>().OpenLogin();
     }
 }

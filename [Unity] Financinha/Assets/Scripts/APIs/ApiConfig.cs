@@ -32,7 +32,9 @@ public class ApiConfig : MonoBehaviour
 
     // Listar as notificações
 
-    // Listar os familiares de um usuário
+    public static string LIST_USER_APPRENDICES = API_URL + "list_aprendiz.php";                 // Listar os aprendizes de um usuário
+
+    public static string CREATE_APPRENDICE = API_URL + "create_aprendiz.php";                   // Listar os aprendizes de um usuário
 
     public static string EXTRATO_URL = API_URL+"timeline.php";                                  // Pegar o extrato do jogador.
 

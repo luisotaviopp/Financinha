@@ -8,9 +8,6 @@ public class UIManager : MonoBehaviour
     public GameObject panelLevelSelector;
     public GameObject panelLogin;
     public GameObject panelRegistration;
-    public GameObject panelSavings;
-    public GameObject panelPhilantrophy;
-    public GameObject panelQuizz;
     public GameObject panelPreQuizz;
     public GameObject panelSettings;
 
@@ -24,6 +21,8 @@ public class UIManager : MonoBehaviour
     public GameObject panelConquista;
     public GameObject panelConquista_editar;
     public GameObject panelAvaliacao;
+    public GameObject panelListaAprendizes;
+    public GameObject panelRegistrarAprendiz;
 
     public GameObject panelSubMenu;
 
@@ -61,10 +60,10 @@ public class UIManager : MonoBehaviour
         panelConquista.SetActive(false);
         panelConquista_editar.SetActive(false);
         panelAvaliacao.SetActive(false);
-        panelQuizz.SetActive(false);
         panelLevelSelector.SetActive(false);
         panelPreQuizz.SetActive(false);
         panelSettings.SetActive(false);
+        panelListaAprendizes.SetActive(false);
     }
 
     public void OpenRegistration()
@@ -81,10 +80,10 @@ public class UIManager : MonoBehaviour
         panelConquista.SetActive(false);
         panelConquista_editar.SetActive(false);
         panelAvaliacao.SetActive(false);
-        panelQuizz.SetActive(false);
         panelLevelSelector.SetActive(false);
         panelPreQuizz.SetActive(false);
         panelSettings.SetActive(false);
+        panelListaAprendizes.SetActive(false);
     }
 
     public void OpenCarteira()
@@ -101,10 +100,10 @@ public class UIManager : MonoBehaviour
         panelConquista.SetActive(false);
         panelConquista_editar.SetActive(false);
         panelAvaliacao.SetActive(false);
-        panelQuizz.SetActive(false);
         panelLevelSelector.SetActive(false);
         panelPreQuizz.SetActive(false);
         panelSettings.SetActive(false);
+        panelListaAprendizes.SetActive(false);
     }
 
     public void OpenCarteiraLancar()
@@ -121,10 +120,10 @@ public class UIManager : MonoBehaviour
         panelConquista.SetActive(false);
         panelConquista_editar.SetActive(false);
         panelAvaliacao.SetActive(false);
-        panelQuizz.SetActive(false);
         panelLevelSelector.SetActive(false);
         panelPreQuizz.SetActive(false);
         panelSettings.SetActive(false);
+        panelListaAprendizes.SetActive(false);
     }
 
     public void OpenBancoDaCasa()
@@ -141,11 +140,12 @@ public class UIManager : MonoBehaviour
         panelConquista.SetActive(false);
         panelConquista_editar.SetActive(false);
         panelAvaliacao.SetActive(false);
-        panelQuizz.SetActive(false);
         panelLevelSelector.SetActive(false);
         panelPreQuizz.SetActive(false);
         panelSettings.SetActive(false);
+        panelListaAprendizes.SetActive(false);
     }
+
     public void OpenBancoDaCasalancar()
     {
         panelLogin.SetActive(false);
@@ -160,11 +160,12 @@ public class UIManager : MonoBehaviour
         panelConquista.SetActive(false);
         panelConquista_editar.SetActive(false);
         panelAvaliacao.SetActive(false);
-        panelQuizz.SetActive(false);
         panelLevelSelector.SetActive(false);
         panelPreQuizz.SetActive(false);
         panelSettings.SetActive(false);
+        panelListaAprendizes.SetActive(false);
     }
+
     public void OpenRegrasDaCasa()
     {
         panelLogin.SetActive(false);
@@ -179,11 +180,12 @@ public class UIManager : MonoBehaviour
         panelConquista.SetActive(false);
         panelConquista_editar.SetActive(false);
         panelAvaliacao.SetActive(false);
-        panelQuizz.SetActive(false);
         panelLevelSelector.SetActive(false);
         panelPreQuizz.SetActive(false);
         panelSettings.SetActive(false);
+        panelListaAprendizes.SetActive(false);
     }
+
     public void OpenRegrasDaCasalancar()
     {
         panelLogin.SetActive(false);
@@ -198,11 +200,12 @@ public class UIManager : MonoBehaviour
         panelConquista.SetActive(false);
         panelConquista_editar.SetActive(false);
         panelAvaliacao.SetActive(false);
-        panelQuizz.SetActive(false);
         panelLevelSelector.SetActive(false);
         panelPreQuizz.SetActive(false);
         panelSettings.SetActive(false);
+        panelListaAprendizes.SetActive(false);
     }
+
     public void OpenSemanadas()
     {
         panelLogin.SetActive(false);
@@ -217,11 +220,12 @@ public class UIManager : MonoBehaviour
         panelConquista.SetActive(false);
         panelConquista_editar.SetActive(false);
         panelAvaliacao.SetActive(false);
-        panelQuizz.SetActive(false);
         panelLevelSelector.SetActive(false);
         panelPreQuizz.SetActive(false);
         panelSettings.SetActive(false);
+        panelListaAprendizes.SetActive(false);
     }
+
     public void OpenConquista()
     {
         panelLogin.SetActive(false);
@@ -236,11 +240,12 @@ public class UIManager : MonoBehaviour
         panelConquista.SetActive(true);
         panelConquista_editar.SetActive(false);
         panelAvaliacao.SetActive(false);
-        panelQuizz.SetActive(false);
         panelLevelSelector.SetActive(false);
         panelPreQuizz.SetActive(false);
         panelSettings.SetActive(false);
+        panelListaAprendizes.SetActive(false);
     }
+
     public void OpenConquistaEditar()
     {
         panelLogin.SetActive(false);
@@ -255,11 +260,12 @@ public class UIManager : MonoBehaviour
         panelConquista.SetActive(false);
         panelConquista_editar.SetActive(true);
         panelAvaliacao.SetActive(false);
-        panelQuizz.SetActive(false);
         panelLevelSelector.SetActive(false);
         panelPreQuizz.SetActive(false);
         panelSettings.SetActive(false);
+        panelListaAprendizes.SetActive(false);
     }
+
     public void OpenAvaliacao()
     {
         panelLogin.SetActive(false);
@@ -274,10 +280,10 @@ public class UIManager : MonoBehaviour
         panelConquista.SetActive(false);
         panelConquista_editar.SetActive(false);
         panelAvaliacao.SetActive(true);
-        panelQuizz.SetActive(false);
         panelLevelSelector.SetActive(false);
         panelPreQuizz.SetActive(false);
         panelSettings.SetActive(false);
+        panelListaAprendizes.SetActive(false);
     }
 
     public void OpenSettings()
@@ -294,10 +300,10 @@ public class UIManager : MonoBehaviour
         panelConquista.SetActive(false);
         panelConquista_editar.SetActive(false);
         panelAvaliacao.SetActive(false);
-        panelQuizz.SetActive(false);
         panelLevelSelector.SetActive(false);
         panelPreQuizz.SetActive(false);
         panelSettings.SetActive(true);
+        panelListaAprendizes.SetActive(false);
     }
 
     public void OpenRules()
@@ -314,10 +320,10 @@ public class UIManager : MonoBehaviour
         panelConquista.SetActive(false);
         panelConquista_editar.SetActive(false);
         panelAvaliacao.SetActive(false);
-        panelQuizz.SetActive(false);
         panelLevelSelector.SetActive(false);
         panelPreQuizz.SetActive(false);
         panelSettings.SetActive(false);
+        panelListaAprendizes.SetActive(false);
     }
 
     public void OpenQuizz()
@@ -334,10 +340,10 @@ public class UIManager : MonoBehaviour
         panelConquista.SetActive(false);
         panelConquista_editar.SetActive(false);
         panelAvaliacao.SetActive(false);
-        panelQuizz.SetActive(true);
         panelLevelSelector.SetActive(false);
         panelPreQuizz.SetActive(false);
         panelSettings.SetActive(false);
+        panelListaAprendizes.SetActive(false);
     }
 
     public void OpenLevelSelector()
@@ -354,11 +360,11 @@ public class UIManager : MonoBehaviour
         panelConquista.SetActive(false);
         panelConquista_editar.SetActive(false);
         panelAvaliacao.SetActive(false);
-        panelQuizz.SetActive(false);
         panelLevelSelector.SetActive(true);
         panelPreQuizz.SetActive(false);
         panelPreGame.SetActive(false);
         panelSettings.SetActive(false);
+        panelListaAprendizes.SetActive(false);
     }
 
     public void OpenPreQuizz()
@@ -375,11 +381,12 @@ public class UIManager : MonoBehaviour
         panelConquista.SetActive(false);
         panelConquista_editar.SetActive(false);
         panelAvaliacao.SetActive(false);
-        panelQuizz.SetActive(false);
         panelLevelSelector.SetActive(false);
         panelPreQuizz.SetActive(true);
         panelSettings.SetActive(false);
+        panelListaAprendizes.SetActive(false);
     }
+
     public void OpenPreGame()
     {
         panelLogin.SetActive(false);
@@ -394,12 +401,13 @@ public class UIManager : MonoBehaviour
         panelConquista.SetActive(false);
         panelConquista_editar.SetActive(false);
         panelAvaliacao.SetActive(false);
-        panelQuizz.SetActive(false);
         panelLevelSelector.SetActive(false);
         panelPreQuizz.SetActive(false);
         panelPreGame.SetActive(true);
         panelSettings.SetActive(false);
+        panelListaAprendizes.SetActive(false);
     }
+
     public void OpenPreLevel(int level)
     {
         SceneLoader.refLevel = level;
@@ -417,5 +425,50 @@ public class UIManager : MonoBehaviour
         else {
             panelSubMenu.SetActive(true);
         }
+    }
+
+    public void OpenListaAprendizes()
+    {
+        panelLogin.SetActive(false);
+        panelRegistration.SetActive(false);
+        panelBanco_da_Casa.SetActive(false);
+        panelBanco_da_Casa_Lancar.SetActive(false);
+        panelCarteira.SetActive(false);
+        panelCarteiraLancar.SetActive(false);
+        panelRegras.SetActive(false);
+        panelRegras_Cadastrar.SetActive(false);
+        panelSemanadas.SetActive(false);
+        panelConquista.SetActive(false);
+        panelConquista_editar.SetActive(false);
+        panelAvaliacao.SetActive(false);
+        panelLevelSelector.SetActive(false);
+        panelPreQuizz.SetActive(false);
+        panelPreGame.SetActive(false);
+        panelSettings.SetActive(false);
+        panelRegistrarAprendiz.SetActive(false);
+        panelListaAprendizes.SetActive(true);
+        ToogleSubMenu();
+    }
+
+    public void OpenRegistrarAprendiz()
+    {
+        panelLogin.SetActive(false);
+        panelRegistration.SetActive(false);
+        panelBanco_da_Casa.SetActive(false);
+        panelBanco_da_Casa_Lancar.SetActive(false);
+        panelCarteira.SetActive(false);
+        panelCarteiraLancar.SetActive(false);
+        panelRegras.SetActive(false);
+        panelRegras_Cadastrar.SetActive(false);
+        panelSemanadas.SetActive(false);
+        panelConquista.SetActive(false);
+        panelConquista_editar.SetActive(false);
+        panelAvaliacao.SetActive(false);
+        panelLevelSelector.SetActive(false);
+        panelPreQuizz.SetActive(false);
+        panelPreGame.SetActive(false);
+        panelSettings.SetActive(false);
+        panelListaAprendizes.SetActive(false);
+        panelRegistrarAprendiz.SetActive(true);
     }
 }

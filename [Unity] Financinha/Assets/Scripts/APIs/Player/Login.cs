@@ -54,7 +54,13 @@ public class Login : MonoBehaviour
 
             statusDisplay.text = "Logado com Sucesso";
 
+            // Esconde os botões (se o usuário for aprendiz).
             GameObject.Find("UIManager").GetComponent<PermissionCheck>().ShowHideButtons();
+            
+            // Muda a altura do cofrinho, de acordo com o level do aprendiz.
+            GameObject.Find("UIManager").GetComponent<LevelCheck>().ChangeCofrinhoPosition(PlayerPrefs.GetInt("level"));
+
+            // Fecha o painel de login.
             GameObject.Find("UIManager").GetComponent<UIManager>().OpenLevelSelector();
         }
     }

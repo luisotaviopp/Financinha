@@ -36,15 +36,15 @@ public class TesteListaRenderizada : MonoBehaviour
             g.transform.GetChild(0).GetComponent<Text>().text = elementos[i].nome;
             g.transform.GetChild(1).GetComponent<Text>().text = elementos[i].valor;
 
-            g.GetComponent<Button>().AddEventListener(i, ItemClicked);
+            g.GetComponent<Button>().AddEventListener(i, AprendizClicked);
         }
 
         Destroy(template.gameObject);
     }
 
-    void ItemClicked (int itemIndex)
+    void AprendizClicked (int itemIndex)
     {
-        Debug.Log("Clicou no item: " + elementos[itemIndex].nome + elementos[itemIndex].valor);
+        Debug.Log("Clicou no aprendiz: " + elementos[itemIndex].nome + elementos[itemIndex].valor);
     }
 }
 

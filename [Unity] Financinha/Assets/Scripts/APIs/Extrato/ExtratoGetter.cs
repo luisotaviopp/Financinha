@@ -38,18 +38,21 @@ public class ExtratoGetter : MonoBehaviour
 
             //statusDisplay.text = "";
 
-            GameObject template = transform.GetChild(0).gameObject;
-            GameObject g;
-
-            for (int i = 0; i < listaDeTransacoes.transacao.Count; i++)
+            if (listaDeTransacoes.transacao.Count > 0)
             {
-                g = Instantiate(template, transform);
-                g.transform.GetChild(0).GetComponent<Text>().text = listaDeTransacoes.transacao[i].created_at;
-                g.transform.GetChild(1).GetComponent<Text>().text = listaDeTransacoes.transacao[i].reason;
-                g.transform.GetChild(3).GetComponent<Text>().text = listaDeTransacoes.transacao[i].value.ToString();
-            }
+                GameObject template = transform.GetChild(0).gameObject;
+                GameObject g;
 
-            Destroy(template.gameObject);
+                for (int i = 0; i < listaDeTransacoes.transacao.Count; i++)
+                {
+                    g = Instantiate(template, transform);
+                    g.transform.GetChild(0).GetComponent<Text>().text = listaDeTransacoes.transacao[i].created_at;
+                    g.transform.GetChild(1).GetComponent<Text>().text = listaDeTransacoes.transacao[i].reason;
+                    g.transform.GetChild(3).GetComponent<Text>().text = listaDeTransacoes.transacao[i].value.ToString();
+                }
+
+                Destroy(template.gameObject);
+            }
         }
     }
 }
