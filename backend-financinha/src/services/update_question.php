@@ -23,7 +23,7 @@
 		if ($conn->query($sql) === TRUE) 
         {
 			echo "Questão atualizada.";
-            header('location: ../../api/1.0.0/quiz/get_questions_table.php');
+			header('location: ../../table_questions.php');
 		} 
         else 
         {

@@ -2,11 +2,12 @@
 	require_once 'connection.php';
 
 	//Registra o usuário
-	$stmt = $conn->prepare("INSERT INTO user (username, name, password) VALUES (?, ?, ?)");
-	$stmt->bind_param("sss", $username, $post_name, $password);
+	$stmt = $conn->prepare("INSERT INTO user (username, name, email, password) VALUES (?, ?, ?, ?)");
+	$stmt->bind_param("ssss", $username, $post_name, $post_email, $password);
 
 	$username = $_POST['post_username'];
 	$post_name = $_POST['post_name'];
+	$post_email = $_POST['post_email'];
 	$password = sha1($_POST['post_password']);
 	$stmt->execute();
 

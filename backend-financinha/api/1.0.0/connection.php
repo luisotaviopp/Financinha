@@ -2,10 +2,15 @@
 	header('Access-Control-Allow-Origin: *');
 	header('Access-Control-Allow-Methods: GET, POST, PATCH');
 
-	$servername = "31.170.161.64";
-	$username = "u507878706_financinha_usr";
-	$password = "VUa1gUJ08z@G";
-	$dbname = "u507878706_financinha_000";
+	// $servername = "31.170.161.64";
+	// $username = "u507878706_financinha_usr";
+	// $password = "VUa1gUJ08z@G";
+	// $dbname = "u507878706_financinha_000";
+
+	$servername = "localhost";
+	$username = "root";
+	$password = "";
+	$dbname = "financinha_000";
 
 	// Create connection
     $conn = new mysqli($servername, $username, $password, $dbname);

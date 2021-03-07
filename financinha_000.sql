@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.9.5
+-- version 5.0.1
 -- https://www.phpmyadmin.net/
 --
--- Host: 127.0.0.1:3306
--- Generation Time: Mar 07, 2021 at 01:50 AM
--- Server version: 10.4.14-MariaDB-cll-lve
--- PHP Version: 7.2.34
+-- Host: 127.0.0.1
+-- Generation Time: Mar 07, 2021 at 04:53 AM
+-- Server version: 10.4.11-MariaDB
+-- PHP Version: 7.4.1
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -19,7 +19,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `u507878706_financinha_000`
+-- Database: `financinha_000`
 --
 
 -- --------------------------------------------------------
@@ -143,7 +143,7 @@ INSERT INTO `question` (`id`, `level`, `question`, `option_1`, `option_2`, `opti
 (2, 1, '2', '2', '2', '2', '2', '2', 2, '2021-03-06 20:07:26', 1),
 (3, 1, '1', '1', '1', '1', '1', '1', 1, '2021-03-06 21:48:16', 1),
 (4, 1, 'aaa', 'aaa', 'aaa', 'aaa', 'aaa', 'aaa', 3, '2021-03-06 21:48:43', 1),
-(5, 1, 'CCC', 'CCC', 'CCC', 'CCC', 'CCC', 'CCC', 4, '2021-03-06 21:49:09', 1);
+(5, 1, 'AAA', 'CCC', 'CCC', 'CCC', 'CCC', 'CCC', 4, '2021-03-06 21:49:09', 1);
 
 -- --------------------------------------------------------
 
@@ -175,7 +175,6 @@ INSERT INTO `quiz_open_answer` (`id`, `user_id`, `created_at`, `level`, `answer`
 
 CREATE TABLE `relation` (
   `id` int(11) NOT NULL,
-  `relation_type` int(11) NOT NULL,
   `resp` int(11) NOT NULL,
   `apr` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
@@ -184,8 +183,10 @@ CREATE TABLE `relation` (
 -- Dumping data for table `relation`
 --
 
-INSERT INTO `relation` (`id`, `relation_type`, `resp`, `apr`) VALUES
-(5, 5, 10, 6);
+INSERT INTO `relation` (`id`, `resp`, `apr`) VALUES
+(5, 10, 6),
+(6, 6, 14),
+(7, 6, 15);
 
 -- --------------------------------------------------------
 
@@ -269,7 +270,12 @@ INSERT INTO `saving` (`id`, `user_id`, `amount`) VALUES
 (6, 9, 100),
 (7, 10, 0),
 (8, 10, 0),
-(9, 11, -50);
+(9, 11, -50),
+(10, 12, 0),
+(11, 12, 0),
+(12, 13, 0),
+(13, 13, 0),
+(14, 13, 0);
 
 -- --------------------------------------------------------
 
@@ -289,13 +295,18 @@ CREATE TABLE `token` (
 --
 
 INSERT INTO `token` (`id`, `user_id`, `created_at`, `token`) VALUES
-(2, 6, '2021-03-07 01:37:04', '6XhxlT2%102p9%XaisBM@@7IeliM8wA#RLVrF7RpczjC5@%3IR7$Q2LRbHtedM8ZBtuq1GMjyvj1BpDJgehr$2O3CTBc4Vxho#AHFSs9nY9nQpfrXJuOXN1aRHwn%gz'),
+(2, 6, '2021-03-07 00:39:18', '@Jl%J7P9Orwq9Jp01RHFgMeID33ytv&zojSAyqA3rjx0w4cVujiQQuTV9Dl!C9k!MB6B8g$MSW#m7UroWNQF5%8F!29FATTjSFZS!g1ZVnPgA8YPSbZq2BIr!kZRFca'),
 (3, 7, '2021-02-13 09:50:35', '7sb56G0LSgg6T@F5c8GXT7AMB0%bUbpd!bNW#7i6eYPxSvWOmHX9zAsQYnPeNgxTwc#46u71hb3NYc22hSbdl0e%3h@l89Z%lMRz8sy8TBWdk0f5$KeFU!yIVCzYYsR'),
 (4, 8, '2021-02-13 10:05:04', '8zLjfJ6Q75%EERnr2o7bjY4FX0QUocHPTjQ6ybT&EQRU#UVq$r8YL2&aSK9!2DUb2XAYuwINEiaUR4r3iOxpyLsL6ijc@wAQniycZ2168%GkUTaF5zg6rojiC1Q9bye'),
 (5, 9, '2021-02-15 21:17:20', '5%Aq!PN!1HtKxW@K7KaD3MqyIKXn%M5SCcik9du0YzallwzlgcPbFfjEH#N5f0M@GpDGQtA#H7wcR2#kZj7hPv&DvWcz6ZBBBRPJNlSoMrZgdDK@W&2wb8WsUl9&6c7'),
 (6, 10, '2021-02-13 19:02:14', 'Eeh8j3AOKqoVR$6GUcU5QO4J2BwoM4ABneU5Rm9d!NkNi4QWp#Ik9MM1r481L0zfy5P2cPpB&v3h@89dn87QN5x&VxYxa8tAoa2atbWzJ8yK!tpInla9a9clAGLMIPY'),
 (7, 10, '2021-02-15 23:20:46', 'init'),
-(8, 11, '2021-02-15 23:21:35', 'pDShTeo6athmgG6af$YMtEOx%&jL46zcZDiaosAnYRf6NtWsi74xvtYN1TLOTbPSm3Rl8nRUYRgjsggrGeSTq7It%VU4cEeh!NbUEbXbQXd!hFoxJ1%yps30HhQ@WEB');
+(8, 11, '2021-02-15 23:21:35', 'pDShTeo6athmgG6af$YMtEOx%&jL46zcZDiaosAnYRf6NtWsi74xvtYN1TLOTbPSm3Rl8nRUYRgjsggrGeSTq7It%VU4cEeh!NbUEbXbQXd!hFoxJ1%yps30HhQ@WEB'),
+(9, 12, '2021-03-06 23:11:01', 'init'),
+(10, 12, '2021-03-06 23:50:52', 'init'),
+(11, 13, '2021-03-06 23:52:10', 'init'),
+(12, 13, '2021-03-06 23:57:26', 'init'),
+(13, 13, '2021-03-06 23:57:47', 'init');
 
 -- --------------------------------------------------------
 
@@ -306,8 +317,10 @@ INSERT INTO `token` (`id`, `user_id`, `created_at`, `token`) VALUES
 CREATE TABLE `user` (
   `id` int(11) NOT NULL,
   `name` varchar(65) NOT NULL,
+  `email` varchar(100) NOT NULL,
   `level` int(11) NOT NULL DEFAULT 0,
   `permission` varchar(5) NOT NULL DEFAULT 'resp',
+  `id_responsible` int(11) NOT NULL DEFAULT 0,
   `created_at` datetime NOT NULL DEFAULT current_timestamp(),
   `username` varchar(30) NOT NULL,
   `password` varchar(128) NOT NULL
@@ -317,11 +330,15 @@ CREATE TABLE `user` (
 -- Dumping data for table `user`
 --
 
-INSERT INTO `user` (`id`, `name`, `level`, `permission`, `created_at`, `username`, `password`) VALUES
-(6, 'Luis', 10, 'resp', '2021-01-30 22:32:27', 'luis', '8cb2237d0679ca88db6464eac60da96345513964'),
-(9, 'Marcio', 3, '0', '2021-02-13 10:18:52', 'marcio', '8cb2237d0679ca88db6464eac60da96345513964'),
-(10, 'teste', 0, 'apr', '2021-02-13 16:18:52', 'teste', '2e6f9b0d5885b6010f9167787445617f553a735f'),
-(11, 'Luis', 0, '0', '2021-02-15 23:21:03', 'luis2', '8cb2237d0679ca88db6464eac60da96345513964');
+INSERT INTO `user` (`id`, `name`, `email`, `level`, `permission`, `id_responsible`, `created_at`, `username`, `password`) VALUES
+(6, 'Luis', 'luisaslan@gmail.com', 10, 'resp', 0, '2021-01-30 22:32:27', 'luis', '8cb2237d0679ca88db6464eac60da96345513964'),
+(9, 'Marcio', '', 3, '0', 0, '2021-02-13 10:18:52', 'marcio', '8cb2237d0679ca88db6464eac60da96345513964'),
+(10, 'teste', '', 0, 'apr', 0, '2021-02-13 16:18:52', 'teste', '2e6f9b0d5885b6010f9167787445617f553a735f'),
+(11, 'Luis', '', 0, '0', 0, '2021-02-15 23:21:03', 'luis2', '8cb2237d0679ca88db6464eac60da96345513964'),
+(12, 'teste3', '', 0, 'resp', 0, '2021-03-06 23:11:01', 'teste3', '5458cb00631fc6748f9d3a52cf6c22ae9b232e91'),
+(13, 'testeemail', 'testeemail@email.com', 0, 'resp', 0, '2021-03-06 23:52:10', 'testeemail', '7cf68461b03bb19f1d98a8e7df901d5cd0e1d29c'),
+(14, 'Amanda', '', 0, 'apr', 6, '2021-03-07 00:10:45', 'a', '86f7e437faa5a7fce15d1ddcb9eaeaea377667b8'),
+(15, 'Daniel', '', 0, 'apr', 6, '2021-03-07 00:12:26', 'lalala', 'df2efa060e335f97628ca39c9fef5469ab3cb837');
 
 -- --------------------------------------------------------
 
@@ -374,7 +391,12 @@ INSERT INTO `wallet` (`id`, `user_id`, `amount`) VALUES
 (8, 9, 4255),
 (9, 10, 0),
 (10, 10, 0),
-(11, 11, 250);
+(11, 11, 250),
+(12, 12, 0),
+(13, 12, 0),
+(14, 13, 0),
+(15, 13, 0),
+(16, 13, 0);
 
 --
 -- Indexes for dumped tables
@@ -508,7 +530,7 @@ ALTER TABLE `quiz_open_answer`
 -- AUTO_INCREMENT for table `relation`
 --
 ALTER TABLE `relation`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- AUTO_INCREMENT for table `relation_type`
@@ -526,19 +548,19 @@ ALTER TABLE `rule`
 -- AUTO_INCREMENT for table `saving`
 --
 ALTER TABLE `saving`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
 
 --
 -- AUTO_INCREMENT for table `token`
 --
 ALTER TABLE `token`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 
 --
 -- AUTO_INCREMENT for table `user`
 --
 ALTER TABLE `user`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
 
 --
 -- AUTO_INCREMENT for table `user_answer`
@@ -550,7 +572,7 @@ ALTER TABLE `user_answer`
 -- AUTO_INCREMENT for table `wallet`
 --
 ALTER TABLE `wallet`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

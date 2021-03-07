@@ -19,12 +19,12 @@
 						<meta charset="UTF-8">
 						<meta http-equiv="X-UA-Compatible" content="IE=edge">
 						<meta name="viewport" content="width=device-width, initial-scale=1.0">
-						<title>Document</title>
+						<title>Financinha</title>
 					</head>
 					<body style="text-align: center;">
 						<h1>FINANCINHA - ADM</h1>
 
-						<p> <a href="get_questions_table.php">Ver questões</a> | <a href="users.php">Ver usuários</a> </p>										
+						<p> <a href="../../table_questions.php">Ver questões</a> | <a href="users.php">Ver usuários</a> </p>										
 
 						<form action="update_question.php" autocomplete="off"  method="POST">
 							<p>Fase (1 a 10):</p>
