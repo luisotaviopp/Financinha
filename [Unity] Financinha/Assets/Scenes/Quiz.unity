@@ -2647,7 +2647,7 @@ MonoBehaviour:
   m_InputType: 0
   m_AsteriskChar: 42
   m_KeyboardType: 0
-  m_LineType: 0
+  m_LineType: 1
   m_HideMobileInput: 1
   m_CharacterValidation: 0
   m_CharacterLimit: 300
@@ -2840,7 +2840,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fcbda238424c68844899052c7f0a17ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  answerInput: {fileID: 947842743}
+  answerInput: {fileID: 1122217224}
 --- !u!1 &1201503142
 GameObject:
   m_ObjectHideFlags: 0
@@ -4672,7 +4672,7 @@ MonoBehaviour:
     m_Alignment: 0
     m_AlignByGeometry: 0
     m_RichText: 0
-    m_HorizontalOverflow: 1
+    m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: 
