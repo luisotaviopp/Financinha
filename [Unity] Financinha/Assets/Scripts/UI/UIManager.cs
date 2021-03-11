@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-
+using UnityEngine.SceneManagement;
 public class UIManager : MonoBehaviour
 {
     public GameObject panelLevelSelector;
@@ -29,6 +29,7 @@ public class UIManager : MonoBehaviour
     public GameObject panelPreGame;
     public Image nuvem;
     public Image pig;
+    public Sprite[] pigs;
     public Sprite[] nuvemLevel;
     public Sprite[] pigLevel;
 
@@ -43,7 +44,7 @@ public class UIManager : MonoBehaviour
             OpenLogin();
         }
     }
-
+    #region
     public void OpenLogin()
     {
         panelLogin.SetActive(true);
@@ -404,26 +405,6 @@ public class UIManager : MonoBehaviour
         panelSettings.SetActive(false);
         panelListaAprendizes.SetActive(false);
     }
-
-    public void OpenPreLevel(int level)
-    {
-        SceneLoader.refLevel = level;
-
-        pig.sprite = pigLevel[level];
-        OpenPreGame();
-    }
-
-    public void ToogleSubMenu()
-    {
-        if (panelSubMenu.activeInHierarchy)
-        {
-            panelSubMenu.SetActive(false);
-        }
-        else {
-            panelSubMenu.SetActive(true);
-        }
-    }
-
     public void OpenListaAprendizes()
     {
         panelLogin.SetActive(false);
@@ -467,4 +448,72 @@ public class UIManager : MonoBehaviour
         panelListaAprendizes.SetActive(false);
         panelRegistrarAprendiz.SetActive(true);
     }
+    /* public void OpenListaAprendizes()
+    {
+        panelLogin.SetActive(false);
+        panelRegistration.SetActive(false);
+        panelBanco_da_Casa.SetActive(false);
+        panelBanco_da_Casa_Lancar.SetActive(false);
+        panelCarteira.SetActive(false);
+        panelCarteiraLancar.SetActive(false);
+        panelRegras.SetActive(false);
+        panelRegras_Cadastrar.SetActive(false);
+        panelSemanadas.SetActive(false);
+        panelConquista.SetActive(false);
+        panelConquista_editar.SetActive(false);
+        panelAvaliacao.SetActive(false);
+        panelLevelSelector.SetActive(false);
+        panelPreGame.SetActive(false);
+        panelSettings.SetActive(false);
+        panelRegistrarAprendiz.SetActive(false);
+        panelListaAprendizes.SetActive(true);
+        ToogleSubMenu();
+    }
+
+    public void OpenRegistrarAprendiz()
+    {
+        panelLogin.SetActive(false);
+        panelRegistration.SetActive(false);
+        panelBanco_da_Casa.SetActive(false);
+        panelBanco_da_Casa_Lancar.SetActive(false);
+        panelCarteira.SetActive(false);
+        panelCarteiraLancar.SetActive(false);
+        panelRegras.SetActive(false);
+        panelRegras_Cadastrar.SetActive(false);
+        panelSemanadas.SetActive(false);
+        panelConquista.SetActive(false);
+        panelConquista_editar.SetActive(false);
+        panelAvaliacao.SetActive(false);
+        panelLevelSelector.SetActive(false);
+        panelPreQuizz.SetActive(false);
+        panelPreGame.SetActive(false);
+        panelSettings.SetActive(false);
+        panelListaAprendizes.SetActive(false);
+        panelRegistrarAprendiz.SetActive(true);
+    }
+    */
+    #endregion
+    public void OpenPreLevel(int level)
+    {
+        SceneLoader.refLevel = level;
+
+        pig.sprite = pigs[level];
+        OpenPreGame();
+    }
+    public void ToogleSubMenu()
+    {
+        if (panelSubMenu.activeInHierarchy)
+        {
+            panelSubMenu.SetActive(false);
+        }
+        else {
+            panelSubMenu.SetActive(true);
+        }
+    }
+    public void OpenSceneQuiz()
+    {
+        SceneManager.LoadSceneAsync("Quiz");
+    }
+
+
 }

@@ -14,7 +14,6 @@ GameObject:
   - component: {fileID: 3111659529158735854}
   - component: {fileID: 3111659529158735840}
   - component: {fileID: 1896176509}
-  - component: {fileID: 1896176508}
   - component: {fileID: 1896176507}
   m_Layer: 10
   m_Name: PigHoverBoard
@@ -121,10 +120,10 @@ MonoBehaviour:
   currentTime: 1
   time: 1
   canJump: 0
-  jumpForce: 10
+  jumpForce: 20
   isOnGroundBackWheel: 0
   isOnGroundFrontWheel: 0
-  WheelRadius: 0.3
+  WheelRadius: 0.69
   frontWheel: {fileID: 2233208270023171175}
   backWheel: {fileID: 9151856162267871727}
   groundLayer:
@@ -142,10 +141,10 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 1.4
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 2.2
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -214,22 +213,6 @@ PolygonCollider2D:
     - - {x: 0, y: -0.25}
       - {x: 0.13, y: -0.26999998}
       - {x: -0.01, y: -0.29}
---- !u!58 &1896176508
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3111659529158735850}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: -0.17132598, y: -0.47084248}
-  serializedVersion: 2
-  m_Radius: 0.11783153
 --- !u!58 &1896176507
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -243,9 +226,9 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.22, y: -0.45}
+  m_Offset: {x: 0.22000001, y: -0.57511216}
   serializedVersion: 2
-  m_Radius: 0.11783153
+  m_Radius: 0.23343691
 --- !u!1 &5276696081252275489
 GameObject:
   m_ObjectHideFlags: 0

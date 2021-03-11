@@ -44,7 +44,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentTimer: 10
-  timeToback: 15
+  timeToback: 14
   coin: {fileID: 8268393018057924719, guid: b8df03d2279597d4389096061a359f43, type: 3}
   ypositive: 7.5
   ynegative: -1

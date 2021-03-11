@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+
 public class HUD : MonoBehaviour
 {
     public Image[] coin;
@@ -10,6 +11,10 @@ public class HUD : MonoBehaviour
     public GameObject PauseMenu;
     public GameObject LoseMenu;
     public GameObject WinMenu;
+    public GameObject PreGame;
+    public Image pig;
+    public Sprite[] pigs;
+
     private void Start()
     {
         ClosePauseMenu();
@@ -42,6 +47,17 @@ public class HUD : MonoBehaviour
         PauseMenu.SetActive(false);
         WinMenu.SetActive(false);
         LoseMenu.SetActive(true);
+ 
+
+    }
+    public void OpenPreGame()
+    {
+        PauseMenu.SetActive(false);
+        WinMenu.SetActive(false);
+        LoseMenu.SetActive(false);
+        PreGame.SetActive(true);
+
+        pig.sprite = pigs[SceneManager.GetActiveScene().buildIndex];
 
     }
     public void OpenWinMenu()
@@ -59,4 +75,5 @@ public class HUD : MonoBehaviour
     {
         SceneManager.LoadSceneAsync(SceneManager.GetActiveScene().buildIndex);
     }
+
 }

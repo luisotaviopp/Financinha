@@ -32,7 +32,7 @@ public class InstantiateObstacle : MonoBehaviour
         //cooldownTimer = Random.Range(1f, 6f);
         currentTimer = cooldownTimer;
 
-        Debug.Log(obstacles.Length + " obstáculos cadastrados");
+
     }
 
     private void Update()

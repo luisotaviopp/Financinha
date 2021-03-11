@@ -45,7 +45,7 @@ public class PigController : MonoBehaviour
         life3.sprite = life_Sprite_UI;
         pigRb = GetComponent<Rigidbody2D>();
         pigAnim = GetComponent<Animator>();
-        currentTime = time;
+        
     }
     protected void TransitarEntreOsLevels()
     {
@@ -97,8 +97,11 @@ public class PigController : MonoBehaviour
                         case 0:
                             life1.sprite = life_Grey_Sprite_UI;
                             GameManager.lose = true;
-                            coinHud.OpenLoseMenu();
-                            Time.timeScale = 0;
+
+                            jumpForce = 0;
+                            pigRb.gravityScale = 0;
+                            StartCoroutine(DeathSlow());
+                            gameObject.layer = 12;
                             return;
                     }
                     
@@ -106,11 +109,26 @@ public class PigController : MonoBehaviour
                 
             }
         }
+  
+    }
+    public void OnCollisionExit2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("enemy"))
+        {
+            if (life > 0)
+            {
+                GetComponent<SpriteRenderer>().enabled = true;
+                gameObject.layer = 10;               
+            }
+        }
+    }
+    public void OnTriggerEnter2D(Collider2D collision)
+    {
         if (collision.gameObject.CompareTag("coin"))
         {
             coin_Game += 100;
 
-            if(coin_Game == 100)
+            if (coin_Game == 100)
             {
                 coinHud.coin[0].sprite = coin_On;
             }
@@ -136,17 +154,6 @@ public class PigController : MonoBehaviour
             Destroy(collision.gameObject);
         }
     }
-    public void OnCollisionExit2D(Collision2D collision)
-    {
-        if (collision.gameObject.CompareTag("enemy"))
-        {
-            if (life > 0)
-            {
-                GetComponent<SpriteRenderer>().enabled = true;
-                gameObject.layer = 10;               
-            }
-        }
-    }
     public void CanDMGConter()
     {
         currentTime -= Time.deltaTime;
@@ -164,7 +171,7 @@ public class PigController : MonoBehaviour
         blinking_Current_time -= Time.deltaTime;
         if(blinking_Current_time <= 0)
         {
-            Debug.Log(gameObject.GetComponent<SpriteRenderer>().enabled);
+
             blinking_Controler++;
             gameObject.GetComponent<SpriteRenderer>().enabled = false;
             for (int i = 0; i < 5; i++)
@@ -184,33 +191,42 @@ public class PigController : MonoBehaviour
             }
             if (blinking_Controler == 1)
             {
-                Debug.Log(gameObject.GetComponent<SpriteRenderer>().enabled);
+               
                 gameObject.GetComponent<SpriteRenderer>().enabled = true;
             }
             if(blinking_Controler == 2)
             {
-                Debug.Log(gameObject.GetComponent<SpriteRenderer>().enabled);
+               
                 gameObject.GetComponent<SpriteRenderer>().enabled = false;
             }
             if (blinking_Controler == 3)
             {
-                Debug.Log(gameObject.GetComponent<SpriteRenderer>().enabled);
+                
                 gameObject.GetComponent<SpriteRenderer>().enabled = true;
             }
             if (blinking_Controler == 4)
             {
-                Debug.Log(gameObject.GetComponent<SpriteRenderer>().enabled);
+               
                 gameObject.GetComponent<SpriteRenderer>().enabled = false;
             }
             if (blinking_Controler == 5)
             {
-                Debug.Log(gameObject.GetComponent<SpriteRenderer>().enabled);
+
                 gameObject.GetComponent<SpriteRenderer>().enabled = true;
                 gameObject.GetComponent<SpriteRenderer>().color = Color.white;
                 blinking_Can = false;
                 blinking_Controler = 0;
             }
+            if(life <= 0)
+            {
+                gameObject.GetComponent<SpriteRenderer>().color = Color.grey;
+            }
             blinking_Current_time = blinking_Time;
         }
+    }
+IEnumerator DeathSlow()
+    {
+        yield return new WaitForSeconds(3);
+        coinHud.OpenLoseMenu();
     }
 }

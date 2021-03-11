@@ -9,11 +9,11 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3111659529158735852}
-  - component: {fileID: 6463670412682824382}
   - component: {fileID: 3111659529158735853}
   - component: {fileID: 3111659529158735855}
   - component: {fileID: 3111659529158735854}
   - component: {fileID: 3111659529158735840}
+  - component: {fileID: 2135767801}
   m_Layer: 10
   m_Name: PigOvni
   m_TagString: player
@@ -35,43 +35,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &6463670412682824382
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3111659529158735850}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c43224cfb6d539d45ac66acbf50c79d9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  coin_On: {fileID: 21300000, guid: 6992ab0e40b81ac4aa2016e30659fced, type: 3}
-  coin_Off: {fileID: 21300000, guid: 869f963f07101aa448ac282ec2b5dd03, type: 3}
-  coinImg: []
-  life_Grey_Sprite_UI: {fileID: 21300000, guid: c0dc16b76b1dfcb41b51a0e5c626d8ad,
-    type: 3}
-  life_Sprite_UI: {fileID: 21300000, guid: 860d8d2334b578948a4f6d0a97b019a0, type: 3}
-  life1: {fileID: 0}
-  life2: {fileID: 0}
-  life3: {fileID: 0}
-  blinking_Current_time: 0.3
-  blinking_Time: 0.3
-  blinking_Controler: 0
-  blinking_Can: 0
-  coin_text: {fileID: 0}
-  coin_Game: 0
-  pigRb: {fileID: 0}
-  life: 3
-  canDMG: 0
-  currentTime: 1
-  time: 1
-  canJump: 0
-  jumpForce: 7
-  currentTimer: 0.1
-  cooldownTimer: 0.1
-  cooldownTimerFixe: 0.1
 --- !u!212 &3111659529158735853
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -163,7 +126,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -188,3 +151,39 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &2135767801
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3111659529158735850}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b81481eece92084db856a8d722903e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  coin_On: {fileID: 21300000, guid: 6992ab0e40b81ac4aa2016e30659fced, type: 3}
+  coin_Off: {fileID: 21300000, guid: 869f963f07101aa448ac282ec2b5dd03, type: 3}
+  coinHud: {fileID: 0}
+  life_Grey_Sprite_UI: {fileID: 21300000, guid: c0dc16b76b1dfcb41b51a0e5c626d8ad,
+    type: 3}
+  life_Sprite_UI: {fileID: 21300000, guid: 860d8d2334b578948a4f6d0a97b019a0, type: 3}
+  life1: {fileID: 0}
+  life2: {fileID: 0}
+  life3: {fileID: 0}
+  blinking_Current_time: 1
+  blinking_Time: 1
+  blinking_Controler: 4
+  blinking_Can: 1
+  coin_Game: 0
+  pigRb: {fileID: 0}
+  life: 3
+  canDMG: 0
+  currentTime: 1
+  time: 1
+  canJump: 1
+  jumpForce: 10
+  currentTimer: 1
+  cooldownTimer: 1
+  cooldownTimerFixe: 1
