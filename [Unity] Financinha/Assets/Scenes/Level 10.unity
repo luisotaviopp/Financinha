@@ -575,12 +575,12 @@ PrefabInstance:
     - target: {fileID: 6259184776440380175, guid: de0be78466f448043b4c58a1daaec126,
         type: 3}
       propertyPath: amountRandommin
-      value: 3
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6259184776440380175, guid: de0be78466f448043b4c58a1daaec126,
         type: 3}
       propertyPath: amountRandomMax
-      value: 3
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6259184776440380175, guid: de0be78466f448043b4c58a1daaec126,
         type: 3}
@@ -1344,7 +1344,7 @@ PrefabInstance:
       objectReference: {fileID: 126719605}
     - target: {fileID: 2135767801, guid: 7845569c50b12d649996995c134b64bf, type: 3}
       propertyPath: jumpForce
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3111659529158735850, guid: 7845569c50b12d649996995c134b64bf,
         type: 3}
