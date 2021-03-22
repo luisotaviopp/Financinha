@@ -8,4 +8,5 @@ public class MenuValues
     public float wallet_amount;
     public float bank_amount;
     public float objective_value;
+    public float semanada;
 }

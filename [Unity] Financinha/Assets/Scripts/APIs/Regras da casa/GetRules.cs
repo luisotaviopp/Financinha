@@ -18,8 +18,8 @@ public static class BtnRegra
 
 public class GetRules : MonoBehaviour
 {
-    //public Text statusDisplay;
-    RulesList rulesList;
+    public RulesList rulesList;
+    public Text saldoValue;
 
     private void OnEnable()
     {
@@ -41,19 +41,21 @@ public class GetRules : MonoBehaviour
 
         if (www.isNetworkError || www.isHttpError)
         {
-            Debug.Log(www.error);
-            
+            Debug.Log(www.error); 
         }
         else
         {
             //Retorna o estado do login
             string result = System.Text.Encoding.UTF8.GetString(www.downloadHandler.data);
+
             rulesList = JsonUtility.FromJson<RulesList>("{\"rules\":" + result + "}");
 
             GameObject template = transform.GetChild(0).gameObject;
             GameObject g;
 
             Debug.Log(www.downloadHandler.text);
+
+            float semanada = PlayerPrefs.GetFloat("rules_amount");
 
             for (int i = 0; i < rulesList.rules.Count; i++)
             {
@@ -66,10 +68,21 @@ public class GetRules : MonoBehaviour
                 g.transform.GetChild(0).GetComponent<Button>().AddEvent(i, RegraDecreased);
                 g.transform.GetChild(2).GetComponent<Button>().AddEvent(i, RegraIncreased);
                 g.transform.GetChild(4).GetComponent<Button>().AddEvent(i, RegraDeleted);
-                //g.transform.GetChild(0).GetComponent<Button>().AddEventListener(i, AprendizClicked);
+
+                semanada +=  rulesList.rules[i].value;
             }
 
             Destroy(template.gameObject);
+
+            //Texto do saldo.
+            if (PlayerPrefs.HasKey("rules_amount"))
+            {
+                saldoValue.text = "R$"+ semanada.ToString();
+            }
+            else
+            {
+                saldoValue.text = "0.00";
+            }
         }
     }
 

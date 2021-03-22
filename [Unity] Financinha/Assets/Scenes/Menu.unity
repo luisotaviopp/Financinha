@@ -3518,6 +3518,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b01ca5de56fc15d438db4ca208169c3b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  rulesList:
+    rules: []
+  saldoValue: {fileID: 1299727858}
 --- !u!1 &177441125
 GameObject:
   m_ObjectHideFlags: 0
