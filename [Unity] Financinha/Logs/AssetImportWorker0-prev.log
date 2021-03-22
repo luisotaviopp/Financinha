@@ -13,11 +13,11 @@ AssetImportWorker0
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-33883
+39317
 Successfully changed project path to: /home/luis/Documents/LZ/Freelas/Financinha/[Unity] Financinha
 /home/luis/Documents/LZ/Freelas/Financinha/[Unity] Financinha
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 45,91 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 45,86 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0,00 ms.
 Initialize engine version: 2020.3.0f1 (c7b5465681fb)
 [Subsystems] Discovering subsystems at path /home/luis/Unity/Hub/Editor/2020.3.0f1/Editor/Data/Resources/UnitySubsystems
@@ -33,30 +33,30 @@ coverage GL_ARB_program_interface_query GL_ARB_provoking_vertex GL_ARB_query_buf
 rgb32 GL_ARB_texture_buffer_range GL_ARB_texture_compression_bptc GL_ARB_texture_compression_rgtc GL_ARB_texture_cube_map_array GL_ARB_texture_filter_anisotropic GL_ARB_texture_float GL_ARB_texture_gather GL_ARB_texture_mirror_clamp_to_edge GL_ARB_texture_multisample GL_ARB_texture_non_power_of_two GL_ARB_texture_query_levels GL_ARB_texture_query_lod GL_ARB_texture_rectangle GL_ARB_texture_rg GL_ARB_texture_rgb10_a2ui GL_ARB_texture_stencil8 GL_ARB_texture_storage GL_ARB_texture_storage_multisample GL_ARB_texture_swizzle GL_ARB_texture_view GL_ARB_timer_query GL_ARB_transform_feedback2 GL_ARB_transform_feedback3 GL_ARB_transform_feedback_instanced GL_ARB_transform_feedback_overflow_query GL_ARB_uniform_buffer_object GL_ARB_vertex_array_bgra GL_ARB_vertex_array_object GL_ARB_vertex_attrib_64bit GL_ARB_vertex_attrib_binding GL_ARB_vertex_buffer_object GL_ARB_vertex_shader GL_ARB_vertex_type_10f_11f_11f_rev GL_ARB_vertex_type_2_10_10_10_rev GL_ARB_viewport_array GL_ATI_blend_equation_separate GL_ATI_texture_flo
 at GL_EXT_EGL_image_storage GL_EXT_EGL_sync GL_EXT_abgr GL_EXT_blend_equation_separate GL_EXT_demote_to_helper_invocation GL_EXT_draw_buffers2 GL_EXT_draw_instanced GL_EXT_framebuffer_blit GL_EXT_framebuffer_multisample GL_EXT_framebuffer_multisample_blit_scaled GL_EXT_framebuffer_object GL_EXT_framebuffer_sRGB GL_EXT_packed_depth_stencil GL_EXT_packed_float GL_EXT_pixel_buffer_object GL_EXT_polygon_offset_clamp GL_EXT_provoking_vertex GL_EXT_shader_framebuffer_fetch GL_EXT_shader_framebuffer_fetch_non_coherent GL_EXT_shader_integer_mix GL_EXT_shader_samples_identical GL_EXT_texture_array GL_EXT_texture_compression_dxt1 GL_EXT_texture_compression_rgtc GL_EXT_texture_compression_s3tc GL_EXT_texture_filter_anisotropic GL_EXT_texture_integer GL_EXT_texture_sRGB GL_EXT_texture_sRGB_R8 GL_EXT_texture_sRGB_decode GL_EXT_texture_shadow_lod GL_EXT_texture_shared_exponent GL_EXT_texture_snorm GL_EXT_texture_swizzle GL_EXT_timer_query GL_EXT_transform_feedback GL_EXT_vertex_array_bgra GL_EXT_vertex_attrib_64bit GL_IBM
 _multimode_draw_arrays GL_INTEL_conservative_rasterization GL_INTEL_performance_query GL_INTEL_shader_atomic_float_minmax GL_INTEL_shader_integer_functions2 GL_KHR_blend_equation_advanced GL_KHR_blend_equation_advanced_coherent GL_KHR_context_flush_control GL_KHR_debug GL_KHR_no_error GL_KHR_parallel_shader_compile GL_KHR_robust_buffer_access_behavior GL_KHR_robustness GL_KHR_texture_compression_astc_ldr GL_KHR_texture_compression_astc_sliced_3d GL_MESA_framebuffer_flip_y GL_MESA_pack_invert GL_MESA_shader_integer_functions GL_MESA_texture_signed_rgba GL_NV_compute_shader_derivatives GL_NV_conditional_render GL_NV_depth_clamp GL_NV_fragment_shader_interlock GL_NV_packed_depth_stencil GL_NV_texture_barrier GL_OES_EGL_image GL_S3_s3tc
-OPENGL LOG: Creating OpenGL 4.6 graphics device ; Context level  <OpenGL 4.5> ; Context handle -1819243120
+OPENGL LOG: Creating OpenGL 4.6 graphics device ; Context level  <OpenGL 4.5> ; Context handle 266198544
 Initialize mono
 Mono path[0] = '/home/luis/Unity/Hub/Editor/2020.3.0f1/Editor/Data/Managed'
 Mono path[1] = '/home/luis/Unity/Hub/Editor/2020.3.0f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = '/home/luis/Unity/Hub/Editor/2020.3.0f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56929
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56305
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: /home/luis/Unity/Hub/Editor/2020.3.0f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/UnityEditor.LinuxStandalone.Extensions.dll
-Registered in 0,001081 seconds.
+Registered in 0,000885 seconds.
 Native extension for LinuxStandalone target not found
-Refreshing native plugins compatible for Editor in 72,09 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 34,00 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0,00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  1,495 seconds
+- Completed reload, in  0,928 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0,000895 seconds.
+Registered in 0,000739 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for LinuxStandalone target not found
-Refreshing native plugins compatible for Editor in 47,98 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 35,27 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0,00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
@@ -69,158 +69,25 @@ Rethrow as TypeInitializationException: The type initializer for 'XT.Enhancer.Pa
 (Filename: Library/PackageCache/com.xeleh.enhancer@78e062bf54/Editor/Package.cs Line: 10)
 
 Mono: successfully reloaded assembly
-- Completed reload, in  1,190 seconds
+- Completed reload, in  0,730 seconds
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
 Launched and connected shader compiler UnityShaderCompiler after 0.01 seconds
-Refreshing native plugins compatible for Editor in 2,65 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 0,45 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0,00 ms.
 Unloading 1986 Unused Serialized files (Serialized files now loaded: 0)
 System memory in use before: 87,0 MB.
-System memory in use after: 87,1 MB.
+System memory in use after: 87,0 MB.
 
 Unloading 19 unused Assets to reduce memory usage. Loaded Objects now: 2444.
-Total: 3,301048 ms (FindLiveObjects: 0,264446 ms CreateObjectMapping: 0,106978 ms MarkObjects: 2,787451 ms  DeleteObjects: 0,140821 ms)
+Total: 2,683396 ms (FindLiveObjects: 0,224569 ms CreateObjectMapping: 0,069946 ms MarkObjects: 2,270591 ms  DeleteObjects: 0,117347 ms)
 
 ========================================================================
 Received Import Request.
-  path: Assets/Scripts/UI/Canvas.prefab
-  artifactKey: Guid(775ed57662884504c87c1f255e1a5194) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/UI/Canvas.prefab using Guid(775ed57662884504c87c1f255e1a5194) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '43966b2934b52d4d838feccd1e6dc5a6') in 0,047018 seconds
-  Import took 0,050726 seconds .
+  path: Assets/Scripts/APIs/ApiConfig.cs
+  artifactKey: Guid(c5f5994dec0d6ee4d95a33c5fd26f761) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/APIs/ApiConfig.cs using Guid(c5f5994dec0d6ee4d95a33c5fd26f761) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cbd27754ac83546e719a102a32b7bc2b') in 0,008992 seconds
+  Import took 0,012392 seconds .
 
-========================================================================
-Received Import Request.
-  Time since last request: 0,000255 seconds.
-  path: Assets/Scripts/UI
-  artifactKey: Guid(da1a088e2fd6a3b4ba905714a4b0fe20) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/UI using Guid(da1a088e2fd6a3b4ba905714a4b0fe20) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5e9b7b08c820b9908735aef54335a597') in 0,000551 seconds
-  Import took 0,002720 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0,000133 seconds.
-  path: Assets/Scripts
-  artifactKey: Guid(e8cd33459bf94e640a0afcfb9c212faa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts using Guid(e8cd33459bf94e640a0afcfb9c212faa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '96ff9db644eebccaea1db5b2ce4ffbef') in 0,000585 seconds
-  Import took 0,003180 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0,155407 seconds.
-  path: Assets/Scripts/Prefabs
-  artifactKey: Guid(0ccfbc2a30dc1ab4da297325892bcdcd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Prefabs using Guid(0ccfbc2a30dc1ab4da297325892bcdcd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e91a7f19fafa94c3b2fb55896f806588') in 0,000919 seconds
-  Import took 0,004935 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0,647281 seconds.
-  path: Assets/Scripts/Gameplay
-  artifactKey: Guid(87304d4f79d6bbd4db60ddf3f89b4daf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Gameplay using Guid(87304d4f79d6bbd4db60ddf3f89b4daf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6d6374772740c5e3d3a0890e137aea78') in 0,000902 seconds
-  Import took 0,005235 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0,641095 seconds.
-  path: Assets/Scripts/APIs
-  artifactKey: Guid(09623b8706e392d4089c65f11398ae77) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/APIs using Guid(09623b8706e392d4089c65f11398ae77) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '548551935c852630553297ecdd10dd22') in 0,000912 seconds
-  Import took 0,005454 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 4,679995 seconds.
-  path: Assets/Scenes
-  artifactKey: Guid(575204b4c67179d48b93099740704550) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes using Guid(575204b4c67179d48b93099740704550) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0c8ac3015019c3e3850b5101e0bed6ac') in 0,000810 seconds
-  Import took 0,004980 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 2,667812 seconds.
-  path: Assets/Scenes/Menu.unity
-  artifactKey: Guid(2cda990e2423bbf4892e6590ba056729) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Menu.unity using Guid(2cda990e2423bbf4892e6590ba056729) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1fc854c1e876161dac80737d137c3dca') in 0,001434 seconds
-  Import took 0,006203 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0,000875 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for LinuxStandalone target not found
-Refreshing native plugins compatible for Editor in 0,43 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0,00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-NullReferenceException: Object reference not set to an instance of an object
-  at XT.Enhancer.Package..cctor () [0x00019] in /home/luis/Documents/LZ/Freelas/Financinha/[Unity] Financinha/Library/PackageCache/com.xeleh.enhancer@78e062bf54/Editor/Package.cs:10 
-Rethrow as TypeInitializationException: The type initializer for 'XT.Enhancer.Package' threw an exception.
-
-
-(Filename: Library/PackageCache/com.xeleh.enhancer@78e062bf54/Editor/Package.cs Line: 10)
-
-Mono: successfully reloaded assembly
-- Completed reload, in  0,868 seconds
-Platform modules already initialized, skipping
-Switching build target platform(24) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
-Refreshing native plugins compatible for Editor in 0,53 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0,00 ms.
-Unloading 1969 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 86,0 MB.
-System memory in use after: 86,1 MB.
-
-Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 2449.
-Total: 3,267103 ms (FindLiveObjects: 0,299215 ms CreateObjectMapping: 0,168253 ms MarkObjects: 2,733650 ms  DeleteObjects: 0,063246 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
-========================================================================
-Received Prepare
-Refreshing native plugins compatible for Editor in 1,45 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0,00 ms.
-Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 47,1 MB.
-System memory in use after: 47,2 MB.
-
-Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 2449.
-Total: 3,250206 ms (FindLiveObjects: 0,320927 ms CreateObjectMapping: 0,130483 ms MarkObjects: 2,763593 ms  DeleteObjects: 0,032640 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0,001526 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for LinuxStandalone target not found
-Refreshing native plugins compatible for Editor in 0,50 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0,00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-NullReferenceException: Object reference not set to an instance of an object
-  at XT.Enhancer.Package..cctor () [0x00019] in /home/luis/Documents/LZ/Freelas/Financinha/[Unity] Financinha/Library/PackageCache/com.xeleh.enhancer@78e062bf54/Editor/Package.cs:10 
-Rethrow as TypeInitializationException: The type initializer for 'XT.Enhancer.Package' threw an exception.
-
-
-(Filename: Library/PackageCache/com.xeleh.enhancer@78e062bf54/Editor/Package.cs Line: 10)
-
-Mono: successfully reloaded assembly
-- Completed reload, in  1,021 seconds
-Platform modules already initialized, skipping
-Switching build target platform(24) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
-Refreshing native plugins compatible for Editor in 0,58 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0,00 ms.
-Unloading 1969 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 86,0 MB.
-System memory in use after: 86,1 MB.
-
-Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 2452.
-Total: 3,265285 ms (FindLiveObjects: 0,261347 ms CreateObjectMapping: 0,091322 ms MarkObjects: 2,871538 ms  DeleteObjects: 0,038666 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file
