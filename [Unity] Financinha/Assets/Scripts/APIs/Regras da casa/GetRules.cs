@@ -60,10 +60,17 @@ public class GetRules : MonoBehaviour
             for (int i = 0; i < rulesList.rules.Count; i++)
             {
                 g = Instantiate(template, transform);
-                g.transform.GetChild(1).GetComponent<Text>().text = rulesList.rules[i].quantity;
+
+                g.transform.GetChild(1).GetComponent<Text>().text = rulesList.rules[i].quantity.ToString();
+
+                //Pega o Text dessa regra para poder mostrar a quantidade assim que ela mudar.
+                rulesList.rules[i].quantityDisplay = g.transform.GetChild(1).GetComponent<Text>();
+
                 g.transform.GetChild(3).GetComponent<Text>().text = rulesList.rules[i].name;
                 g.transform.GetChild(5).GetComponent<Text>().text = "R$" + rulesList.rules[i].value.ToString();
-                g.transform.GetChild(6).GetComponent<Text>().text = "R$" + rulesList.rules[i].total_week.ToString();
+                g.transform.GetChild(6).GetComponent<Text>().text = "R$" + (rulesList.rules[i].quantity*rulesList.rules[i].value).ToString();
+
+                rulesList.rules[i].totalValueDisplay =g.transform.GetChild(6).GetComponent<Text>();
 
                 g.transform.GetChild(0).GetComponent<Button>().AddEvent(i, RegraDecreased);
                 g.transform.GetChild(2).GetComponent<Button>().AddEvent(i, RegraIncreased);
@@ -88,11 +95,25 @@ public class GetRules : MonoBehaviour
 
     void RegraDecreased (int itemIndex)
     {
+        int newValue = rulesList.rules[itemIndex].quantity-=1;                  //Atualiza o valor na lista
+        rulesList.rules[itemIndex].quantityDisplay.text = newValue.ToString();  //Renderiza o novo valor na tela
+
+        rulesList.rules[itemIndex].totalValueDisplay.text = "R$" + (rulesList.rules[itemIndex].quantity*rulesList.rules[itemIndex].value).ToString();
+
+        //ATUALIZAR SALDO/SEMANADA
+
         Debug.Log("Diminui " + rulesList.rules[itemIndex].name);
     }
 
     void RegraIncreased (int itemIndex)
     {
+        int newValue = rulesList.rules[itemIndex].quantity+=1;
+        rulesList.rules[itemIndex].quantityDisplay.text = newValue.ToString();
+
+        rulesList.rules[itemIndex].totalValueDisplay.text = "R$" + (rulesList.rules[itemIndex].quantity*rulesList.rules[itemIndex].value).ToString();
+
+        //ATUALIZAR SALDO/SEMANADA
+
         Debug.Log("Aumenta: " + rulesList.rules[itemIndex].name);
     }
 
