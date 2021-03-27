@@ -12,6 +12,8 @@ public class CreateObjective : MonoBehaviour
     public Text causeValue;
     public Text statusDisplay;
 
+    public static bool editMode = false;
+
     public void GetInfo()
     {
         StartCoroutine(PostObjective(giftName.text, giftValue.text, causeName.text, causeValue.text));
@@ -26,7 +28,16 @@ public class CreateObjective : MonoBehaviour
         form.AddField("post_cause_name", post_cause_name);
         form.AddField("post_cause_value", post_cause_value);
 
-        UnityWebRequest www = UnityWebRequest.Post(ApiConfig.INSERT_OBJECTIVE, form);
+        UnityWebRequest www;
+
+        if (editMode)
+        {
+            www = UnityWebRequest.Post(ApiConfig.UPDATE_OBJECTIVE, form);
+        }
+        else 
+        {
+            www = UnityWebRequest.Post(ApiConfig.INSERT_OBJECTIVE, form);        
+        }
 
         statusDisplay.text = "";
 

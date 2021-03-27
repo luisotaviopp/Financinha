@@ -34,8 +34,6 @@ public class CreateRule : MonoBehaviour
 
         form.AddField("post_value", value.ToString());
 
-        Debug.Log(PlayerPrefs.GetInt("id_aprendiz"));
-
         UnityWebRequest www = UnityWebRequest.Post(ApiConfig.CREATE_RULE_URL, form);
         yield return www.SendWebRequest();
 
