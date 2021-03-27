@@ -67,8 +67,20 @@ public class GetRules : MonoBehaviour
 				rulesList.rules[i].quantityDisplay = g.transform.GetChild(1).GetComponent<Text>();
 
 				g.transform.GetChild(3).GetComponent<Text>().text = rulesList.rules[i].name;
-				g.transform.GetChild(5).GetComponent<Text>().text = "R$" + rulesList.rules[i].value.ToString();
-				g.transform.GetChild(6).GetComponent<Text>().text = "R$" + (rulesList.rules[i].quantity*rulesList.rules[i].value).ToString();
+				
+				// Adiciona o sinal de - antes do R$ caso o valor seja negativo.
+				// Aplica o -1 apenas no valor que será mostrado, não no valor que será usado para calcular o saldo depois.
+				if (rulesList.rules[i].value > 0)
+				{				
+					g.transform.GetChild(5).GetComponent<Text>().text = "R$" + rulesList.rules[i].value.ToString();
+					g.transform.GetChild(6).GetComponent<Text>().text = "R$" + (rulesList.rules[i].quantity*rulesList.rules[i].value).ToString();
+				}
+				else 
+				{
+					g.transform.GetChild(5).GetComponent<Text>().text = "-R$" + (rulesList.rules[i].value * -1).ToString();
+					g.transform.GetChild(6).GetComponent<Text>().text = "-R$" + (rulesList.rules[i].quantity*rulesList.rules[i].value*-1).ToString();
+				}
+
 
 				rulesList.rules[i].totalValueDisplay =g.transform.GetChild(6).GetComponent<Text>();
 
@@ -98,7 +110,16 @@ public class GetRules : MonoBehaviour
 		int newValue = rulesList.rules[itemIndex].quantity-=1;                  //Atualiza o valor na lista
 		rulesList.rules[itemIndex].quantityDisplay.text = newValue.ToString();  //Renderiza o novo valor na tela
 
-		rulesList.rules[itemIndex].totalValueDisplay.text = "R$" + (rulesList.rules[itemIndex].quantity*rulesList.rules[itemIndex].value).ToString();
+		// Adiciona o sinal de - antes do R$ caso o valor seja negativo.
+		// Aplica o -1 apenas no valor que será mostrado, não no valor que será usado para calcular o saldo depois.
+		if (rulesList.rules[itemIndex].value > 0) 
+		{		
+			rulesList.rules[itemIndex].totalValueDisplay.text = "R$" + (rulesList.rules[itemIndex].quantity*rulesList.rules[itemIndex].value).ToString();
+		} 
+		else 
+		{
+			rulesList.rules[itemIndex].totalValueDisplay.text = "-R$" + (rulesList.rules[itemIndex].quantity*rulesList.rules[itemIndex].value * -1).ToString();
+		}
 
 		//ATUALIZAR SALDO/SEMANADA
 
@@ -114,6 +135,17 @@ public class GetRules : MonoBehaviour
 		rulesList.rules[itemIndex].quantityDisplay.text = newValue.ToString();
 
 		rulesList.rules[itemIndex].totalValueDisplay.text = "R$" + (rulesList.rules[itemIndex].quantity*rulesList.rules[itemIndex].value).ToString();
+
+		// Adiciona o sinal de - antes do R$ caso o valor seja negativo.
+		// Aplica o -1 apenas no valor que será mostrado, não no valor que será usado para calcular o saldo depois.
+		if (rulesList.rules[itemIndex].value > 0)
+		{		
+			rulesList.rules[itemIndex].totalValueDisplay.text = "R$" + (rulesList.rules[itemIndex].quantity*rulesList.rules[itemIndex].value).ToString();
+		}
+		else 
+		{
+			rulesList.rules[itemIndex].totalValueDisplay.text = "-R$" + (rulesList.rules[itemIndex].quantity*rulesList.rules[itemIndex].value * -1).ToString();
+		}
 
 		//ATUALIZAR SALDO/SEMANADA
 
