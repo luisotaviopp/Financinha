@@ -5,6 +5,7 @@ using UnityEngine.UI;
 [System.Serializable]
 public class Rule
 {
+    public int id;
     public string name;
     public float value;
     public int quantity;
