@@ -7,24 +7,32 @@ using UnityEngine.UI;
 public class CreateRule : MonoBehaviour
 {
     public InputField nameInput;
-    // public InputField descriptionInput;
     public InputField valueInput;
-    public Text statusDisplay;
+
+    private bool isPenalidade = false;
 
     public void GetInfo()
     {
-        StartCoroutine(Upload(nameInput.text, "descrição", valueInput.text));
+        StartCoroutine(Upload(nameInput.text, "descrição", float.Parse(valueInput.text) ));
     }
 
-    IEnumerator Upload(string name, string description, string value)
+    IEnumerator Upload(string name, string description, float value)
     {
         WWWForm form = new WWWForm();
         form.AddField("post_token", PlayerPrefs.GetString("token"));
         form.AddField("post_id", PlayerPrefs.GetInt("id_aprendiz"));
         form.AddField("post_name", name);
         form.AddField("post_description", description);
-        form.AddField("post_value", value);
 
+        if (isPenalidade && value > 0)
+        {
+            // Inverte o valor caso seja penalidade.
+            value = value*-1;
+        }
+
+        Debug.Log(value);
+
+        form.AddField("post_value", value.ToString());
 
         Debug.Log(PlayerPrefs.GetInt("id_aprendiz"));
 
@@ -38,7 +46,18 @@ public class CreateRule : MonoBehaviour
         else
         {
             //Retorna o estado do registro
-            statusDisplay.text = www.downloadHandler.text;
+            //statusDisplay.text = www.downloadHandler.text;
+            Debug.Log(www.downloadHandler.text);
         }
+    }
+
+    public void SetPenalidade()
+    {
+        isPenalidade = true;
+    }
+
+    public void SetRecompensa()
+    {
+        isPenalidade = false;
     }
 }
