@@ -18,12 +18,14 @@ public class ApiConfig : MonoBehaviour
 	public static string SAVINGS_TO_WALLET_URL 		= API_URL + "/bank/savings_to_wallet.php";      // Transferência -> cofrinho para carteira 
 	public static string BANK_EVENTS_URL 			= API_URL + "/bank/bank_timeline.php";               // Pegar o extrato do jogador.
 	public static string SAVINGS_AMOUNT_URL 		= API_URL + "/bank/saving_amount.php";                // Pegar o valor do cofrinho.
+	public static string DELETE_BANK_EVENT_URL 		= API_URL + "/bank/delete_bank_event.php";    // Transferência -> carteira para cofrinho
 
 	// CARTEIRA
 	public static string WALLET_EVENTS_URL 			= API_URL + "/wallet/wallet_timeline.php";        // Pegar o extrato do jogador.
-	public static string WALLET_AMOUNT_URL 			= API_URL + "/wallet/wallet_amount.php";                // Pegar o valor da carteira.
-	public static string WALLET_OPERATION_URL 		= API_URL + "/wallet/wallet_operation.php";             // Inserindo grana na carteira -> post_value, post_reason
-	public static string WALLET_TO_SAVINGS_URL 		= API_URL + "/wallet/wallet_to_savings.php";            // Transferência -> carteira para cofrinho
+	public static string WALLET_AMOUNT_URL 			= API_URL + "/wallet/wallet_amount.php";          // Pegar o valor da carteira.
+	public static string WALLET_OPERATION_URL 		= API_URL + "/wallet/wallet_operation.php";       // Inserindo grana na carteira -> post_value, post_reason
+	public static string WALLET_TO_SAVINGS_URL 		= API_URL + "/wallet/wallet_to_savings.php";      // Transferência -> carteira para cofrinho
+	public static string DELETE_WALLET_EVENT_URL 	= API_URL + "/wallet/delete_wallet_event.php";    // Transferência -> carteira para cofrinho
 
 	// REGRAS
 	public static string CREATE_RULE_URL 			= API_URL + "/rule/create_rule.php";            // Criando regras da casa

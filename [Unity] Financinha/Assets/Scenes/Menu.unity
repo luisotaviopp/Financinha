@@ -11325,6 +11325,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2551084f29ee6fe43925cd478c2a1449, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  listaDeTransacoes:
+    transacao: []
 --- !u!1 &626781139
 GameObject:
   m_ObjectHideFlags: 0
@@ -13155,7 +13157,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &772678413
 RectTransform:
   m_ObjectHideFlags: 0
@@ -16184,7 +16186,7 @@ PrefabInstance:
     - target: {fileID: 2487674643437583491, guid: 7de49af7d13a9c04984e068f283cf5c0,
         type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2487674643437583491, guid: 7de49af7d13a9c04984e068f283cf5c0,
         type: 3}
@@ -16194,12 +16196,12 @@ PrefabInstance:
     - target: {fileID: 2487674643437583491, guid: 7de49af7d13a9c04984e068f283cf5c0,
         type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2487674643437583491, guid: 7de49af7d13a9c04984e068f283cf5c0,
         type: 3}
       propertyPath: m_SizeDelta.x
-      value: 0
+      value: 1448.4021
       objectReference: {fileID: 0}
     - target: {fileID: 2487674643437583491, guid: 7de49af7d13a9c04984e068f283cf5c0,
         type: 3}
@@ -16244,12 +16246,12 @@ PrefabInstance:
     - target: {fileID: 2487674643437583491, guid: 7de49af7d13a9c04984e068f283cf5c0,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 744.20105
       objectReference: {fileID: 0}
     - target: {fileID: 2487674643437583491, guid: 7de49af7d13a9c04984e068f283cf5c0,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -80
       objectReference: {fileID: 0}
     - target: {fileID: 2487674643437583491, guid: 7de49af7d13a9c04984e068f283cf5c0,
         type: 3}
@@ -16997,7 +16999,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1016150862
 RectTransform:
   m_ObjectHideFlags: 0
@@ -20021,6 +20023,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ae234924336bdb038dd44df615d25cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  listaDeTransacoes:
+    transacao: []
 --- !u!114 &1133029002
 MonoBehaviour:
   m_ObjectHideFlags: 0
