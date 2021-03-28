@@ -8,7 +8,7 @@ public class DistributeObjectiveValues : MonoBehaviour
 	[SerializeField] private float objectiveValue = 0;
 	[SerializeField] private Text[] valueTexts;
 
-	void Start()
+	void OnEnable()
 	{
 		if (PlayerPrefs.HasKey("objective_value"))
 		{

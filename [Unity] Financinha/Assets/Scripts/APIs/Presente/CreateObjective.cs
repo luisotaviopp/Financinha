@@ -28,6 +28,10 @@ public class CreateObjective : MonoBehaviour
         form.AddField("post_cause_name", post_cause_name);
         form.AddField("post_cause_value", post_cause_value);
 
+        //Seta o playerpref para mudar o valor no menu
+        float objective_value = float.Parse(post_cause_value) + float.Parse(post_gift_value);
+        PlayerPrefs.SetFloat("objective_value", objective_value);
+
         UnityWebRequest www;
 
         if (editMode)
@@ -59,5 +63,7 @@ public class CreateObjective : MonoBehaviour
         giftValue.text = "";
         causeName.text = "";
         causeValue.text = "";
+
+        GameObject.Find("UIManager").GetComponent<UIManager>().OpenConquista();
     }
 }

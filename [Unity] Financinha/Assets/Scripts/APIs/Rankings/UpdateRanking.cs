@@ -43,7 +43,6 @@ public class UpdateRanking : MonoBehaviour
         form.AddField("rankingIndex", rankingIndex);
         form.AddField("player_id", PlayerPrefs.GetInt("player_id"));
 
-
         UnityWebRequest www = UnityWebRequest.Post(rankingURL, form);
         yield return www.SendWebRequest();
 
@@ -60,6 +59,5 @@ public class UpdateRanking : MonoBehaviour
             Debug.Log(PlayerPrefs.GetInt("player_id") + "newScore: " + newScore);
 
         }
-
     }
 }

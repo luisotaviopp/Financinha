@@ -57,6 +57,4 @@ public class PigSkateController : PigController
         Gizmos.DrawSphere(backWheel.position, WheelRadius);
         Gizmos.DrawSphere(frontWheel.position, WheelRadius);
     }
-
-   
 }
