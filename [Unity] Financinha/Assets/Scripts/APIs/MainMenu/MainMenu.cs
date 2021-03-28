@@ -31,7 +31,6 @@ public class MainMenu : MonoBehaviour
         // Inicia o form e pega o token ativo
         WWWForm form = new WWWForm();
         form.AddField("post_id", PlayerPrefs.GetInt("id_aprendiz"));
-        //form.AddField("post_id", 6);
 
         UnityWebRequest www = UnityWebRequest.Post(ApiConfig.MENU_UPDATE_VALUES, form);
         yield return www.SendWebRequest();
@@ -52,6 +51,8 @@ public class MainMenu : MonoBehaviour
             PlayerPrefs.SetFloat("objective_value", listaValues.menuValues[0].objective_value);
             PlayerPrefs.SetFloat("rules_amount", listaValues.menuValues[0].saldo);
             PlayerPrefs.SetFloat("semanada", listaValues.menuValues[0].semanada);
+            
+            Debug.Log(listaValues.menuValues[0].semanada);
 
             RenderValues();
         }

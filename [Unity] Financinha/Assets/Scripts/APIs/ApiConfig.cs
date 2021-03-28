@@ -9,6 +9,7 @@ public class ApiConfig : MonoBehaviour
 	public static string REGISTER_URL 				= API_URL + "/user/create_user.php";            // Cadastrar jogador novo. *****
 	public static string LOGIN_URL 					= API_URL + "/user/login.php";                  // Logar.
 	public static string LIST_USERS_URL 			= API_URL + "/user/search_user.php";            // Procurando um usuário
+	public static string UPDATE_SEMANADA 			= API_URL + "/user/update_semanada.php";        // Procurando um usuário
 
 	// LEVEL
 	public static string GET_LEVEL_URL 				= API_URL + "/level/user_level.php";            // Pegar level do jogador.
