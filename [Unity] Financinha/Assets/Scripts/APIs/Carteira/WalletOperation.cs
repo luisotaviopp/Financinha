@@ -19,13 +19,13 @@ public class WalletOperation : MonoBehaviour
     IEnumerator PostLog(string reason, string value, string post_operation)
     {
         WWWForm form = new WWWForm();
-        form.AddField("post_token", PlayerPrefs.GetString("token"));
         form.AddField("post_id", PlayerPrefs.GetInt("id_aprendiz"));
         form.AddField("post_reason", reason);
         form.AddField("post_value", value);
         form.AddField("post_operation", post_operation);
 
         UnityWebRequest www = UnityWebRequest.Post(ApiConfig.WALLET_OPERATION_URL, form);
+
         yield return www.SendWebRequest();
 
         if (www.isNetworkError || www.isHttpError)
@@ -36,11 +36,13 @@ public class WalletOperation : MonoBehaviour
         else
         {
             //Texto de Retorno
-            statusDisplay.text = www.downloadHandler.text;
+            //statusDisplay.text = www.downloadHandler.text;
 
             //Zerando Campos Login
             reasonInput.text = "";
             valueInput.text = "";
+
+            GameObject.Find("UIManager").GetComponent<UIManager>().OpenCarteira();
         }
     }
 

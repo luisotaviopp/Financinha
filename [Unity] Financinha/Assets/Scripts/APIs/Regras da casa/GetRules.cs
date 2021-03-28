@@ -53,11 +53,10 @@ public class GetRules : MonoBehaviour
 			GameObject template = transform.GetChild(0).gameObject;
 			GameObject g;
 
-			Debug.Log(www.downloadHandler.text);
+			// Debug.Log(www.downloadHandler.text);
 
-			float semanada = PlayerPrefs.GetFloat("rules_amount");
+			float semanada = PlayerPrefs.GetFloat("semanada");
 
-			
 			// Se já tiver carregado a primeira lista, apaga todos os ítens antes de recarregar os ítens vindos da API.
 			if (this.transform.childCount > 1)
 			{
@@ -68,6 +67,8 @@ public class GetRules : MonoBehaviour
 				Debug.Log("Terminou de re-alimentar a lista");
 			}
 
+			// Valor da quantidade das regras*valor.
+			float modifier = 0;
 
 			// Carrega os ítens da API
 			for (int i = 0; i < rulesList.rules.Count; i++)
@@ -99,12 +100,14 @@ public class GetRules : MonoBehaviour
 				g.transform.GetChild(0).GetComponent<Button>().AddEvent(i, RegraDecreased);
 				g.transform.GetChild(2).GetComponent<Button>().AddEvent(i, RegraIncreased);
 				g.transform.GetChild(4).GetComponent<Button>().AddEvent(i, RegraDeleted);
-
-				semanada +=  rulesList.rules[i].value;
+				
+				modifier +=  (rulesList.rules[i].value * rulesList.rules[i].quantity);
 			}
 
 			Destroy(template.gameObject);
 
+			semanada = semanada + modifier;
+			
 			//Texto do saldo.
 			if (PlayerPrefs.HasKey("rules_amount"))
 			{
@@ -119,26 +122,27 @@ public class GetRules : MonoBehaviour
 
 	void RegraDecreased (int itemIndex)
 	{
-		int newValue = rulesList.rules[itemIndex].quantity-=1;                  //Atualiza o valor na lista
-		rulesList.rules[itemIndex].quantityDisplay.text = newValue.ToString();  //Renderiza o novo valor na tela
+		if (rulesList.rules[itemIndex].quantity > 0)
+		{				
+			int newValue = rulesList.rules[itemIndex].quantity-=1;                  //Atualiza o valor na lista
+			rulesList.rules[itemIndex].quantityDisplay.text = newValue.ToString();  //Renderiza o novo valor na tela
 
-		// Adiciona o sinal de - antes do R$ caso o valor seja negativo.
-		// Aplica o -1 apenas no valor que será mostrado, não no valor que será usado para calcular o saldo depois.
-		if (rulesList.rules[itemIndex].value > 0) 
-		{		
-			rulesList.rules[itemIndex].totalValueDisplay.text = "R$" + (rulesList.rules[itemIndex].quantity*rulesList.rules[itemIndex].value).ToString();
-		} 
-		else 
-		{
-			rulesList.rules[itemIndex].totalValueDisplay.text = "-R$" + (rulesList.rules[itemIndex].quantity*rulesList.rules[itemIndex].value * -1).ToString();
+			// Adiciona o sinal de - antes do R$ caso o valor seja negativo.
+			// Aplica o -1 apenas no valor que será mostrado, não no valor que será usado para calcular o saldo depois.
+			if (rulesList.rules[itemIndex].value > 0) 
+			{		
+				rulesList.rules[itemIndex].totalValueDisplay.text = "R$" + (rulesList.rules[itemIndex].quantity*rulesList.rules[itemIndex].value).ToString();
+			} 
+			else 
+			{
+				rulesList.rules[itemIndex].totalValueDisplay.text = "-R$" + (rulesList.rules[itemIndex].quantity*rulesList.rules[itemIndex].value * -1).ToString();
+			}
+
+			UpdateSaldoValue();
+
+			// Manda o valor atual para o servidor
+			UpdateRuleQuantityOnDB(newValue, rulesList.rules[itemIndex].id);
 		}
-
-		//ATUALIZAR SALDO/SEMANADA
-
-		// Manda o valor atual para o servidor
-		UpdateRuleQuantityOnDB(newValue, rulesList.rules[itemIndex].id);
-
-		Debug.Log("Diminui " + rulesList.rules[itemIndex].name);
 	}
 
 	void RegraIncreased (int itemIndex)
@@ -159,7 +163,7 @@ public class GetRules : MonoBehaviour
 			rulesList.rules[itemIndex].totalValueDisplay.text = "-R$" + (rulesList.rules[itemIndex].quantity*rulesList.rules[itemIndex].value * -1).ToString();
 		}
 
-		//ATUALIZAR SALDO/SEMANADA
+		 UpdateSaldoValue();
 
 		// Manda o valor atual para o servidor
 		UpdateRuleQuantityOnDB(newValue, rulesList.rules[itemIndex].id);
@@ -218,4 +222,43 @@ public class GetRules : MonoBehaviour
 			Debug.Log(www.downloadHandler.text);
 		}
 	}
+
+	public void UpdateSaldoValue()
+	{
+		float newModifier = 0;
+
+		foreach (var rule in rulesList.rules)
+		{
+			newModifier += (rule.value * rule.quantity);
+		}
+
+		float semanada = PlayerPrefs.GetFloat("semanada");
+		
+		semanada = semanada + newModifier;
+
+		PlayerPrefs.SetFloat("rules_amount", semanada);
+
+		saldoValue.text = semanada.ToString();
+		StartCoroutine(UpdateSaldoCoroutine(semanada));
+	}
+
+	IEnumerator UpdateSaldoCoroutine(float saldo)
+	{
+		WWWForm form = new WWWForm();
+		form.AddField("post_saldo", saldo.ToString());
+		form.AddField("post_id", PlayerPrefs.GetInt("id_aprendiz"));
+
+		UnityWebRequest www = UnityWebRequest.Post(ApiConfig.UPDATE_SALDO, form);
+		yield return www.SendWebRequest();
+
+		if (www.isNetworkError || www.isHttpError)
+		{
+			Debug.Log(www.error); 
+		}
+		else
+		{
+			Debug.Log(www.downloadHandler.text);
+		}
+	}
+	
 }

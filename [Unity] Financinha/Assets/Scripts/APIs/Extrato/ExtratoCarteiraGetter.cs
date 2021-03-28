@@ -59,7 +59,18 @@ public class ExtratoCarteiraGetter : MonoBehaviour
 					g = Instantiate(template, transform);
 					g.transform.GetChild(0).GetComponent<Text>().text = listaDeTransacoes.transacao[i].created_at;
 					g.transform.GetChild(1).GetComponent<Text>().text = listaDeTransacoes.transacao[i].reason;
-					g.transform.GetChild(3).GetComponent<Text>().text = listaDeTransacoes.transacao[i].value.ToString();
+					
+					if (listaDeTransacoes.transacao[i].type == "w_takeout" || listaDeTransacoes.transacao[i].type == "w2s")
+					{
+						g.transform.GetChild(3).GetComponent<Text>().color = Color.red;
+						g.transform.GetChild(3).GetComponent<Text>().text = "- R$" + listaDeTransacoes.transacao[i].value.ToString();
+					} 
+					else 
+					{
+						g.transform.GetChild(3).GetComponent<Text>().color = Color.green;
+						g.transform.GetChild(3).GetComponent<Text>().text = "+ R$" + listaDeTransacoes.transacao[i].value.ToString();
+					}
+					
 					
 					listaDeTransacoes.transacao[i].refToDelete = g.transform.GetChild(3).GetComponent<Text>();
 					g.transform.GetChild(2).GetComponent<Button>().AddEvent(i, DeleteWalletEvent);

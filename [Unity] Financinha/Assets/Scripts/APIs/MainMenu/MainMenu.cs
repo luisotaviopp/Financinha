@@ -50,7 +50,7 @@ public class MainMenu : MonoBehaviour
             PlayerPrefs.SetFloat("wallet_amount", listaValues.menuValues[0].wallet_amount);
             PlayerPrefs.SetFloat("bank_amount", listaValues.menuValues[0].bank_amount);
             PlayerPrefs.SetFloat("objective_value", listaValues.menuValues[0].objective_value);
-            PlayerPrefs.SetFloat("rules_amount", listaValues.menuValues[0].semanada);
+            PlayerPrefs.SetFloat("rules_amount", listaValues.menuValues[0].saldo);
             PlayerPrefs.SetFloat("semanada", listaValues.menuValues[0].semanada);
 
             RenderValues();

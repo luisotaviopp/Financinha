@@ -65,6 +65,8 @@ public class Login : MonoBehaviour
                 PlayerPrefs.SetInt("id_aprendiz", listaDosPlayers.players[0].id);
                 PlayerPrefs.Save();
 
+                Debug.Log(PlayerPrefs.GetInt("id_aprendiz"));
+
                 // Fecha o painel de login.
                 GameObject.Find("UIManager").GetComponent<UIManager>().OpenLevelSelector();
             }

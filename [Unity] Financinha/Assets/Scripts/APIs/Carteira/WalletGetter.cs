@@ -8,7 +8,7 @@ public class WalletGetter : MonoBehaviour
 {
     public Text amountDisplay;
 
-    private void Start()
+    private void OnEnable()
     {
         GetAmount();
     }
@@ -22,7 +22,7 @@ public class WalletGetter : MonoBehaviour
     {
         // Inicia o form e pega o token ativo
         WWWForm form = new WWWForm();
-        form.AddField("post_token", PlayerPrefs.GetString("token"));
+		form.AddField("post_id", PlayerPrefs.GetInt("id_aprendiz"));
 
         UnityWebRequest www = UnityWebRequest.Post(ApiConfig.WALLET_AMOUNT_URL, form);
         yield return www.SendWebRequest();

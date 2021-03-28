@@ -39,7 +39,6 @@ public class GetApprendices : MonoBehaviour
             string result = System.Text.Encoding.UTF8.GetString(www.downloadHandler.data);
             apprendicesList = JsonUtility.FromJson<ApprendicesList>("{\"apprendices\":" + result + "}");
 
-
             if (apprendicesList.apprendices.Count > 0)
             {
                 GameObject template = transform.GetChild(0).gameObject;
