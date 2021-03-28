@@ -156,6 +156,7 @@ public class GetQuestions : MonoBehaviour
         finalPanel.SetActive(true);
 
         selectedAnswers.Clear();
+        //comentário desnecessario e fora de contexto, para essa bosta de linter atualizar 
     }
 
     IEnumerator SendSelectedAnswers(SelectedAnswer answer)
