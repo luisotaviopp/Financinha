@@ -30,7 +30,7 @@ public class GetApprendices : MonoBehaviour
 
         if (www.isNetworkError || www.isHttpError)
         {
-            Debug.Log(www.error);;
+            Debug.Log(www.error);
         }
         else
         {
@@ -52,16 +52,15 @@ public class GetApprendices : MonoBehaviour
                     {
                         Destroy(transform.GetChild(i).gameObject);
                     }
-                    Debug.Log("Terminou de re-alimentar a lista");
                 }
 
             
                 for (int i = 0; i < apprendicesList.apprendices.Count; i++)
                 {
                     g = Instantiate(template, transform);
-                    g.transform.GetChild(0).GetComponent<Text>().text = apprendicesList.apprendices[i].apr;
-                    g.transform.GetChild(1).GetComponent<Text>().text = apprendicesList.apprendices[i].level_apr.ToString();
-                    g.GetComponent<Button>().AddEventListener(i, AprendizClicked);
+                    g.transform.GetChild(0).GetComponent<Text>().text = "Nome: " + apprendicesList.apprendices[i].apr;
+                    g.transform.GetChild(1).GetComponent<Text>().text = "Fase: " + apprendicesList.apprendices[i].level_apr.ToString();
+                    g.GetComponent<Button>().AddEvent(i, AprendizClicked);
                 }
 
                 Destroy(template.gameObject);

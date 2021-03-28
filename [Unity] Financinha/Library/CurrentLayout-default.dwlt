@@ -19,9 +19,9 @@ MonoBehaviour:
     width: 1325
     height: 689
   m_ShowMode: 4
-  m_Title: Simulator
+  m_Title: Hierarchy
   m_RootView: {fileID: 2}
-  m_MinSize: {x: 875, y: 371}
+  m_MinSize: {x: 875, y: 392}
   m_MaxSize: {x: 10000, y: 10000}
   m_Maximized: 0
 --- !u!114 &2
@@ -119,10 +119,10 @@ MonoBehaviour:
     y: 30
     width: 1325
     height: 639
-  m_MinSize: {x: 577, y: 321}
+  m_MinSize: {x: 677, y: 342}
   m_MaxSize: {x: 12002, y: 8042}
   vertical: 0
-  controlID: 15
+  controlID: 72
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -144,10 +144,10 @@ MonoBehaviour:
     y: 0
     width: 1049
     height: 639
-  m_MinSize: {x: 302, y: 321}
+  m_MinSize: {x: 402, y: 342}
   m_MaxSize: {x: 8002, y: 8042}
   vertical: 1
-  controlID: 16
+  controlID: 73
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -169,10 +169,10 @@ MonoBehaviour:
     y: 0
     width: 1049
     height: 449
-  m_MinSize: {x: 302, y: 200}
+  m_MinSize: {x: 402, y: 221}
   m_MaxSize: {x: 8002, y: 4021}
   vertical: 0
-  controlID: 17
+  controlID: 74
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -209,7 +209,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: SimulatorWindow
+  m_Name: SceneView
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
@@ -218,15 +218,15 @@ MonoBehaviour:
     y: 0
     width: 776
     height: 449
-  m_MinSize: {x: 102, y: 121}
+  m_MinSize: {x: 202, y: 221}
   m_MaxSize: {x: 4002, y: 4021}
-  m_ActualView: {fileID: 12}
+  m_ActualView: {fileID: 14}
   m_Panes:
   - {fileID: 14}
   - {fileID: 15}
   - {fileID: 12}
-  m_Selected: 2
-  m_LastSelected: 0
+  m_Selected: 0
+  m_LastSelected: 2
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -329,7 +329,7 @@ MonoBehaviour:
     controlPanelFoldoutValues: 010101
     extensionNames: []
     extensionStates: []
-    scale: 42
+    scale: 36
     fitToScreenEnabled: 0
     rotationDegree: 90
     highlightSafeAreaEnabled: 0
@@ -364,10 +364,10 @@ MonoBehaviour:
   m_ViewDataDictionary: {fileID: 0}
   m_SceneHierarchy:
     m_TreeViewState:
-      scrollPos: {x: 0, y: 120}
-      m_SelectedIDs: 34490000
-      m_LastClickedID: 18740
-      m_ExpandedIDs: f2faffffa84300007845000098460000f04600002a48000094490000824a0000a84a0000
+      scrollPos: {x: 0, y: 185}
+      m_SelectedIDs: 124d0000
+      m_LastClickedID: 19730
+      m_ExpandedIDs: 00d8ffff6ee6ffff70e6ffffa2f8ffff40fbffffea42000098460000f0460000724700007c470000d24700002a480000784d0000124e0000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -383,7 +383,7 @@ MonoBehaviour:
         m_IsRenaming: 0
         m_OriginalEventType: 11
         m_IsRenamingFilename: 0
-        m_ClientGUIView: {fileID: 8}
+        m_ClientGUIView: {fileID: 0}
       m_SearchString: 
     m_ExpandedScenes: []
     m_CurrenRootInstanceID: 0
@@ -428,9 +428,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 622.33765, y: 326.62634, z: -166.22638}
+    m_Target: {x: 696.84814, y: 377.10126, z: -166.38556}
     speed: 2
-    m_Value: {x: 622.33765, y: 326.62634, z: -166.22638}
+    m_Value: {x: 696.84814, y: 377.10126, z: -166.38556}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -588,7 +588,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 339}
     m_SelectedIDs: 3a510000
     m_LastClickedID: 20794
-    m_ExpandedIDs: 000000000e51000010510000125100001451000016510000185100001a5100001c5100001e510000345100003c51000000ca9a3b
+    m_ExpandedIDs: 000000000e51000010510000125100001451000016510000185100001a5100001c5100001e510000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
