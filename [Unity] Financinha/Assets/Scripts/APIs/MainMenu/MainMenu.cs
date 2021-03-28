@@ -46,7 +46,7 @@ public class MainMenu : MonoBehaviour
             string result = System.Text.Encoding.UTF8.GetString(www.downloadHandler.data);
             MenuValuesList listaValues = JsonUtility.FromJson<MenuValuesList>("{\"menuValues\":" + result + "}");
 
-            Debug.Log(www.downloadHandler.text);
+//            Debug.Log(www.downloadHandler.text);
 
             //Salvando PlayerPrefs
             PlayerPrefs.SetFloat("wallet_amount", listaValues.menuValues[0].wallet_amount);

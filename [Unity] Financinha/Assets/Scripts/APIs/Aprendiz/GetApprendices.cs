@@ -45,6 +45,17 @@ public class GetApprendices : MonoBehaviour
                 GameObject template = transform.GetChild(0).gameObject;
                 GameObject g;
 
+                // Se já tiver carregado a primeira lista, apaga todos os ítens antes de recarregar os ítens vindos da API.
+                if (this.transform.childCount > 1)
+                {
+                    for (int i = 1; i < this.transform.childCount; i++)
+                    {
+                        Destroy(transform.GetChild(i).gameObject);
+                    }
+                    Debug.Log("Terminou de re-alimentar a lista");
+                }
+
+            
                 for (int i = 0; i < apprendicesList.apprendices.Count; i++)
                 {
                     g = Instantiate(template, transform);

@@ -34,12 +34,21 @@ public class ExtratoCarteiraGetter : MonoBehaviour
 		}
 		else
 		{
-			//Retorna o estado do login
+			// Retorna o estado do login
 			string result = System.Text.Encoding.UTF8.GetString(www.downloadHandler.data);
 			listaDeTransacoes = JsonUtility.FromJson<TransacaoList>("{\"transacao\":" + result + "}");
 
-			//statusDisplay.text = "";
+			// Se já tiver carregado a primeira lista, apaga todos os ítens antes de recarregar os ítens vindos da API.
+			if (this.transform.childCount > 1)
+			{
+				for (int i = 1; i < this.transform.childCount; i++)
+				{
+					Destroy(transform.GetChild(i).gameObject);
+				}
+				Debug.Log("Terminou de re-alimentar a lista");
+			}
 
+			// Inicia a renderizar a lista com os ítens vindos da API.
 			if (listaDeTransacoes.transacao.Count > 0)
 			{
 				GameObject template = transform.GetChild(0).gameObject;

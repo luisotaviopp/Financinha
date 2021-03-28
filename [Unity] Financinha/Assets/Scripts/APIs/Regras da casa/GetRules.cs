@@ -57,6 +57,19 @@ public class GetRules : MonoBehaviour
 
 			float semanada = PlayerPrefs.GetFloat("rules_amount");
 
+			
+			// Se já tiver carregado a primeira lista, apaga todos os ítens antes de recarregar os ítens vindos da API.
+			if (this.transform.childCount > 1)
+			{
+				for (int i = 1; i < this.transform.childCount; i++)
+				{
+					Destroy(transform.GetChild(i).gameObject);
+				}
+				Debug.Log("Terminou de re-alimentar a lista");
+			}
+
+
+			// Carrega os ítens da API
 			for (int i = 0; i < rulesList.rules.Count; i++)
 			{
 				g = Instantiate(template, transform);
@@ -80,7 +93,6 @@ public class GetRules : MonoBehaviour
 					g.transform.GetChild(5).GetComponent<Text>().text = "-R$" + (rulesList.rules[i].value * -1).ToString();
 					g.transform.GetChild(6).GetComponent<Text>().text = "-R$" + (rulesList.rules[i].quantity*rulesList.rules[i].value*-1).ToString();
 				}
-
 
 				rulesList.rules[i].totalValueDisplay =g.transform.GetChild(6).GetComponent<Text>();
 
@@ -188,9 +200,6 @@ public class GetRules : MonoBehaviour
 			Debug.Log(www.downloadHandler.text);
 		}
 	}
-
-
-
 
 	IEnumerator DeleteRegra(int ruleId)
 	{
