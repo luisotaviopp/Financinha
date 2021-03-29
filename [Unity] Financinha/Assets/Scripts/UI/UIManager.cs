@@ -28,13 +28,14 @@ public class UIManager : MonoBehaviour
 
 	public GameObject panelPreGame;
 	public Image nuvem;
+
 	public Image pig;
 	public Sprite[] pigs;
-	public Sprite[] nuvemLevel;
-	public Sprite[] pigLevel;
+
 
 	public void Awake()
 	{
+	
 		if (!PlayerPrefs.HasKey("token"))
 		{
 			OpenLogin();

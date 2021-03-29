@@ -31,6 +31,7 @@ public class Reading : MonoBehaviour
 
     public void Start()
     {
+        level_Que_Veio = SceneLoader.refLevel;
         switch (level_Que_Veio)
         {
             case 1:

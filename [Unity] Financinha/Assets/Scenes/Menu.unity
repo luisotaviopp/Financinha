@@ -1252,7 +1252,7 @@ MonoBehaviour:
   panelSubMenu: {fileID: 2096217708}
   panelPreGame: {fileID: 161977850}
   nuvem: {fileID: 0}
-  pig: {fileID: 1121517923}
+  pig: {fileID: 2026480355}
   pigs:
   - {fileID: 21300000, guid: f1dcd05fd6f2e0d4ab6d6a73958c5fa2, type: 3}
   - {fileID: 21300000, guid: f1dcd05fd6f2e0d4ab6d6a73958c5fa2, type: 3}
@@ -1265,30 +1265,6 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 325ef9f3d2546ca4d8bc61a14621f719, type: 3}
   - {fileID: 21300000, guid: f87482bf068f46f40988c82c65a8308b, type: 3}
   - {fileID: 21300000, guid: be66a39fd799922468c68edae1544f49, type: 3}
-  nuvemLevel:
-  - {fileID: 21300000, guid: d658f86980eb6ee48b75780eb10940af, type: 3}
-  - {fileID: 21300000, guid: d658f86980eb6ee48b75780eb10940af, type: 3}
-  - {fileID: 21300000, guid: 53e31fbb0ba2a784f9546001418e1846, type: 3}
-  - {fileID: 21300000, guid: 710e622f95c59c244875c9dd443359aa, type: 3}
-  - {fileID: 21300000, guid: 96f6e7d30015eee458a0951ac3d505fe, type: 3}
-  - {fileID: 21300000, guid: 46da4bd9c5e3e7d44af761da156f0c85, type: 3}
-  - {fileID: 21300000, guid: 0e3d6a38f156b7043b6d508e046d8bc3, type: 3}
-  - {fileID: 21300000, guid: fdf35af047e023c4298ee1124abaa1f9, type: 3}
-  - {fileID: 21300000, guid: 50a82faa60a29274a9a08740111b44d6, type: 3}
-  - {fileID: 21300000, guid: 343b0c34f4851a6469adeea36d891012, type: 3}
-  - {fileID: 21300000, guid: a4676b68e66f6c042867a00a944d60e6, type: 3}
-  pigLevel:
-  - {fileID: 21300000, guid: b4836bc4c15e09b4c8c706aa5972bf34, type: 3}
-  - {fileID: 21300000, guid: b4836bc4c15e09b4c8c706aa5972bf34, type: 3}
-  - {fileID: 21300000, guid: 077fbeae51a483245bc4243e64e4e50e, type: 3}
-  - {fileID: 21300000, guid: 79a3693cb2aaccb4dadf5111a8f6b2ea, type: 3}
-  - {fileID: 21300000, guid: 3eb775834689d264ab8263fa3941144c, type: 3}
-  - {fileID: 21300000, guid: c3a0e3697525bcc41899fa8f039869a2, type: 3}
-  - {fileID: 21300000, guid: ca8eb60e569c6574cb182daa49020c52, type: 3}
-  - {fileID: 21300000, guid: 97e9f47782908a14290370c35bfe4c39, type: 3}
-  - {fileID: 21300000, guid: 4f2d83a27a89d1d4aa412518a474d572, type: 3}
-  - {fileID: 21300000, guid: 601d833a327f176428dac381debaa479, type: 3}
-  - {fileID: 21300000, guid: 1097d2cf83176e64e9c3e78ad56e21c6, type: 3}
 --- !u!4 &50948060
 Transform:
   m_ObjectHideFlags: 0
@@ -12139,7 +12115,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &648784853
 RectTransform:
   m_ObjectHideFlags: 0
@@ -16026,7 +16002,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &954803765
 RectTransform:
   m_ObjectHideFlags: 0
@@ -17063,7 +17039,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1016150862
 RectTransform:
   m_ObjectHideFlags: 0
