@@ -1,0 +1,559 @@
+Using pre-set license
+Built from '2020.3/staging' branch; Version is '2020.3.0f1 (c7b5465681fb) revision 13088070'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 10 Pro; OS build 18363.418; Version 1909; 64bit' Language: 'pt' Physical Memory: 7671 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+ COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2020.3.0f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+C:/Users/danie/Documents/Unity Projects/GitHub/Financinha/[Unity] Financinha
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+50898
+Successfully changed project path to: C:/Users/danie/Documents/Unity Projects/GitHub/Financinha/[Unity] Financinha
+C:/Users/danie/Documents/Unity Projects/GitHub/Financinha/[Unity] Financinha
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 100.78 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2020.3.0f1 (c7b5465681fb)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.0f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/danie/Documents/Unity Projects/GitHub/Financinha/[Unity] Financinha/Assets
+GfxDevice: creating device client; threaded=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: NVIDIA GeForce GTX 760 (ID=0x1187)
+    Vendor:   
+    VRAM:     2007 MB
+    Driver:   27.21.14.5730
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.0f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.0f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.0f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56608
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.0f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.002072 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 83.85 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.721 seconds
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.001340 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 73.14 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+NullReferenceException: Object reference not set to an instance of an object
+  at XT.Enhancer.Package..cctor () [0x00019] in C:\Users\danie\Documents\Unity Projects\GitHub\Financinha\[Unity] Financinha\Library\PackageCache\com.xeleh.enhancer@78e062bf54\Editor\Package.cs:10 
+Rethrow as TypeInitializationException: The type initializer for 'XT.Enhancer.Package' threw an exception.
+
+
+(Filename: Library/PackageCache/com.xeleh.enhancer@78e062bf54/Editor/Package.cs Line: 10)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.666 seconds
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.12 seconds
+Refreshing native plugins compatible for Editor in 0.62 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1998 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 94.3 MB.
+System memory in use after: 94.4 MB.
+
+Unloading 19 unused Assets to reduce memory usage. Loaded Objects now: 2456.
+Total: 2.953500 ms (FindLiveObjects: 0.405900 ms CreateObjectMapping: 0.109300 ms MarkObjects: 2.350300 ms  DeleteObjects: 0.086200 ms)
+
+========================================================================
+Received Import Request.
+  path: Assets
+  artifactKey: Guid(00000000000000001000000000000000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets using Guid(00000000000000001000000000000000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '42baae205c97e3337697759514652acd') in 0.069572 seconds
+  Import took 0.073712 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 13.227049 seconds.
+  path: Assets
+  artifactKey: Guid(00000000000000001000000000000000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets using Guid(00000000000000001000000000000000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '42baae205c97e3337697759514652acd') in 0.023096 seconds
+  Import took 0.027343 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 103.779597 seconds.
+  path: Assets/Scenes
+  artifactKey: Guid(575204b4c67179d48b93099740704550) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes using Guid(575204b4c67179d48b93099740704550) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bdcd05122ee069b9ebf89496d7c3cdb9') in 0.002778 seconds
+  Import took 0.007473 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.937650 seconds.
+  path: Assets/Scenes/Level 03.unity
+  artifactKey: Guid(62c0bb1cd1b16e0469f7a4ee26b1a99f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Level 03.unity using Guid(62c0bb1cd1b16e0469f7a4ee26b1a99f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5a65f74af4407b065afc63278ae5dcd2') in 0.169883 seconds
+  Import took 0.173968 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.590664 seconds.
+  path: Assets/Scenes/Menu.unity
+  artifactKey: Guid(2cda990e2423bbf4892e6590ba056729) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Menu.unity using Guid(2cda990e2423bbf4892e6590ba056729) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6f8f7038bfcc2c76765af6df9a0d9655') in 0.002771 seconds
+  Import took 0.007620 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 551.754574 seconds.
+  path: Assets/Art
+  artifactKey: Guid(c979c89e4f5b6d04c88f14793b9e2348) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art using Guid(c979c89e4f5b6d04c88f14793b9e2348) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f9518131f52343729a942dabd315d800') in 0.070264 seconds
+  Import took 0.074824 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.034957 seconds.
+  path: Assets/Art/Icon.jpg
+  artifactKey: Guid(c67deaded61f37e428c019e9d2cfd0e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Icon.jpg using Guid(c67deaded61f37e428c019e9d2cfd0e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8a278fe229467548774b42a4a978e1d3') in 0.794347 seconds
+  Import took 0.798660 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000198 seconds.
+  path: Assets/Art/janbrady.ttf
+  artifactKey: Guid(e2e670a9d1edbb24194b2932e1add159) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/janbrady.ttf using Guid(e2e670a9d1edbb24194b2932e1add159) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8c60cfba14a64eb4c85270f4ff55f6f5') in 0.107689 seconds
+  Import took 0.112240 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000191 seconds.
+  path: Assets/Art/New Art
+  artifactKey: Guid(9a2674a94ccc93c44aa1889ae746231c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/New Art using Guid(9a2674a94ccc93c44aa1889ae746231c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3b00d4682cd24e80fb68301d5197517b') in 0.016669 seconds
+  Import took 0.020413 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000218 seconds.
+  path: Assets/Art/pós-cena.jpg
+  artifactKey: Guid(859b638a4e575da40ba0cba8972d81c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/pós-cena.jpg using Guid(859b638a4e575da40ba0cba8972d81c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0e72ae92403345954f018f4d87aa733a') in 0.054494 seconds
+  Import took 0.059275 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000193 seconds.
+  path: Assets/Art/RegrasDaCasa_Cadastrar_Letra_3ValorUnitario.png
+  artifactKey: Guid(b3ec7eec336d7e84dab8db4ecf7103fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/RegrasDaCasa_Cadastrar_Letra_3ValorUnitario.png using Guid(b3ec7eec336d7e84dab8db4ecf7103fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9455d001823de7b42bc72ebef03221a3') in 0.013853 seconds
+  Import took 0.017760 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.038852 seconds.
+  path: Assets/Art/New Art/Imagens Final
+  artifactKey: Guid(a7c7dec7443bffe44ac0a66ae4f3ce4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/New Art/Imagens Final using Guid(a7c7dec7443bffe44ac0a66ae4f3ce4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '619170c0522cd673540bc795eb299f66') in 0.002780 seconds
+  Import took 0.007012 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.080554 seconds.
+  path: Assets/Art/New Art/Imagens Final/Botao-excluir-item.png
+  artifactKey: Guid(d3676b8cfb58960449ddb5ea13833da4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/New Art/Imagens Final/Botao-excluir-item.png using Guid(d3676b8cfb58960449ddb5ea13833da4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'faf8ea17b29775ed8acfee079c276f34') in 0.008934 seconds
+  Import took 0.013062 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000188 seconds.
+  path: Assets/Art/New Art/Imagens Final/Botão-Sair.png
+  artifactKey: Guid(3c1b2c7cc3066e44c915fed6335266bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/New Art/Imagens Final/Botão-Sair.png using Guid(3c1b2c7cc3066e44c915fed6335266bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '637f5a6a61efa112750144e9e347708d') in 0.025315 seconds
+  Import took 0.029076 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000237 seconds.
+  path: Assets/Art/New Art/Imagens Final/Quiz-icon-5-pt.png
+  artifactKey: Guid(f4bbc49782260874cafb049ce2505c52) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/New Art/Imagens Final/Quiz-icon-5-pt.png using Guid(f4bbc49782260874cafb049ce2505c52) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f4557cb7401e76f09ea61d086c600992') in 0.029728 seconds
+  Import took 0.033754 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000181 seconds.
+  path: Assets/Art/New Art/Imagens Final/Botao-home.png
+  artifactKey: Guid(b460f82d9fb567c4ebb3fd7231f76db2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/New Art/Imagens Final/Botao-home.png using Guid(b460f82d9fb567c4ebb3fd7231f76db2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bcdc01e2531c3300c6c7940b574f3fc3') in 0.018067 seconds
+  Import took 0.022151 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.365644 seconds.
+  path: Assets/Art/New Art/Imagens Final/Home
+  artifactKey: Guid(b48254da3c38efd4cbb9f6b075c2b6b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/New Art/Imagens Final/Home using Guid(b48254da3c38efd4cbb9f6b075c2b6b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e1f85a2626cc1fcb498e24a911cb8194') in 0.002260 seconds
+  Import took 0.006993 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.074097 seconds.
+  path: Assets/Art/New Art/Imagens Final/Home/Home_Botao_BancoDaCasa.png
+  artifactKey: Guid(a5a34467e56024e42b9e2f4d4116af2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/New Art/Imagens Final/Home/Home_Botao_BancoDaCasa.png using Guid(a5a34467e56024e42b9e2f4d4116af2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e3ec8c477e9b70231256b39690fd7370') in 0.027506 seconds
+  Import took 0.032189 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000213 seconds.
+  path: Assets/Art/New Art/Imagens Final/Home/Home_Icon_Pergunta_Checked.png
+  artifactKey: Guid(c93449fb92a1b86419abaadc9525d771) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/New Art/Imagens Final/Home/Home_Icon_Pergunta_Checked.png using Guid(c93449fb92a1b86419abaadc9525d771) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f563b60271931c3c2586e8f9d28e15e4') in 0.010962 seconds
+  Import took 0.014829 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000231 seconds.
+  path: Assets/Art/New Art/Imagens Final/Home/Home_Icon_Pergunta_Off.png
+  artifactKey: Guid(8a0da266ffec47e479a45fe55da1ee80) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/New Art/Imagens Final/Home/Home_Icon_Pergunta_Off.png using Guid(8a0da266ffec47e479a45fe55da1ee80) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ad00c3b0c6ed138876350b065f0bd0d1') in 0.010613 seconds
+  Import took 0.015112 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000193 seconds.
+  path: Assets/Art/New Art/Imagens Final/Home/Home_Fundo_Casa.png
+  artifactKey: Guid(6fd16eb494934694f90aad1b5d1421f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/New Art/Imagens Final/Home/Home_Fundo_Casa.png using Guid(6fd16eb494934694f90aad1b5d1421f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c22e36165ef94f66cb2f2cf460167cc3') in 0.030798 seconds
+  Import took 0.035514 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000209 seconds.
+  path: Assets/Art/New Art/Imagens Final/Home/Home_Personagem_Fase1.png
+  artifactKey: Guid(d851f2f29182bc34987f09eac082a41d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/New Art/Imagens Final/Home/Home_Personagem_Fase1.png using Guid(d851f2f29182bc34987f09eac082a41d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cd988dc2bd3ca07d5aab00fa7a1927d7') in 0.013660 seconds
+  Import took 0.018594 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000252 seconds.
+  path: Assets/Art/New Art/Imagens Final/Home/Home_Fundo_Lua_1.png
+  artifactKey: Guid(7eab268e356ef0a4ebdbc1c97401a87c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/New Art/Imagens Final/Home/Home_Fundo_Lua_1.png using Guid(7eab268e356ef0a4ebdbc1c97401a87c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e56c05521321f644ad39fdc09e4a6ce7') in 0.141417 seconds
+  Import took 0.146547 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000195 seconds.
+  path: Assets/Art/New Art/Imagens Final/Home/Home_Botao_Conquista.png
+  artifactKey: Guid(4eb77bb7176cc864497df6bd3c0837c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/New Art/Imagens Final/Home/Home_Botao_Conquista.png using Guid(4eb77bb7176cc864497df6bd3c0837c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cec49e48851fe9e1d87f75503d3fee9b') in 0.024970 seconds
+  Import took 0.028811 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000193 seconds.
+  path: Assets/Art/New Art/Imagens Final/Home/Home_Icon_Pergunta_On.png
+  artifactKey: Guid(c2e3c49668017354faa2eeb3f5d9e7eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/New Art/Imagens Final/Home/Home_Icon_Pergunta_On.png using Guid(c2e3c49668017354faa2eeb3f5d9e7eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '18fefc4218fc1676d5f3472d53444456') in 0.010536 seconds
+  Import took 0.014743 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000204 seconds.
+  path: Assets/Art/New Art/Imagens Final/Home/Home_Fundo_Lua_2.png
+  artifactKey: Guid(5e68fed51e65c2a41ad1aee691a4f9d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/New Art/Imagens Final/Home/Home_Fundo_Lua_2.png using Guid(5e68fed51e65c2a41ad1aee691a4f9d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8f66f4c7e9681c933357fb07b08cdf4d') in 0.115259 seconds
+  Import took 0.119473 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000214 seconds.
+  path: Assets/Art/New Art/Imagens Final/Home/Home_Fundo_Base.png
+  artifactKey: Guid(aa0cd6088a85095468448d3319fa58bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/New Art/Imagens Final/Home/Home_Fundo_Base.png using Guid(aa0cd6088a85095468448d3319fa58bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e7b6f54e7585877bbd5611ac8d60f74b') in 0.020294 seconds
+  Import took 0.024971 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000218 seconds.
+  path: Assets/Art/New Art/Imagens Final/Home/Home_icon_closed.png
+  artifactKey: Guid(422ca985887c8a14d81577545c52758d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/New Art/Imagens Final/Home/Home_icon_closed.png using Guid(422ca985887c8a14d81577545c52758d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cfc8db284c65018e87c93103afe631e9') in 0.018669 seconds
+  Import took 0.023716 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000267 seconds.
+  path: Assets/Art/New Art/Imagens Final/Home/Home_Icon_open.png
+  artifactKey: Guid(92ef28ebdea441845a75f651aa405abb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/New Art/Imagens Final/Home/Home_Icon_open.png using Guid(92ef28ebdea441845a75f651aa405abb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '744f7b54a21a10ca3e238afcfcc065fa') in 0.011234 seconds
+  Import took 0.015730 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000218 seconds.
+  path: Assets/Art/New Art/Imagens Final/Home/Home_icon_checked.png
+  artifactKey: Guid(3216d3611d2009e4f874e6fbc62c0cf0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/New Art/Imagens Final/Home/Home_icon_checked.png using Guid(3216d3611d2009e4f874e6fbc62c0cf0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3e26e59bd917afa914faac84b5084be2') in 0.012594 seconds
+  Import took 0.017505 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001329 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.66 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+NullReferenceException: Object reference not set to an instance of an object
+  at XT.Enhancer.Package..cctor () [0x00019] in C:\Users\danie\Documents\Unity Projects\GitHub\Financinha\[Unity] Financinha\Library\PackageCache\com.xeleh.enhancer@78e062bf54\Editor\Package.cs:10 
+Rethrow as TypeInitializationException: The type initializer for 'XT.Enhancer.Package' threw an exception.
+
+
+(Filename: Library/PackageCache/com.xeleh.enhancer@78e062bf54/Editor/Package.cs Line: 10)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.419 seconds
+Platform modules already initialized, skipping
+Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 0.65 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1981 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 96.4 MB.
+System memory in use after: 96.5 MB.
+
+Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 2527.
+Total: 3.092600 ms (FindLiveObjects: 0.313100 ms CreateObjectMapping: 0.111300 ms MarkObjects: 2.641200 ms  DeleteObjects: 0.025200 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Import Request.
+  Time since last request: 419.525215 seconds.
+  path: Assets/Art/New Art/Imagens-16fev21
+  artifactKey: Guid(ba3cfe3879f22c147aa8db8882e111a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/New Art/Imagens-16fev21 using Guid(ba3cfe3879f22c147aa8db8882e111a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '837162fd9c0ad35383558524606c0912') in 0.008416 seconds
+  Import took 0.013633 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001440 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.65 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+NullReferenceException: Object reference not set to an instance of an object
+  at XT.Enhancer.Package..cctor () [0x00019] in C:\Users\danie\Documents\Unity Projects\GitHub\Financinha\[Unity] Financinha\Library\PackageCache\com.xeleh.enhancer@78e062bf54\Editor\Package.cs:10 
+Rethrow as TypeInitializationException: The type initializer for 'XT.Enhancer.Package' threw an exception.
+
+
+(Filename: Library/PackageCache/com.xeleh.enhancer@78e062bf54/Editor/Package.cs Line: 10)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.401 seconds
+Platform modules already initialized, skipping
+Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 0.64 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1981 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 96.4 MB.
+System memory in use after: 96.5 MB.
+
+Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 2530.
+Total: 2.918200 ms (FindLiveObjects: 0.260700 ms CreateObjectMapping: 0.118900 ms MarkObjects: 2.514600 ms  DeleteObjects: 0.022600 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001359 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.69 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+NullReferenceException: Object reference not set to an instance of an object
+  at XT.Enhancer.Package..cctor () [0x00019] in C:\Users\danie\Documents\Unity Projects\GitHub\Financinha\[Unity] Financinha\Library\PackageCache\com.xeleh.enhancer@78e062bf54\Editor\Package.cs:10 
+Rethrow as TypeInitializationException: The type initializer for 'XT.Enhancer.Package' threw an exception.
+
+
+(Filename: Library/PackageCache/com.xeleh.enhancer@78e062bf54/Editor/Package.cs Line: 10)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.353 seconds
+Platform modules already initialized, skipping
+Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 0.64 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1981 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 96.4 MB.
+System memory in use after: 96.5 MB.
+
+Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 2533.
+Total: 2.724600 ms (FindLiveObjects: 0.273900 ms CreateObjectMapping: 0.109900 ms MarkObjects: 2.320600 ms  DeleteObjects: 0.018500 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Import Request.
+  Time since last request: 2471.694830 seconds.
+  path: Assets/Art/Sprites/UI New
+  artifactKey: Guid(9da634651a521bc41a45b14206b9bb5b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Sprites/UI New using Guid(9da634651a521bc41a45b14206b9bb5b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cf81b4eb0db262c4cfc51a57ea743420') in 0.008211 seconds
+  Import took 0.013253 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.955595 seconds.
+  path: Assets/Art/Sprites/UI New/0- Modelos
+  artifactKey: Guid(ffef4bd563e610d40b1f8e8dbfc8f6a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Sprites/UI New/0- Modelos using Guid(ffef4bd563e610d40b1f8e8dbfc8f6a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '04be674681a164a163be0fcf38535d11') in 0.002022 seconds
+  Import took 0.006878 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 12.058837 seconds.
+  path: Assets/Art/Sprites/UI New/Fundo/fundo-fixo-inferior.png
+  artifactKey: Guid(a7f78612969ef384d9db462f0f3302e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Sprites/UI New/Fundo/fundo-fixo-inferior.png using Guid(a7f78612969ef384d9db462f0f3302e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9e4f0de5630cb2d472d5ede1f638b919') in 0.124811 seconds
+  Import took 0.130545 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.578125 seconds.
+  path: Assets/Art/Sprites/UI New/Fundo/fundo-fixo-superior.png
+  artifactKey: Guid(0d632958a42e97b46aed3ca83b110b67) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Sprites/UI New/Fundo/fundo-fixo-superior.png using Guid(0d632958a42e97b46aed3ca83b110b67) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bd7e4b4bb217fed52d799081d0aa6633') in 0.095545 seconds
+  Import took 0.101018 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001351 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.67 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+NullReferenceException: Object reference not set to an instance of an object
+  at XT.Enhancer.Package..cctor () [0x00019] in C:\Users\danie\Documents\Unity Projects\GitHub\Financinha\[Unity] Financinha\Library\PackageCache\com.xeleh.enhancer@78e062bf54\Editor\Package.cs:10 
+Rethrow as TypeInitializationException: The type initializer for 'XT.Enhancer.Package' threw an exception.
+
+
+(Filename: Library/PackageCache/com.xeleh.enhancer@78e062bf54/Editor/Package.cs Line: 10)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.395 seconds
+Platform modules already initialized, skipping
+Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 0.64 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1981 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 96.5 MB.
+System memory in use after: 96.6 MB.
+
+Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 2537.
+Total: 2.658400 ms (FindLiveObjects: 0.271900 ms CreateObjectMapping: 0.110900 ms MarkObjects: 2.256100 ms  DeleteObjects: 0.017900 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001336 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.69 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+NullReferenceException: Object reference not set to an instance of an object
+  at XT.Enhancer.Package..cctor () [0x00019] in C:\Users\danie\Documents\Unity Projects\GitHub\Financinha\[Unity] Financinha\Library\PackageCache\com.xeleh.enhancer@78e062bf54\Editor\Package.cs:10 
+Rethrow as TypeInitializationException: The type initializer for 'XT.Enhancer.Package' threw an exception.
+
+
+(Filename: Library/PackageCache/com.xeleh.enhancer@78e062bf54/Editor/Package.cs Line: 10)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.372 seconds
+Platform modules already initialized, skipping
+Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 0.66 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1981 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 96.5 MB.
+System memory in use after: 96.6 MB.
+
+Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 2540.
+Total: 2.695300 ms (FindLiveObjects: 0.261000 ms CreateObjectMapping: 0.110600 ms MarkObjects: 2.298900 ms  DeleteObjects: 0.023500 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001767 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.67 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+NullReferenceException: Object reference not set to an instance of an object
+  at XT.Enhancer.Package..cctor () [0x00019] in C:\Users\danie\Documents\Unity Projects\GitHub\Financinha\[Unity] Financinha\Library\PackageCache\com.xeleh.enhancer@78e062bf54\Editor\Package.cs:10 
+Rethrow as TypeInitializationException: The type initializer for 'XT.Enhancer.Package' threw an exception.
+
+
+(Filename: Library/PackageCache/com.xeleh.enhancer@78e062bf54/Editor/Package.cs Line: 10)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.369 seconds
+Platform modules already initialized, skipping
+Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 0.65 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1981 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 96.5 MB.
+System memory in use after: 96.6 MB.
+
+Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 2543.
+Total: 2.641700 ms (FindLiveObjects: 0.255300 ms CreateObjectMapping: 0.110400 ms MarkObjects: 2.256600 ms  DeleteObjects: 0.018100 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
