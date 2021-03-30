@@ -156,7 +156,6 @@ public class GetQuestions : MonoBehaviour
         finalPanel.SetActive(true);
 
         selectedAnswers.Clear();
-        //comentário desnecessario e fora de contexto, para essa bosta de linter atualizar 
     }
 
     IEnumerator SendSelectedAnswers(SelectedAnswer answer)
@@ -165,6 +164,7 @@ public class GetQuestions : MonoBehaviour
 
         form.AddField("post_question_id", answer.questionId);
         form.AddField("post_selected_option", answer.selectedAnswer);
+        form.AddField("post_id", PlayerPrefs.GetInt("id_aprendiz"));
 
         UnityWebRequest www = UnityWebRequest.Post(ApiConfig.INSERT_QUESTION_RESPONSES, form);
         yield return www.SendWebRequest();

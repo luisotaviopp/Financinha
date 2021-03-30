@@ -10,4 +10,5 @@ public class MenuValues
     public float objective_value;
     public float semanada;
     public float saldo;
+    public int level;
 }

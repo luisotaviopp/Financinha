@@ -15,7 +15,8 @@ public class ApiConfig : MonoBehaviour
 	public static string GET_LEVEL_URL 				= API_URL + "/level/user_level.php";            // Pegar level do jogador.
 	public static string INCREASE_LEVEL_URL 		= API_URL + "/level/increase_level.php";        // Aumentar level do jogador.
 	public static string GET_HABILITIES_LIST 		= API_URL + "/level/get_level_progress.php";  	// Checar desafios cumpridos pelo jogador.
-
+	public static string UPDATE_HABILITY 			= API_URL + "/level/check_level_hability.php";  // Checar desafios cumpridos pelo jogador.
+	
 	// BANCO
 	public static string SAVINGS_TO_WALLET_URL 		= API_URL + "/bank/savings_to_wallet.php";      // Transferência -> cofrinho para carteira 
 	public static string BANK_EVENTS_URL 			= API_URL + "/bank/bank_timeline.php";          // Pegar o extrato do jogador.
@@ -34,7 +35,7 @@ public class ApiConfig : MonoBehaviour
 	public static string LIST_RULES_URL 			= API_URL + "/rule/list_rules.php";             // Listando regras da casa
 	public static string UPDATE_RULE_QUANTITY_URL 	= API_URL + "/rule/update_rule_quantity.php";   // Atualizando quantidade semanal
 	public static string DELETE_RULE_URL 			= API_URL + "/rule/delete_rule.php";   			// Atualizando quantidade semanal
-	public static string UPDATE_SALDO 				= API_URL + "/rule/update_saldo.php";   			// Atualizando quantidade semanal
+	public static string UPDATE_SALDO 				= API_URL + "/rule/update_saldo.php";   		// Atualizando quantidade semanal
 
 	// MENU
 	public static string MENU_UPDATE_VALUES 		= API_URL + "/menu/menu_values.php";            // Pega os valores para o menu

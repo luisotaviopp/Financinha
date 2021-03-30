@@ -18,8 +18,8 @@ public class SceneLoader : MonoBehaviour
         {
             Destroy(gameObject);
         }
-
     }
+    
     public void LoadScene(int scene = 0)
     {
         scene = refLevel;

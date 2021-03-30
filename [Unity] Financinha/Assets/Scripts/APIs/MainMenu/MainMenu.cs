@@ -51,8 +51,9 @@ public class MainMenu : MonoBehaviour
             PlayerPrefs.SetFloat("objective_value", listaValues.menuValues[0].objective_value);
             PlayerPrefs.SetFloat("rules_amount", listaValues.menuValues[0].saldo);
             PlayerPrefs.SetFloat("semanada", listaValues.menuValues[0].semanada);
+            PlayerPrefs.SetInt("level", listaValues.menuValues[0].level);
             
-            Debug.Log(listaValues.menuValues[0].semanada);
+            Debug.Log($"Level: {listaValues.menuValues[0].level}");
 
             RenderValues();
         }

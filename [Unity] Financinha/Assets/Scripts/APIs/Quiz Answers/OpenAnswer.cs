@@ -17,7 +17,8 @@ public class OpenAnswer : MonoBehaviour
     IEnumerator Upload(string answer)
     {
         WWWForm form = new WWWForm();
-        form.AddField("post_token", PlayerPrefs.GetString("token"));
+        form.AddField("post_id", PlayerPrefs.GetInt("id_aprendiz"));
+		form.AddField("post_level", PlayerPrefs.GetInt("level"));
         form.AddField("post_answer", answer);
 
         UnityWebRequest www = UnityWebRequest.Post(ApiConfig.INSERT_OPEN_ANSWER, form);
@@ -31,6 +32,8 @@ public class OpenAnswer : MonoBehaviour
         {
             //Retorna o estado do registro
             //statusDisplay.text = www.downloadHandler.text;
+            Debug.Log(www.downloadHandler.text);
+
             answerInput.text = "";
         }
     }
