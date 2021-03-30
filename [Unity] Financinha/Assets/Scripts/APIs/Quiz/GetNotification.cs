@@ -6,15 +6,15 @@ using UnityEngine.Networking;
 
 public class GetNotification : MonoBehaviour
 {
-	public Button[] notificationButtons;
+	public GameObject[] notificationButtons;
+
+	private void Awake()
+	{	
+		StartCoroutine(GetNotificationCoroutine());		
+	}
 
 	private void OnEnable()
 	{    
-		foreach (Button btn in notificationButtons)
-		{
-			btn.interactable = false;
-		}
-
 		StartCoroutine(GetNotificationCoroutine());
 	}
 
@@ -33,8 +33,12 @@ public class GetNotification : MonoBehaviour
 		else
 		{
 			PlayerPrefs.SetString("notification_question_level", www.downloadHandler.text);
-			Debug.Log("Questão aberta no level: " + int.Parse(PlayerPrefs.GetString("notification_question_level")).ToString());
-			notificationButtons[int.Parse(PlayerPrefs.GetString("notification_question_level"))-1].interactable = true;
+			Debug.Log(www.downloadHandler.text);
+
+			if (int.Parse(PlayerPrefs.GetString("notification_question_level")) > 0)
+			{			
+				notificationButtons[int.Parse(PlayerPrefs.GetString("notification_question_level"))-1].SetActive(true);
+			}
 		}
 	}
 }

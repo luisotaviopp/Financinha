@@ -459,6 +459,8 @@ public class UIManager : MonoBehaviour
 
 		btQuiz.interactable = false;
 
+		PlayerPrefs.SetInt("quiz_level_to_load", level);
+
 		if (level == 1 && habilidade.levelProgressorList.progressor[0].lvl_1_habilidade)
 		{
 			btQuiz.interactable = true;
@@ -482,7 +484,6 @@ public class UIManager : MonoBehaviour
 			btQuiz.interactable = true;
 			Debug.Log($" Abriu {habilidade.levelProgressorList.progressor[0].lvl_4_habilidade}");
 		}
-
 
 		if (level == 5 && habilidade.levelProgressorList.progressor[0].lvl_5_habilidade)
 		{
@@ -529,7 +530,8 @@ public class UIManager : MonoBehaviour
 		{
 			panelSubMenu.SetActive(false);
 		}
-		else {
+		else 
+		{
 			panelSubMenu.SetActive(true);
 		}
 	}

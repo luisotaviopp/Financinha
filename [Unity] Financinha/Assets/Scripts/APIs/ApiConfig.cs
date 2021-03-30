@@ -58,6 +58,7 @@ public class ApiConfig : MonoBehaviour
 	public static string GET_NOTIFICATION	 		= API_URL + "/quiz/get_notifications.php";		// Pegando o level que está com resposta cadastrada e esperando ser avaliada
 	public static string GET_OPEN_ANSWER	 		= API_URL + "/quiz/get_open_answer.php";		// Pega a resposta da questão aberta
 	public static string EVALUATE_ANSWER	 		= API_URL + "/quiz/evaluate_answer.php";		// Envia a nota do pai para o servidor
+	public static string GET_SCORE	 				= API_URL + "/quiz/get_level_score.php";		// Pega a nota das questões + nota do pai
 
 	// Apenas responsáveis -> Vendo as respostas para as perguntas
 

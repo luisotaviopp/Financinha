@@ -36,7 +36,7 @@ public class GetQuestions : MonoBehaviour
     {
         WWWForm form = new WWWForm();
 
-        form.AddField("post_level", 1);
+        form.AddField("post_level", PlayerPrefs.GetInt("quiz_level_to_load"));
 
         UnityWebRequest www = UnityWebRequest.Post(ApiConfig.GET_QUESTIONS_BY_LEVEL, form);
         yield return www.SendWebRequest();

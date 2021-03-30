@@ -15,6 +15,21 @@ public class GetHabilityProgress : MonoBehaviour
 	public Button[] levelButtons;
 	public Image[] cadeadosQuizz;
 
+	private void Awake()
+	{
+		foreach (Button btn in levelButtons)
+		{
+			btn.interactable = false;
+		}
+
+		foreach (Image img in cadeadosQuizz)
+		{
+			img.sprite = cadeadoVermelho;
+		}
+
+		StartCoroutine(GetHabilityProgressList());		
+	}
+
 	void OnEnable()
 	{
 		foreach (Button btn in levelButtons)

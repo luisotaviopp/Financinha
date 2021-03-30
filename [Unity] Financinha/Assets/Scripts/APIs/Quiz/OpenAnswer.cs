@@ -18,7 +18,7 @@ public class OpenAnswer : MonoBehaviour
     {
         WWWForm form = new WWWForm();
         form.AddField("post_id", PlayerPrefs.GetInt("id_aprendiz"));
-		form.AddField("post_level", PlayerPrefs.GetInt("level"));
+		form.AddField("post_level", PlayerPrefs.GetInt("quiz_level_to_load"));
         form.AddField("post_answer", answer);
 
         UnityWebRequest www = UnityWebRequest.Post(ApiConfig.INSERT_OPEN_ANSWER, form);
