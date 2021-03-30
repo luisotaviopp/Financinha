@@ -20,5 +20,4 @@ public class GameManager : MonoBehaviour
     public static string getToken() {
         return token;
     }
-
 }

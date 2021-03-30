@@ -14,6 +14,7 @@ public class ApiConfig : MonoBehaviour
 	// LEVEL
 	public static string GET_LEVEL_URL 				= API_URL + "/level/user_level.php";            // Pegar level do jogador.
 	public static string INCREASE_LEVEL_URL 		= API_URL + "/level/increase_level.php";        // Aumentar level do jogador.
+	public static string GET_HABILITIES_LIST 		= API_URL + "/level/get_level_progress.php";  	// Checar desafios cumpridos pelo jogador.
 
 	// BANCO
 	public static string SAVINGS_TO_WALLET_URL 		= API_URL + "/bank/savings_to_wallet.php";      // Transferência -> cofrinho para carteira 
