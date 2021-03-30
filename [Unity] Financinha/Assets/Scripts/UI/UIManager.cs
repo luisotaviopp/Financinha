@@ -449,56 +449,12 @@ public class UIManager : MonoBehaviour
 		panelListaAprendizes.SetActive(false);
 		panelRegistrarAprendiz.SetActive(true);
 	}
-	/* public void OpenListaAprendizes()
-	{
-		panelLogin.SetActive(false);
-		panelRegistration.SetActive(false);
-		panelBanco_da_Casa.SetActive(false);
-		panelBanco_da_Casa_Lancar.SetActive(false);
-		panelCarteira.SetActive(false);
-		panelCarteiraLancar.SetActive(false);
-		panelRegras.SetActive(false);
-		panelRegras_Cadastrar.SetActive(false);
-		panelSemanadas.SetActive(false);
-		panelConquista.SetActive(false);
-		panelConquista_editar.SetActive(false);
-		panelAvaliacao.SetActive(false);
-		panelLevelSelector.SetActive(false);
-		panelPreGame.SetActive(false);
-		panelSettings.SetActive(false);
-		panelRegistrarAprendiz.SetActive(false);
-		panelListaAprendizes.SetActive(true);
-		ToogleSubMenu();
-	}
-
-	public void OpenRegistrarAprendiz()
-	{
-		panelLogin.SetActive(false);
-		panelRegistration.SetActive(false);
-		panelBanco_da_Casa.SetActive(false);
-		panelBanco_da_Casa_Lancar.SetActive(false);
-		panelCarteira.SetActive(false);
-		panelCarteiraLancar.SetActive(false);
-		panelRegras.SetActive(false);
-		panelRegras_Cadastrar.SetActive(false);
-		panelSemanadas.SetActive(false);
-		panelConquista.SetActive(false);
-		panelConquista_editar.SetActive(false);
-		panelAvaliacao.SetActive(false);
-		panelLevelSelector.SetActive(false);
-		panelPreQuizz.SetActive(false);
-		panelPreGame.SetActive(false);
-		panelSettings.SetActive(false);
-		panelListaAprendizes.SetActive(false);
-		panelRegistrarAprendiz.SetActive(true);
-	}
-	*/
+	
 	#endregion
 	public void OpenPreLevel(int level)
 	{
 		SceneLoader.refLevel = level;
 
-		//btQuiz
 		GetHabilityProgress habilidade = GameObject.Find("LevelSelector").GetComponent<GetHabilityProgress>();
 
 		btQuiz.interactable = false;
@@ -566,6 +522,7 @@ public class UIManager : MonoBehaviour
 		pig.sprite = pigs[level];
 		OpenPreGame();
 	}
+
 	public void ToogleSubMenu()
 	{
 		if (panelSubMenu.activeInHierarchy)
@@ -576,6 +533,7 @@ public class UIManager : MonoBehaviour
 			panelSubMenu.SetActive(true);
 		}
 	}
+	
 	public void OpenSceneQuiz()
 	{
 		SceneManager.LoadSceneAsync("Quiz");
