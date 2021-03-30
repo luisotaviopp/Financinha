@@ -32,6 +32,7 @@ public class UIManager : MonoBehaviour
 	public Image pig;
 	public Sprite[] pigs;
 
+	public Button btQuiz;
 
 	public void Awake()
 	{
@@ -497,6 +498,71 @@ public class UIManager : MonoBehaviour
 	{
 		SceneLoader.refLevel = level;
 
+		//btQuiz
+		GetHabilityProgress habilidade = GameObject.Find("LevelSelector").GetComponent<GetHabilityProgress>();
+
+		btQuiz.interactable = false;
+
+		if (level == 1 && habilidade.levelProgressorList.progressor[0].lvl_1_habilidade)
+		{
+			btQuiz.interactable = true;
+			Debug.Log($" Abriu {habilidade.levelProgressorList.progressor[0].lvl_1_habilidade}");
+		}
+
+		if (level == 2 && habilidade.levelProgressorList.progressor[0].lvl_2_habilidade)
+		{
+			btQuiz.interactable = true;
+			Debug.Log($" Abriu {habilidade.levelProgressorList.progressor[0].lvl_2_habilidade}");
+		}
+
+		if (level == 3 && habilidade.levelProgressorList.progressor[0].lvl_3_habilidade)
+		{
+			btQuiz.interactable = true;
+			Debug.Log($" Abriu {habilidade.levelProgressorList.progressor[0].lvl_3_habilidade}");
+		}
+
+		if (level == 4 && habilidade.levelProgressorList.progressor[0].lvl_4_habilidade)
+		{
+			btQuiz.interactable = true;
+			Debug.Log($" Abriu {habilidade.levelProgressorList.progressor[0].lvl_4_habilidade}");
+		}
+
+
+		if (level == 5 && habilidade.levelProgressorList.progressor[0].lvl_5_habilidade)
+		{
+			btQuiz.interactable = true;
+			Debug.Log($" Abriu {habilidade.levelProgressorList.progressor[0].lvl_5_habilidade}");
+		}
+
+		if (level == 6 && habilidade.levelProgressorList.progressor[0].lvl_6_habilidade)
+		{
+			btQuiz.interactable = true;
+			Debug.Log($" Abriu {habilidade.levelProgressorList.progressor[0].lvl_6_habilidade}");
+		}
+
+		if (level == 7 && habilidade.levelProgressorList.progressor[0].lvl_7_habilidade)
+		{
+			btQuiz.interactable = true;
+			Debug.Log($" Abriu {habilidade.levelProgressorList.progressor[0].lvl_7_habilidade}");
+		}
+
+		if (level == 8 && habilidade.levelProgressorList.progressor[0].lvl_8_habilidade)
+		{
+			btQuiz.interactable = true;
+			Debug.Log($" Abriu {habilidade.levelProgressorList.progressor[0].lvl_8_habilidade}");
+		}
+
+		if (level == 9 && habilidade.levelProgressorList.progressor[0].lvl_9_habilidade)
+		{
+			btQuiz.interactable = true;
+			Debug.Log($" Abriu {habilidade.levelProgressorList.progressor[0].lvl_9_habilidade}");
+		}
+
+		if (level == 10 && habilidade.levelProgressorList.progressor[0].lvl_10_habilidade)
+		{
+			btQuiz.interactable = true;
+			Debug.Log($" Abriu {habilidade.levelProgressorList.progressor[0].lvl_10_habilidade}");
+		}
 		pig.sprite = pigs[level];
 		OpenPreGame();
 	}
