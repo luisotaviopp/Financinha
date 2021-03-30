@@ -53,7 +53,7 @@ public class MainMenu : MonoBehaviour
             PlayerPrefs.SetFloat("semanada", listaValues.menuValues[0].semanada);
             PlayerPrefs.SetInt("level", listaValues.menuValues[0].level);
             
-            Debug.Log($"Level: {listaValues.menuValues[0].level}");
+           // Debug.Log($"Level: {listaValues.menuValues[0].level}");
 
             RenderValues();
         }
