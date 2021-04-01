@@ -20,7 +20,13 @@ public class GetQuestions : MonoBehaviour
         public GameObject openAnswerPanel;
         public GameObject finalPanel;
 
-    private int questionIndex = 0;
+        public Button nextBtn;
+
+        public Image ponto;
+        public int indexPonto;
+        public Sprite[] pontos;
+
+        private int questionIndex = 0;
 
         public List<SelectedAnswer> selectedAnswers;
 
@@ -65,16 +71,23 @@ public class GetQuestions : MonoBehaviour
 
     public void NextQuestion()
     {
+        if ( indexPonto < 5)
+        {
+            indexPonto++;
+            ponto.sprite = pontos[indexPonto];
+        }
+        nextBtn.interactable = false;
         if (questionIndex < 4)
         {
             questionIndex++;
-
+            
             questionText.text = questionsList.questions[questionIndex].question;
             option1Text.text = questionsList.questions[questionIndex].option_1;
             option2Text.text = questionsList.questions[questionIndex].option_2;
             option3Text.text = questionsList.questions[questionIndex].option_3;
             option4Text.text = questionsList.questions[questionIndex].option_4;
             option5Text.text = questionsList.questions[questionIndex].option_5;
+            
         } 
         else
         {
@@ -86,8 +99,15 @@ public class GetQuestions : MonoBehaviour
 
     public void PreviousQuestion()
     {
+        if (indexPonto < 0 )
+        {
+            indexPonto--;
+            ponto.sprite = pontos[indexPonto];
+        }
+        nextBtn.interactable = false;
         if (questionIndex > 0)
         {
+            
             questionIndex--;
             questionText.text = questionsList.questions[questionIndex].question;
             option1Text.text = questionsList.questions[questionIndex].option_1;
@@ -105,6 +125,8 @@ public class GetQuestions : MonoBehaviour
 
     public void SelectAnswer(int option)
     {
+        nextBtn.interactable = true;
+     
         // Verifica se já tem alguma resposta cadastrada para essa questão
         SelectedAnswer selected = selectedAnswers.Find((x) => x.questionId == questionsList.questions[questionIndex].id);
 
@@ -142,6 +164,7 @@ public class GetQuestions : MonoBehaviour
 
             Debug.Log("Substituindo a resposta já selecionada.");
         }
+       
     }
 
     public void SendAnswersToServer()

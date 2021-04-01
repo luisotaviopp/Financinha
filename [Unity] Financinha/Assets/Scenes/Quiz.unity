@@ -195,7 +195,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &62137593
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1763,7 +1763,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 700646861}
   m_OnClick:
     m_PersistentCalls:
@@ -2897,6 +2897,15 @@ MonoBehaviour:
   quizPanel: {fileID: 62137592}
   openAnswerPanel: {fileID: 1507315717}
   finalPanel: {fileID: 1110864799}
+  nextBtn: {fileID: 700646860}
+  ponto: {fileID: 193801485}
+  pontos:
+  - {fileID: 21300000, guid: cac88f315d5e1d241a3de41c63513273, type: 3}
+  - {fileID: 21300000, guid: 82fffc40de356164d88284244f72cede, type: 3}
+  - {fileID: 21300000, guid: 8d2c63913958ab44c8c0dc8f232330e0, type: 3}
+  - {fileID: 21300000, guid: 5afb76de5c9855148a7089549d3cc5ed, type: 3}
+  - {fileID: 21300000, guid: 43fffc4b9e951354f80961ce1ba92b82, type: 3}
+  - {fileID: 21300000, guid: d35fd3df386380d469c14271fc4b2969, type: 3}
   selectedAnswers: []
 --- !u!114 &1162804798
 MonoBehaviour:
@@ -3445,7 +3454,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1441534829
 RectTransform:
   m_ObjectHideFlags: 0

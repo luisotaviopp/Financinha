@@ -12,10 +12,14 @@ public class DistributeObjectiveValues : MonoBehaviour
 	public Sprite cadeadoVermelho;
 	public Image[] cadeadosHabilidade;
 
+	public Image luaVovo;
+	public Sprite luaVovoNave;
+
 	public List<float> values;
 
 	void OnEnable()
 	{
+		
 		if (PlayerPrefs.HasKey("objective_value"))
 		{
 			objectiveValue = PlayerPrefs.GetFloat("objective_value");
@@ -45,6 +49,10 @@ public class DistributeObjectiveValues : MonoBehaviour
 			if (values[i] <= PlayerPrefs.GetFloat("bank_amount"))
 			{
 				cadeadosHabilidade[i].sprite = cadeadoVerde;
+				if(cadeadosHabilidade[cadeadosHabilidade.Length - 1].sprite.name == "cadeado-aberto")
+                {
+					luaVovo.sprite = luaVovoNave;
+                }
 			}
 		}
 	}

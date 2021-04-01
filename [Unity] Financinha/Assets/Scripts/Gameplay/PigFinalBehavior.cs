@@ -41,7 +41,7 @@ public class PigFinalBehavior : PigController
             int i = 0;
             while (i < Input.touchCount)
             {
-                if (Input.GetTouch(i).position.y > Screen.height / 2)
+                if (Input.GetTouch(i).position.y < Screen.height / 2)
                 {
                     if (jumpForce > 0)
                     {
@@ -53,7 +53,7 @@ public class PigFinalBehavior : PigController
                     Debug.Log("entr1e");
                 }
 
-                if (Input.GetTouch(i).position.y < Screen.height / 2)
+                if (Input.GetTouch(i).position.y > Screen.height / 2)
                 {
                     if (jumpForce < 0)
                     {

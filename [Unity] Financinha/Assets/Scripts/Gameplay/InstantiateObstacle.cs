@@ -68,9 +68,10 @@ public class InstantiateObstacle : MonoBehaviour
     public void Spawn()
     {
         amount = Random.Range(amountRandommin, amountRandomMax);
+        int randomRangeResult = Random.Range(0, obstacles.Length);
         for (int i = 0; i < amount; i++)
         {
-            Instantiate(obstacles[Random.Range(0, obstacles.Length)],
+            Instantiate(obstacles[randomRangeResult],
                         position[selectedObstacleTransformIndex[i]].position,
                         Quaternion.identity);
         }

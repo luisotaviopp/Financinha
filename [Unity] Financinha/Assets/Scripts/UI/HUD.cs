@@ -15,6 +15,8 @@ public class HUD : MonoBehaviour
     public Image pig;
     public Sprite[] pigs;
 
+    public Image win;
+
     private void Start()
     {
         ClosePauseMenu();
@@ -47,8 +49,6 @@ public class HUD : MonoBehaviour
         PauseMenu.SetActive(false);
         WinMenu.SetActive(false);
         LoseMenu.SetActive(true);
- 
-
     }
     public void OpenPreGame()
     {

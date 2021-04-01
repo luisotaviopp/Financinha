@@ -9,11 +9,11 @@ public class AudioManager : MonoBehaviour
     public AudioMixer mixerSoundEffects;
     public void SetVolumeMusic(float music)
     {
-        mixerMusic.SetFloat("music", music);
+        mixerMusic.SetFloat("volume", music);
     }
     public void SetVolumeSoundEffects(float soundEffects)
     {
-        mixerSoundEffects.SetFloat("soundEffects", soundEffects);
+        mixerSoundEffects.SetFloat("Effect", soundEffects);
     }
 
 }

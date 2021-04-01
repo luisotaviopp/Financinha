@@ -153,7 +153,10 @@ public class PigController : MonoBehaviour
 			if (coin_Game == 500)
 			{
 				coinHud.coin[4].sprite = coin_On;
-				
+				if("Level"+SceneLoader.refLevel == "Level10")
+                {
+
+                }
 				Time.timeScale = 0;
 				coinHud.OpenWinMenu();
 
