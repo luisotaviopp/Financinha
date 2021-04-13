@@ -1,1855 +1,287 @@
 Using pre-set license
-Built from '2020.3/staging' branch; Version is '2020.3.0f1 (c7b5465681fb) revision 13088070'; Using compiler version '192528614'; Build Type 'Release'
-OS: 'Windows 10 Pro; OS build 18363.418; Version 1909; 64bit' Language: 'pt' Physical Memory: 7671 MB
-BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
 
  COMMAND LINE ARGUMENTS:
-C:\Program Files\Unity\Hub\Editor\2020.3.0f1\Editor\Unity.exe
+/Applications/Unity/Hub/Editor/2020.3.2f1/Unity.app/Contents/MacOS/Unity
 -adb2
 -batchMode
 -noUpm
 -name
 AssetImportWorker0
 -projectPath
-C:/Users/danie/Documents/Unity Projects/GitHub/Financinha/[Unity] Financinha
+/Users/luisotaviozimermann/Desktop/Financinha/[Unity] Financinha
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-62302
-Successfully changed project path to: C:/Users/danie/Documents/Unity Projects/GitHub/Financinha/[Unity] Financinha
-C:/Users/danie/Documents/Unity Projects/GitHub/Financinha/[Unity] Financinha
+50080
+Successfully changed project path to: /Users/luisotaviozimermann/Desktop/Financinha/[Unity] Financinha
+/Users/luisotaviozimermann/Desktop/Financinha/[Unity] Financinha
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 72.62 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 53.26 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Initialize engine version: 2020.3.0f1 (c7b5465681fb)
-[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.0f1/Editor/Data/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path C:/Users/danie/Documents/Unity Projects/GitHub/Financinha/[Unity] Financinha/Assets
+Initialize engine version: 2020.3.2f1 (8fd9074bf66c)
+[Subsystems] Discovering subsystems at path /Applications/Unity/Hub/Editor/2020.3.2f1/Unity.app/Contents/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path /Users/luisotaviozimermann/Desktop/Financinha/[Unity] Financinha/Assets
 GfxDevice: creating device client; threaded=0
-Direct3D:
-    Version:  Direct3D 11.0 [level 11.0]
-    Renderer: NVIDIA GeForce GTX 760 (ID=0x1187)
-    Vendor:   
-    VRAM:     2007 MB
-    Driver:   27.21.14.5730
+2021-04-12 12:57:28.282 Unity[10415:52939] iMac preferred device: NVIDIA GeForce GT 640M (high power)
+2021-04-12 12:57:28.282 Unity[10415:52939] Metal devices available: 1
+2021-04-12 12:57:28.282 Unity[10415:52939] 0: NVIDIA GeForce GT 640M (high power)
+2021-04-12 12:57:28.298 Unity[10415:52939] Using device NVIDIA GeForce GT 640M (high power)
+Initializing Metal device caps: NVIDIA GeForce GT 640M
 Initialize mono
-Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.0f1/Editor/Data/Managed'
-Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.0f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
-Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.0f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56060
+Mono path[0] = '/Applications/Unity/Hub/Editor/2020.3.2f1/Unity.app/Contents/Managed'
+Mono path[1] = '/Applications/Unity/Hub/Editor/2020.3.2f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = '/Applications/Unity/Hub/Editor/2020.3.2f1/Unity.app/Contents/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56415
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
-Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.0f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.002080 seconds.
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 71.28 ms, found 1 plugins.
+Register platform support module: /Applications/Unity/Hub/Editor/2020.3.2f1/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
+Registered in 0.000782 seconds.
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 49.68 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  3.073 seconds
+- Completed reload, in  6.491 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.001357 seconds.
+Registered in 0.000604 seconds.
 Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 79.19 ms, found 1 plugins.
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.32 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
-NullReferenceException: Object reference not set to an instance of an object
-  at XT.Enhancer.Package..cctor () [0x00019] in C:\Users\danie\Documents\Unity Projects\GitHub\Financinha\[Unity] Financinha\Library\PackageCache\com.xeleh.enhancer@78e062bf54\Editor\Package.cs:10 
-Rethrow as TypeInitializationException: The type initializer for 'XT.Enhancer.Package' threw an exception.
-
-
-(Filename: Library/PackageCache/com.xeleh.enhancer@78e062bf54/Editor/Package.cs Line: 10)
-
 Mono: successfully reloaded assembly
-- Completed reload, in  1.592 seconds
+- Completed reload, in  1.321 seconds
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
-Refreshing native plugins compatible for Editor in 0.64 ms, found 1 plugins.
+Launching external process: /Applications/Unity/Hub/Editor/2020.3.2f1/Unity.app/Contents/Tools/UnityShaderCompiler
+Launched and connected shader compiler UnityShaderCompiler after 0.04 seconds
+Refreshing native plugins compatible for Editor in 0.33 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2008 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 94.6 MB.
-System memory in use after: 94.6 MB.
+Unloading 1222 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 118.0 MB.
+System memory in use after: 118.1 MB.
 
-Unloading 19 unused Assets to reduce memory usage. Loaded Objects now: 2466.
-Total: 4.424200 ms (FindLiveObjects: 0.257900 ms CreateObjectMapping: 0.112800 ms MarkObjects: 3.948400 ms  DeleteObjects: 0.103100 ms)
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 1667.
+Total: 2.165792 ms (FindLiveObjects: 0.186602 ms CreateObjectMapping: 0.056235 ms MarkObjects: 1.797563 ms  DeleteObjects: 0.123801 ms)
 
 ========================================================================
 Received Import Request.
-  path: Assets/Prefabs/Objects/Level05
-  artifactKey: Guid(4e2dec839b4736c4892adb3fc91b25e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Objects/Level05 using Guid(4e2dec839b4736c4892adb3fc91b25e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '94239812feb26200defbf5fd996f2940') in 0.006955 seconds
-  Import took 0.033250 seconds .
+  path: Assets/Scenes/Level 03.unity
+  artifactKey: Guid(62c0bb1cd1b16e0469f7a4ee26b1a99f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Level 03.unity using Guid(62c0bb1cd1b16e0469f7a4ee26b1a99f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8ab122ed45a59dae8976ae8d176393be') in 0.040879 seconds
+  Import took 0.054550 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 42.073272 seconds.
-  path: Assets/Prefabs/Objects/Level05
-  artifactKey: Guid(4e2dec839b4736c4892adb3fc91b25e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Objects/Level05 using Guid(4e2dec839b4736c4892adb3fc91b25e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '94239812feb26200defbf5fd996f2940') in 0.003544 seconds
-  Import took 0.010778 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001349 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.67 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-NullReferenceException: Object reference not set to an instance of an object
-  at XT.Enhancer.Package..cctor () [0x00019] in C:\Users\danie\Documents\Unity Projects\GitHub\Financinha\[Unity] Financinha\Library\PackageCache\com.xeleh.enhancer@78e062bf54\Editor\Package.cs:10 
-Rethrow as TypeInitializationException: The type initializer for 'XT.Enhancer.Package' threw an exception.
-
-
-(Filename: Library/PackageCache/com.xeleh.enhancer@78e062bf54/Editor/Package.cs Line: 10)
-
-Mono: successfully reloaded assembly
-- Completed reload, in  1.288 seconds
-Platform modules already initialized, skipping
-Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
-Refreshing native plugins compatible for Editor in 0.66 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1991 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 93.2 MB.
-System memory in use after: 93.3 MB.
-
-Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 2469.
-Total: 2.664300 ms (FindLiveObjects: 0.246200 ms CreateObjectMapping: 0.110900 ms MarkObjects: 2.285300 ms  DeleteObjects: 0.020300 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001347 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.66 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-NullReferenceException: Object reference not set to an instance of an object
-  at XT.Enhancer.Package..cctor () [0x00019] in C:\Users\danie\Documents\Unity Projects\GitHub\Financinha\[Unity] Financinha\Library\PackageCache\com.xeleh.enhancer@78e062bf54\Editor\Package.cs:10 
-Rethrow as TypeInitializationException: The type initializer for 'XT.Enhancer.Package' threw an exception.
-
-
-(Filename: Library/PackageCache/com.xeleh.enhancer@78e062bf54/Editor/Package.cs Line: 10)
-
-Mono: successfully reloaded assembly
-- Completed reload, in  1.312 seconds
-Platform modules already initialized, skipping
-Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
-Refreshing native plugins compatible for Editor in 0.67 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1991 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 93.2 MB.
-System memory in use after: 93.4 MB.
-
-Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 2472.
-Total: 2.602000 ms (FindLiveObjects: 0.245800 ms CreateObjectMapping: 0.111100 ms MarkObjects: 2.225300 ms  DeleteObjects: 0.018300 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
-========================================================================
-Received Import Request.
-  Time since last request: 2091.728505 seconds.
-  path: Assets/Scenes/Level 01.unity
-  artifactKey: Guid(383913c065f6db74b85b0e7a9e8e597f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Level 01.unity using Guid(383913c065f6db74b85b0e7a9e8e597f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e8e1ef1b3e28d3f63f8bb501e657e7b3') in 0.017083 seconds
-  Import took 0.021855 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 3.677509 seconds.
+  Time since last request: 0.000275 seconds.
   path: Assets/Scenes/Level 02.unity
   artifactKey: Guid(1d539350a9db63e4cbd22d28874d2383) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Level 02.unity using Guid(1d539350a9db63e4cbd22d28874d2383) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '428e00c1fac61ed100dd4619b790ac24') in 0.002885 seconds
-  Import took 0.007076 seconds .
+Start importing Assets/Scenes/Level 02.unity using Guid(1d539350a9db63e4cbd22d28874d2383) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5a5fed9801255d0fc4c8b688ea0987a5') in 0.019251 seconds
+  Import took 0.041139 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 11.012975 seconds.
-  path: Assets/Scenes/Level 03.unity
-  artifactKey: Guid(62c0bb1cd1b16e0469f7a4ee26b1a99f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Level 03.unity using Guid(62c0bb1cd1b16e0469f7a4ee26b1a99f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5a65f74af4407b065afc63278ae5dcd2') in 0.002691 seconds
-  Import took 0.006805 seconds .
+  Time since last request: 0.000228 seconds.
+  path: Assets/Sprites
+  artifactKey: Guid(49fe658e049071f4ea552e1260719494) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites using Guid(49fe658e049071f4ea552e1260719494) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1182b87f1ebcd0e1dd0281751e56c432') in 0.011104 seconds
+  Import took 0.013891 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000495 seconds.
-  path: Assets/Scenes/Level 03.unity
-  artifactKey: Guid(62c0bb1cd1b16e0469f7a4ee26b1a99f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Level 03.unity using Guid(62c0bb1cd1b16e0469f7a4ee26b1a99f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5a65f74af4407b065afc63278ae5dcd2') in 0.002644 seconds
-  Import took 0.007345 seconds .
+  Time since last request: 0.000335 seconds.
+  path: Assets/Scenes
+  artifactKey: Guid(575204b4c67179d48b93099740704550) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes using Guid(575204b4c67179d48b93099740704550) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '60cfd6ce85cb90471f31c63010452959') in 0.001303 seconds
+  Import took 0.019578 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 3.213907 seconds.
+  Time since last request: 27.272511 seconds.
   path: Assets/Scenes/Level 04.unity
   artifactKey: Guid(65c63b4e485eb7f45b1422ff1048303b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Level 04.unity using Guid(65c63b4e485eb7f45b1422ff1048303b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cc652d582e5363f2f802855c33daf101') in 0.004825 seconds
-  Import took 0.008901 seconds .
+Start importing Assets/Scenes/Level 04.unity using Guid(65c63b4e485eb7f45b1422ff1048303b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4c842b408bd9ad6068412c2ef3e3bc4d') in 0.001814 seconds
+  Import took 0.030886 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 4.072060 seconds.
+  Time since last request: 1.664749 seconds.
   path: Assets/Scenes/Level 05.unity
   artifactKey: Guid(9c83d1e77eeb92a43a996201e6fdf0e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Level 05.unity using Guid(9c83d1e77eeb92a43a996201e6fdf0e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8b4e1c5909a1134d7b5072a3ac0a5aeb') in 0.002621 seconds
-  Import took 0.006653 seconds .
+Start importing Assets/Scenes/Level 05.unity using Guid(9c83d1e77eeb92a43a996201e6fdf0e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a28b496fe76f2f3b40c307869c33923d') in 0.015782 seconds
+  Import took 0.060144 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 4.170510 seconds.
+  Time since last request: 36.141658 seconds.
   path: Assets/Scenes/Level 06.unity
   artifactKey: Guid(cec8ec083d9d1db4887a6bd5cf22e2c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Level 06.unity using Guid(cec8ec083d9d1db4887a6bd5cf22e2c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7028ef3fbc304bdc67fe0b601b517a3f') in 0.002630 seconds
-  Import took 0.006717 seconds .
+Start importing Assets/Scenes/Level 06.unity using Guid(cec8ec083d9d1db4887a6bd5cf22e2c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9d576421966812418379d1678bfb3ad1') in 0.030149 seconds
+  Import took 0.047107 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000375 seconds.
-  path: Assets/Scenes/Level 06.unity
-  artifactKey: Guid(cec8ec083d9d1db4887a6bd5cf22e2c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Level 06.unity using Guid(cec8ec083d9d1db4887a6bd5cf22e2c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7028ef3fbc304bdc67fe0b601b517a3f') in 0.002152 seconds
-  Import took 0.005803 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 4.026650 seconds.
+  Time since last request: 2.696936 seconds.
   path: Assets/Scenes/Level 07.unity
   artifactKey: Guid(80f7fc524df543d4ba3d63a3e9d10b5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Level 07.unity using Guid(80f7fc524df543d4ba3d63a3e9d10b5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a6bc64bdadee0d716103025686e78801') in 0.002705 seconds
-  Import took 0.006876 seconds .
+Start importing Assets/Scenes/Level 07.unity using Guid(80f7fc524df543d4ba3d63a3e9d10b5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b9c122f6df2615b9e8dca4ba10b4189e') in 0.002099 seconds
+  Import took 0.047368 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000652 seconds.
-  path: Assets/Scenes/Level 07.unity
-  artifactKey: Guid(80f7fc524df543d4ba3d63a3e9d10b5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Level 07.unity using Guid(80f7fc524df543d4ba3d63a3e9d10b5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a6bc64bdadee0d716103025686e78801') in 0.002684 seconds
-  Import took 0.007627 seconds .
+  Time since last request: 28.616578 seconds.
+  path: Assets/Scenes/Level 08.unity
+  artifactKey: Guid(d72062060fd8e3c439e0bea967a7998b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Level 08.unity using Guid(d72062060fd8e3c439e0bea967a7998b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '86ce8527030382a62a0194a281a4c453') in 0.001467 seconds
+  Import took 0.035306 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 6.676347 seconds.
-  path: Assets/Scenes/Level 10.unity
-  artifactKey: Guid(168f54b2b05bb5e45b8ed7aaae7663e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Level 10.unity using Guid(168f54b2b05bb5e45b8ed7aaae7663e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dcfe0cdac7c1bd2c9f65b7abe9ff9ff8') in 0.013011 seconds
-  Import took 0.017460 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 7.538134 seconds.
+  Time since last request: 2.122509 seconds.
   path: Assets/Scenes/Level 09.unity
   artifactKey: Guid(d270ebb8fa52e3a43b1db82cb3a99b56) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Level 09.unity using Guid(d270ebb8fa52e3a43b1db82cb3a99b56) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9a8ae93413d40414f8f8e3158ec5a563') in 0.017204 seconds
-  Import took 0.021310 seconds .
+Start importing Assets/Scenes/Level 09.unity using Guid(d270ebb8fa52e3a43b1db82cb3a99b56) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '36967dc899e15ddef17ebea2d6fd985a') in 0.001289 seconds
+  Import took 0.031749 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.974061 seconds.
-  path: Assets/Scenes/Level 09Settings.lighting
-  artifactKey: Guid(bc359335139230448a427a97ef1716d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Level 09Settings.lighting using Guid(bc359335139230448a427a97ef1716d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cfa7e0cd9ecbc7fd065a32276ced6f5e') in 0.033728 seconds
-  Import took 0.037902 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.010698 seconds.
-  path: Assets/Scenes/Level 09Settings.lighting
-  artifactKey: Guid(bc359335139230448a427a97ef1716d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Level 09Settings.lighting using Guid(bc359335139230448a427a97ef1716d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cfa7e0cd9ecbc7fd065a32276ced6f5e') in 0.002688 seconds
-  Import took 0.006729 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 3.479345 seconds.
-  path: Assets/Scenes/TesteQuizz.unity
-  artifactKey: Guid(1c35aa438e1b2d246892b32d0627fe1f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/TesteQuizz.unity using Guid(1c35aa438e1b2d246892b32d0627fe1f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9999be8fef78883ca6c90a1e3d4675e9') in 0.002660 seconds
-  Import took 0.007135 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000499 seconds.
-  path: Assets/Scenes/TesteQuizz.unity
-  artifactKey: Guid(1c35aa438e1b2d246892b32d0627fe1f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/TesteQuizz.unity using Guid(1c35aa438e1b2d246892b32d0627fe1f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9999be8fef78883ca6c90a1e3d4675e9') in 0.002522 seconds
-  Import took 0.007459 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.373326 seconds.
-  path: Assets/Scenes/Quiz.unity
-  artifactKey: Guid(e013866f49873a642bf9167b02eb5de0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Quiz.unity using Guid(e013866f49873a642bf9167b02eb5de0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'beb1b8c5fa90419a0851b1cffef5f7a3') in 0.002969 seconds
-  Import took 0.007665 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.272548 seconds.
+  Time since last request: 52.055318 seconds.
   path: Assets/Scenes/Menu.unity
   artifactKey: Guid(2cda990e2423bbf4892e6590ba056729) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Menu.unity using Guid(2cda990e2423bbf4892e6590ba056729) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c4990277b6b2a6367533aec211733736') in 0.002589 seconds
-  Import took 0.007111 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001398 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.67 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-NullReferenceException: Object reference not set to an instance of an object
-  at XT.Enhancer.Package..cctor () [0x00019] in C:\Users\danie\Documents\Unity Projects\GitHub\Financinha\[Unity] Financinha\Library\PackageCache\com.xeleh.enhancer@78e062bf54\Editor\Package.cs:10 
-Rethrow as TypeInitializationException: The type initializer for 'XT.Enhancer.Package' threw an exception.
-
-
-(Filename: Library/PackageCache/com.xeleh.enhancer@78e062bf54/Editor/Package.cs Line: 10)
-
-Mono: successfully reloaded assembly
-- Completed reload, in  1.351 seconds
-Platform modules already initialized, skipping
-Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
-Refreshing native plugins compatible for Editor in 0.66 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1991 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 93.3 MB.
-System memory in use after: 93.4 MB.
-
-Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 2475.
-Total: 2.604100 ms (FindLiveObjects: 0.238900 ms CreateObjectMapping: 0.111600 ms MarkObjects: 2.233900 ms  DeleteObjects: 0.018400 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
-========================================================================
-Received Import Request.
-  Time since last request: 64.115058 seconds.
-  path: Assets/Sprites/Piggy
-  artifactKey: Guid(cdceccf6bb743e944b80b1946630efee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Piggy using Guid(cdceccf6bb743e944b80b1946630efee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '47e10f9ebf71d070d7982d32bcdefafc') in 0.007945 seconds
-  Import took 0.012532 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001380 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.68 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-NullReferenceException: Object reference not set to an instance of an object
-  at XT.Enhancer.Package..cctor () [0x00019] in C:\Users\danie\Documents\Unity Projects\GitHub\Financinha\[Unity] Financinha\Library\PackageCache\com.xeleh.enhancer@78e062bf54\Editor\Package.cs:10 
-Rethrow as TypeInitializationException: The type initializer for 'XT.Enhancer.Package' threw an exception.
-
-
-(Filename: Library/PackageCache/com.xeleh.enhancer@78e062bf54/Editor/Package.cs Line: 10)
-
-Mono: successfully reloaded assembly
-- Completed reload, in  1.332 seconds
-Platform modules already initialized, skipping
-Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
-Refreshing native plugins compatible for Editor in 0.71 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1991 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 93.4 MB.
-System memory in use after: 93.5 MB.
-
-Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 2478.
-Total: 2.610500 ms (FindLiveObjects: 0.244400 ms CreateObjectMapping: 0.111900 ms MarkObjects: 2.234200 ms  DeleteObjects: 0.018600 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001390 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.67 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-NullReferenceException: Object reference not set to an instance of an object
-  at XT.Enhancer.Package..cctor () [0x00019] in C:\Users\danie\Documents\Unity Projects\GitHub\Financinha\[Unity] Financinha\Library\PackageCache\com.xeleh.enhancer@78e062bf54\Editor\Package.cs:10 
-Rethrow as TypeInitializationException: The type initializer for 'XT.Enhancer.Package' threw an exception.
-
-
-(Filename: Library/PackageCache/com.xeleh.enhancer@78e062bf54/Editor/Package.cs Line: 10)
-
-Mono: successfully reloaded assembly
-- Completed reload, in  1.359 seconds
-Platform modules already initialized, skipping
-Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
-Refreshing native plugins compatible for Editor in 0.67 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1991 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 93.4 MB.
-System memory in use after: 93.5 MB.
-
-Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 2481.
-Total: 2.603100 ms (FindLiveObjects: 0.242400 ms CreateObjectMapping: 0.111600 ms MarkObjects: 2.230300 ms  DeleteObjects: 0.017500 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001370 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.67 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-NullReferenceException: Object reference not set to an instance of an object
-  at XT.Enhancer.Package..cctor () [0x00019] in C:\Users\danie\Documents\Unity Projects\GitHub\Financinha\[Unity] Financinha\Library\PackageCache\com.xeleh.enhancer@78e062bf54\Editor\Package.cs:10 
-Rethrow as TypeInitializationException: The type initializer for 'XT.Enhancer.Package' threw an exception.
-
-
-(Filename: Library/PackageCache/com.xeleh.enhancer@78e062bf54/Editor/Package.cs Line: 10)
-
-Mono: successfully reloaded assembly
-- Completed reload, in  1.348 seconds
-Platform modules already initialized, skipping
-Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
-Refreshing native plugins compatible for Editor in 0.68 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1991 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 93.4 MB.
-System memory in use after: 93.5 MB.
-
-Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 2484.
-Total: 2.620200 ms (FindLiveObjects: 0.246700 ms CreateObjectMapping: 0.111500 ms MarkObjects: 2.243200 ms  DeleteObjects: 0.017500 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001388 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.67 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-NullReferenceException: Object reference not set to an instance of an object
-  at XT.Enhancer.Package..cctor () [0x00019] in C:\Users\danie\Documents\Unity Projects\GitHub\Financinha\[Unity] Financinha\Library\PackageCache\com.xeleh.enhancer@78e062bf54\Editor\Package.cs:10 
-Rethrow as TypeInitializationException: The type initializer for 'XT.Enhancer.Package' threw an exception.
-
-
-(Filename: Library/PackageCache/com.xeleh.enhancer@78e062bf54/Editor/Package.cs Line: 10)
-
-Mono: successfully reloaded assembly
-- Completed reload, in  1.339 seconds
-Platform modules already initialized, skipping
-Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
-Refreshing native plugins compatible for Editor in 0.67 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1991 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 93.4 MB.
-System memory in use after: 93.5 MB.
-
-Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 2487.
-Total: 2.608500 ms (FindLiveObjects: 0.245900 ms CreateObjectMapping: 0.111400 ms MarkObjects: 2.231700 ms  DeleteObjects: 0.018100 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001355 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.67 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-NullReferenceException: Object reference not set to an instance of an object
-  at XT.Enhancer.Package..cctor () [0x00019] in C:\Users\danie\Documents\Unity Projects\GitHub\Financinha\[Unity] Financinha\Library\PackageCache\com.xeleh.enhancer@78e062bf54\Editor\Package.cs:10 
-Rethrow as TypeInitializationException: The type initializer for 'XT.Enhancer.Package' threw an exception.
-
-
-(Filename: Library/PackageCache/com.xeleh.enhancer@78e062bf54/Editor/Package.cs Line: 10)
-
-Mono: successfully reloaded assembly
-- Completed reload, in  1.392 seconds
-Platform modules already initialized, skipping
-Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
-Refreshing native plugins compatible for Editor in 0.66 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1991 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 93.4 MB.
-System memory in use after: 93.5 MB.
-
-Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 2490.
-Total: 2.597400 ms (FindLiveObjects: 0.246400 ms CreateObjectMapping: 0.111300 ms MarkObjects: 2.220500 ms  DeleteObjects: 0.017900 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001331 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.66 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-NullReferenceException: Object reference not set to an instance of an object
-  at XT.Enhancer.Package..cctor () [0x00019] in C:\Users\danie\Documents\Unity Projects\GitHub\Financinha\[Unity] Financinha\Library\PackageCache\com.xeleh.enhancer@78e062bf54\Editor\Package.cs:10 
-Rethrow as TypeInitializationException: The type initializer for 'XT.Enhancer.Package' threw an exception.
-
-
-(Filename: Library/PackageCache/com.xeleh.enhancer@78e062bf54/Editor/Package.cs Line: 10)
-
-Mono: successfully reloaded assembly
-- Completed reload, in  1.356 seconds
-Platform modules already initialized, skipping
-Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
-Refreshing native plugins compatible for Editor in 0.66 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1991 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 93.4 MB.
-System memory in use after: 93.5 MB.
-
-Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 2493.
-Total: 2.607000 ms (FindLiveObjects: 0.246400 ms CreateObjectMapping: 0.111100 ms MarkObjects: 2.231000 ms  DeleteObjects: 0.017200 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001332 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.68 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-NullReferenceException: Object reference not set to an instance of an object
-  at XT.Enhancer.Package..cctor () [0x00019] in C:\Users\danie\Documents\Unity Projects\GitHub\Financinha\[Unity] Financinha\Library\PackageCache\com.xeleh.enhancer@78e062bf54\Editor\Package.cs:10 
-Rethrow as TypeInitializationException: The type initializer for 'XT.Enhancer.Package' threw an exception.
-
-
-(Filename: Library/PackageCache/com.xeleh.enhancer@78e062bf54/Editor/Package.cs Line: 10)
-
-Mono: successfully reloaded assembly
-- Completed reload, in  1.406 seconds
-Platform modules already initialized, skipping
-Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
-Refreshing native plugins compatible for Editor in 0.66 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1991 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 93.4 MB.
-System memory in use after: 93.5 MB.
-
-Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 2496.
-Total: 3.125900 ms (FindLiveObjects: 0.744300 ms CreateObjectMapping: 0.125000 ms MarkObjects: 2.235300 ms  DeleteObjects: 0.019700 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001401 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.71 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-NullReferenceException: Object reference not set to an instance of an object
-  at XT.Enhancer.Package..cctor () [0x00019] in C:\Users\danie\Documents\Unity Projects\GitHub\Financinha\[Unity] Financinha\Library\PackageCache\com.xeleh.enhancer@78e062bf54\Editor\Package.cs:10 
-Rethrow as TypeInitializationException: The type initializer for 'XT.Enhancer.Package' threw an exception.
-
-
-(Filename: Library/PackageCache/com.xeleh.enhancer@78e062bf54/Editor/Package.cs Line: 10)
-
-Mono: successfully reloaded assembly
-- Completed reload, in  1.385 seconds
-Platform modules already initialized, skipping
-Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
-Refreshing native plugins compatible for Editor in 0.66 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1991 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 93.4 MB.
-System memory in use after: 93.5 MB.
-
-Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 2499.
-Total: 2.605100 ms (FindLiveObjects: 0.242800 ms CreateObjectMapping: 0.111200 ms MarkObjects: 2.231300 ms  DeleteObjects: 0.018600 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001369 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.67 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-NullReferenceException: Object reference not set to an instance of an object
-  at XT.Enhancer.Package..cctor () [0x00019] in C:\Users\danie\Documents\Unity Projects\GitHub\Financinha\[Unity] Financinha\Library\PackageCache\com.xeleh.enhancer@78e062bf54\Editor\Package.cs:10 
-Rethrow as TypeInitializationException: The type initializer for 'XT.Enhancer.Package' threw an exception.
-
-
-(Filename: Library/PackageCache/com.xeleh.enhancer@78e062bf54/Editor/Package.cs Line: 10)
-
-Mono: successfully reloaded assembly
-- Completed reload, in  1.378 seconds
-Platform modules already initialized, skipping
-Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
-Refreshing native plugins compatible for Editor in 0.66 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1991 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 93.4 MB.
-System memory in use after: 93.5 MB.
-
-Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 2502.
-Total: 2.664200 ms (FindLiveObjects: 0.248500 ms CreateObjectMapping: 0.111800 ms MarkObjects: 2.283400 ms  DeleteObjects: 0.019200 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001457 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.68 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-NullReferenceException: Object reference not set to an instance of an object
-  at XT.Enhancer.Package..cctor () [0x00019] in C:\Users\danie\Documents\Unity Projects\GitHub\Financinha\[Unity] Financinha\Library\PackageCache\com.xeleh.enhancer@78e062bf54\Editor\Package.cs:10 
-Rethrow as TypeInitializationException: The type initializer for 'XT.Enhancer.Package' threw an exception.
-
-
-(Filename: Library/PackageCache/com.xeleh.enhancer@78e062bf54/Editor/Package.cs Line: 10)
-
-Mono: successfully reloaded assembly
-- Completed reload, in  1.390 seconds
-Platform modules already initialized, skipping
-Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
-Refreshing native plugins compatible for Editor in 0.67 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1991 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 93.4 MB.
-System memory in use after: 93.5 MB.
-
-Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 2505.
-Total: 2.603800 ms (FindLiveObjects: 0.240000 ms CreateObjectMapping: 0.112100 ms MarkObjects: 2.232300 ms  DeleteObjects: 0.018100 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001282 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.68 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-NullReferenceException: Object reference not set to an instance of an object
-  at XT.Enhancer.Package..cctor () [0x00019] in C:\Users\danie\Documents\Unity Projects\GitHub\Financinha\[Unity] Financinha\Library\PackageCache\com.xeleh.enhancer@78e062bf54\Editor\Package.cs:10 
-Rethrow as TypeInitializationException: The type initializer for 'XT.Enhancer.Package' threw an exception.
-
-
-(Filename: Library/PackageCache/com.xeleh.enhancer@78e062bf54/Editor/Package.cs Line: 10)
-
-Mono: successfully reloaded assembly
-- Completed reload, in  1.383 seconds
-Platform modules already initialized, skipping
-Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
-Refreshing native plugins compatible for Editor in 0.65 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1991 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 93.4 MB.
-System memory in use after: 93.6 MB.
-
-Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 2508.
-Total: 2.630300 ms (FindLiveObjects: 0.255500 ms CreateObjectMapping: 0.111100 ms MarkObjects: 2.244900 ms  DeleteObjects: 0.017500 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001364 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.67 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-NullReferenceException: Object reference not set to an instance of an object
-  at XT.Enhancer.Package..cctor () [0x00019] in C:\Users\danie\Documents\Unity Projects\GitHub\Financinha\[Unity] Financinha\Library\PackageCache\com.xeleh.enhancer@78e062bf54\Editor\Package.cs:10 
-Rethrow as TypeInitializationException: The type initializer for 'XT.Enhancer.Package' threw an exception.
-
-
-(Filename: Library/PackageCache/com.xeleh.enhancer@78e062bf54/Editor/Package.cs Line: 10)
-
-Mono: successfully reloaded assembly
-- Completed reload, in  1.404 seconds
-Platform modules already initialized, skipping
-Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
-Refreshing native plugins compatible for Editor in 0.66 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1991 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 93.4 MB.
-System memory in use after: 93.6 MB.
-
-Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 2511.
-Total: 2.648700 ms (FindLiveObjects: 0.245000 ms CreateObjectMapping: 0.112500 ms MarkObjects: 2.270500 ms  DeleteObjects: 0.019300 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001337 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.68 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-NullReferenceException: Object reference not set to an instance of an object
-  at XT.Enhancer.Package..cctor () [0x00019] in C:\Users\danie\Documents\Unity Projects\GitHub\Financinha\[Unity] Financinha\Library\PackageCache\com.xeleh.enhancer@78e062bf54\Editor\Package.cs:10 
-Rethrow as TypeInitializationException: The type initializer for 'XT.Enhancer.Package' threw an exception.
-
-
-(Filename: Library/PackageCache/com.xeleh.enhancer@78e062bf54/Editor/Package.cs Line: 10)
-
-Mono: successfully reloaded assembly
-- Completed reload, in  1.410 seconds
-Platform modules already initialized, skipping
-Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
-Refreshing native plugins compatible for Editor in 0.71 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1991 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 93.5 MB.
-System memory in use after: 93.6 MB.
-
-Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 2514.
-Total: 2.667400 ms (FindLiveObjects: 0.245900 ms CreateObjectMapping: 0.112900 ms MarkObjects: 2.289600 ms  DeleteObjects: 0.017700 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001346 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.67 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-NullReferenceException: Object reference not set to an instance of an object
-  at XT.Enhancer.Package..cctor () [0x00019] in C:\Users\danie\Documents\Unity Projects\GitHub\Financinha\[Unity] Financinha\Library\PackageCache\com.xeleh.enhancer@78e062bf54\Editor\Package.cs:10 
-Rethrow as TypeInitializationException: The type initializer for 'XT.Enhancer.Package' threw an exception.
-
-
-(Filename: Library/PackageCache/com.xeleh.enhancer@78e062bf54/Editor/Package.cs Line: 10)
-
-Mono: successfully reloaded assembly
-- Completed reload, in  1.401 seconds
-Platform modules already initialized, skipping
-Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
-Refreshing native plugins compatible for Editor in 0.66 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1991 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 93.5 MB.
-System memory in use after: 93.6 MB.
-
-Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 2517.
-Total: 2.645800 ms (FindLiveObjects: 0.250700 ms CreateObjectMapping: 0.111000 ms MarkObjects: 2.264100 ms  DeleteObjects: 0.018600 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001347 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.67 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-NullReferenceException: Object reference not set to an instance of an object
-  at XT.Enhancer.Package..cctor () [0x00019] in C:\Users\danie\Documents\Unity Projects\GitHub\Financinha\[Unity] Financinha\Library\PackageCache\com.xeleh.enhancer@78e062bf54\Editor\Package.cs:10 
-Rethrow as TypeInitializationException: The type initializer for 'XT.Enhancer.Package' threw an exception.
-
-
-(Filename: Library/PackageCache/com.xeleh.enhancer@78e062bf54/Editor/Package.cs Line: 10)
-
-Mono: successfully reloaded assembly
-- Completed reload, in  1.406 seconds
-Platform modules already initialized, skipping
-Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
-Refreshing native plugins compatible for Editor in 0.66 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1991 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 93.5 MB.
-System memory in use after: 93.6 MB.
-
-Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 2520.
-Total: 2.637500 ms (FindLiveObjects: 0.252100 ms CreateObjectMapping: 0.112300 ms MarkObjects: 2.253700 ms  DeleteObjects: 0.018200 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001347 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.66 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-NullReferenceException: Object reference not set to an instance of an object
-  at XT.Enhancer.Package..cctor () [0x00019] in C:\Users\danie\Documents\Unity Projects\GitHub\Financinha\[Unity] Financinha\Library\PackageCache\com.xeleh.enhancer@78e062bf54\Editor\Package.cs:10 
-Rethrow as TypeInitializationException: The type initializer for 'XT.Enhancer.Package' threw an exception.
-
-
-(Filename: Library/PackageCache/com.xeleh.enhancer@78e062bf54/Editor/Package.cs Line: 10)
-
-Mono: successfully reloaded assembly
-- Completed reload, in  1.422 seconds
-Platform modules already initialized, skipping
-Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
-Refreshing native plugins compatible for Editor in 0.67 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1991 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 93.5 MB.
-System memory in use after: 93.6 MB.
-
-Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 2523.
-Total: 2.664600 ms (FindLiveObjects: 0.251000 ms CreateObjectMapping: 0.111400 ms MarkObjects: 2.281600 ms  DeleteObjects: 0.019200 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
-========================================================================
-Received Import Request.
-  Time since last request: 1391.602022 seconds.
-  path: Assets/Art/New Art
-  artifactKey: Guid(9a2674a94ccc93c44aa1889ae746231c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/New Art using Guid(9a2674a94ccc93c44aa1889ae746231c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3b00d4682cd24e80fb68301d5197517b') in 0.006451 seconds
-  Import took 0.010875 seconds .
+Start importing Assets/Scenes/Menu.unity using Guid(2cda990e2423bbf4892e6590ba056729) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '957968916e3cbcdc5aa24a3ec9d5029c') in 0.002229 seconds
+  Import took 0.063464 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.012921 seconds.
-  path: Assets/Art/New Art
-  artifactKey: Guid(9a2674a94ccc93c44aa1889ae746231c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/New Art using Guid(9a2674a94ccc93c44aa1889ae746231c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3b00d4682cd24e80fb68301d5197517b') in 0.002154 seconds
-  Import took 0.006288 seconds .
+  Time since last request: 189.436219 seconds.
+  path: Assets/Scenes/Level 10.unity
+  artifactKey: Guid(168f54b2b05bb5e45b8ed7aaae7663e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Level 10.unity using Guid(168f54b2b05bb5e45b8ed7aaae7663e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '69fcee1a534e1cd0f27e35c7c28ac457') in 0.001967 seconds
+  Import took 0.025670 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 2.298012 seconds.
-  path: Assets/Art/New Art/FASE 1
-  artifactKey: Guid(0233b8f313b404c429a736803df0fb60) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/New Art/FASE 1 using Guid(0233b8f313b404c429a736803df0fb60) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8f701bb475f141e1b5a26f8a217819d2') in 0.002226 seconds
-  Import took 0.006539 seconds .
+  Time since last request: 0.006578 seconds.
+  path: Assets/Scenes/Level 10.unity
+  artifactKey: Guid(168f54b2b05bb5e45b8ed7aaae7663e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Level 10.unity using Guid(168f54b2b05bb5e45b8ed7aaae7663e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '69fcee1a534e1cd0f27e35c7c28ac457') in 0.001365 seconds
+  Import took 0.003837 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 224.794849 seconds.
-  path: Assets/Art/New Art/Imagens Final
-  artifactKey: Guid(a7c7dec7443bffe44ac0a66ae4f3ce4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/New Art/Imagens Final using Guid(a7c7dec7443bffe44ac0a66ae4f3ce4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '619170c0522cd673540bc795eb299f66') in 0.015453 seconds
-  Import took 0.020095 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 7.042023 seconds.
-  path: Assets/Art/Sprites/UI New
-  artifactKey: Guid(9da634651a521bc41a45b14206b9bb5b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Sprites/UI New using Guid(9da634651a521bc41a45b14206b9bb5b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cf81b4eb0db262c4cfc51a57ea743420') in 0.002364 seconds
-  Import took 0.006424 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.007257 seconds.
-  path: Assets/Art/Sprites/UI New
-  artifactKey: Guid(9da634651a521bc41a45b14206b9bb5b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Sprites/UI New using Guid(9da634651a521bc41a45b14206b9bb5b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cf81b4eb0db262c4cfc51a57ea743420') in 0.002214 seconds
-  Import took 0.007301 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.996158 seconds.
-  path: Assets/Art/Sprites/UI New/Icones
-  artifactKey: Guid(8cf95d49dbef77e4a8c7988085584313) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Sprites/UI New/Icones using Guid(8cf95d49dbef77e4a8c7988085584313) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6dd3a106f28053441575347e56591151') in 0.002945 seconds
-  Import took 0.007619 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 53.391023 seconds.
-  path: Assets/Art/New Art/Imagens Final/Avaliacao
-  artifactKey: Guid(e53e83dd61b01a94aacf67d4da3f0683) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/New Art/Imagens Final/Avaliacao using Guid(e53e83dd61b01a94aacf67d4da3f0683) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c1b394af34f4a80db7b80185f83631da') in 0.003153 seconds
-  Import took 0.007871 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 6.565703 seconds.
-  path: Assets/Art/New Art/Imagens Final/Avaliacao/Avaliacao_Logo.png
-  artifactKey: Guid(7f82202de2990804c81e2a40fb5452b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/New Art/Imagens Final/Avaliacao/Avaliacao_Logo.png using Guid(7f82202de2990804c81e2a40fb5452b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4748a7257d122d335e6cc31beb668e54') in 0.261300 seconds
-  Import took 0.266178 seconds .
+  Time since last request: 12.521074 seconds.
+  path: Assets/Scenes/Level 01.unity
+  artifactKey: Guid(383913c065f6db74b85b0e7a9e8e597f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Level 01.unity using Guid(383913c065f6db74b85b0e7a9e8e597f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ed3d6dc5937da98f3428bfaeb534e8fb') in 0.001737 seconds
+  Import took 0.061929 seconds .
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.001395 seconds.
+Registered in 0.000616 seconds.
 Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.68 ms, found 1 plugins.
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.34 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
-NullReferenceException: Object reference not set to an instance of an object
-  at XT.Enhancer.Package..cctor () [0x00019] in C:\Users\danie\Documents\Unity Projects\GitHub\Financinha\[Unity] Financinha\Library\PackageCache\com.xeleh.enhancer@78e062bf54\Editor\Package.cs:10 
-Rethrow as TypeInitializationException: The type initializer for 'XT.Enhancer.Package' threw an exception.
-
-
-(Filename: Library/PackageCache/com.xeleh.enhancer@78e062bf54/Editor/Package.cs Line: 10)
-
 Mono: successfully reloaded assembly
-- Completed reload, in  1.451 seconds
+- Completed reload, in  1.472 seconds
 Platform modules already initialized, skipping
-Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
-Refreshing native plugins compatible for Editor in 0.67 ms, found 1 plugins.
+Switching build target platform(2) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(589824) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 0.33 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1991 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 96.5 MB.
-System memory in use after: 96.6 MB.
+Unloading 1209 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 116.5 MB.
+System memory in use after: 116.5 MB.
 
-Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 2532.
-Total: 2.831900 ms (FindLiveObjects: 0.411200 ms CreateObjectMapping: 0.117700 ms MarkObjects: 2.281900 ms  DeleteObjects: 0.019600 ms)
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1670.
+Total: 1.992675 ms (FindLiveObjects: 0.169548 ms CreateObjectMapping: 0.052746 ms MarkObjects: 1.703918 ms  DeleteObjects: 0.065073 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.001369 seconds.
+Registered in 0.000493 seconds.
 Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.67 ms, found 1 plugins.
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.34 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
-NullReferenceException: Object reference not set to an instance of an object
-  at XT.Enhancer.Package..cctor () [0x00019] in C:\Users\danie\Documents\Unity Projects\GitHub\Financinha\[Unity] Financinha\Library\PackageCache\com.xeleh.enhancer@78e062bf54\Editor\Package.cs:10 
-Rethrow as TypeInitializationException: The type initializer for 'XT.Enhancer.Package' threw an exception.
-
-
-(Filename: Library/PackageCache/com.xeleh.enhancer@78e062bf54/Editor/Package.cs Line: 10)
-
 Mono: successfully reloaded assembly
-- Completed reload, in  1.440 seconds
+- Completed reload, in  1.211 seconds
 Platform modules already initialized, skipping
-Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
-Refreshing native plugins compatible for Editor in 0.68 ms, found 1 plugins.
+Switching build target platform(2) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(589824) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 0.32 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1991 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 96.5 MB.
-System memory in use after: 96.6 MB.
+Unloading 1209 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 116.7 MB.
+System memory in use after: 116.7 MB.
 
-Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 2535.
-Total: 2.635600 ms (FindLiveObjects: 0.251200 ms CreateObjectMapping: 0.112200 ms MarkObjects: 2.253300 ms  DeleteObjects: 0.017400 ms)
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1673.
+Total: 2.129511 ms (FindLiveObjects: 0.166875 ms CreateObjectMapping: 0.052331 ms MarkObjects: 1.839309 ms  DeleteObjects: 0.069400 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.001417 seconds.
+Registered in 0.000558 seconds.
 Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.67 ms, found 1 plugins.
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.34 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
-NullReferenceException: Object reference not set to an instance of an object
-  at XT.Enhancer.Package..cctor () [0x00019] in C:\Users\danie\Documents\Unity Projects\GitHub\Financinha\[Unity] Financinha\Library\PackageCache\com.xeleh.enhancer@78e062bf54\Editor\Package.cs:10 
-Rethrow as TypeInitializationException: The type initializer for 'XT.Enhancer.Package' threw an exception.
-
-
-(Filename: Library/PackageCache/com.xeleh.enhancer@78e062bf54/Editor/Package.cs Line: 10)
-
 Mono: successfully reloaded assembly
-- Completed reload, in  1.445 seconds
+- Completed reload, in  1.258 seconds
 Platform modules already initialized, skipping
-Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
-Refreshing native plugins compatible for Editor in 0.67 ms, found 1 plugins.
+Switching build target platform(2) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(589824) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 0.32 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1991 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 96.5 MB.
-System memory in use after: 96.6 MB.
+Unloading 1209 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 116.8 MB.
+System memory in use after: 116.9 MB.
 
-Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 2538.
-Total: 2.684600 ms (FindLiveObjects: 0.274100 ms CreateObjectMapping: 0.111100 ms MarkObjects: 2.277800 ms  DeleteObjects: 0.020000 ms)
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1676.
+Total: 2.033207 ms (FindLiveObjects: 0.251669 ms CreateObjectMapping: 0.079334 ms MarkObjects: 1.637266 ms  DeleteObjects: 0.063516 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.001822 seconds.
+Registered in 0.000529 seconds.
 Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.68 ms, found 1 plugins.
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.39 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
-NullReferenceException: Object reference not set to an instance of an object
-  at XT.Enhancer.Package..cctor () [0x00019] in C:\Users\danie\Documents\Unity Projects\GitHub\Financinha\[Unity] Financinha\Library\PackageCache\com.xeleh.enhancer@78e062bf54\Editor\Package.cs:10 
-Rethrow as TypeInitializationException: The type initializer for 'XT.Enhancer.Package' threw an exception.
-
-
-(Filename: Library/PackageCache/com.xeleh.enhancer@78e062bf54/Editor/Package.cs Line: 10)
-
 Mono: successfully reloaded assembly
-- Completed reload, in  1.478 seconds
+- Completed reload, in  1.291 seconds
 Platform modules already initialized, skipping
-Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
-Refreshing native plugins compatible for Editor in 0.70 ms, found 1 plugins.
+Switching build target platform(2) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(589824) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 0.33 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1991 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 96.5 MB.
-System memory in use after: 96.6 MB.
+Unloading 1209 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 117.0 MB.
+System memory in use after: 117.0 MB.
 
-Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 2541.
-Total: 2.813100 ms (FindLiveObjects: 0.264900 ms CreateObjectMapping: 0.111500 ms MarkObjects: 2.412800 ms  DeleteObjects: 0.021900 ms)
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1679.
+Total: 2.029198 ms (FindLiveObjects: 0.184930 ms CreateObjectMapping: 0.055240 ms MarkObjects: 1.703865 ms  DeleteObjects: 0.083642 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001338 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.66 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-NullReferenceException: Object reference not set to an instance of an object
-  at XT.Enhancer.Package..cctor () [0x00019] in C:\Users\danie\Documents\Unity Projects\GitHub\Financinha\[Unity] Financinha\Library\PackageCache\com.xeleh.enhancer@78e062bf54\Editor\Package.cs:10 
-Rethrow as TypeInitializationException: The type initializer for 'XT.Enhancer.Package' threw an exception.
-
-
-(Filename: Library/PackageCache/com.xeleh.enhancer@78e062bf54/Editor/Package.cs Line: 10)
-
-Mono: successfully reloaded assembly
-- Completed reload, in  1.485 seconds
-Platform modules already initialized, skipping
-Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
-Refreshing native plugins compatible for Editor in 0.67 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1991 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 96.5 MB.
-System memory in use after: 96.6 MB.
-
-Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 2544.
-Total: 2.830300 ms (FindLiveObjects: 0.252300 ms CreateObjectMapping: 0.112200 ms MarkObjects: 2.446100 ms  DeleteObjects: 0.018200 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001365 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.67 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-NullReferenceException: Object reference not set to an instance of an object
-  at XT.Enhancer.Package..cctor () [0x00019] in C:\Users\danie\Documents\Unity Projects\GitHub\Financinha\[Unity] Financinha\Library\PackageCache\com.xeleh.enhancer@78e062bf54\Editor\Package.cs:10 
-Rethrow as TypeInitializationException: The type initializer for 'XT.Enhancer.Package' threw an exception.
-
-
-(Filename: Library/PackageCache/com.xeleh.enhancer@78e062bf54/Editor/Package.cs Line: 10)
-
-Mono: successfully reloaded assembly
-- Completed reload, in  1.532 seconds
-Platform modules already initialized, skipping
-Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
-Refreshing native plugins compatible for Editor in 0.69 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1991 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 96.5 MB.
-System memory in use after: 96.6 MB.
-
-Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 2547.
-Total: 2.684800 ms (FindLiveObjects: 0.259400 ms CreateObjectMapping: 0.113000 ms MarkObjects: 2.292600 ms  DeleteObjects: 0.018300 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001355 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.67 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-NullReferenceException: Object reference not set to an instance of an object
-  at XT.Enhancer.Package..cctor () [0x00019] in C:\Users\danie\Documents\Unity Projects\GitHub\Financinha\[Unity] Financinha\Library\PackageCache\com.xeleh.enhancer@78e062bf54\Editor\Package.cs:10 
-Rethrow as TypeInitializationException: The type initializer for 'XT.Enhancer.Package' threw an exception.
-
-
-(Filename: Library/PackageCache/com.xeleh.enhancer@78e062bf54/Editor/Package.cs Line: 10)
-
-Mono: successfully reloaded assembly
-- Completed reload, in  1.518 seconds
-Platform modules already initialized, skipping
-Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
-Refreshing native plugins compatible for Editor in 0.67 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1991 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 96.5 MB.
-System memory in use after: 96.6 MB.
-
-Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 2550.
-Total: 2.634900 ms (FindLiveObjects: 0.258400 ms CreateObjectMapping: 0.111000 ms MarkObjects: 2.245600 ms  DeleteObjects: 0.018700 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001352 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.66 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-NullReferenceException: Object reference not set to an instance of an object
-  at XT.Enhancer.Package..cctor () [0x00019] in C:\Users\danie\Documents\Unity Projects\GitHub\Financinha\[Unity] Financinha\Library\PackageCache\com.xeleh.enhancer@78e062bf54\Editor\Package.cs:10 
-Rethrow as TypeInitializationException: The type initializer for 'XT.Enhancer.Package' threw an exception.
-
-
-(Filename: Library/PackageCache/com.xeleh.enhancer@78e062bf54/Editor/Package.cs Line: 10)
-
-Mono: successfully reloaded assembly
-- Completed reload, in  1.516 seconds
-Platform modules already initialized, skipping
-Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
-Refreshing native plugins compatible for Editor in 0.67 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1991 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 96.5 MB.
-System memory in use after: 96.6 MB.
-
-Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 2553.
-Total: 2.699700 ms (FindLiveObjects: 0.265200 ms CreateObjectMapping: 0.113300 ms MarkObjects: 2.301100 ms  DeleteObjects: 0.018700 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001287 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.71 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-NullReferenceException: Object reference not set to an instance of an object
-  at XT.Enhancer.Package..cctor () [0x00019] in C:\Users\danie\Documents\Unity Projects\GitHub\Financinha\[Unity] Financinha\Library\PackageCache\com.xeleh.enhancer@78e062bf54\Editor\Package.cs:10 
-Rethrow as TypeInitializationException: The type initializer for 'XT.Enhancer.Package' threw an exception.
-
-
-(Filename: Library/PackageCache/com.xeleh.enhancer@78e062bf54/Editor/Package.cs Line: 10)
-
-Mono: successfully reloaded assembly
-- Completed reload, in  1.530 seconds
-Platform modules already initialized, skipping
-Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
-Refreshing native plugins compatible for Editor in 0.68 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1991 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 96.5 MB.
-System memory in use after: 96.6 MB.
-
-Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 2556.
-Total: 2.652400 ms (FindLiveObjects: 0.275100 ms CreateObjectMapping: 0.112400 ms MarkObjects: 2.244700 ms  DeleteObjects: 0.018800 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001340 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.66 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-NullReferenceException: Object reference not set to an instance of an object
-  at XT.Enhancer.Package..cctor () [0x00019] in C:\Users\danie\Documents\Unity Projects\GitHub\Financinha\[Unity] Financinha\Library\PackageCache\com.xeleh.enhancer@78e062bf54\Editor\Package.cs:10 
-Rethrow as TypeInitializationException: The type initializer for 'XT.Enhancer.Package' threw an exception.
-
-
-(Filename: Library/PackageCache/com.xeleh.enhancer@78e062bf54/Editor/Package.cs Line: 10)
-
-Mono: successfully reloaded assembly
-- Completed reload, in  1.521 seconds
-Platform modules already initialized, skipping
-Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
-Refreshing native plugins compatible for Editor in 0.71 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1991 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 96.5 MB.
-System memory in use after: 96.6 MB.
-
-Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 2559.
-Total: 2.672700 ms (FindLiveObjects: 0.283400 ms CreateObjectMapping: 0.111700 ms MarkObjects: 2.258200 ms  DeleteObjects: 0.018000 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001334 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.68 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-NullReferenceException: Object reference not set to an instance of an object
-  at XT.Enhancer.Package..cctor () [0x00019] in C:\Users\danie\Documents\Unity Projects\GitHub\Financinha\[Unity] Financinha\Library\PackageCache\com.xeleh.enhancer@78e062bf54\Editor\Package.cs:10 
-Rethrow as TypeInitializationException: The type initializer for 'XT.Enhancer.Package' threw an exception.
-
-
-(Filename: Library/PackageCache/com.xeleh.enhancer@78e062bf54/Editor/Package.cs Line: 10)
-
-Mono: successfully reloaded assembly
-- Completed reload, in  1.584 seconds
-Platform modules already initialized, skipping
-Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
-Refreshing native plugins compatible for Editor in 0.68 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1991 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 96.6 MB.
-System memory in use after: 96.7 MB.
-
-Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 2562.
-Total: 2.678700 ms (FindLiveObjects: 0.278100 ms CreateObjectMapping: 0.110300 ms MarkObjects: 2.269200 ms  DeleteObjects: 0.019500 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001340 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.66 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-NullReferenceException: Object reference not set to an instance of an object
-  at XT.Enhancer.Package..cctor () [0x00019] in C:\Users\danie\Documents\Unity Projects\GitHub\Financinha\[Unity] Financinha\Library\PackageCache\com.xeleh.enhancer@78e062bf54\Editor\Package.cs:10 
-Rethrow as TypeInitializationException: The type initializer for 'XT.Enhancer.Package' threw an exception.
-
-
-(Filename: Library/PackageCache/com.xeleh.enhancer@78e062bf54/Editor/Package.cs Line: 10)
-
-Mono: successfully reloaded assembly
-- Completed reload, in  1.607 seconds
-Platform modules already initialized, skipping
-Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
-Refreshing native plugins compatible for Editor in 0.66 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1991 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 96.6 MB.
-System memory in use after: 96.7 MB.
-
-Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 2565.
-Total: 2.657500 ms (FindLiveObjects: 0.268000 ms CreateObjectMapping: 0.113800 ms MarkObjects: 2.255500 ms  DeleteObjects: 0.018600 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
-========================================================================
-Received Import Request.
-  Time since last request: 1841.185930 seconds.
-  path: Assets/Scripts/MainAudio.mixer
-  artifactKey: Guid(72899724ba8a9a64fa91a00be6ace4c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/MainAudio.mixer using Guid(72899724ba8a9a64fa91a00be6ace4c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd23683908a69d40d597bbcdaf6e8c9d5') in 0.035430 seconds
-  Import took 0.040420 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 169.260336 seconds.
-  path: Assets/Scripts/SoundEffects.mixer
-  artifactKey: Guid(a75d6a416aa61a0428e9c85130c342cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/SoundEffects.mixer using Guid(a75d6a416aa61a0428e9c85130c342cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c67bc2855333b2c87f4a63d72fba6b53') in 0.003883 seconds
-  Import took 0.009831 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 26.373072 seconds.
-  path: Assets/Scripts/SoundEffects.mixer
-  artifactKey: Guid(a75d6a416aa61a0428e9c85130c342cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/SoundEffects.mixer using Guid(a75d6a416aa61a0428e9c85130c342cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2ed2ef341cd22dad2431c9f052d5cc99') in 0.003169 seconds
-  Import took 0.007621 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.720569 seconds.
-  path: Assets/Scripts/MainAudio.mixer
-  artifactKey: Guid(72899724ba8a9a64fa91a00be6ace4c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/MainAudio.mixer using Guid(72899724ba8a9a64fa91a00be6ace4c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5caf919916d06e2d6598dbf6f137e8f8') in 0.002966 seconds
-  Import took 0.007669 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.003876 seconds.
-  path: Assets/Scripts/MainAudio.mixer
-  artifactKey: Guid(72899724ba8a9a64fa91a00be6ace4c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/MainAudio.mixer using Guid(72899724ba8a9a64fa91a00be6ace4c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5caf919916d06e2d6598dbf6f137e8f8') in 0.003060 seconds
-  Import took 0.007271 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001321 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.68 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-NullReferenceException: Object reference not set to an instance of an object
-  at XT.Enhancer.Package..cctor () [0x00019] in C:\Users\danie\Documents\Unity Projects\GitHub\Financinha\[Unity] Financinha\Library\PackageCache\com.xeleh.enhancer@78e062bf54\Editor\Package.cs:10 
-Rethrow as TypeInitializationException: The type initializer for 'XT.Enhancer.Package' threw an exception.
-
-
-(Filename: Library/PackageCache/com.xeleh.enhancer@78e062bf54/Editor/Package.cs Line: 10)
-
-Mono: successfully reloaded assembly
-- Completed reload, in  1.552 seconds
-Platform modules already initialized, skipping
-Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
-Refreshing native plugins compatible for Editor in 0.69 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1991 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 96.6 MB.
-System memory in use after: 96.7 MB.
-
-Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 2568.
-Total: 2.755800 ms (FindLiveObjects: 0.274600 ms CreateObjectMapping: 0.111600 ms MarkObjects: 2.349300 ms  DeleteObjects: 0.018900 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001750 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.67 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-NullReferenceException: Object reference not set to an instance of an object
-  at XT.Enhancer.Package..cctor () [0x00019] in C:\Users\danie\Documents\Unity Projects\GitHub\Financinha\[Unity] Financinha\Library\PackageCache\com.xeleh.enhancer@78e062bf54\Editor\Package.cs:10 
-Rethrow as TypeInitializationException: The type initializer for 'XT.Enhancer.Package' threw an exception.
-
-
-(Filename: Library/PackageCache/com.xeleh.enhancer@78e062bf54/Editor/Package.cs Line: 10)
-
-Mono: successfully reloaded assembly
-- Completed reload, in  1.566 seconds
-Platform modules already initialized, skipping
-Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
-Refreshing native plugins compatible for Editor in 0.65 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1991 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 96.6 MB.
-System memory in use after: 96.7 MB.
-
-Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 2571.
-Total: 2.696600 ms (FindLiveObjects: 0.276800 ms CreateObjectMapping: 0.111000 ms MarkObjects: 2.289600 ms  DeleteObjects: 0.017700 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001323 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.67 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-NullReferenceException: Object reference not set to an instance of an object
-  at XT.Enhancer.Package..cctor () [0x00019] in C:\Users\danie\Documents\Unity Projects\GitHub\Financinha\[Unity] Financinha\Library\PackageCache\com.xeleh.enhancer@78e062bf54\Editor\Package.cs:10 
-Rethrow as TypeInitializationException: The type initializer for 'XT.Enhancer.Package' threw an exception.
-
-
-(Filename: Library/PackageCache/com.xeleh.enhancer@78e062bf54/Editor/Package.cs Line: 10)
-
-Mono: successfully reloaded assembly
-- Completed reload, in  1.526 seconds
-Platform modules already initialized, skipping
-Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
-Refreshing native plugins compatible for Editor in 0.67 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1991 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 96.6 MB.
-System memory in use after: 96.7 MB.
-
-Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 2574.
-Total: 2.708600 ms (FindLiveObjects: 0.264100 ms CreateObjectMapping: 0.112200 ms MarkObjects: 2.311700 ms  DeleteObjects: 0.019100 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001455 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.89 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-NullReferenceException: Object reference not set to an instance of an object
-  at XT.Enhancer.Package..cctor () [0x00019] in C:\Users\danie\Documents\Unity Projects\GitHub\Financinha\[Unity] Financinha\Library\PackageCache\com.xeleh.enhancer@78e062bf54\Editor\Package.cs:10 
-Rethrow as TypeInitializationException: The type initializer for 'XT.Enhancer.Package' threw an exception.
-
-
-(Filename: Library/PackageCache/com.xeleh.enhancer@78e062bf54/Editor/Package.cs Line: 10)
-
-Mono: successfully reloaded assembly
-- Completed reload, in  1.539 seconds
-Platform modules already initialized, skipping
-Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
-Refreshing native plugins compatible for Editor in 0.66 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1991 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 96.6 MB.
-System memory in use after: 96.7 MB.
-
-Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 2577.
-Total: 2.661800 ms (FindLiveObjects: 0.264600 ms CreateObjectMapping: 0.112800 ms MarkObjects: 2.263900 ms  DeleteObjects: 0.019100 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001426 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.67 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-NullReferenceException: Object reference not set to an instance of an object
-  at XT.Enhancer.Package..cctor () [0x00019] in C:\Users\danie\Documents\Unity Projects\GitHub\Financinha\[Unity] Financinha\Library\PackageCache\com.xeleh.enhancer@78e062bf54\Editor\Package.cs:10 
-Rethrow as TypeInitializationException: The type initializer for 'XT.Enhancer.Package' threw an exception.
-
-
-(Filename: Library/PackageCache/com.xeleh.enhancer@78e062bf54/Editor/Package.cs Line: 10)
-
-Mono: successfully reloaded assembly
-- Completed reload, in  1.569 seconds
-Platform modules already initialized, skipping
-Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
-Refreshing native plugins compatible for Editor in 0.66 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1991 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 96.6 MB.
-System memory in use after: 96.7 MB.
-
-Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 2580.
-Total: 2.645500 ms (FindLiveObjects: 0.258400 ms CreateObjectMapping: 0.113100 ms MarkObjects: 2.254900 ms  DeleteObjects: 0.017600 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001334 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.69 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-NullReferenceException: Object reference not set to an instance of an object
-  at XT.Enhancer.Package..cctor () [0x00019] in C:\Users\danie\Documents\Unity Projects\GitHub\Financinha\[Unity] Financinha\Library\PackageCache\com.xeleh.enhancer@78e062bf54\Editor\Package.cs:10 
-Rethrow as TypeInitializationException: The type initializer for 'XT.Enhancer.Package' threw an exception.
-
-
-(Filename: Library/PackageCache/com.xeleh.enhancer@78e062bf54/Editor/Package.cs Line: 10)
-
-Mono: successfully reloaded assembly
-- Completed reload, in  1.574 seconds
-Platform modules already initialized, skipping
-Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
-Refreshing native plugins compatible for Editor in 0.66 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1991 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 96.6 MB.
-System memory in use after: 96.7 MB.
-
-Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 2583.
-Total: 2.674400 ms (FindLiveObjects: 0.269200 ms CreateObjectMapping: 0.112400 ms MarkObjects: 2.273200 ms  DeleteObjects: 0.018300 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001337 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.66 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-NullReferenceException: Object reference not set to an instance of an object
-  at XT.Enhancer.Package..cctor () [0x00019] in C:\Users\danie\Documents\Unity Projects\GitHub\Financinha\[Unity] Financinha\Library\PackageCache\com.xeleh.enhancer@78e062bf54\Editor\Package.cs:10 
-Rethrow as TypeInitializationException: The type initializer for 'XT.Enhancer.Package' threw an exception.
-
-
-(Filename: Library/PackageCache/com.xeleh.enhancer@78e062bf54/Editor/Package.cs Line: 10)
-
-Mono: successfully reloaded assembly
-- Completed reload, in  1.577 seconds
-Platform modules already initialized, skipping
-Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
-Refreshing native plugins compatible for Editor in 0.67 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1991 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 96.6 MB.
-System memory in use after: 96.7 MB.
-
-Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 2586.
-Total: 2.689100 ms (FindLiveObjects: 0.263200 ms CreateObjectMapping: 0.111800 ms MarkObjects: 2.295400 ms  DeleteObjects: 0.017400 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001332 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.67 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-NullReferenceException: Object reference not set to an instance of an object
-  at XT.Enhancer.Package..cctor () [0x00019] in C:\Users\danie\Documents\Unity Projects\GitHub\Financinha\[Unity] Financinha\Library\PackageCache\com.xeleh.enhancer@78e062bf54\Editor\Package.cs:10 
-Rethrow as TypeInitializationException: The type initializer for 'XT.Enhancer.Package' threw an exception.
-
-
-(Filename: Library/PackageCache/com.xeleh.enhancer@78e062bf54/Editor/Package.cs Line: 10)
-
-Mono: successfully reloaded assembly
-- Completed reload, in  1.562 seconds
-Platform modules already initialized, skipping
-Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
-Refreshing native plugins compatible for Editor in 0.66 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1991 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 96.6 MB.
-System memory in use after: 96.8 MB.
-
-Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 2589.
-Total: 2.709800 ms (FindLiveObjects: 0.265500 ms CreateObjectMapping: 0.112100 ms MarkObjects: 2.312800 ms  DeleteObjects: 0.018200 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
-========================================================================
-Received Import Request.
-  Time since last request: 488.725302 seconds.
-  path: Assets/Sound
-  artifactKey: Guid(7de3d1b7da6504e4483d33498dc20d91) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sound using Guid(7de3d1b7da6504e4483d33498dc20d91) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0971a060503432dff1f441d4ac32cb64') in 0.007937 seconds
-  Import took 0.012382 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001332 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.69 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-NullReferenceException: Object reference not set to an instance of an object
-  at XT.Enhancer.Package..cctor () [0x00019] in C:\Users\danie\Documents\Unity Projects\GitHub\Financinha\[Unity] Financinha\Library\PackageCache\com.xeleh.enhancer@78e062bf54\Editor\Package.cs:10 
-Rethrow as TypeInitializationException: The type initializer for 'XT.Enhancer.Package' threw an exception.
-
-
-(Filename: Library/PackageCache/com.xeleh.enhancer@78e062bf54/Editor/Package.cs Line: 10)
-
-Mono: successfully reloaded assembly
-- Completed reload, in  1.605 seconds
-Platform modules already initialized, skipping
-Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
-Refreshing native plugins compatible for Editor in 0.67 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1991 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 96.6 MB.
-System memory in use after: 96.8 MB.
-
-Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 2592.
-Total: 2.675000 ms (FindLiveObjects: 0.268500 ms CreateObjectMapping: 0.112600 ms MarkObjects: 2.274700 ms  DeleteObjects: 0.017800 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001365 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.74 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-NullReferenceException: Object reference not set to an instance of an object
-  at XT.Enhancer.Package..cctor () [0x00019] in C:\Users\danie\Documents\Unity Projects\GitHub\Financinha\[Unity] Financinha\Library\PackageCache\com.xeleh.enhancer@78e062bf54\Editor\Package.cs:10 
-Rethrow as TypeInitializationException: The type initializer for 'XT.Enhancer.Package' threw an exception.
-
-
-(Filename: Library/PackageCache/com.xeleh.enhancer@78e062bf54/Editor/Package.cs Line: 10)
-
-Mono: successfully reloaded assembly
-- Completed reload, in  1.590 seconds
-Platform modules already initialized, skipping
-Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
-Refreshing native plugins compatible for Editor in 0.66 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1991 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 96.7 MB.
-System memory in use after: 96.8 MB.
-
-Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 2595.
-Total: 2.672000 ms (FindLiveObjects: 0.276500 ms CreateObjectMapping: 0.113400 ms MarkObjects: 2.263000 ms  DeleteObjects: 0.017700 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001727 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.67 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-NullReferenceException: Object reference not set to an instance of an object
-  at XT.Enhancer.Package..cctor () [0x00019] in C:\Users\danie\Documents\Unity Projects\GitHub\Financinha\[Unity] Financinha\Library\PackageCache\com.xeleh.enhancer@78e062bf54\Editor\Package.cs:10 
-Rethrow as TypeInitializationException: The type initializer for 'XT.Enhancer.Package' threw an exception.
-
-
-(Filename: Library/PackageCache/com.xeleh.enhancer@78e062bf54/Editor/Package.cs Line: 10)
-
-Mono: successfully reloaded assembly
-- Completed reload, in  1.609 seconds
-Platform modules already initialized, skipping
-Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
-Refreshing native plugins compatible for Editor in 0.65 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1991 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 96.7 MB.
-System memory in use after: 96.8 MB.
-
-Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 2598.
-Total: 2.675400 ms (FindLiveObjects: 0.270800 ms CreateObjectMapping: 0.111000 ms MarkObjects: 2.274500 ms  DeleteObjects: 0.018000 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001805 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.66 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-NullReferenceException: Object reference not set to an instance of an object
-  at XT.Enhancer.Package..cctor () [0x00019] in C:\Users\danie\Documents\Unity Projects\GitHub\Financinha\[Unity] Financinha\Library\PackageCache\com.xeleh.enhancer@78e062bf54\Editor\Package.cs:10 
-Rethrow as TypeInitializationException: The type initializer for 'XT.Enhancer.Package' threw an exception.
-
-
-(Filename: Library/PackageCache/com.xeleh.enhancer@78e062bf54/Editor/Package.cs Line: 10)
-
-Mono: successfully reloaded assembly
-- Completed reload, in  1.660 seconds
-Platform modules already initialized, skipping
-Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
-Refreshing native plugins compatible for Editor in 0.70 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1991 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 96.7 MB.
-System memory in use after: 96.8 MB.
-
-Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 2601.
-Total: 2.706800 ms (FindLiveObjects: 0.269700 ms CreateObjectMapping: 0.111900 ms MarkObjects: 2.305900 ms  DeleteObjects: 0.018000 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001318 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.64 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-NullReferenceException: Object reference not set to an instance of an object
-  at XT.Enhancer.Package..cctor () [0x00019] in C:\Users\danie\Documents\Unity Projects\GitHub\Financinha\[Unity] Financinha\Library\PackageCache\com.xeleh.enhancer@78e062bf54\Editor\Package.cs:10 
-Rethrow as TypeInitializationException: The type initializer for 'XT.Enhancer.Package' threw an exception.
-
-
-(Filename: Library/PackageCache/com.xeleh.enhancer@78e062bf54/Editor/Package.cs Line: 10)
-
-Mono: successfully reloaded assembly
-- Completed reload, in  1.630 seconds
-Platform modules already initialized, skipping
-Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
-Refreshing native plugins compatible for Editor in 0.67 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1991 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 96.7 MB.
-System memory in use after: 96.8 MB.
-
-Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 2604.
-Total: 2.911300 ms (FindLiveObjects: 0.430000 ms CreateObjectMapping: 0.112200 ms MarkObjects: 2.343900 ms  DeleteObjects: 0.023000 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001375 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.67 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-NullReferenceException: Object reference not set to an instance of an object
-  at XT.Enhancer.Package..cctor () [0x00019] in C:\Users\danie\Documents\Unity Projects\GitHub\Financinha\[Unity] Financinha\Library\PackageCache\com.xeleh.enhancer@78e062bf54\Editor\Package.cs:10 
-Rethrow as TypeInitializationException: The type initializer for 'XT.Enhancer.Package' threw an exception.
-
-
-(Filename: Library/PackageCache/com.xeleh.enhancer@78e062bf54/Editor/Package.cs Line: 10)
-
-Mono: successfully reloaded assembly
-- Completed reload, in  1.663 seconds
-Platform modules already initialized, skipping
-Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
-Refreshing native plugins compatible for Editor in 0.67 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1991 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 96.7 MB.
-System memory in use after: 96.8 MB.
-
-Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 2607.
-Total: 3.051800 ms (FindLiveObjects: 0.298500 ms CreateObjectMapping: 0.113100 ms MarkObjects: 2.609800 ms  DeleteObjects: 0.028300 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
-AssetImportWorkerClient::OnTransportError - code=2 error=End of file
