@@ -123,5 +123,7 @@ public class GetHabilityProgress : MonoBehaviour
 				levelButtons[9].interactable = true;
 			}
 		}
+
+        Debug.Log("Progressao carregada");
 	}
 }
