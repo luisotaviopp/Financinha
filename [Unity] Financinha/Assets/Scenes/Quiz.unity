@@ -98,8 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_LightingSettings: {fileID: 4890085278179872738, guid: ccd7af980bef76e47bffe5662ae0666e,
-    type: 2}
+  m_LightingSettings: {fileID: 4890085278179872738, guid: ccd7af980bef76e47bffe5662ae0666e, type: 2}
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -158,7 +157,7 @@ RectTransform:
   - {fileID: 82400716}
   - {fileID: 1907779615}
   m_Father: {fileID: 2139890403}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -189,6 +188,7 @@ GameObject:
   - component: {fileID: 62137593}
   - component: {fileID: 62137595}
   - component: {fileID: 62137594}
+  - component: {fileID: 62137596}
   m_Layer: 5
   m_Name: Quizz
   m_TagString: Untagged
@@ -255,6 +255,1030 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 62137592}
   m_CullTransparentMesh: 0
+--- !u!114 &62137596
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 62137592}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec66040278ab3408b8cb492a248325ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  questions:
+  - level: 1
+    rightAnswer: 3
+    isImage: 0
+    question: Questai 1, lvl1
+    answer1: Teste1
+    answer2: Teste2
+    answer3: Teste3
+    answer4: Teste4
+    answer5: Teste5
+    questionSprite: {fileID: 0}
+  - level: 1
+    rightAnswer: 3
+    isImage: 1
+    question: Teste1
+    answer1: Teste1
+    answer2: Teste1
+    answer3: Teste1
+    answer4: Teste1
+    answer5: Teste1
+    questionSprite: {fileID: 21300000, guid: 0586e4ffa163be84ebf0133f07971730, type: 3}
+  - level: 1
+    rightAnswer: 3
+    isImage: 0
+    question: Teste1
+    answer1: Teste1
+    answer2: Teste1
+    answer3: Teste1
+    answer4: Teste1
+    answer5: Teste1
+    questionSprite: {fileID: 0}
+  - level: 1
+    rightAnswer: 3
+    isImage: 0
+    question: Teste1
+    answer1: Teste1
+    answer2: Teste1
+    answer3: Teste1
+    answer4: Teste1
+    answer5: Teste1
+    questionSprite: {fileID: 0}
+  - level: 1
+    rightAnswer: 3
+    isImage: 0
+    question: Teste1
+    answer1: Teste1
+    answer2: Teste1
+    answer3: Teste1
+    answer4: Teste1
+    answer5: Teste1
+    questionSprite: {fileID: 0}
+  - level: 1
+    rightAnswer: 3
+    isImage: 0
+    question: Teste1
+    answer1: Teste1
+    answer2: Teste1
+    answer3: Teste1
+    answer4: Teste1
+    answer5: Teste1
+    questionSprite: {fileID: 0}
+  - level: 1
+    rightAnswer: 3
+    isImage: 0
+    question: Teste1
+    answer1: Teste1
+    answer2: Teste1
+    answer3: Teste1
+    answer4: Teste1
+    answer5: Teste1
+    questionSprite: {fileID: 0}
+  - level: 1
+    rightAnswer: 3
+    isImage: 0
+    question: Teste1
+    answer1: Teste1
+    answer2: Teste1
+    answer3: Teste1
+    answer4: Teste1
+    answer5: Teste1
+    questionSprite: {fileID: 0}
+  - level: 1
+    rightAnswer: 3
+    isImage: 0
+    question: Teste1
+    answer1: Teste1
+    answer2: Teste1
+    answer3: Teste1
+    answer4: Teste1
+    answer5: Teste1
+    questionSprite: {fileID: 0}
+  - level: 1
+    rightAnswer: 3
+    isImage: 0
+    question: Teste1
+    answer1: Teste1
+    answer2: Teste1
+    answer3: Teste1
+    answer4: Teste1
+    answer5: Teste1
+    questionSprite: {fileID: 0}
+  - level: 1
+    rightAnswer: 3
+    isImage: 0
+    question: Teste1
+    answer1: Teste1
+    answer2: Teste1
+    answer3: Teste1
+    answer4: Teste1
+    answer5: Teste1
+    questionSprite: {fileID: 0}
+  - level: 1
+    rightAnswer: 3
+    isImage: 0
+    question: Teste1
+    answer1: Teste1
+    answer2: Teste1
+    answer3: Teste1
+    answer4: Teste1
+    answer5: Teste1
+    questionSprite: {fileID: 0}
+  - level: 1
+    rightAnswer: 3
+    isImage: 0
+    question: Teste1
+    answer1: Teste1
+    answer2: Teste1
+    answer3: Teste1
+    answer4: Teste1
+    answer5: Teste1
+    questionSprite: {fileID: 0}
+  - level: 1
+    rightAnswer: 3
+    isImage: 0
+    question: Teste1
+    answer1: Teste1
+    answer2: Teste1
+    answer3: Teste1
+    answer4: Teste1
+    answer5: Teste1
+    questionSprite: {fileID: 0}
+  - level: 1
+    rightAnswer: 3
+    isImage: 0
+    question: Teste1
+    answer1: Teste1
+    answer2: Teste1
+    answer3: Teste1
+    answer4: Teste1
+    answer5: Teste1
+    questionSprite: {fileID: 0}
+  - level: 1
+    rightAnswer: 3
+    isImage: 0
+    question: Teste1
+    answer1: Teste1
+    answer2: Teste1
+    answer3: Teste1
+    answer4: Teste1
+    answer5: Teste1
+    questionSprite: {fileID: 0}
+  - level: 1
+    rightAnswer: 3
+    isImage: 0
+    question: Teste1
+    answer1: Teste1
+    answer2: Teste1
+    answer3: Teste1
+    answer4: Teste1
+    answer5: Teste1
+    questionSprite: {fileID: 0}
+  - level: 1
+    rightAnswer: 3
+    isImage: 0
+    question: Teste1
+    answer1: Teste1
+    answer2: Teste1
+    answer3: Teste1
+    answer4: Teste1
+    answer5: Teste1
+    questionSprite: {fileID: 0}
+  - level: 1
+    rightAnswer: 3
+    isImage: 0
+    question: Teste1
+    answer1: Teste1
+    answer2: Teste1
+    answer3: Teste1
+    answer4: Teste1
+    answer5: Teste1
+    questionSprite: {fileID: 0}
+  - level: 1
+    rightAnswer: 3
+    isImage: 0
+    question: Teste1
+    answer1: Teste1
+    answer2: Teste1
+    answer3: Teste1
+    answer4: Teste1
+    answer5: Teste1
+    questionSprite: {fileID: 0}
+  - level: 1
+    rightAnswer: 3
+    isImage: 0
+    question: Teste1
+    answer1: Teste1
+    answer2: Teste1
+    answer3: Teste1
+    answer4: Teste1
+    answer5: Teste1
+    questionSprite: {fileID: 0}
+  - level: 1
+    rightAnswer: 3
+    isImage: 0
+    question: Teste1
+    answer1: Teste1
+    answer2: Teste1
+    answer3: Teste1
+    answer4: Teste1
+    answer5: Teste1
+    questionSprite: {fileID: 0}
+  - level: 1
+    rightAnswer: 3
+    isImage: 0
+    question: Teste1
+    answer1: Teste1
+    answer2: Teste1
+    answer3: Teste1
+    answer4: Teste1
+    answer5: Teste1
+    questionSprite: {fileID: 0}
+  - level: 1
+    rightAnswer: 3
+    isImage: 0
+    question: Teste1
+    answer1: Teste1
+    answer2: Teste1
+    answer3: Teste1
+    answer4: Teste1
+    answer5: Teste1
+    questionSprite: {fileID: 0}
+  - level: 1
+    rightAnswer: 3
+    isImage: 0
+    question: Teste1
+    answer1: Teste1
+    answer2: Teste1
+    answer3: Teste1
+    answer4: Teste1
+    answer5: Teste1
+    questionSprite: {fileID: 0}
+  - level: 1
+    rightAnswer: 3
+    isImage: 0
+    question: Teste1
+    answer1: Teste1
+    answer2: Teste1
+    answer3: Teste1
+    answer4: Teste1
+    answer5: Teste1
+    questionSprite: {fileID: 0}
+  - level: 1
+    rightAnswer: 3
+    isImage: 0
+    question: Teste1
+    answer1: Teste1
+    answer2: Teste1
+    answer3: Teste1
+    answer4: Teste1
+    answer5: Teste1
+    questionSprite: {fileID: 0}
+  - level: 1
+    rightAnswer: 3
+    isImage: 0
+    question: Teste1
+    answer1: Teste1
+    answer2: Teste1
+    answer3: Teste1
+    answer4: Teste1
+    answer5: Teste1
+    questionSprite: {fileID: 0}
+  - level: 1
+    rightAnswer: 3
+    isImage: 0
+    question: Teste1
+    answer1: Teste1
+    answer2: Teste1
+    answer3: Teste1
+    answer4: Teste1
+    answer5: Teste1
+    questionSprite: {fileID: 0}
+  - level: 1
+    rightAnswer: 3
+    isImage: 0
+    question: Teste1
+    answer1: Teste1
+    answer2: Teste1
+    answer3: Teste1
+    answer4: Teste1
+    answer5: Teste1
+    questionSprite: {fileID: 0}
+  - level: 1
+    rightAnswer: 3
+    isImage: 0
+    question: Teste1
+    answer1: Teste1
+    answer2: Teste1
+    answer3: Teste1
+    answer4: Teste1
+    answer5: Teste1
+    questionSprite: {fileID: 0}
+  - level: 1
+    rightAnswer: 3
+    isImage: 0
+    question: Teste1
+    answer1: Teste1
+    answer2: Teste1
+    answer3: Teste1
+    answer4: Teste1
+    answer5: Teste1
+    questionSprite: {fileID: 0}
+  - level: 1
+    rightAnswer: 3
+    isImage: 0
+    question: Teste1
+    answer1: Teste1
+    answer2: Teste1
+    answer3: Teste1
+    answer4: Teste1
+    answer5: Teste1
+    questionSprite: {fileID: 0}
+  - level: 1
+    rightAnswer: 3
+    isImage: 0
+    question: Teste1
+    answer1: Teste1
+    answer2: Teste1
+    answer3: Teste1
+    answer4: Teste1
+    answer5: Teste1
+    questionSprite: {fileID: 0}
+  - level: 1
+    rightAnswer: 3
+    isImage: 0
+    question: Teste1
+    answer1: Teste1
+    answer2: Teste1
+    answer3: Teste1
+    answer4: Teste1
+    answer5: Teste1
+    questionSprite: {fileID: 0}
+  - level: 1
+    rightAnswer: 3
+    isImage: 0
+    question: Teste1
+    answer1: Teste1
+    answer2: Teste1
+    answer3: Teste1
+    answer4: Teste1
+    answer5: Teste1
+    questionSprite: {fileID: 0}
+  - level: 1
+    rightAnswer: 3
+    isImage: 0
+    question: Teste1
+    answer1: Teste1
+    answer2: Teste1
+    answer3: Teste1
+    answer4: Teste1
+    answer5: Teste1
+    questionSprite: {fileID: 0}
+  - level: 1
+    rightAnswer: 3
+    isImage: 0
+    question: Teste1
+    answer1: Teste1
+    answer2: Teste1
+    answer3: Teste1
+    answer4: Teste1
+    answer5: Teste1
+    questionSprite: {fileID: 0}
+  - level: 1
+    rightAnswer: 3
+    isImage: 0
+    question: Teste1
+    answer1: Teste1
+    answer2: Teste1
+    answer3: Teste1
+    answer4: Teste1
+    answer5: Teste1
+    questionSprite: {fileID: 0}
+  - level: 1
+    rightAnswer: 3
+    isImage: 0
+    question: Teste1
+    answer1: Teste1
+    answer2: Teste1
+    answer3: Teste1
+    answer4: Teste1
+    answer5: Teste1
+    questionSprite: {fileID: 0}
+  - level: 1
+    rightAnswer: 3
+    isImage: 0
+    question: Teste1
+    answer1: Teste1
+    answer2: Teste1
+    answer3: Teste1
+    answer4: Teste1
+    answer5: Teste1
+    questionSprite: {fileID: 0}
+  - level: 1
+    rightAnswer: 3
+    isImage: 0
+    question: Teste1
+    answer1: Teste1
+    answer2: Teste1
+    answer3: Teste1
+    answer4: Teste1
+    answer5: Teste1
+    questionSprite: {fileID: 0}
+  - level: 1
+    rightAnswer: 3
+    isImage: 0
+    question: Teste1
+    answer1: Teste1
+    answer2: Teste1
+    answer3: Teste1
+    answer4: Teste1
+    answer5: Teste1
+    questionSprite: {fileID: 0}
+  - level: 1
+    rightAnswer: 3
+    isImage: 0
+    question: Teste1
+    answer1: Teste1
+    answer2: Teste1
+    answer3: Teste1
+    answer4: Teste1
+    answer5: Teste1
+    questionSprite: {fileID: 0}
+  - level: 1
+    rightAnswer: 3
+    isImage: 0
+    question: Teste1
+    answer1: Teste1
+    answer2: Teste1
+    answer3: Teste1
+    answer4: Teste1
+    answer5: Teste1
+    questionSprite: {fileID: 0}
+  - level: 1
+    rightAnswer: 3
+    isImage: 0
+    question: Teste1
+    answer1: Teste1
+    answer2: Teste1
+    answer3: Teste1
+    answer4: Teste1
+    answer5: Teste1
+    questionSprite: {fileID: 0}
+  - level: 1
+    rightAnswer: 3
+    isImage: 0
+    question: Teste1
+    answer1: Teste1
+    answer2: Teste1
+    answer3: Teste1
+    answer4: Teste1
+    answer5: Teste1
+    questionSprite: {fileID: 0}
+  - level: 1
+    rightAnswer: 3
+    isImage: 0
+    question: Teste1
+    answer1: Teste1
+    answer2: Teste1
+    answer3: Teste1
+    answer4: Teste1
+    answer5: Teste1
+    questionSprite: {fileID: 0}
+  - level: 1
+    rightAnswer: 3
+    isImage: 0
+    question: Teste1
+    answer1: Teste1
+    answer2: Teste1
+    answer3: Teste1
+    answer4: Teste1
+    answer5: Teste1
+    questionSprite: {fileID: 0}
+  - level: 1
+    rightAnswer: 3
+    isImage: 0
+    question: Teste1
+    answer1: Teste1
+    answer2: Teste1
+    answer3: Teste1
+    answer4: Teste1
+    answer5: Teste1
+    questionSprite: {fileID: 0}
+  - level: 1
+    rightAnswer: 3
+    isImage: 0
+    question: Teste1
+    answer1: Teste1
+    answer2: Teste1
+    answer3: Teste1
+    answer4: Teste1
+    answer5: Teste1
+    questionSprite: {fileID: 0}
+  - level: 1
+    rightAnswer: 3
+    isImage: 0
+    question: Teste1
+    answer1: Teste1
+    answer2: Teste1
+    answer3: Teste1
+    answer4: Teste1
+    answer5: Teste1
+    questionSprite: {fileID: 0}
+  - level: 1
+    rightAnswer: 3
+    isImage: 0
+    question: Teste1
+    answer1: Teste1
+    answer2: Teste1
+    answer3: Teste1
+    answer4: Teste1
+    answer5: Teste1
+    questionSprite: {fileID: 0}
+  - level: 1
+    rightAnswer: 3
+    isImage: 0
+    question: Teste1
+    answer1: Teste1
+    answer2: Teste1
+    answer3: Teste1
+    answer4: Teste1
+    answer5: Teste1
+    questionSprite: {fileID: 0}
+  - level: 1
+    rightAnswer: 3
+    isImage: 0
+    question: Teste1
+    answer1: Teste1
+    answer2: Teste1
+    answer3: Teste1
+    answer4: Teste1
+    answer5: Teste1
+    questionSprite: {fileID: 0}
+  - level: 1
+    rightAnswer: 3
+    isImage: 0
+    question: Teste1
+    answer1: Teste1
+    answer2: Teste1
+    answer3: Teste1
+    answer4: Teste1
+    answer5: Teste1
+    questionSprite: {fileID: 0}
+  - level: 1
+    rightAnswer: 3
+    isImage: 0
+    question: Teste1
+    answer1: Teste1
+    answer2: Teste1
+    answer3: Teste1
+    answer4: Teste1
+    answer5: Teste1
+    questionSprite: {fileID: 0}
+  - level: 1
+    rightAnswer: 3
+    isImage: 0
+    question: Teste1
+    answer1: Teste1
+    answer2: Teste1
+    answer3: Teste1
+    answer4: Teste1
+    answer5: Teste1
+    questionSprite: {fileID: 0}
+  - level: 1
+    rightAnswer: 3
+    isImage: 0
+    question: Teste1
+    answer1: Teste1
+    answer2: Teste1
+    answer3: Teste1
+    answer4: Teste1
+    answer5: Teste1
+    questionSprite: {fileID: 0}
+  - level: 1
+    rightAnswer: 3
+    isImage: 0
+    question: Teste1
+    answer1: Teste1
+    answer2: Teste1
+    answer3: Teste1
+    answer4: Teste1
+    answer5: Teste1
+    questionSprite: {fileID: 0}
+  - level: 1
+    rightAnswer: 3
+    isImage: 0
+    question: Teste1
+    answer1: Teste1
+    answer2: Teste1
+    answer3: Teste1
+    answer4: Teste1
+    answer5: Teste1
+    questionSprite: {fileID: 0}
+  - level: 1
+    rightAnswer: 3
+    isImage: 0
+    question: Teste1
+    answer1: Teste1
+    answer2: Teste1
+    answer3: Teste1
+    answer4: Teste1
+    answer5: Teste1
+    questionSprite: {fileID: 0}
+  - level: 1
+    rightAnswer: 3
+    isImage: 0
+    question: Teste1
+    answer1: Teste1
+    answer2: Teste1
+    answer3: Teste1
+    answer4: Teste1
+    answer5: Teste1
+    questionSprite: {fileID: 0}
+  - level: 1
+    rightAnswer: 3
+    isImage: 0
+    question: Teste1
+    answer1: Teste1
+    answer2: Teste1
+    answer3: Teste1
+    answer4: Teste1
+    answer5: Teste1
+    questionSprite: {fileID: 0}
+  - level: 1
+    rightAnswer: 3
+    isImage: 0
+    question: Teste1
+    answer1: Teste1
+    answer2: Teste1
+    answer3: Teste1
+    answer4: Teste1
+    answer5: Teste1
+    questionSprite: {fileID: 0}
+  - level: 1
+    rightAnswer: 3
+    isImage: 0
+    question: Teste1
+    answer1: Teste1
+    answer2: Teste1
+    answer3: Teste1
+    answer4: Teste1
+    answer5: Teste1
+    questionSprite: {fileID: 0}
+  - level: 1
+    rightAnswer: 3
+    isImage: 0
+    question: Teste1
+    answer1: Teste1
+    answer2: Teste1
+    answer3: Teste1
+    answer4: Teste1
+    answer5: Teste1
+    questionSprite: {fileID: 0}
+  - level: 1
+    rightAnswer: 3
+    isImage: 0
+    question: Teste1
+    answer1: Teste1
+    answer2: Teste1
+    answer3: Teste1
+    answer4: Teste1
+    answer5: Teste1
+    questionSprite: {fileID: 0}
+  - level: 1
+    rightAnswer: 3
+    isImage: 0
+    question: Teste1
+    answer1: Teste1
+    answer2: Teste1
+    answer3: Teste1
+    answer4: Teste1
+    answer5: Teste1
+    questionSprite: {fileID: 0}
+  - level: 1
+    rightAnswer: 3
+    isImage: 0
+    question: Teste1
+    answer1: Teste1
+    answer2: Teste1
+    answer3: Teste1
+    answer4: Teste1
+    answer5: Teste1
+    questionSprite: {fileID: 0}
+  - level: 1
+    rightAnswer: 3
+    isImage: 0
+    question: Teste1
+    answer1: Teste1
+    answer2: Teste1
+    answer3: Teste1
+    answer4: Teste1
+    answer5: Teste1
+    questionSprite: {fileID: 0}
+  - level: 1
+    rightAnswer: 3
+    isImage: 0
+    question: Teste1
+    answer1: Teste1
+    answer2: Teste1
+    answer3: Teste1
+    answer4: Teste1
+    answer5: Teste1
+    questionSprite: {fileID: 0}
+  - level: 1
+    rightAnswer: 3
+    isImage: 0
+    question: Teste1
+    answer1: Teste1
+    answer2: Teste1
+    answer3: Teste1
+    answer4: Teste1
+    answer5: Teste1
+    questionSprite: {fileID: 0}
+  - level: 1
+    rightAnswer: 3
+    isImage: 0
+    question: Teste1
+    answer1: Teste1
+    answer2: Teste1
+    answer3: Teste1
+    answer4: Teste1
+    answer5: Teste1
+    questionSprite: {fileID: 0}
+  - level: 1
+    rightAnswer: 3
+    isImage: 0
+    question: Teste1
+    answer1: Teste1
+    answer2: Teste1
+    answer3: Teste1
+    answer4: Teste1
+    answer5: Teste1
+    questionSprite: {fileID: 0}
+  - level: 1
+    rightAnswer: 3
+    isImage: 0
+    question: Teste1
+    answer1: Teste1
+    answer2: Teste1
+    answer3: Teste1
+    answer4: Teste1
+    answer5: Teste1
+    questionSprite: {fileID: 0}
+  - level: 1
+    rightAnswer: 3
+    isImage: 0
+    question: Teste1
+    answer1: Teste1
+    answer2: Teste1
+    answer3: Teste1
+    answer4: Teste1
+    answer5: Teste1
+    questionSprite: {fileID: 0}
+  - level: 1
+    rightAnswer: 3
+    isImage: 0
+    question: Teste1
+    answer1: Teste1
+    answer2: Teste1
+    answer3: Teste1
+    answer4: Teste1
+    answer5: Teste1
+    questionSprite: {fileID: 0}
+  - level: 1
+    rightAnswer: 3
+    isImage: 0
+    question: Teste1
+    answer1: Teste1
+    answer2: Teste1
+    answer3: Teste1
+    answer4: Teste1
+    answer5: Teste1
+    questionSprite: {fileID: 0}
+  - level: 1
+    rightAnswer: 3
+    isImage: 0
+    question: Teste1
+    answer1: Teste1
+    answer2: Teste1
+    answer3: Teste1
+    answer4: Teste1
+    answer5: Teste1
+    questionSprite: {fileID: 0}
+  - level: 1
+    rightAnswer: 3
+    isImage: 0
+    question: Teste1
+    answer1: Teste1
+    answer2: Teste1
+    answer3: Teste1
+    answer4: Teste1
+    answer5: Teste1
+    questionSprite: {fileID: 0}
+  - level: 1
+    rightAnswer: 3
+    isImage: 0
+    question: Teste1
+    answer1: Teste1
+    answer2: Teste1
+    answer3: Teste1
+    answer4: Teste1
+    answer5: Teste1
+    questionSprite: {fileID: 0}
+  - level: 1
+    rightAnswer: 3
+    isImage: 0
+    question: Teste1
+    answer1: Teste1
+    answer2: Teste1
+    answer3: Teste1
+    answer4: Teste1
+    answer5: Teste1
+    questionSprite: {fileID: 0}
+  - level: 1
+    rightAnswer: 3
+    isImage: 0
+    question: Teste1
+    answer1: Teste1
+    answer2: Teste1
+    answer3: Teste1
+    answer4: Teste1
+    answer5: Teste1
+    questionSprite: {fileID: 0}
+  - level: 1
+    rightAnswer: 3
+    isImage: 0
+    question: Teste1
+    answer1: Teste1
+    answer2: Teste1
+    answer3: Teste1
+    answer4: Teste1
+    answer5: Teste1
+    questionSprite: {fileID: 0}
+  - level: 1
+    rightAnswer: 3
+    isImage: 0
+    question: Teste1
+    answer1: Teste1
+    answer2: Teste1
+    answer3: Teste1
+    answer4: Teste1
+    answer5: Teste1
+    questionSprite: {fileID: 0}
+  - level: 1
+    rightAnswer: 3
+    isImage: 0
+    question: Teste1
+    answer1: Teste1
+    answer2: Teste1
+    answer3: Teste1
+    answer4: Teste1
+    answer5: Teste1
+    questionSprite: {fileID: 0}
+  - level: 1
+    rightAnswer: 3
+    isImage: 0
+    question: Teste1
+    answer1: Teste1
+    answer2: Teste1
+    answer3: Teste1
+    answer4: Teste1
+    answer5: Teste1
+    questionSprite: {fileID: 0}
+  - level: 1
+    rightAnswer: 3
+    isImage: 0
+    question: Teste1
+    answer1: Teste1
+    answer2: Teste1
+    answer3: Teste1
+    answer4: Teste1
+    answer5: Teste1
+    questionSprite: {fileID: 0}
+  - level: 1
+    rightAnswer: 3
+    isImage: 0
+    question: Teste1
+    answer1: Teste1
+    answer2: Teste1
+    answer3: Teste1
+    answer4: Teste1
+    answer5: Teste1
+    questionSprite: {fileID: 0}
+  - level: 1
+    rightAnswer: 3
+    isImage: 0
+    question: Teste1
+    answer1: Teste1
+    answer2: Teste1
+    answer3: Teste1
+    answer4: Teste1
+    answer5: Teste1
+    questionSprite: {fileID: 0}
+  - level: 1
+    rightAnswer: 3
+    isImage: 0
+    question: Teste1
+    answer1: Teste1
+    answer2: Teste1
+    answer3: Teste1
+    answer4: Teste1
+    answer5: Teste1
+    questionSprite: {fileID: 0}
+  - level: 1
+    rightAnswer: 3
+    isImage: 0
+    question: Teste1
+    answer1: Teste1
+    answer2: Teste1
+    answer3: Teste1
+    answer4: Teste1
+    answer5: Teste1
+    questionSprite: {fileID: 0}
+  - level: 1
+    rightAnswer: 3
+    isImage: 0
+    question: Teste1
+    answer1: Teste1
+    answer2: Teste1
+    answer3: Teste1
+    answer4: Teste1
+    answer5: Teste1
+    questionSprite: {fileID: 0}
+  - level: 1
+    rightAnswer: 3
+    isImage: 0
+    question: Teste1
+    answer1: Teste1
+    answer2: Teste1
+    answer3: Teste1
+    answer4: Teste1
+    answer5: Teste1
+    questionSprite: {fileID: 0}
+  - level: 1
+    rightAnswer: 3
+    isImage: 0
+    question: Teste1
+    answer1: Teste1
+    answer2: Teste1
+    answer3: Teste1
+    answer4: Teste1
+    answer5: Teste1
+    questionSprite: {fileID: 0}
+  - level: 1
+    rightAnswer: 3
+    isImage: 0
+    question: Teste1
+    answer1: Teste1
+    answer2: Teste1
+    answer3: Teste1
+    answer4: Teste1
+    answer5: Teste1
+    questionSprite: {fileID: 0}
+  - level: 1
+    rightAnswer: 3
+    isImage: 0
+    question: Teste1
+    answer1: Teste1
+    answer2: Teste1
+    answer3: Teste1
+    answer4: Teste1
+    answer5: Teste1
+    questionSprite: {fileID: 0}
+  - level: 1
+    rightAnswer: 3
+    isImage: 0
+    question: Teste1
+    answer1: Teste1
+    answer2: Teste1
+    answer3: Teste1
+    answer4: Teste1
+    answer5: Teste1
+    questionSprite: {fileID: 0}
+  - level: 1
+    rightAnswer: 3
+    isImage: 0
+    question: Teste1
+    answer1: Teste1
+    answer2: Teste1
+    answer3: Teste1
+    answer4: Teste1
+    answer5: Teste1
+    questionSprite: {fileID: 0}
+  levelQuestions: []
+  questionImage: {fileID: 1292856408}
+  questionText: {fileID: 1668056315}
+  answer1Text: {fileID: 1663769395}
+  answer2Text: {fileID: 133016068}
+  answer3Text: {fileID: 2114510438}
+  answer4Text: {fileID: 1117711456}
+  answer5Text: {fileID: 1732361225}
+  pointsImage: {fileID: 0}
+  pointSprites: []
+  historinhaPanel: {fileID: 1441534828}
 --- !u!1 &82400715
 GameObject:
   m_ObjectHideFlags: 0
@@ -340,7 +1364,7 @@ MonoBehaviour:
   onValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1162804797}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: GetQuestions, Assembly-CSharp
         m_MethodName: SelectAnswer
         m_Mode: 3
@@ -835,7 +1859,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2139890403}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.6203895, y: 0.10015557}
   m_AnchorMax: {x: 0.6203895, y: 0.10015557}
@@ -886,7 +1910,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1162804797}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: 
         m_MethodName: PreviousQuestion
         m_Mode: 1
@@ -1250,7 +2274,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1162804797}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: 
         m_MethodName: GetInfo
         m_Mode: 3
@@ -1540,7 +2564,7 @@ MonoBehaviour:
   onValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1162804797}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: GetQuestions, Assembly-CSharp
         m_MethodName: SelectAnswer
         m_Mode: 3
@@ -1636,9 +2660,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1441534830}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: Set_PreviousImg
+      - m_Target: {fileID: 1162804797}
+        m_TargetAssemblyTypeName: Cutscenes, Assembly-CSharp
+        m_MethodName: PrevSprite
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1717,7 +2741,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2139890403}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.80500007, y: 0.10015557}
   m_AnchorMax: {x: 0.80500007, y: 0.10015557}
@@ -1768,7 +2792,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1162804797}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: 
         m_MethodName: NextQuestion
         m_Mode: 1
@@ -1912,7 +2936,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1162804797}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: 
         m_MethodName: SendAnswersToServer
         m_Mode: 1
@@ -2263,7 +3287,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1162804797}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: 
         m_MethodName: BackToMenu
         m_Mode: 1
@@ -2781,8 +3805,8 @@ GameObject:
   - component: {fileID: 1162804795}
   - component: {fileID: 1162804794}
   - component: {fileID: 1162804793}
-  - component: {fileID: 1162804797}
   - component: {fileID: 1162804798}
+  - component: {fileID: 1162804797}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -2862,11 +3886,12 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
-  - {fileID: 1507315718}
-  - {fileID: 62137593}
   - {fileID: 1441534829}
+  - {fileID: 62137593}
+  - {fileID: 1507315718}
   - {fileID: 1110864800}
   - {fileID: 1843630425}
+  - {fileID: 1863783415}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2884,29 +3909,53 @@ MonoBehaviour:
   m_GameObject: {fileID: 1162804792}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 676a6912a250b3046a0e95f7cc8bf321, type: 3}
+  m_Script: {fileID: 11500000, guid: 1e1d13f1adaac450eaa712e38e0e4ab9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  questionText: {fileID: 1668056315}
-  option1Text: {fileID: 1663769395}
-  option2Text: {fileID: 133016068}
-  option3Text: {fileID: 2114510438}
-  option4Text: {fileID: 1117711456}
-  option5Text: {fileID: 1732361225}
-  levelPanel: {fileID: 1441534828}
+  cutscene1:
+  - {fileID: 21300000, guid: 8ebdb17efb79f764dacfaec7da764b40, type: 3}
+  - {fileID: 21300000, guid: 19ca2cbb498812c45b2da98c78e842cf, type: 3}
+  - {fileID: 21300000, guid: c773240ebd5c07e44b148f99042bef78, type: 3}
+  - {fileID: 21300000, guid: 1da26c9642e46e341961cd8b3fe9e888, type: 3}
+  - {fileID: 21300000, guid: fac49cbb1552c754b857859163693c2a, type: 3}
+  - {fileID: 21300000, guid: 677697c52b3af774b929ad8bed00eaf9, type: 3}
+  - {fileID: 21300000, guid: c47a38795c4231745948adac72d9b421, type: 3}
+  - {fileID: 21300000, guid: 5e82f48fb40d21b4ca2aeeddc43039bd, type: 3}
+  - {fileID: 21300000, guid: 97c226c2ac829f1409688c6e781cfbdb, type: 3}
+  - {fileID: 21300000, guid: c9b88e389d1bb2044b5a0400af6b600b, type: 3}
+  - {fileID: 21300000, guid: 94ef7fc4b64d29749a3662472b335989, type: 3}
+  - {fileID: 21300000, guid: 6eab0c4a0eeef3444bd6f351a4f2dd31, type: 3}
+  - {fileID: 21300000, guid: ccfc46e6fb9c66740a7272ce4ed5a6d6, type: 3}
+  - {fileID: 21300000, guid: 4b7c5cc95dd344e4cb9bce6be55da29f, type: 3}
+  cutscene2:
+  - {fileID: 21300000, guid: 662bb845ca24c5245ac475f2198d6af7, type: 3}
+  - {fileID: 21300000, guid: bf2228d6379c29343b1f138741df664c, type: 3}
+  - {fileID: 21300000, guid: f6139077259c16f428e86c0507fc8e39, type: 3}
+  - {fileID: 21300000, guid: 23707333aee2a9d4bb5b66ecc2871780, type: 3}
+  - {fileID: 21300000, guid: 64901d469469ff84390cda660f02a001, type: 3}
+  - {fileID: 21300000, guid: b56b9c470d28e4a42b6bc8caf136091c, type: 3}
+  - {fileID: 21300000, guid: e0eb74f6c96a55845af19e29ef497cf8, type: 3}
+  - {fileID: 21300000, guid: d1ded4e449154ef44bcb89c9e0175cd2, type: 3}
+  - {fileID: 21300000, guid: 280358c08179b1f49895cff3020a5b18, type: 3}
+  - {fileID: 21300000, guid: 9b6332f816fcba14d86bfa7df61812bf, type: 3}
+  - {fileID: 21300000, guid: ee937fb7b29cb144eb2259aab88b1bb5, type: 3}
+  - {fileID: 21300000, guid: b3bcce3d1cac73f44adeab526cf80733, type: 3}
+  - {fileID: 21300000, guid: 2c55fff8ae60cce45b01ae7ec6bef2e9, type: 3}
+  - {fileID: 21300000, guid: 20c92cbd7c6647b4f88b7215aacb2a75, type: 3}
+  cutscene3: []
+  cutscene4: []
+  cutscene5: []
+  cutscene6: []
+  cutscene7: []
+  cutscene8: []
+  cutscene9: []
+  cutscene10: []
+  currentCutscene: []
+  renderImg: {fileID: 425106374}
+  currentLevel: 0
+  currentIndex: 0
   quizPanel: {fileID: 62137592}
-  openAnswerPanel: {fileID: 1507315717}
-  finalPanel: {fileID: 1110864799}
-  nextBtn: {fileID: 700646860}
-  ponto: {fileID: 193801485}
-  pontos:
-  - {fileID: 21300000, guid: cac88f315d5e1d241a3de41c63513273, type: 3}
-  - {fileID: 21300000, guid: 82fffc40de356164d88284244f72cede, type: 3}
-  - {fileID: 21300000, guid: 8d2c63913958ab44c8c0dc8f232330e0, type: 3}
-  - {fileID: 21300000, guid: 5afb76de5c9855148a7089549d3cc5ed, type: 3}
-  - {fileID: 21300000, guid: 43fffc4b9e951354f80961ce1ba92b82, type: 3}
-  - {fileID: 21300000, guid: d35fd3df386380d469c14271fc4b2969, type: 3}
-  selectedAnswers: []
+  loadingPanel: {fileID: 1863783414}
 --- !u!114 &1162804798
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3127,85 +4176,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1207365652}
   m_CullTransparentMesh: 0
---- !u!1 &1258979201
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1258979202}
-  - component: {fileID: 1258979204}
-  - component: {fileID: 1258979203}
-  m_Layer: 5
-  m_Name: Placeholder
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1258979202
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1258979201}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 2054499322}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -0.5}
-  m_SizeDelta: {x: 458, y: 521}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1258979203
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1258979201}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 0.24968448, g: 0.120016046, b: 0.8773585, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_FontData:
-    m_Font: {fileID: 12800000, guid: e3265ab4bf004d28a9537516768c1c75, type: 3}
-    m_FontSize: 40
-    m_FontStyle: 2
-    m_BestFit: 0
-    m_MinSize: 2
-    m_MaxSize: 40
-    m_Alignment: 0
-    m_AlignByGeometry: 0
-    m_RichText: 1
-    m_HorizontalOverflow: 0
-    m_VerticalOverflow: 0
-    m_LineSpacing: 1
-  m_Text: 
---- !u!222 &1258979204
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1258979201}
-  m_CullTransparentMesh: 0
 --- !u!1 &1292856406
 GameObject:
   m_ObjectHideFlags: 0
@@ -3231,16 +4201,16 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1292856406}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 2054499322}
+  m_Father: {fileID: 2139890403}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.41955903}
   m_AnchorMax: {x: 0.5, y: 0.41955903}
-  m_AnchoredPosition: {x: 0.000024319, y: -9.299999}
+  m_AnchoredPosition: {x: -327.09338, y: 56.38106}
   m_SizeDelta: {x: 455.12753, y: 204.66913}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1292856408
@@ -3449,7 +4419,7 @@ GameObject:
   - component: {fileID: 1441534831}
   - component: {fileID: 1441534830}
   m_Layer: 5
-  m_Name: Reading
+  m_Name: Cutscene
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3468,7 +4438,7 @@ RectTransform:
   m_Children:
   - {fileID: 425106373}
   m_Father: {fileID: 1162804796}
-  m_RootOrder: 2
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -3484,136 +4454,38 @@ MonoBehaviour:
   m_GameObject: {fileID: 1441534828}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b3097b4a9f8c96a46a7372cb32d84bf1, type: 3}
+  m_Script: {fileID: 11500000, guid: 1e1d13f1adaac450eaa712e38e0e4ab9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  quiz: {fileID: 62137592}
-  btn_Quiz: {fileID: 549821070}
-  btn_Reading: {fileID: 1829680529}
-  reading: {fileID: 1441534828}
-  readHistory: {fileID: 425106374}
-  receptor: []
-  story_Level1:
-  - {fileID: 21300000, guid: 8ebdb17efb79f764dacfaec7da764b40, type: 3}
-  - {fileID: 21300000, guid: 19ca2cbb498812c45b2da98c78e842cf, type: 3}
-  - {fileID: 21300000, guid: c773240ebd5c07e44b148f99042bef78, type: 3}
-  - {fileID: 21300000, guid: 1da26c9642e46e341961cd8b3fe9e888, type: 3}
-  - {fileID: 21300000, guid: fac49cbb1552c754b857859163693c2a, type: 3}
-  - {fileID: 21300000, guid: 677697c52b3af774b929ad8bed00eaf9, type: 3}
-  - {fileID: 21300000, guid: c47a38795c4231745948adac72d9b421, type: 3}
-  - {fileID: 21300000, guid: 5e82f48fb40d21b4ca2aeeddc43039bd, type: 3}
-  - {fileID: 21300000, guid: 97c226c2ac829f1409688c6e781cfbdb, type: 3}
-  - {fileID: 21300000, guid: c9b88e389d1bb2044b5a0400af6b600b, type: 3}
-  - {fileID: 21300000, guid: 94ef7fc4b64d29749a3662472b335989, type: 3}
-  - {fileID: 21300000, guid: 6eab0c4a0eeef3444bd6f351a4f2dd31, type: 3}
-  - {fileID: 21300000, guid: ccfc46e6fb9c66740a7272ce4ed5a6d6, type: 3}
-  - {fileID: 21300000, guid: 4b7c5cc95dd344e4cb9bce6be55da29f, type: 3}
-  - {fileID: 21300000, guid: d7af5381f99a45245a7f6b12838da674, type: 3}
-  story_Level2:
-  - {fileID: 21300000, guid: 662bb845ca24c5245ac475f2198d6af7, type: 3}
-  - {fileID: 21300000, guid: bf2228d6379c29343b1f138741df664c, type: 3}
-  - {fileID: 21300000, guid: f6139077259c16f428e86c0507fc8e39, type: 3}
-  - {fileID: 21300000, guid: 23707333aee2a9d4bb5b66ecc2871780, type: 3}
-  - {fileID: 21300000, guid: 64901d469469ff84390cda660f02a001, type: 3}
-  - {fileID: 21300000, guid: b56b9c470d28e4a42b6bc8caf136091c, type: 3}
-  - {fileID: 21300000, guid: e0eb74f6c96a55845af19e29ef497cf8, type: 3}
-  - {fileID: 21300000, guid: d1ded4e449154ef44bcb89c9e0175cd2, type: 3}
-  - {fileID: 21300000, guid: 280358c08179b1f49895cff3020a5b18, type: 3}
-  - {fileID: 21300000, guid: 9b6332f816fcba14d86bfa7df61812bf, type: 3}
-  - {fileID: 21300000, guid: ee937fb7b29cb144eb2259aab88b1bb5, type: 3}
-  - {fileID: 21300000, guid: b3bcce3d1cac73f44adeab526cf80733, type: 3}
-  - {fileID: 21300000, guid: 2c55fff8ae60cce45b01ae7ec6bef2e9, type: 3}
-  - {fileID: 21300000, guid: 20c92cbd7c6647b4f88b7215aacb2a75, type: 3}
-  - {fileID: 21300000, guid: bb22dbfa45dc2454c8291586f63c5ce2, type: 3}
-  story_Level3:
-  - {fileID: 21300000, guid: 672a8a05f4c6a3247a0a7993915aa7d2, type: 3}
-  - {fileID: 21300000, guid: 58aa0d9b6c68e83459ad9bd62439dabd, type: 3}
-  - {fileID: 21300000, guid: 54c660dc7ca9b6a4d836e75027554985, type: 3}
-  - {fileID: 21300000, guid: 8a056c0ca8c2377489905b27a1f14cfc, type: 3}
-  - {fileID: 21300000, guid: 1598e59b9c2553341b016fad255891d2, type: 3}
-  - {fileID: 21300000, guid: cd5e1e3c09cd24e41a72f9aabf9f3d95, type: 3}
-  - {fileID: 21300000, guid: 93479407ede68a847a4727b94e1f94aa, type: 3}
-  - {fileID: 21300000, guid: 42960f71236ff884e9378bd4825c11c3, type: 3}
-  - {fileID: 21300000, guid: fe8e13be88117684795d0590ed66b444, type: 3}
-  - {fileID: 21300000, guid: 95b75207c65757642a25b0c9277b28f9, type: 3}
-  - {fileID: 21300000, guid: 45763ed788b6ea94eab751dcec6fb30d, type: 3}
-  - {fileID: 21300000, guid: c040b9c27078aca45b134d353ab46107, type: 3}
-  - {fileID: 21300000, guid: 14459120d6f816a48a631647f87cd413, type: 3}
-  - {fileID: 21300000, guid: d7af5381f99a45245a7f6b12838da674, type: 3}
-  story_Level4:
-  - {fileID: 21300000, guid: 76bfed3a3583ecd4e8114b6de485b7eb, type: 3}
-  - {fileID: 21300000, guid: b3b8d2fc28ae0e349953b22e28e90482, type: 3}
-  - {fileID: 21300000, guid: 688083558803e404d974acc97797dbb6, type: 3}
-  - {fileID: 21300000, guid: 5648693edf8cd1744aeb3f0d56188bd6, type: 3}
-  - {fileID: 21300000, guid: 7ff5133d67132ec4a90313144a300a55, type: 3}
-  - {fileID: 21300000, guid: 65aae8fa85a352e4bada29822f6d5b76, type: 3}
-  - {fileID: 21300000, guid: 16131eefd314b0846bc5cdfb3f64c59f, type: 3}
-  - {fileID: 21300000, guid: 978965b3765b7bb409127cdf03c955db, type: 3}
-  - {fileID: 21300000, guid: 82a0d1302f5f1af45a90608ff4b07f92, type: 3}
-  - {fileID: 21300000, guid: d9826189364c49145a6a827abf32d6c2, type: 3}
-  - {fileID: 21300000, guid: d7af5381f99a45245a7f6b12838da674, type: 3}
-  story_Level5:
-  - {fileID: 21300000, guid: 92aaf623d58e8a24088849a6154ac1d4, type: 3}
-  - {fileID: 21300000, guid: 9287a117357a194449dcf4f99b6fe5fb, type: 3}
-  - {fileID: 21300000, guid: 00a5f9511c733904682baedce11911bf, type: 3}
-  - {fileID: 21300000, guid: 7c0b712bc6c91754ca84ba81ca571a3a, type: 3}
-  - {fileID: 21300000, guid: 986832c8d87421d4eafa3bc8c1a325ba, type: 3}
-  - {fileID: 21300000, guid: 144cb5e8c286acd428145ed1741161be, type: 3}
-  - {fileID: 21300000, guid: c40c731dae137514f81183320add1ff6, type: 3}
-  - {fileID: 21300000, guid: 627a7e62375188842aac71598030a440, type: 3}
-  - {fileID: 21300000, guid: 83de5e7d9ecf8ea4788e64dafcde77df, type: 3}
-  - {fileID: 21300000, guid: b6a2d2afc6fadac498ff03561d8970dd, type: 3}
-  - {fileID: 21300000, guid: d7af5381f99a45245a7f6b12838da674, type: 3}
-  story_Level6:
-  - {fileID: 21300000, guid: 8a0334bec35489746aa2336a045e28a8, type: 3}
-  - {fileID: 21300000, guid: 5927fb6b3f44fd448a2f7ee569f62579, type: 3}
-  - {fileID: 21300000, guid: 77eeb6b48b618544089636f7225f810c, type: 3}
-  - {fileID: 21300000, guid: e56c76799f4b0d04ca9a44baffaeb4dc, type: 3}
-  - {fileID: 21300000, guid: 80f3fe1f0a9f9fe4ba0fbc9a9ba87e3f, type: 3}
-  - {fileID: 21300000, guid: d2bf09387eb967d449f00aa59bbf40b9, type: 3}
-  - {fileID: 21300000, guid: a653672b92e9c3a4eace694febc4ca72, type: 3}
-  - {fileID: 21300000, guid: d412b84f7698c384eb8f16bcf4e25a39, type: 3}
-  - {fileID: 21300000, guid: d6eaa172330c9b24183b7c3d9d535257, type: 3}
-  - {fileID: 21300000, guid: 8c8fd7c0ca4718440b3c1fc7ed55570c, type: 3}
-  - {fileID: 21300000, guid: 63c64ccca5bf58540b705597409de037, type: 3}
-  - {fileID: 21300000, guid: d67a2cfb7dd026b4c965502863e7b7d2, type: 3}
-  - {fileID: 21300000, guid: 23aaca966790fc4409c267f88e276795, type: 3}
-  - {fileID: 21300000, guid: d7af5381f99a45245a7f6b12838da674, type: 3}
-  story_Level7:
-  - {fileID: 21300000, guid: 5d8a8452b7e63ba4eb4e55cb4ed385dc, type: 3}
-  - {fileID: 21300000, guid: c6c81b2e86d09094fa9b5a02d5557446, type: 3}
-  - {fileID: 21300000, guid: 9e1fe71e9e39b2a44b9545163d8c3b9f, type: 3}
-  - {fileID: 21300000, guid: 17eb8bd1bce854e4fbe40a0d7e39da18, type: 3}
-  - {fileID: 21300000, guid: 58f8e29641be7654ebc3685e08f3e312, type: 3}
-  - {fileID: 21300000, guid: 5873acede304b0240b4c238f4fcc0c75, type: 3}
-  - {fileID: 21300000, guid: 056c013a5f16fb94082e9ca5ba459792, type: 3}
-  - {fileID: 21300000, guid: 1958a87943d77004ca0ce0e7e16e1df7, type: 3}
-  - {fileID: 21300000, guid: c046cc1661139ad48941851e23aa5a18, type: 3}
-  - {fileID: 21300000, guid: 9ed5a658aaa355f42809f81104d341d8, type: 3}
-  - {fileID: 21300000, guid: 830c3487a53aaba4695470e65d3814aa, type: 3}
-  - {fileID: 21300000, guid: fc5b1e17feffa7b4aa937276a19bb5aa, type: 3}
-  - {fileID: 21300000, guid: 510e9821694f7434db14b8669b48eb34, type: 3}
-  - {fileID: 21300000, guid: e67ebf97446445344baf592f5416a9b9, type: 3}
-  - {fileID: 21300000, guid: d7af5381f99a45245a7f6b12838da674, type: 3}
-  story_Level8:
-  - {fileID: 21300000, guid: 8cf2268980db5f54a8e8e21fd24b185b, type: 3}
-  - {fileID: 21300000, guid: f9263a641c2dd2a45b8b08119be7dacf, type: 3}
-  - {fileID: 21300000, guid: 44e6e7695a6fdb54f94004ccb12f6397, type: 3}
-  - {fileID: 21300000, guid: 3204185b52f079d46b1e9e6d2bc3525b, type: 3}
-  - {fileID: 21300000, guid: 56972d30dd25f7a49b9748b8511dd1f1, type: 3}
-  - {fileID: 21300000, guid: 37b335094ee0de240b2576d6eda3f527, type: 3}
-  - {fileID: 21300000, guid: 738e914808cbbdb40b28e488f54fc174, type: 3}
-  - {fileID: 21300000, guid: b128aa829e3337a46acce957365fa4dd, type: 3}
-  - {fileID: 21300000, guid: 7a5c0c7e1be5ad34e8169df8fc40d432, type: 3}
-  - {fileID: 21300000, guid: c2816d9cafa34e34b8af93b66c068209, type: 3}
-  - {fileID: 21300000, guid: 8baee6961c2e9dc49a73a4eb5acf134f, type: 3}
-  - {fileID: 21300000, guid: 7072b95416c2cd24cbc64f925d6ae359, type: 3}
-  - {fileID: 21300000, guid: ec318aa66d7123940b248262c812a462, type: 3}
-  - {fileID: 21300000, guid: 2f55d999d2516eb4392c3c6174b36a29, type: 3}
-  - {fileID: 21300000, guid: 9b0e730ca8cf4464dbf4a5293d867b95, type: 3}
-  - {fileID: 21300000, guid: d7af5381f99a45245a7f6b12838da674, type: 3}
-  level_Que_Veio: 1
-  imgSelect: 0
+  cutscene1: []
+  cutscene2: []
+  cutscene3:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  cutscene4: []
+  cutscene5: []
+  cutscene6: []
+  cutscene7: []
+  cutscene8: []
+  cutscene9: []
+  cutscene10: []
+  currentCutscene: []
+  renderImg: {fileID: 0}
+  currentLevel: 0
+  currentIndex: 0
+  quizPanel: {fileID: 0}
+  loadingPanel: {fileID: 0}
 --- !u!114 &1441534831
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3738,7 +4610,7 @@ GameObject:
   - component: {fileID: 1507315718}
   - component: {fileID: 1507315719}
   m_Layer: 5
-  m_Name: QuizParte2
+  m_Name: QuizOpenAnswer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3760,7 +4632,7 @@ RectTransform:
   - {fileID: 947842742}
   - {fileID: 1122217223}
   m_Father: {fileID: 1162804796}
-  m_RootOrder: 0
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.011308562, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -3944,7 +4816,7 @@ MonoBehaviour:
   onValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1162804797}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: GetQuestions, Assembly-CSharp
         m_MethodName: SelectAnswer
         m_Mode: 3
@@ -3986,12 +4858,12 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 2054499322}
-  m_RootOrder: 2
+  m_Father: {fileID: 2139890403}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -0.5}
+  m_AnchoredPosition: {x: -327.09344, y: 51.621044}
   m_SizeDelta: {x: 458, y: 521}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1668056314
@@ -4351,7 +5223,7 @@ MonoBehaviour:
   onValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1162804797}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: GetQuestions, Assembly-CSharp
         m_MethodName: SelectAnswer
         m_Mode: 3
@@ -4447,9 +5319,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1441534830}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: Set_NextImg
+      - m_Target: {fileID: 1162804797}
+        m_TargetAssemblyTypeName: Cutscenes, Assembly-CSharp
+        m_MethodName: NextSprite
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4569,6 +5441,82 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 50.000004}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &1863783414
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1863783415}
+  - component: {fileID: 1863783417}
+  - component: {fileID: 1863783416}
+  m_Layer: 5
+  m_Name: Loading
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &1863783415
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1863783414}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1954199195}
+  m_Father: {fileID: 1162804796}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1863783416
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1863783414}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.4897859, g: 0.6886792, b: 0.40606087, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1863783417
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1863783414}
+  m_CullTransparentMesh: 1
 --- !u!1 &1907779614
 GameObject:
   m_ObjectHideFlags: 0
@@ -4654,7 +5602,7 @@ MonoBehaviour:
   onValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1162804797}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: GetQuestions, Assembly-CSharp
         m_MethodName: SelectAnswer
         m_Mode: 3
@@ -4667,6 +5615,85 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   m_IsOn: 1
+--- !u!1 &1954199194
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1954199195}
+  - component: {fileID: 1954199197}
+  - component: {fileID: 1954199196}
+  m_Layer: 5
+  m_Name: Text
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1954199195
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1954199194}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1863783415}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 493.8812, y: 168.791}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1954199196
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1954199194}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 29
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 10
+    m_MaxSize: 53
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: CARREGANDO
+--- !u!222 &1954199197
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1954199194}
+  m_CullTransparentMesh: 1
 --- !u!1 &1959020649
 GameObject:
   m_ObjectHideFlags: 0
@@ -4825,150 +5852,6 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: 
---- !u!1 &2054499321
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2054499322}
-  - component: {fileID: 2054499325}
-  - component: {fileID: 2054499324}
-  - component: {fileID: 2054499323}
-  m_Layer: 5
-  m_Name: Pergunta_InputText
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &2054499322
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2054499321}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 1292856407}
-  - {fileID: 1258979202}
-  - {fileID: 1668056313}
-  m_Father: {fileID: 2139890403}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.21953185, y: 0.5853334}
-  m_AnchorMax: {x: 0.21953185, y: 0.5853334}
-  m_AnchoredPosition: {x: 21.20996, y: -7.8790283}
-  m_SizeDelta: {x: 477.12756, y: 534.5538}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &2054499323
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2054499321}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d199490a83bb2b844b9695cbf13b01ef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Navigation:
-    m_Mode: 3
-    m_WrapAround: 0
-    m_SelectOnUp: {fileID: 0}
-    m_SelectOnDown: {fileID: 0}
-    m_SelectOnLeft: {fileID: 0}
-    m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
-  m_Colors:
-    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_DisabledColor: {r: 1, g: 1, b: 1, a: 1}
-    m_ColorMultiplier: 1
-    m_FadeDuration: 0.1
-  m_SpriteState:
-    m_HighlightedSprite: {fileID: 0}
-    m_PressedSprite: {fileID: 0}
-    m_SelectedSprite: {fileID: 0}
-    m_DisabledSprite: {fileID: 0}
-  m_AnimationTriggers:
-    m_NormalTrigger: Normal
-    m_HighlightedTrigger: Highlighted
-    m_PressedTrigger: Pressed
-    m_SelectedTrigger: Selected
-    m_DisabledTrigger: Disabled
-  m_Interactable: 0
-  m_TargetGraphic: {fileID: 2054499324}
-  m_TextComponent: {fileID: 1668056315}
-  m_Placeholder: {fileID: 1258979203}
-  m_ContentType: 0
-  m_InputType: 0
-  m_AsteriskChar: 42
-  m_KeyboardType: 0
-  m_LineType: 0
-  m_HideMobileInput: 1
-  m_CharacterValidation: 0
-  m_CharacterLimit: 2400
-  m_OnEndEdit:
-    m_PersistentCalls:
-      m_Calls: []
-  m_OnValueChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_CaretColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
-  m_CustomCaretColor: 0
-  m_SelectionColor: {r: 0.65882355, g: 0.80784315, b: 1, a: 0.7529412}
-  m_Text: 
-  m_CaretBlinkRate: 0.85
-  m_CaretWidth: 1
-  m_ReadOnly: 1
-  m_ShouldActivateOnSelect: 1
---- !u!114 &2054499324
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2054499321}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 10911, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &2054499325
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2054499321}
-  m_CullTransparentMesh: 0
 --- !u!1 &2114510436
 GameObject:
   m_ObjectHideFlags: 0
@@ -5075,7 +5958,8 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 2054499322}
+  - {fileID: 1292856407}
+  - {fileID: 1668056313}
   - {fileID: 422334099}
   - {fileID: 700646859}
   - {fileID: 50078079}

@@ -32,8 +32,12 @@ public class Quiz : MonoBehaviour
     // Index da questao carregada.
     private int currentQuestionIndex = 0;
 
+    public GameObject historinhaPanel;
+
     private void Start()
     {
+        historinhaPanel.SetActive(false);
+
         Debug.Log("Carregando quiz do level " + PlayerPrefs.GetInt("quiz_level_to_load"));
         LoadLevelQuestions(PlayerPrefs.GetInt("quiz_level_to_load"));
     }
