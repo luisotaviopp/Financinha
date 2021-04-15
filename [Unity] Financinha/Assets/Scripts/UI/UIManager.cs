@@ -5,28 +5,28 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 public class UIManager : MonoBehaviour
 {
-	public GameObject panelLevelSelector;
-	public GameObject panelLogin;
-	public GameObject panelRegistration;
-	public GameObject panelPreQuizz;
-	public GameObject panelSettings;
+	public GameObject panelLevelSelector;           // Menu principal
+	public GameObject panelLogin;                   // Login
+	public GameObject panelRegistration;            // Registro
+//	public GameObject panelPreQuizz;
+	public GameObject panelSettings;                // Opcoes
 
-	public GameObject panelBanco_da_Casa;
-	public GameObject panelBanco_da_Casa_Lancar;
-	public GameObject panelCarteira;
-	public GameObject panelCarteiraLancar;
-	public GameObject panelRegras;
-	public GameObject panelRegras_Cadastrar;
-	public GameObject panelSemanadas;
-	public GameObject panelConquista;
-	public GameObject panelConquista_editar;
-	public GameObject panelAvaliacao;
-	public GameObject panelListaAprendizes;
-	public GameObject panelRegistrarAprendiz;
+	public GameObject panelBanco_da_Casa;           // Lista os eventos do banco
+	public GameObject panelBanco_da_Casa_Lancar;    // Operacao no banco
+	public GameObject panelCarteira;                // Lista as operacoes da carteira
+	public GameObject panelCarteiraLancar;          // Novo evento na carteira
+	public GameObject panelRegras;                  // Lista as regras da casa
+	public GameObject panelRegras_Cadastrar;        // Cadastra nova regra
+	public GameObject panelSemanadas;               // Simulador de semanadas
+	public GameObject panelConquista;               // Mostra objetivo e conquista
+	public GameObject panelConquista_editar;        // Adicionar ou editar conquista
+	public GameObject panelAvaliacao;               // Para o pai avaliar a resposta do aprendiz
+	public GameObject panelListaAprendizes;         // Lista de aprendizes
+	public GameObject panelRegistrarAprendiz;       // Cadastra novo aprendiz
 
-	public GameObject panelSubMenu;
+	public GameObject panelSubMenu;                 // Manu hamburger no canto da tela
 
-	public GameObject panelPreGame;
+	public GameObject panelPreGame;                 // Seleciona entre desafio de habilidades e quiz
 	public Image nuvem;
 
 	public Image pig;
@@ -61,7 +61,7 @@ public class UIManager : MonoBehaviour
 		panelConquista_editar.SetActive(false);
 		panelAvaliacao.SetActive(false);
 		panelLevelSelector.SetActive(false);
-		panelPreQuizz.SetActive(false);
+		//panelPreQuizz.SetActive(false);
 		panelSettings.SetActive(false);
 		panelListaAprendizes.SetActive(false);
 	}
@@ -81,7 +81,7 @@ public class UIManager : MonoBehaviour
 		panelConquista_editar.SetActive(false);
 		panelAvaliacao.SetActive(false);
 		panelLevelSelector.SetActive(false);
-		panelPreQuizz.SetActive(false);
+		//panelPreQuizz.SetActive(false);
 		panelSettings.SetActive(false);
 		panelListaAprendizes.SetActive(false);
 	}
@@ -101,7 +101,7 @@ public class UIManager : MonoBehaviour
 		panelConquista_editar.SetActive(false);
 		panelAvaliacao.SetActive(false);
 		panelLevelSelector.SetActive(false);
-		panelPreQuizz.SetActive(false);
+		//panelPreQuizz.SetActive(false);
 		panelSettings.SetActive(false);
 		panelListaAprendizes.SetActive(false);
 	}
@@ -121,7 +121,7 @@ public class UIManager : MonoBehaviour
 		panelConquista_editar.SetActive(false);
 		panelAvaliacao.SetActive(false);
 		panelLevelSelector.SetActive(false);
-		panelPreQuizz.SetActive(false);
+		//panelPreQuizz.SetActive(false);
 		panelSettings.SetActive(false);
 		panelListaAprendizes.SetActive(false);
 	}
@@ -141,7 +141,7 @@ public class UIManager : MonoBehaviour
 		panelConquista_editar.SetActive(false);
 		panelAvaliacao.SetActive(false);
 		panelLevelSelector.SetActive(false);
-		panelPreQuizz.SetActive(false);
+		//panelPreQuizz.SetActive(false);
 		panelSettings.SetActive(false);
 		panelListaAprendizes.SetActive(false);
 	}
@@ -161,7 +161,7 @@ public class UIManager : MonoBehaviour
 		panelConquista_editar.SetActive(false);
 		panelAvaliacao.SetActive(false);
 		panelLevelSelector.SetActive(false);
-		panelPreQuizz.SetActive(false);
+		//panelPreQuizz.SetActive(false);
 		panelSettings.SetActive(false);
 		panelListaAprendizes.SetActive(false);
 	}
@@ -181,7 +181,7 @@ public class UIManager : MonoBehaviour
 		panelConquista_editar.SetActive(false);
 		panelAvaliacao.SetActive(false);
 		panelLevelSelector.SetActive(false);
-		panelPreQuizz.SetActive(false);
+		//panelPreQuizz.SetActive(false);
 		panelSettings.SetActive(false);
 		panelListaAprendizes.SetActive(false);
 	}
@@ -201,7 +201,7 @@ public class UIManager : MonoBehaviour
 		panelConquista_editar.SetActive(false);
 		panelAvaliacao.SetActive(false);
 		panelLevelSelector.SetActive(false);
-		panelPreQuizz.SetActive(false);
+		//panelPreQuizz.SetActive(false);
 		panelSettings.SetActive(false);
 		panelListaAprendizes.SetActive(false);
 	}
@@ -221,7 +221,7 @@ public class UIManager : MonoBehaviour
 		panelConquista_editar.SetActive(false);
 		panelAvaliacao.SetActive(false);
 		panelLevelSelector.SetActive(false);
-		panelPreQuizz.SetActive(false);
+		//panelPreQuizz.SetActive(false);
 		panelSettings.SetActive(false);
 		panelListaAprendizes.SetActive(false);
 	}
@@ -241,7 +241,7 @@ public class UIManager : MonoBehaviour
 		panelConquista_editar.SetActive(false);
 		panelAvaliacao.SetActive(false);
 		panelLevelSelector.SetActive(false);
-		panelPreQuizz.SetActive(false);
+		//panelPreQuizz.SetActive(false);
 		panelSettings.SetActive(false);
 		panelListaAprendizes.SetActive(false);
 	}
@@ -261,7 +261,7 @@ public class UIManager : MonoBehaviour
 		panelConquista_editar.SetActive(true);
 		panelAvaliacao.SetActive(false);
 		panelLevelSelector.SetActive(false);
-		panelPreQuizz.SetActive(false);
+		//panelPreQuizz.SetActive(false);
 		panelSettings.SetActive(false);
 		panelListaAprendizes.SetActive(false);
 	}
@@ -281,7 +281,7 @@ public class UIManager : MonoBehaviour
 		panelConquista_editar.SetActive(false);
 		panelAvaliacao.SetActive(true);
 		panelLevelSelector.SetActive(false);
-		panelPreQuizz.SetActive(false);
+		//panelPreQuizz.SetActive(false);
 		panelSettings.SetActive(false);
 		panelListaAprendizes.SetActive(false);
 	}
@@ -301,7 +301,7 @@ public class UIManager : MonoBehaviour
 		panelConquista_editar.SetActive(false);
 		panelAvaliacao.SetActive(false);
 		panelLevelSelector.SetActive(false);
-		panelPreQuizz.SetActive(false);
+		//panelPreQuizz.SetActive(false);
 		panelSettings.SetActive(true);
 		panelListaAprendizes.SetActive(false);
 	}
@@ -321,7 +321,7 @@ public class UIManager : MonoBehaviour
 		panelConquista_editar.SetActive(false);
 		panelAvaliacao.SetActive(false);
 		panelLevelSelector.SetActive(false);
-		panelPreQuizz.SetActive(false);
+		//panelPreQuizz.SetActive(false);
 		panelSettings.SetActive(false);
 		panelListaAprendizes.SetActive(false);
 	}
@@ -341,7 +341,7 @@ public class UIManager : MonoBehaviour
 		panelConquista_editar.SetActive(false);
 		panelAvaliacao.SetActive(false);
 		panelLevelSelector.SetActive(false);
-		panelPreQuizz.SetActive(false);
+		//panelPreQuizz.SetActive(false);
 		panelSettings.SetActive(false);
 		panelListaAprendizes.SetActive(false);
 	}
@@ -381,7 +381,7 @@ public class UIManager : MonoBehaviour
 		panelConquista_editar.SetActive(false);
 		panelAvaliacao.SetActive(false);
 		panelLevelSelector.SetActive(false);
-		panelPreQuizz.SetActive(true);
+		//panelPreQuizz.SetActive(true);
 		panelSettings.SetActive(false);
 		panelListaAprendizes.SetActive(false);
 	}
@@ -401,7 +401,7 @@ public class UIManager : MonoBehaviour
 		panelConquista_editar.SetActive(false);
 		panelAvaliacao.SetActive(false);
 		panelLevelSelector.SetActive(false);
-		panelPreQuizz.SetActive(false);
+		//panelPreQuizz.SetActive(false);
 		panelPreGame.SetActive(true);
 		panelSettings.SetActive(false);
 		panelListaAprendizes.SetActive(false);
@@ -443,7 +443,7 @@ public class UIManager : MonoBehaviour
 		panelConquista_editar.SetActive(false);
 		panelAvaliacao.SetActive(false);
 		panelLevelSelector.SetActive(false);
-		panelPreQuizz.SetActive(false);
+		//panelPreQuizz.SetActive(false);
 		panelPreGame.SetActive(false);
 		panelSettings.SetActive(false);
 		panelListaAprendizes.SetActive(false);

@@ -35,9 +35,6 @@ public class WalletOperation : MonoBehaviour
         }
         else
         {
-            //Texto de Retorno
-            //statusDisplay.text = www.downloadHandler.text;
-
             //Zerando Campos Login
             reasonInput.text = "";
             valueInput.text = "";

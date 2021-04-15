@@ -7,7 +7,7 @@ public class ApiConfig : MonoBehaviour
 
 	// USUARIOS
 	public static string REGISTER_URL 				= API_URL + "/user/create_user.php";            // Cadastrar jogador novo. *****
-	public static string LOGIN_URL 					= API_URL + "/user/login.php";                  // Logar.
+	public static string LOGIN_URL 				= API_URL + "/user/login.php";                  // Logar.
 	public static string LIST_USERS_URL 			= API_URL + "/user/search_user.php";            // Procurando um usuário
 	public static string UPDATE_SEMANADA 			= API_URL + "/user/update_semanada.php";        // Procurando um usuário
 
@@ -18,24 +18,27 @@ public class ApiConfig : MonoBehaviour
 	public static string UPDATE_HABILITY 			= API_URL + "/level/check_level_hability.php";  // Checar desafios cumpridos pelo jogador.
 	
 	// BANCO
-	public static string SAVINGS_TO_WALLET_URL 		= API_URL + "/bank/savings_to_wallet.php";      // Transferência -> cofrinho para carteira 
-	public static string BANK_EVENTS_URL 			= API_URL + "/bank/bank_timeline.php";          // Pegar o extrato do jogador.
-	public static string SAVINGS_AMOUNT_URL 		= API_URL + "/bank/saving_amount.php";          // Pegar o valor do cofrinho.
-	public static string DELETE_BANK_EVENT_URL 		= API_URL + "/bank/delete_bank_event.php";    	// Transferência -> carteira para cofrinho
+    public static string BANK_EVENTS_URL            = API_URL + "/bank/bank_timeline.php";          // Pegar o extrato do jogador.
+    public static string SAVINGS_AMOUNT_URL         = API_URL + "/bank/saving_amount.php";          // Pegar o valor do cofrinho.
+    public static string DELETE_BANK_EVENT_URL      = API_URL + "/bank/delete_bank_event.php";      // Deleta um evento no banco.
+    public static string BANK_OPERATION             = API_URL + "/bank/bank_operation.php";         // Fazer essa bosta funcionar amanha.
 
-	// CARTEIRA
-	public static string WALLET_EVENTS_URL 			= API_URL + "/wallet/wallet_timeline.php";      // Pegar o extrato do jogador.
-	public static string WALLET_AMOUNT_URL 			= API_URL + "/wallet/wallet_amount.php";        // Pegar o valor da carteira.
-	public static string WALLET_OPERATION_URL 		= API_URL + "/wallet/wallet_operation.php";     // Inserindo grana na carteira -> post_value, post_reason
-	public static string WALLET_TO_SAVINGS_URL 		= API_URL + "/wallet/wallet_to_savings.php";    // Transferência -> carteira para cofrinho
+    // Esses aqui foram substituidos pelo Bank Operation, que depende da escolha do jogador.
+    public static string SAVINGS_TO_WALLET_URL      = API_URL + "/bank/savings_to_wallet.php";      // LEGADO, SUBSTITUIDO PELO BANK OPERATION - Transferência -> cofrinho para carteira 
+    public static string WALLET_TO_SAVINGS_URL      = API_URL + "/wallet/wallet_to_savings.php";    // LEGADO, SUBSTITUIDO PELO BANK OPERATION - Transferência -> carteira para cofrinho
+
+    // CARTEIRA
+    public static string WALLET_EVENTS_URL           = API_URL + "/wallet/wallet_timeline.php";      // Pegar o extrato do jogador.
+    public static string WALLET_AMOUNT_URL           = API_URL + "/wallet/wallet_amount.php";        // Pegar o valor da carteira.
+    public static string WALLET_OPERATION_URL        = API_URL + "/wallet/wallet_operation.php";     // Inserindo grana na carteira -> post_value, post_reason
 	public static string DELETE_WALLET_EVENT_URL 	= API_URL + "/wallet/delete_wallet_event.php";  // Transferência -> carteira para cofrinho
 
 	// REGRAS
 	public static string CREATE_RULE_URL 			= API_URL + "/rule/create_rule.php";            // Criando regras da casa
 	public static string LIST_RULES_URL 			= API_URL + "/rule/list_rules.php";             // Listando regras da casa
 	public static string UPDATE_RULE_QUANTITY_URL 	= API_URL + "/rule/update_rule_quantity.php";   // Atualizando quantidade semanal
-	public static string DELETE_RULE_URL 			= API_URL + "/rule/delete_rule.php";   			// Atualizando quantidade semanal
-	public static string UPDATE_SALDO 				= API_URL + "/rule/update_saldo.php";   		// Atualizando quantidade semanal
+	public static string DELETE_RULE_URL 			= API_URL + "/rule/delete_rule.php";   			// Deletando uma regra
+	public static string UPDATE_SALDO 				= API_URL + "/rule/update_saldo.php";   		// Atualizando o saldo semanal
 
 	// MENU
 	public static string MENU_UPDATE_VALUES 		= API_URL + "/menu/menu_values.php";            // Pega os valores para o menu
@@ -52,7 +55,7 @@ public class ApiConfig : MonoBehaviour
 	public static string GET_CAUSE_URL 				= API_URL + "/objective/get_cause.php";         // Pegar causa
 
 	// QUIZZ
-	public static string GET_QUESTIONS_BY_LEVEL 	= API_URL + "/quiz/get_questions_level.php";    // Pega as questões por level
+	public static string GET_QUESTIONS_BY_LEVEL     	= API_URL + "/quiz/get_questions_level.php";    // Pega as questões por level
 	public static string INSERT_QUESTION_RESPONSES 	= API_URL + "/quiz/insert_selection.php";     	// Envia as respostas pro servidor	
 	public static string INSERT_OPEN_ANSWER 		= API_URL + "/quiz/insert_open_answer.php";		// Cadastrando uma resposta para uma pergunta
 	public static string GET_NOTIFICATION	 		= API_URL + "/quiz/get_notifications.php";		// Pegando o level que está com resposta cadastrada e esperando ser avaliada
