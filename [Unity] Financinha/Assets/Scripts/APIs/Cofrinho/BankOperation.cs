@@ -7,7 +7,7 @@ using UnityEngine.UI;
 public class BankOperation : MonoBehaviour
 {
     public InputField valueInput;
-    public string operation;
+    public string operation = "w2s";
 
     public void GetInfo()
     {
@@ -34,7 +34,7 @@ public class BankOperation : MonoBehaviour
             //Zerando Campos
             valueInput.text = "";
 
-           // GameObject.Find("UIManager").GetComponent<UIManager>().OpenBancoDaCasa();
+            GameObject.Find("UIManager").GetComponent<UIManager>().OpenBancoDaCasa();
         }
     }
 

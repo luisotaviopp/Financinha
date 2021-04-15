@@ -95,5 +95,5 @@ public class ExtratoBancoGetter : MonoBehaviour
 		{
 			Debug.Log(www.downloadHandler.text);
 		}
-	}
+    }
 }
