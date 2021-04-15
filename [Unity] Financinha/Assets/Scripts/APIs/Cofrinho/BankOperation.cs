@@ -8,6 +8,7 @@ public class BankOperation : MonoBehaviour
 {
     public InputField valueInput;
     public string operation = "w2s";
+    public AudioSource coinSfx;
 
     public void GetInfo()
     {
@@ -33,9 +34,10 @@ public class BankOperation : MonoBehaviour
         {
             //Zerando Campos
             valueInput.text = "";
-
+            GameObject.Find("Canvas").GetComponent<AudioManager>().PlayCoinSound();
             GameObject.Find("UIManager").GetComponent<UIManager>().OpenBancoDaCasa();
         }
+
     }
 
     public void setOperation(string op)
