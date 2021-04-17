@@ -4,9 +4,10 @@ using UnityEngine;
 
 public class PermissionCheck : MonoBehaviour
 {
-    public GameObject[] buttons;
+    public GameObject[] buttonsHiddenForResponsible;
+    public GameObject[] buttonsHiddenForApprentice;
 
-    void Start()
+    void OnEnable()
     {
         ShowHideButtons();
     }
@@ -15,14 +16,14 @@ public class PermissionCheck : MonoBehaviour
     {
         if (PlayerPrefs.GetString("permission") == "resp")
         {
-            foreach (GameObject btn in buttons)
+            foreach (GameObject btn in buttonsHiddenForResponsible)
             {
-                btn.SetActive(true);
+                btn.SetActive(false);
             }
         }
         else
         {
-           foreach (GameObject btn in buttons)
+           foreach (GameObject btn in buttonsHiddenForApprentice)
            {
                btn.SetActive(false);
            }

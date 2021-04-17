@@ -12,6 +12,20 @@ public class MainMenu : MonoBehaviour
     public Text walletAmount;
     public Text objectiveAmount;
 
+    private void Awake()
+    {
+        RenderValues();
+        if (PlayerPrefs.HasKey("id_aprendiz"))
+        {
+            StartCoroutine(GetValuesCorroutine());
+        }
+        else
+        {
+            // Fecha o painel de login.
+            GameObject.Find("UIManager").GetComponent<UIManager>().OpenListaAprendizes();
+        }
+    }
+
     private void OnEnable()
     {
         RenderValues();
