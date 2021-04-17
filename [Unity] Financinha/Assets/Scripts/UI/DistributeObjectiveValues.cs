@@ -17,6 +17,8 @@ public class DistributeObjectiveValues : MonoBehaviour
 
 	public List<float> values;
 
+    public Button first_level_button;
+
 	void OnEnable()
 	{
 		
@@ -35,7 +37,7 @@ public class DistributeObjectiveValues : MonoBehaviour
 
 		foreach (var txt in valueTexts)
 		{
-			float partialMultiplication = partial*expoent;
+			float partialMultiplication = partial * expoent;
 
 			txt.text = partialMultiplication.ToString();
 
@@ -49,11 +51,19 @@ public class DistributeObjectiveValues : MonoBehaviour
 			if (values[i] <= PlayerPrefs.GetFloat("bank_amount"))
 			{
 				cadeadosHabilidade[i].sprite = cadeadoVerde;
+
 				if(cadeadosHabilidade[cadeadosHabilidade.Length - 1].sprite.name == "cadeado-aberto")
                 {
 					luaVovo.sprite = luaVovoNave;
                 }
 			}
 		}
-	}
+
+        // Libera a primeira fase se o valor da carteira for maior que o valor da fase
+        if(values[0] <= PlayerPrefs.GetFloat("bank_amount"))
+        {
+            first_level_button.interactable = true;
+            cadeadosHabilidade[0].sprite = cadeadoVerde;
+        }
+    }
 }

@@ -9,6 +9,7 @@ public class QuizQuestion
     public int level;
     public int rightAnswer;
     public bool isImage;
+    public bool isOpenAnswer;
     public string question;
     public string answer1;
     public string answer2;

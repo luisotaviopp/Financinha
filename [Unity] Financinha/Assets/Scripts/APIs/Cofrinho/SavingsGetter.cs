@@ -8,7 +8,7 @@ public class SavingsGetter : MonoBehaviour
 {
     public Text amountDisplay;
 
-    private void Start()
+    private void OnEnable()
     {
         GetAmount();
     }

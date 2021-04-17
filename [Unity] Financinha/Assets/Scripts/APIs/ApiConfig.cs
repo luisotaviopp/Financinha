@@ -54,14 +54,16 @@ public class ApiConfig : MonoBehaviour
 	public static string GET_GIFT_URL 				= API_URL + "/objective/get_objective.php";     // Pegar objetivo
 	public static string GET_CAUSE_URL 				= API_URL + "/objective/get_cause.php";         // Pegar causa
 
-	// QUIZZ
+	// QUIZZ - DESCONTINUADOS
 	public static string GET_QUESTIONS_BY_LEVEL     	= API_URL + "/quiz/get_questions_level.php";    // Pega as questões por level
 	public static string INSERT_QUESTION_RESPONSES 	= API_URL + "/quiz/insert_selection.php";     	// Envia as respostas pro servidor	
-	public static string INSERT_OPEN_ANSWER 		= API_URL + "/quiz/insert_open_answer.php";		// Cadastrando uma resposta para uma pergunta
-	public static string GET_NOTIFICATION	 		= API_URL + "/quiz/get_notifications.php";		// Pegando o level que está com resposta cadastrada e esperando ser avaliada
-	public static string GET_OPEN_ANSWER	 		= API_URL + "/quiz/get_open_answer.php";		// Pega a resposta da questão aberta
-	public static string EVALUATE_ANSWER	 		= API_URL + "/quiz/evaluate_answer.php";		// Envia a nota do pai para o servidor
-	public static string GET_SCORE	 				= API_URL + "/quiz/get_level_score.php";		// Pega a nota das questões + nota do pai
+	
+    // QUIZ - Esses estaao corretos.
+    public static string INSERT_ANSWERS 		    = API_URL + "/quiz/insert_quiz_answers.php";	// Cadastrando as respostas para um level
+	public static string GET_NOTIFICATION	 		= API_URL + "/quiz/get_notifications.php";		    // Pegando o level que está com resposta cadastrada e esperando ser avaliada
+	public static string GET_OPEN_ANSWER	 		= API_URL + "/quiz/get_open_answer.php";		    // Pega a resposta da questão aberta
+	public static string EVALUATE_ANSWER	 		= API_URL + "/quiz/evaluate_answer.php";		    // Envia a nota do pai para o servidor
+	public static string GET_SCORE	 				= API_URL + "/quiz/get_level_score.php";		    // Pega a nota das questões + nota do pai
 
 	// Apenas responsáveis -> Vendo as respostas para as perguntas
 

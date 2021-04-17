@@ -161,7 +161,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 3.5664673, y: 0.0020751953}
+  m_AnchoredPosition: {x: 3.5665283, y: 0.0020751953}
   m_SizeDelta: {x: -8.137939, y: -0.0040893555}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &50078080
@@ -195,7 +195,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &62137593
 RectTransform:
   m_ObjectHideFlags: 0
@@ -276,6 +276,7 @@ MonoBehaviour:
   - level: 1
     rightAnswer: 3
     isImage: 0
+    isOpenAnswer: 0
     question: Questai 1, lvl1
     answer1: Teste1
     answer2: Teste2
@@ -286,6 +287,7 @@ MonoBehaviour:
   - level: 1
     rightAnswer: 3
     isImage: 1
+    isOpenAnswer: 0
     question: Teste1
     answer1: Teste1
     answer2: Teste1
@@ -296,6 +298,7 @@ MonoBehaviour:
   - level: 1
     rightAnswer: 3
     isImage: 0
+    isOpenAnswer: 0
     question: Teste1
     answer1: Teste1
     answer2: Teste1
@@ -303,9 +306,10 @@ MonoBehaviour:
     answer4: Teste1
     answer5: Teste1
     questionSprite: {fileID: 0}
-  - level: 2
+  - level: 1
     rightAnswer: 3
     isImage: 0
+    isOpenAnswer: 0
     question: Teste1
     answer1: Teste1
     answer2: Teste1
@@ -313,15 +317,16 @@ MonoBehaviour:
     answer4: Teste1
     answer5: Teste1
     questionSprite: {fileID: 0}
-  - level: 3
+  - level: 1
     rightAnswer: 3
     isImage: 0
-    question: Teste1
-    answer1: Teste1
-    answer2: Teste1
-    answer3: Teste1
-    answer4: Teste1
-    answer5: Teste1
+    isOpenAnswer: 1
+    question: QUESTAO ABERTA
+    answer1: 
+    answer2: 
+    answer3: 
+    answer4: 
+    answer5: 
     questionSprite: {fileID: 0}
   levelQuestions: []
   questionImage: {fileID: 1292856408}
@@ -335,6 +340,9 @@ MonoBehaviour:
   pointsImage: {fileID: 0}
   pointSprites: []
   historinhaPanel: {fileID: 1441534828}
+  answerButtons: {fileID: 50078078}
+  openAnswerInput: {fileID: 1122217222}
+  answerInput: {fileID: 1122217224}
 --- !u!1 &82400715
 GameObject:
   m_ObjectHideFlags: 0
@@ -919,7 +927,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.6203895, y: 0.10015557}
   m_AnchorMax: {x: 0.6203895, y: 0.10015557}
-  m_AnchoredPosition: {x: 1.5881195, y: 3.4000244}
+  m_AnchoredPosition: {x: 1.5881348, y: 3.4000244}
   m_SizeDelta: {x: 164.47449, y: 72.50929}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &422334100
@@ -1722,7 +1730,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.80500007, y: 0.10015557}
   m_AnchorMax: {x: 0.80500007, y: 0.10015557}
-  m_AnchoredPosition: {x: -4.9137573, y: 3.4000244}
+  m_AnchoredPosition: {x: -4.9136963, y: 3.4000244}
   m_SizeDelta: {x: 164.47449, y: 72.50929}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &700646860
@@ -2898,14 +2906,13 @@ GameObject:
   - component: {fileID: 1441534829}
   - component: {fileID: 1441534832}
   - component: {fileID: 1441534831}
-  - component: {fileID: 1441534830}
   m_Layer: 5
   m_Name: Cutscene
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1441534829
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2926,47 +2933,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1441534830
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1441534828}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1e1d13f1adaac450eaa712e38e0e4ab9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cutscene1: []
-  cutscene2: []
-  cutscene3:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  cutscene4: []
-  cutscene5: []
-  cutscene6: []
-  cutscene7: []
-  cutscene8: []
-  cutscene9: []
-  cutscene10: []
-  currentCutscene: []
-  renderImg: {fileID: 0}
-  currentLevel: 0
-  currentIndex: 0
-  quizPanel: {fileID: 62137592}
-  loadingPanel: {fileID: 0}
 --- !u!114 &1441534831
 MonoBehaviour:
   m_ObjectHideFlags: 0

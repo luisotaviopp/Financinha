@@ -38,6 +38,14 @@ public class Quiz : MonoBehaviour
     // Volta para a historinha se o index da questao atual for menor que zero.
     public GameObject historinhaPanel;
 
+    public GameObject answerButtons;
+    public GameObject openAnswerInput;
+
+    //Input para pegar a resposta aberta
+    public InputField answerInput;
+
+    private int quiz_score = 0;
+
     private void OnEnable()
     {
         historinhaPanel.SetActive(false);
@@ -88,11 +96,22 @@ public class Quiz : MonoBehaviour
             questionText.text = levelQuestions[currentQuestionIndex].question;
         }
 
-        answer1Text.text = levelQuestions[currentQuestionIndex].answer1;
-        answer2Text.text = levelQuestions[currentQuestionIndex].answer2;
-        answer3Text.text = levelQuestions[currentQuestionIndex].answer3;
-        answer4Text.text = levelQuestions[currentQuestionIndex].answer4;
-        answer5Text.text = levelQuestions[currentQuestionIndex].answer5;
+        if (!levelQuestions[currentQuestionIndex].isOpenAnswer) 
+        {
+            answerButtons.SetActive(true);
+            openAnswerInput.SetActive(false);
+            answer1Text.text = levelQuestions[currentQuestionIndex].answer1;
+            answer2Text.text = levelQuestions[currentQuestionIndex].answer2;
+            answer3Text.text = levelQuestions[currentQuestionIndex].answer3;
+            answer4Text.text = levelQuestions[currentQuestionIndex].answer4;
+            answer5Text.text = levelQuestions[currentQuestionIndex].answer5;
+        }
+        else
+        {
+            // Se for a ultima pergunta, abre o input para a resposta aberta.
+            answerButtons.SetActive(false);
+            openAnswerInput.SetActive(true);
+        }
     }
 
     public void NextQuestion()
@@ -102,9 +121,10 @@ public class Quiz : MonoBehaviour
             currentQuestionIndex++;
             RenderQuestion();
         }
-        else
+
+        if(levelQuestions[currentQuestionIndex].isOpenAnswer)
         {
-            Debug.Log("Acabaram as perguntas desse level.");
+            SendResultToServer();
         }
     }
 
@@ -127,6 +147,9 @@ public class Quiz : MonoBehaviour
         if(num == levelQuestions[currentQuestionIndex].rightAnswer)
         {
             Debug.Log("Acertou");
+
+            // Isso aqui precisa mudar, a crianca so deve pontuar se nao tiver selecionado essa resposta antes.
+            quiz_score++;
         }
         else
         {
@@ -134,5 +157,37 @@ public class Quiz : MonoBehaviour
         }
 
         nextButton.interactable = true;
+    }
+
+    public void SendResultToServer()
+    {
+        Debug.Log("Envia resultado e pergunta aberta para o servidor");
+        StartCoroutine(Upload(answerInput.text));
+    }
+
+    IEnumerator Upload(string answer)
+    {
+        if(answer != "" && answer != null)
+        {
+            WWWForm form = new WWWForm();
+            form.AddField("post_id", PlayerPrefs.GetInt("id_aprendiz"));
+            form.AddField("post_level", PlayerPrefs.GetInt("quiz_level_to_load"));
+            form.AddField("post_answer", answer);
+            form.AddField("post_quiz_score", quiz_score);
+
+            UnityWebRequest www = UnityWebRequest.Post(ApiConfig.INSERT_ANSWERS, form);
+            yield return www.SendWebRequest();
+
+            if (www.isNetworkError || www.isHttpError)
+            {
+                Debug.Log(www.error);
+            }
+            else
+            {
+                Debug.Log(www.downloadHandler.text);
+
+                answerInput.text = "";
+            }
+        }
     }
 }
