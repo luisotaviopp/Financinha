@@ -1155,7 +1155,6 @@ GameObject:
   - component: {fileID: 50948059}
   - component: {fileID: 50948061}
   - component: {fileID: 50948062}
-  - component: {fileID: 50948063}
   m_Layer: 0
   m_Name: UIManager
   m_TagString: Untagged
@@ -1260,33 +1259,6 @@ MonoBehaviour:
   pos8: 885.6
   pos9: 1285.8
   pos10: 1682.9
---- !u!114 &50948063
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 50948058}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 764f8cca61b4d1246a0d4c2e014f6d3c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  buttons:
-  - {fileID: 923070547}
-  - {fileID: 593303426}
-  - {fileID: 242713840}
-  - {fileID: 1045678182}
-  - {fileID: 923070547}
-  - {fileID: 918287002}
-  - {fileID: 529343109}
-  - {fileID: 582015898}
-  - {fileID: 1315954449}
-  - {fileID: 2080956818}
-  - {fileID: 631631970}
-  - {fileID: 21157750}
-  - {fileID: 1450778976}
-  - {fileID: 1772712328}
 --- !u!1 &68545505
 GameObject:
   m_ObjectHideFlags: 0
@@ -16252,6 +16224,7 @@ GameObject:
   - component: {fileID: 1016150866}
   - component: {fileID: 1016150868}
   - component: {fileID: 1016150870}
+  - component: {fileID: 1016150867}
   m_Layer: 5
   m_Name: LevelSelector
   m_TagString: Untagged
@@ -16371,6 +16344,29 @@ MonoBehaviour:
   rulesAmount: {fileID: 808428670}
   walletAmount: {fileID: 313235052}
   objectiveAmount: {fileID: 1248187688}
+--- !u!114 &1016150867
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1016150861}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01da3591c6e7a8cfd83f9a67a6b0bc85, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  notificationButtons:
+  - {fileID: 923070547}
+  - {fileID: 918287002}
+  - {fileID: 529343109}
+  - {fileID: 582015898}
+  - {fileID: 1315954449}
+  - {fileID: 2080956818}
+  - {fileID: 631631970}
+  - {fileID: 21157750}
+  - {fileID: 1450778976}
+  - {fileID: 1772712328}
 --- !u!114 &1016150868
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16453,16 +16449,6 @@ MonoBehaviour:
   - {fileID: 593303426}
   - {fileID: 242713840}
   - {fileID: 1045678182}
-  - {fileID: 923070547}
-  - {fileID: 918287002}
-  - {fileID: 529343109}
-  - {fileID: 582015898}
-  - {fileID: 1315954449}
-  - {fileID: 2080956818}
-  - {fileID: 631631970}
-  - {fileID: 21157750}
-  - {fileID: 1450778976}
-  - {fileID: 1772712328}
 --- !u!1 &1035857034
 GameObject:
   m_ObjectHideFlags: 0

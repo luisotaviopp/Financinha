@@ -18,7 +18,6 @@ public class GetHabilityProgress : MonoBehaviour
     [Header("Botoes das fases")]
     public Button[] levelButtons;
 
-
     [Header("Cadeados que indicam se o quiz esta aberto")]
     public Image[] cadeadosQuizz;
 

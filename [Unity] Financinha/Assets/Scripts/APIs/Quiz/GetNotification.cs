@@ -20,7 +20,12 @@ public class GetNotification : MonoBehaviour
 
 	IEnumerator GetNotificationCoroutine()
 	{
-		WWWForm form = new WWWForm();
+        foreach(GameObject ponto in notificationButtons)
+        {
+            ponto.SetActive(false);
+        }
+
+        WWWForm form = new WWWForm();
 		form.AddField("post_id", PlayerPrefs.GetInt("id_aprendiz"));
 
 		UnityWebRequest www = UnityWebRequest.Post(ApiConfig.GET_NOTIFICATION, form);

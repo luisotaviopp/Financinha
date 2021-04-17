@@ -46,6 +46,8 @@ public class Quiz : MonoBehaviour
 
     private int quiz_score = 0;
 
+    public List<bool> rightAnswerList;
+
     private void OnEnable()
     {
         historinhaPanel.SetActive(false);
@@ -66,6 +68,9 @@ public class Quiz : MonoBehaviour
             if(question.level == level)
             {
                 levelQuestions.Add(question);
+
+                //Inicia a lista das respostas das questões.
+                rightAnswerList.Add(false);
             }
         }
 
@@ -147,13 +152,12 @@ public class Quiz : MonoBehaviour
         if(num == levelQuestions[currentQuestionIndex].rightAnswer)
         {
             Debug.Log("Acertou");
-
-            // Isso aqui precisa mudar, a crianca so deve pontuar se nao tiver selecionado essa resposta antes.
-            quiz_score++;
+            rightAnswerList[currentQuestionIndex] = true;
         }
         else
         {
             Debug.Log("Errou");
+            rightAnswerList[currentQuestionIndex] = false;
         }
 
         nextButton.interactable = true;
@@ -161,7 +165,6 @@ public class Quiz : MonoBehaviour
 
     public void SendResultToServer()
     {
-        Debug.Log("Envia resultado e pergunta aberta para o servidor");
         StartCoroutine(Upload(answerInput.text));
     }
 
@@ -169,11 +172,23 @@ public class Quiz : MonoBehaviour
     {
         if(answer != "" && answer != null)
         {
+            int nota = 0;
+
+            foreach(bool resposta in rightAnswerList)
+            {
+                if (resposta)
+                {
+                    nota++;
+                }
+            }
+
+            Debug.Log($"Acertou {nota} questoes. Resposta aberta: {answer}");
+
             WWWForm form = new WWWForm();
             form.AddField("post_id", PlayerPrefs.GetInt("id_aprendiz"));
             form.AddField("post_level", PlayerPrefs.GetInt("quiz_level_to_load"));
             form.AddField("post_answer", answer);
-            form.AddField("post_quiz_score", quiz_score);
+            form.AddField("post_quiz_score", nota);
 
             UnityWebRequest www = UnityWebRequest.Post(ApiConfig.INSERT_ANSWERS, form);
             yield return www.SendWebRequest();
@@ -188,6 +203,12 @@ public class Quiz : MonoBehaviour
 
                 answerInput.text = "";
             }
+
+            Debug.Log("Envia resultado e pergunta aberta para o servidor");
+        }
+        else
+        {
+            Debug.Log("Questao aberta esta nula");
         }
     }
 }
