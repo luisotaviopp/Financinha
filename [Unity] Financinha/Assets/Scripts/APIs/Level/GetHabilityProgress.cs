@@ -40,8 +40,6 @@ public class GetHabilityProgress : MonoBehaviour
 	void OnEnable()
 	{
         StartCoroutine(GetHabilityProgressList());
-
-
     }
 
 	IEnumerator GetHabilityProgressList()
@@ -115,63 +113,63 @@ public class GetHabilityProgress : MonoBehaviour
             }
 
             // Libera o level 02
-            if (levelProgressorList.progressor[0].lvl_1_habilidade && (levelProgressorList.progressor[0].lvl_1_quiz + levelProgressorList.progressor[0].lvl_1_resp > 7))
+            if (PlayerPrefs.GetFloat("bank_amount") > values[1] && levelProgressorList.progressor[0].lvl_1_habilidade && (levelProgressorList.progressor[0].lvl_1_quiz + levelProgressorList.progressor[0].lvl_1_resp > 7))
             {
                 cadeadosHabilidade[1].sprite = cadeadoVerde;
 				levelButtons[1].interactable = true;
 			}
 
             // Libera o level 03
-            if (levelProgressorList.progressor[0].lvl_2_habilidade && (levelProgressorList.progressor[0].lvl_2_quiz + levelProgressorList.progressor[0].lvl_2_resp > 7))
+            if (PlayerPrefs.GetFloat("bank_amount") > values[2] && levelProgressorList.progressor[0].lvl_2_habilidade && (levelProgressorList.progressor[0].lvl_2_quiz + levelProgressorList.progressor[0].lvl_2_resp > 7))
             {
                 cadeadosHabilidade[2].sprite = cadeadoVerde;
                 levelButtons[2].interactable = true;
             }
 
             // Libera o level 04
-            if (levelProgressorList.progressor[0].lvl_3_habilidade && (levelProgressorList.progressor[0].lvl_3_quiz + levelProgressorList.progressor[0].lvl_3_resp > 7))
+            if (PlayerPrefs.GetFloat("bank_amount") > values[3] && levelProgressorList.progressor[0].lvl_3_habilidade && (levelProgressorList.progressor[0].lvl_3_quiz + levelProgressorList.progressor[0].lvl_3_resp > 7))
             {
                 cadeadosHabilidade[3].sprite = cadeadoVerde;
                 levelButtons[3].interactable = true;
             }
 
             // Libera o level 05
-            if (levelProgressorList.progressor[0].lvl_4_habilidade && (levelProgressorList.progressor[0].lvl_4_quiz + levelProgressorList.progressor[0].lvl_4_resp > 7))
+            if (PlayerPrefs.GetFloat("bank_amount") > values[4] && levelProgressorList.progressor[0].lvl_4_habilidade && (levelProgressorList.progressor[0].lvl_4_quiz + levelProgressorList.progressor[0].lvl_4_resp > 7))
             {
                 cadeadosHabilidade[4].sprite = cadeadoVerde;
                 levelButtons[4].interactable = true;
             }
 
             // Libera o level 06
-            if (levelProgressorList.progressor[0].lvl_5_habilidade && (levelProgressorList.progressor[0].lvl_5_quiz + levelProgressorList.progressor[0].lvl_5_resp > 7))
+            if (PlayerPrefs.GetFloat("bank_amount") > values[5] && levelProgressorList.progressor[0].lvl_5_habilidade && (levelProgressorList.progressor[0].lvl_5_quiz + levelProgressorList.progressor[0].lvl_5_resp > 7))
             {
                 cadeadosHabilidade[5].sprite = cadeadoVerde;
                 levelButtons[5].interactable = true;
             }
 
             // Libera o level 07
-            if (levelProgressorList.progressor[0].lvl_6_habilidade && (levelProgressorList.progressor[0].lvl_6_quiz + levelProgressorList.progressor[0].lvl_6_resp > 7))
+            if (PlayerPrefs.GetFloat("bank_amount") > values[6] && levelProgressorList.progressor[0].lvl_6_habilidade && (levelProgressorList.progressor[0].lvl_6_quiz + levelProgressorList.progressor[0].lvl_6_resp > 7))
             {
                 cadeadosHabilidade[6].sprite = cadeadoVerde;
                 levelButtons[6].interactable = true;
             }
 
             // Libera o level 08
-            if (levelProgressorList.progressor[0].lvl_7_habilidade && (levelProgressorList.progressor[0].lvl_7_quiz + levelProgressorList.progressor[0].lvl_7_resp > 7))
+            if (PlayerPrefs.GetFloat("bank_amount") > values[7] && levelProgressorList.progressor[0].lvl_7_habilidade && (levelProgressorList.progressor[0].lvl_7_quiz + levelProgressorList.progressor[0].lvl_7_resp > 7))
             {
                 cadeadosHabilidade[7].sprite = cadeadoVerde;
                 levelButtons[7].interactable = true;
             }
 
             // Libera o level 09
-            if (levelProgressorList.progressor[0].lvl_8_habilidade && (levelProgressorList.progressor[0].lvl_8_quiz + levelProgressorList.progressor[0].lvl_8_resp > 7))
+            if (PlayerPrefs.GetFloat("bank_amount") > values[8] && levelProgressorList.progressor[0].lvl_8_habilidade && (levelProgressorList.progressor[0].lvl_8_quiz + levelProgressorList.progressor[0].lvl_8_resp > 7))
             {
                 cadeadosHabilidade[8].sprite = cadeadoVerde;
                 levelButtons[8].interactable = true;
             }
 
             // Libera o level 10
-            if (levelProgressorList.progressor[0].lvl_9_habilidade && (levelProgressorList.progressor[0].lvl_9_quiz + levelProgressorList.progressor[0].lvl_9_resp > 7))
+            if (PlayerPrefs.GetFloat("bank_amount") > values[9] && levelProgressorList.progressor[0].lvl_9_habilidade && (levelProgressorList.progressor[0].lvl_9_quiz + levelProgressorList.progressor[0].lvl_9_resp > 7))
             {
                 cadeadosHabilidade[9].sprite = cadeadoVerde;
                 levelButtons[9].interactable = true;

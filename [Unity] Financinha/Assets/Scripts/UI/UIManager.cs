@@ -27,6 +27,9 @@ public class UIManager : MonoBehaviour
 	public GameObject panelSubMenu;                 // Manu hamburger no canto da tela
 
 	public GameObject panelPreGame;                 // Seleciona entre desafio de habilidades e quiz
+
+    public GameObject panelLoading;                 // Tela de carregamento
+
 	public Image nuvem;
 
 	public Image pig;
@@ -364,7 +367,8 @@ public class UIManager : MonoBehaviour
 		panelPreGame.SetActive(false);
 		panelSettings.SetActive(false);
 		panelListaAprendizes.SetActive(false);
-	}
+        panelLoading.SetActive(false);
+    }
 
 	public void OpenPreQuizz()
 	{
@@ -464,63 +468,65 @@ public class UIManager : MonoBehaviour
 		if (level == 1 && habilidade.levelProgressorList.progressor[0].lvl_1_habilidade)
 		{
 			btQuiz.interactable = true;
-			Debug.Log($" Abriu {habilidade.levelProgressorList.progressor[0].lvl_1_habilidade}");
+			Debug.Log($" Quiz do level {level}: {habilidade.levelProgressorList.progressor[0].lvl_1_habilidade}");
 		}
 
 		if (level == 2 && habilidade.levelProgressorList.progressor[0].lvl_2_habilidade)
 		{
 			btQuiz.interactable = true;
-			Debug.Log($" Abriu {habilidade.levelProgressorList.progressor[0].lvl_2_habilidade}");
+			Debug.Log($" Quiz do level {level}: {habilidade.levelProgressorList.progressor[0].lvl_2_habilidade}");
 		}
 
 		if (level == 3 && habilidade.levelProgressorList.progressor[0].lvl_3_habilidade)
 		{
 			btQuiz.interactable = true;
-			Debug.Log($" Abriu {habilidade.levelProgressorList.progressor[0].lvl_3_habilidade}");
+			Debug.Log($" Quiz do level {level}: {habilidade.levelProgressorList.progressor[0].lvl_3_habilidade}");
 		}
 
 		if (level == 4 && habilidade.levelProgressorList.progressor[0].lvl_4_habilidade)
 		{
 			btQuiz.interactable = true;
-			Debug.Log($" Abriu {habilidade.levelProgressorList.progressor[0].lvl_4_habilidade}");
+			Debug.Log($" Quiz do level {level}: {habilidade.levelProgressorList.progressor[0].lvl_4_habilidade}");
 		}
 
 		if (level == 5 && habilidade.levelProgressorList.progressor[0].lvl_5_habilidade)
 		{
 			btQuiz.interactable = true;
-			Debug.Log($" Abriu {habilidade.levelProgressorList.progressor[0].lvl_5_habilidade}");
+			Debug.Log($" Quiz do level {level}: {habilidade.levelProgressorList.progressor[0].lvl_5_habilidade}");
 		}
 
 		if (level == 6 && habilidade.levelProgressorList.progressor[0].lvl_6_habilidade)
 		{
 			btQuiz.interactable = true;
-			Debug.Log($" Abriu {habilidade.levelProgressorList.progressor[0].lvl_6_habilidade}");
+			Debug.Log($" Quiz do level {level}: {habilidade.levelProgressorList.progressor[0].lvl_6_habilidade}");
 		}
 
 		if (level == 7 && habilidade.levelProgressorList.progressor[0].lvl_7_habilidade)
 		{
 			btQuiz.interactable = true;
-			Debug.Log($" Abriu {habilidade.levelProgressorList.progressor[0].lvl_7_habilidade}");
+			Debug.Log($" Quiz do level {level}: {habilidade.levelProgressorList.progressor[0].lvl_7_habilidade}");
 		}
 
 		if (level == 8 && habilidade.levelProgressorList.progressor[0].lvl_8_habilidade)
 		{
 			btQuiz.interactable = true;
-			Debug.Log($" Abriu {habilidade.levelProgressorList.progressor[0].lvl_8_habilidade}");
+			Debug.Log($" Quiz do level {level}: {habilidade.levelProgressorList.progressor[0].lvl_8_habilidade}");
 		}
 
 		if (level == 9 && habilidade.levelProgressorList.progressor[0].lvl_9_habilidade)
 		{
 			btQuiz.interactable = true;
-			Debug.Log($" Abriu {habilidade.levelProgressorList.progressor[0].lvl_9_habilidade}");
+			Debug.Log($" Quiz do level {level}: {habilidade.levelProgressorList.progressor[0].lvl_9_habilidade}");
 		}
 
 		if (level == 10 && habilidade.levelProgressorList.progressor[0].lvl_10_habilidade)
 		{
 			btQuiz.interactable = true;
-			Debug.Log($" Abriu {habilidade.levelProgressorList.progressor[0].lvl_10_habilidade}");
+			Debug.Log($" Quiz do level {level}: {habilidade.levelProgressorList.progressor[0].lvl_10_habilidade}");
 		}
+
 		pig.sprite = pigs[level];
+
 		OpenPreGame();
 	}
 
@@ -538,6 +544,7 @@ public class UIManager : MonoBehaviour
 	
 	public void OpenSceneQuiz()
 	{
+        panelLoading.SetActive(true);
 		SceneManager.LoadSceneAsync("Quiz");
 	}
 }
