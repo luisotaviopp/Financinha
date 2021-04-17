@@ -10,7 +10,6 @@ public class CreateObjective : MonoBehaviour
     public InputField giftValue;
     public InputField causeName;
     public Text causeValue;
-    public Text statusDisplay;
 
     public static bool editMode = false;
 
@@ -43,19 +42,16 @@ public class CreateObjective : MonoBehaviour
             www = UnityWebRequest.Post(ApiConfig.INSERT_OBJECTIVE, form);        
         }
 
-        statusDisplay.text = "";
-
         yield return www.SendWebRequest();
 
         if (www.isNetworkError || www.isHttpError)
         {
             Debug.Log(www.error);
-            statusDisplay.text = "Erro ao Logar";
         }
         else
         {
             //Texto de Retorno
-            statusDisplay.text = www.downloadHandler.text;
+            Debug.Log(www.downloadHandler.text);
         }
 
         //Zerando Campos Login

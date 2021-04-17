@@ -25,7 +25,7 @@ public class Cutscenes : MonoBehaviour
 
     void OnEnable()
     {
-
+        quizPanel.SetActive(false);
         currentLevel = PlayerPrefs.GetInt("quiz_level_to_load");
 
         switch (currentLevel) 

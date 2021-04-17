@@ -24,6 +24,9 @@ public class Quiz : MonoBehaviour
     public Text answer4Text;
     public Text answer5Text;
 
+    //Botao para garregar a prox pergunta.
+    public Button nextButton;
+
     //Aquelas imagens da pontuação no canto da tela.
     [Header("Aquelas imagens da pontuação no canto da tela.")]
     public Image pointsImage;
@@ -32,9 +35,10 @@ public class Quiz : MonoBehaviour
     // Index da questao carregada.
     private int currentQuestionIndex = 0;
 
+    // Volta para a historinha se o index da questao atual for menor que zero.
     public GameObject historinhaPanel;
 
-    private void Start()
+    private void OnEnable()
     {
         historinhaPanel.SetActive(false);
 
@@ -74,6 +78,7 @@ public class Quiz : MonoBehaviour
         {
             questionImage.gameObject.SetActive(true);
             questionImage.sprite = levelQuestions[currentQuestionIndex].questionSprite;
+            questionText.text = "";
         }
 
         // Se nao for uma imagem
@@ -92,14 +97,42 @@ public class Quiz : MonoBehaviour
 
     public void NextQuestion()
     {
-        if(currentQuestionIndex < levelQuestions.Count)
+        if(currentQuestionIndex < levelQuestions.Count-1)
         {
             currentQuestionIndex++;
             RenderQuestion();
         }
         else
         {
-            Debug.Log("Volta pra historinha");
+            Debug.Log("Acabaram as perguntas desse level.");
         }
+    }
+
+    public void PreviousQuestion()
+    {
+        if (currentQuestionIndex > 0)
+        {
+            currentQuestionIndex--;
+            RenderQuestion();
+        }
+        else
+        {
+            Debug.Log("Volta pra historinha");
+            historinhaPanel.SetActive(true);
+        }
+    }
+
+    public void SelectAnswer(int num)
+    {
+        if(num == levelQuestions[currentQuestionIndex].rightAnswer)
+        {
+            Debug.Log("Acertou");
+        }
+        else
+        {
+            Debug.Log("Errou");
+        }
+
+        nextButton.interactable = true;
     }
 }

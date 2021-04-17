@@ -134,7 +134,7 @@ GameObject:
   - component: {fileID: 50078079}
   - component: {fileID: 50078080}
   m_Layer: 5
-  m_Name: Panel_Btn_Resposta
+  m_Name: Panel_Respostas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -147,7 +147,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 50078078}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -156,13 +156,13 @@ RectTransform:
   - {fileID: 658082093}
   - {fileID: 82400716}
   - {fileID: 1907779615}
-  m_Father: {fileID: 2139890403}
-  m_RootOrder: 4
+  m_Father: {fileID: 62137593}
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0.0010986328, y: 0.0020751953}
-  m_SizeDelta: {x: -0.0021972656, y: -0.0040893555}
+  m_AnchoredPosition: {x: 3.5664673, y: 0.0020751953}
+  m_SizeDelta: {x: -8.137939, y: -0.0040893555}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &50078080
 MonoBehaviour:
@@ -208,7 +208,12 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 193801484}
-  - {fileID: 2139890403}
+  - {fileID: 1292856407}
+  - {fileID: 1668056313}
+  - {fileID: 422334099}
+  - {fileID: 700646859}
+  - {fileID: 50078079}
+  - {fileID: 1122217223}
   m_Father: {fileID: 1162804796}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -298,7 +303,7 @@ MonoBehaviour:
     answer4: Teste1
     answer5: Teste1
     questionSprite: {fileID: 0}
-  - level: 1
+  - level: 2
     rightAnswer: 3
     isImage: 0
     question: Teste1
@@ -308,957 +313,7 @@ MonoBehaviour:
     answer4: Teste1
     answer5: Teste1
     questionSprite: {fileID: 0}
-  - level: 1
-    rightAnswer: 3
-    isImage: 0
-    question: Teste1
-    answer1: Teste1
-    answer2: Teste1
-    answer3: Teste1
-    answer4: Teste1
-    answer5: Teste1
-    questionSprite: {fileID: 0}
-  - level: 1
-    rightAnswer: 3
-    isImage: 0
-    question: Teste1
-    answer1: Teste1
-    answer2: Teste1
-    answer3: Teste1
-    answer4: Teste1
-    answer5: Teste1
-    questionSprite: {fileID: 0}
-  - level: 1
-    rightAnswer: 3
-    isImage: 0
-    question: Teste1
-    answer1: Teste1
-    answer2: Teste1
-    answer3: Teste1
-    answer4: Teste1
-    answer5: Teste1
-    questionSprite: {fileID: 0}
-  - level: 1
-    rightAnswer: 3
-    isImage: 0
-    question: Teste1
-    answer1: Teste1
-    answer2: Teste1
-    answer3: Teste1
-    answer4: Teste1
-    answer5: Teste1
-    questionSprite: {fileID: 0}
-  - level: 1
-    rightAnswer: 3
-    isImage: 0
-    question: Teste1
-    answer1: Teste1
-    answer2: Teste1
-    answer3: Teste1
-    answer4: Teste1
-    answer5: Teste1
-    questionSprite: {fileID: 0}
-  - level: 1
-    rightAnswer: 3
-    isImage: 0
-    question: Teste1
-    answer1: Teste1
-    answer2: Teste1
-    answer3: Teste1
-    answer4: Teste1
-    answer5: Teste1
-    questionSprite: {fileID: 0}
-  - level: 1
-    rightAnswer: 3
-    isImage: 0
-    question: Teste1
-    answer1: Teste1
-    answer2: Teste1
-    answer3: Teste1
-    answer4: Teste1
-    answer5: Teste1
-    questionSprite: {fileID: 0}
-  - level: 1
-    rightAnswer: 3
-    isImage: 0
-    question: Teste1
-    answer1: Teste1
-    answer2: Teste1
-    answer3: Teste1
-    answer4: Teste1
-    answer5: Teste1
-    questionSprite: {fileID: 0}
-  - level: 1
-    rightAnswer: 3
-    isImage: 0
-    question: Teste1
-    answer1: Teste1
-    answer2: Teste1
-    answer3: Teste1
-    answer4: Teste1
-    answer5: Teste1
-    questionSprite: {fileID: 0}
-  - level: 1
-    rightAnswer: 3
-    isImage: 0
-    question: Teste1
-    answer1: Teste1
-    answer2: Teste1
-    answer3: Teste1
-    answer4: Teste1
-    answer5: Teste1
-    questionSprite: {fileID: 0}
-  - level: 1
-    rightAnswer: 3
-    isImage: 0
-    question: Teste1
-    answer1: Teste1
-    answer2: Teste1
-    answer3: Teste1
-    answer4: Teste1
-    answer5: Teste1
-    questionSprite: {fileID: 0}
-  - level: 1
-    rightAnswer: 3
-    isImage: 0
-    question: Teste1
-    answer1: Teste1
-    answer2: Teste1
-    answer3: Teste1
-    answer4: Teste1
-    answer5: Teste1
-    questionSprite: {fileID: 0}
-  - level: 1
-    rightAnswer: 3
-    isImage: 0
-    question: Teste1
-    answer1: Teste1
-    answer2: Teste1
-    answer3: Teste1
-    answer4: Teste1
-    answer5: Teste1
-    questionSprite: {fileID: 0}
-  - level: 1
-    rightAnswer: 3
-    isImage: 0
-    question: Teste1
-    answer1: Teste1
-    answer2: Teste1
-    answer3: Teste1
-    answer4: Teste1
-    answer5: Teste1
-    questionSprite: {fileID: 0}
-  - level: 1
-    rightAnswer: 3
-    isImage: 0
-    question: Teste1
-    answer1: Teste1
-    answer2: Teste1
-    answer3: Teste1
-    answer4: Teste1
-    answer5: Teste1
-    questionSprite: {fileID: 0}
-  - level: 1
-    rightAnswer: 3
-    isImage: 0
-    question: Teste1
-    answer1: Teste1
-    answer2: Teste1
-    answer3: Teste1
-    answer4: Teste1
-    answer5: Teste1
-    questionSprite: {fileID: 0}
-  - level: 1
-    rightAnswer: 3
-    isImage: 0
-    question: Teste1
-    answer1: Teste1
-    answer2: Teste1
-    answer3: Teste1
-    answer4: Teste1
-    answer5: Teste1
-    questionSprite: {fileID: 0}
-  - level: 1
-    rightAnswer: 3
-    isImage: 0
-    question: Teste1
-    answer1: Teste1
-    answer2: Teste1
-    answer3: Teste1
-    answer4: Teste1
-    answer5: Teste1
-    questionSprite: {fileID: 0}
-  - level: 1
-    rightAnswer: 3
-    isImage: 0
-    question: Teste1
-    answer1: Teste1
-    answer2: Teste1
-    answer3: Teste1
-    answer4: Teste1
-    answer5: Teste1
-    questionSprite: {fileID: 0}
-  - level: 1
-    rightAnswer: 3
-    isImage: 0
-    question: Teste1
-    answer1: Teste1
-    answer2: Teste1
-    answer3: Teste1
-    answer4: Teste1
-    answer5: Teste1
-    questionSprite: {fileID: 0}
-  - level: 1
-    rightAnswer: 3
-    isImage: 0
-    question: Teste1
-    answer1: Teste1
-    answer2: Teste1
-    answer3: Teste1
-    answer4: Teste1
-    answer5: Teste1
-    questionSprite: {fileID: 0}
-  - level: 1
-    rightAnswer: 3
-    isImage: 0
-    question: Teste1
-    answer1: Teste1
-    answer2: Teste1
-    answer3: Teste1
-    answer4: Teste1
-    answer5: Teste1
-    questionSprite: {fileID: 0}
-  - level: 1
-    rightAnswer: 3
-    isImage: 0
-    question: Teste1
-    answer1: Teste1
-    answer2: Teste1
-    answer3: Teste1
-    answer4: Teste1
-    answer5: Teste1
-    questionSprite: {fileID: 0}
-  - level: 1
-    rightAnswer: 3
-    isImage: 0
-    question: Teste1
-    answer1: Teste1
-    answer2: Teste1
-    answer3: Teste1
-    answer4: Teste1
-    answer5: Teste1
-    questionSprite: {fileID: 0}
-  - level: 1
-    rightAnswer: 3
-    isImage: 0
-    question: Teste1
-    answer1: Teste1
-    answer2: Teste1
-    answer3: Teste1
-    answer4: Teste1
-    answer5: Teste1
-    questionSprite: {fileID: 0}
-  - level: 1
-    rightAnswer: 3
-    isImage: 0
-    question: Teste1
-    answer1: Teste1
-    answer2: Teste1
-    answer3: Teste1
-    answer4: Teste1
-    answer5: Teste1
-    questionSprite: {fileID: 0}
-  - level: 1
-    rightAnswer: 3
-    isImage: 0
-    question: Teste1
-    answer1: Teste1
-    answer2: Teste1
-    answer3: Teste1
-    answer4: Teste1
-    answer5: Teste1
-    questionSprite: {fileID: 0}
-  - level: 1
-    rightAnswer: 3
-    isImage: 0
-    question: Teste1
-    answer1: Teste1
-    answer2: Teste1
-    answer3: Teste1
-    answer4: Teste1
-    answer5: Teste1
-    questionSprite: {fileID: 0}
-  - level: 1
-    rightAnswer: 3
-    isImage: 0
-    question: Teste1
-    answer1: Teste1
-    answer2: Teste1
-    answer3: Teste1
-    answer4: Teste1
-    answer5: Teste1
-    questionSprite: {fileID: 0}
-  - level: 1
-    rightAnswer: 3
-    isImage: 0
-    question: Teste1
-    answer1: Teste1
-    answer2: Teste1
-    answer3: Teste1
-    answer4: Teste1
-    answer5: Teste1
-    questionSprite: {fileID: 0}
-  - level: 1
-    rightAnswer: 3
-    isImage: 0
-    question: Teste1
-    answer1: Teste1
-    answer2: Teste1
-    answer3: Teste1
-    answer4: Teste1
-    answer5: Teste1
-    questionSprite: {fileID: 0}
-  - level: 1
-    rightAnswer: 3
-    isImage: 0
-    question: Teste1
-    answer1: Teste1
-    answer2: Teste1
-    answer3: Teste1
-    answer4: Teste1
-    answer5: Teste1
-    questionSprite: {fileID: 0}
-  - level: 1
-    rightAnswer: 3
-    isImage: 0
-    question: Teste1
-    answer1: Teste1
-    answer2: Teste1
-    answer3: Teste1
-    answer4: Teste1
-    answer5: Teste1
-    questionSprite: {fileID: 0}
-  - level: 1
-    rightAnswer: 3
-    isImage: 0
-    question: Teste1
-    answer1: Teste1
-    answer2: Teste1
-    answer3: Teste1
-    answer4: Teste1
-    answer5: Teste1
-    questionSprite: {fileID: 0}
-  - level: 1
-    rightAnswer: 3
-    isImage: 0
-    question: Teste1
-    answer1: Teste1
-    answer2: Teste1
-    answer3: Teste1
-    answer4: Teste1
-    answer5: Teste1
-    questionSprite: {fileID: 0}
-  - level: 1
-    rightAnswer: 3
-    isImage: 0
-    question: Teste1
-    answer1: Teste1
-    answer2: Teste1
-    answer3: Teste1
-    answer4: Teste1
-    answer5: Teste1
-    questionSprite: {fileID: 0}
-  - level: 1
-    rightAnswer: 3
-    isImage: 0
-    question: Teste1
-    answer1: Teste1
-    answer2: Teste1
-    answer3: Teste1
-    answer4: Teste1
-    answer5: Teste1
-    questionSprite: {fileID: 0}
-  - level: 1
-    rightAnswer: 3
-    isImage: 0
-    question: Teste1
-    answer1: Teste1
-    answer2: Teste1
-    answer3: Teste1
-    answer4: Teste1
-    answer5: Teste1
-    questionSprite: {fileID: 0}
-  - level: 1
-    rightAnswer: 3
-    isImage: 0
-    question: Teste1
-    answer1: Teste1
-    answer2: Teste1
-    answer3: Teste1
-    answer4: Teste1
-    answer5: Teste1
-    questionSprite: {fileID: 0}
-  - level: 1
-    rightAnswer: 3
-    isImage: 0
-    question: Teste1
-    answer1: Teste1
-    answer2: Teste1
-    answer3: Teste1
-    answer4: Teste1
-    answer5: Teste1
-    questionSprite: {fileID: 0}
-  - level: 1
-    rightAnswer: 3
-    isImage: 0
-    question: Teste1
-    answer1: Teste1
-    answer2: Teste1
-    answer3: Teste1
-    answer4: Teste1
-    answer5: Teste1
-    questionSprite: {fileID: 0}
-  - level: 1
-    rightAnswer: 3
-    isImage: 0
-    question: Teste1
-    answer1: Teste1
-    answer2: Teste1
-    answer3: Teste1
-    answer4: Teste1
-    answer5: Teste1
-    questionSprite: {fileID: 0}
-  - level: 1
-    rightAnswer: 3
-    isImage: 0
-    question: Teste1
-    answer1: Teste1
-    answer2: Teste1
-    answer3: Teste1
-    answer4: Teste1
-    answer5: Teste1
-    questionSprite: {fileID: 0}
-  - level: 1
-    rightAnswer: 3
-    isImage: 0
-    question: Teste1
-    answer1: Teste1
-    answer2: Teste1
-    answer3: Teste1
-    answer4: Teste1
-    answer5: Teste1
-    questionSprite: {fileID: 0}
-  - level: 1
-    rightAnswer: 3
-    isImage: 0
-    question: Teste1
-    answer1: Teste1
-    answer2: Teste1
-    answer3: Teste1
-    answer4: Teste1
-    answer5: Teste1
-    questionSprite: {fileID: 0}
-  - level: 1
-    rightAnswer: 3
-    isImage: 0
-    question: Teste1
-    answer1: Teste1
-    answer2: Teste1
-    answer3: Teste1
-    answer4: Teste1
-    answer5: Teste1
-    questionSprite: {fileID: 0}
-  - level: 1
-    rightAnswer: 3
-    isImage: 0
-    question: Teste1
-    answer1: Teste1
-    answer2: Teste1
-    answer3: Teste1
-    answer4: Teste1
-    answer5: Teste1
-    questionSprite: {fileID: 0}
-  - level: 1
-    rightAnswer: 3
-    isImage: 0
-    question: Teste1
-    answer1: Teste1
-    answer2: Teste1
-    answer3: Teste1
-    answer4: Teste1
-    answer5: Teste1
-    questionSprite: {fileID: 0}
-  - level: 1
-    rightAnswer: 3
-    isImage: 0
-    question: Teste1
-    answer1: Teste1
-    answer2: Teste1
-    answer3: Teste1
-    answer4: Teste1
-    answer5: Teste1
-    questionSprite: {fileID: 0}
-  - level: 1
-    rightAnswer: 3
-    isImage: 0
-    question: Teste1
-    answer1: Teste1
-    answer2: Teste1
-    answer3: Teste1
-    answer4: Teste1
-    answer5: Teste1
-    questionSprite: {fileID: 0}
-  - level: 1
-    rightAnswer: 3
-    isImage: 0
-    question: Teste1
-    answer1: Teste1
-    answer2: Teste1
-    answer3: Teste1
-    answer4: Teste1
-    answer5: Teste1
-    questionSprite: {fileID: 0}
-  - level: 1
-    rightAnswer: 3
-    isImage: 0
-    question: Teste1
-    answer1: Teste1
-    answer2: Teste1
-    answer3: Teste1
-    answer4: Teste1
-    answer5: Teste1
-    questionSprite: {fileID: 0}
-  - level: 1
-    rightAnswer: 3
-    isImage: 0
-    question: Teste1
-    answer1: Teste1
-    answer2: Teste1
-    answer3: Teste1
-    answer4: Teste1
-    answer5: Teste1
-    questionSprite: {fileID: 0}
-  - level: 1
-    rightAnswer: 3
-    isImage: 0
-    question: Teste1
-    answer1: Teste1
-    answer2: Teste1
-    answer3: Teste1
-    answer4: Teste1
-    answer5: Teste1
-    questionSprite: {fileID: 0}
-  - level: 1
-    rightAnswer: 3
-    isImage: 0
-    question: Teste1
-    answer1: Teste1
-    answer2: Teste1
-    answer3: Teste1
-    answer4: Teste1
-    answer5: Teste1
-    questionSprite: {fileID: 0}
-  - level: 1
-    rightAnswer: 3
-    isImage: 0
-    question: Teste1
-    answer1: Teste1
-    answer2: Teste1
-    answer3: Teste1
-    answer4: Teste1
-    answer5: Teste1
-    questionSprite: {fileID: 0}
-  - level: 1
-    rightAnswer: 3
-    isImage: 0
-    question: Teste1
-    answer1: Teste1
-    answer2: Teste1
-    answer3: Teste1
-    answer4: Teste1
-    answer5: Teste1
-    questionSprite: {fileID: 0}
-  - level: 1
-    rightAnswer: 3
-    isImage: 0
-    question: Teste1
-    answer1: Teste1
-    answer2: Teste1
-    answer3: Teste1
-    answer4: Teste1
-    answer5: Teste1
-    questionSprite: {fileID: 0}
-  - level: 1
-    rightAnswer: 3
-    isImage: 0
-    question: Teste1
-    answer1: Teste1
-    answer2: Teste1
-    answer3: Teste1
-    answer4: Teste1
-    answer5: Teste1
-    questionSprite: {fileID: 0}
-  - level: 1
-    rightAnswer: 3
-    isImage: 0
-    question: Teste1
-    answer1: Teste1
-    answer2: Teste1
-    answer3: Teste1
-    answer4: Teste1
-    answer5: Teste1
-    questionSprite: {fileID: 0}
-  - level: 1
-    rightAnswer: 3
-    isImage: 0
-    question: Teste1
-    answer1: Teste1
-    answer2: Teste1
-    answer3: Teste1
-    answer4: Teste1
-    answer5: Teste1
-    questionSprite: {fileID: 0}
-  - level: 1
-    rightAnswer: 3
-    isImage: 0
-    question: Teste1
-    answer1: Teste1
-    answer2: Teste1
-    answer3: Teste1
-    answer4: Teste1
-    answer5: Teste1
-    questionSprite: {fileID: 0}
-  - level: 1
-    rightAnswer: 3
-    isImage: 0
-    question: Teste1
-    answer1: Teste1
-    answer2: Teste1
-    answer3: Teste1
-    answer4: Teste1
-    answer5: Teste1
-    questionSprite: {fileID: 0}
-  - level: 1
-    rightAnswer: 3
-    isImage: 0
-    question: Teste1
-    answer1: Teste1
-    answer2: Teste1
-    answer3: Teste1
-    answer4: Teste1
-    answer5: Teste1
-    questionSprite: {fileID: 0}
-  - level: 1
-    rightAnswer: 3
-    isImage: 0
-    question: Teste1
-    answer1: Teste1
-    answer2: Teste1
-    answer3: Teste1
-    answer4: Teste1
-    answer5: Teste1
-    questionSprite: {fileID: 0}
-  - level: 1
-    rightAnswer: 3
-    isImage: 0
-    question: Teste1
-    answer1: Teste1
-    answer2: Teste1
-    answer3: Teste1
-    answer4: Teste1
-    answer5: Teste1
-    questionSprite: {fileID: 0}
-  - level: 1
-    rightAnswer: 3
-    isImage: 0
-    question: Teste1
-    answer1: Teste1
-    answer2: Teste1
-    answer3: Teste1
-    answer4: Teste1
-    answer5: Teste1
-    questionSprite: {fileID: 0}
-  - level: 1
-    rightAnswer: 3
-    isImage: 0
-    question: Teste1
-    answer1: Teste1
-    answer2: Teste1
-    answer3: Teste1
-    answer4: Teste1
-    answer5: Teste1
-    questionSprite: {fileID: 0}
-  - level: 1
-    rightAnswer: 3
-    isImage: 0
-    question: Teste1
-    answer1: Teste1
-    answer2: Teste1
-    answer3: Teste1
-    answer4: Teste1
-    answer5: Teste1
-    questionSprite: {fileID: 0}
-  - level: 1
-    rightAnswer: 3
-    isImage: 0
-    question: Teste1
-    answer1: Teste1
-    answer2: Teste1
-    answer3: Teste1
-    answer4: Teste1
-    answer5: Teste1
-    questionSprite: {fileID: 0}
-  - level: 1
-    rightAnswer: 3
-    isImage: 0
-    question: Teste1
-    answer1: Teste1
-    answer2: Teste1
-    answer3: Teste1
-    answer4: Teste1
-    answer5: Teste1
-    questionSprite: {fileID: 0}
-  - level: 1
-    rightAnswer: 3
-    isImage: 0
-    question: Teste1
-    answer1: Teste1
-    answer2: Teste1
-    answer3: Teste1
-    answer4: Teste1
-    answer5: Teste1
-    questionSprite: {fileID: 0}
-  - level: 1
-    rightAnswer: 3
-    isImage: 0
-    question: Teste1
-    answer1: Teste1
-    answer2: Teste1
-    answer3: Teste1
-    answer4: Teste1
-    answer5: Teste1
-    questionSprite: {fileID: 0}
-  - level: 1
-    rightAnswer: 3
-    isImage: 0
-    question: Teste1
-    answer1: Teste1
-    answer2: Teste1
-    answer3: Teste1
-    answer4: Teste1
-    answer5: Teste1
-    questionSprite: {fileID: 0}
-  - level: 1
-    rightAnswer: 3
-    isImage: 0
-    question: Teste1
-    answer1: Teste1
-    answer2: Teste1
-    answer3: Teste1
-    answer4: Teste1
-    answer5: Teste1
-    questionSprite: {fileID: 0}
-  - level: 1
-    rightAnswer: 3
-    isImage: 0
-    question: Teste1
-    answer1: Teste1
-    answer2: Teste1
-    answer3: Teste1
-    answer4: Teste1
-    answer5: Teste1
-    questionSprite: {fileID: 0}
-  - level: 1
-    rightAnswer: 3
-    isImage: 0
-    question: Teste1
-    answer1: Teste1
-    answer2: Teste1
-    answer3: Teste1
-    answer4: Teste1
-    answer5: Teste1
-    questionSprite: {fileID: 0}
-  - level: 1
-    rightAnswer: 3
-    isImage: 0
-    question: Teste1
-    answer1: Teste1
-    answer2: Teste1
-    answer3: Teste1
-    answer4: Teste1
-    answer5: Teste1
-    questionSprite: {fileID: 0}
-  - level: 1
-    rightAnswer: 3
-    isImage: 0
-    question: Teste1
-    answer1: Teste1
-    answer2: Teste1
-    answer3: Teste1
-    answer4: Teste1
-    answer5: Teste1
-    questionSprite: {fileID: 0}
-  - level: 1
-    rightAnswer: 3
-    isImage: 0
-    question: Teste1
-    answer1: Teste1
-    answer2: Teste1
-    answer3: Teste1
-    answer4: Teste1
-    answer5: Teste1
-    questionSprite: {fileID: 0}
-  - level: 1
-    rightAnswer: 3
-    isImage: 0
-    question: Teste1
-    answer1: Teste1
-    answer2: Teste1
-    answer3: Teste1
-    answer4: Teste1
-    answer5: Teste1
-    questionSprite: {fileID: 0}
-  - level: 1
-    rightAnswer: 3
-    isImage: 0
-    question: Teste1
-    answer1: Teste1
-    answer2: Teste1
-    answer3: Teste1
-    answer4: Teste1
-    answer5: Teste1
-    questionSprite: {fileID: 0}
-  - level: 1
-    rightAnswer: 3
-    isImage: 0
-    question: Teste1
-    answer1: Teste1
-    answer2: Teste1
-    answer3: Teste1
-    answer4: Teste1
-    answer5: Teste1
-    questionSprite: {fileID: 0}
-  - level: 1
-    rightAnswer: 3
-    isImage: 0
-    question: Teste1
-    answer1: Teste1
-    answer2: Teste1
-    answer3: Teste1
-    answer4: Teste1
-    answer5: Teste1
-    questionSprite: {fileID: 0}
-  - level: 1
-    rightAnswer: 3
-    isImage: 0
-    question: Teste1
-    answer1: Teste1
-    answer2: Teste1
-    answer3: Teste1
-    answer4: Teste1
-    answer5: Teste1
-    questionSprite: {fileID: 0}
-  - level: 1
-    rightAnswer: 3
-    isImage: 0
-    question: Teste1
-    answer1: Teste1
-    answer2: Teste1
-    answer3: Teste1
-    answer4: Teste1
-    answer5: Teste1
-    questionSprite: {fileID: 0}
-  - level: 1
-    rightAnswer: 3
-    isImage: 0
-    question: Teste1
-    answer1: Teste1
-    answer2: Teste1
-    answer3: Teste1
-    answer4: Teste1
-    answer5: Teste1
-    questionSprite: {fileID: 0}
-  - level: 1
-    rightAnswer: 3
-    isImage: 0
-    question: Teste1
-    answer1: Teste1
-    answer2: Teste1
-    answer3: Teste1
-    answer4: Teste1
-    answer5: Teste1
-    questionSprite: {fileID: 0}
-  - level: 1
-    rightAnswer: 3
-    isImage: 0
-    question: Teste1
-    answer1: Teste1
-    answer2: Teste1
-    answer3: Teste1
-    answer4: Teste1
-    answer5: Teste1
-    questionSprite: {fileID: 0}
-  - level: 1
-    rightAnswer: 3
-    isImage: 0
-    question: Teste1
-    answer1: Teste1
-    answer2: Teste1
-    answer3: Teste1
-    answer4: Teste1
-    answer5: Teste1
-    questionSprite: {fileID: 0}
-  - level: 1
-    rightAnswer: 3
-    isImage: 0
-    question: Teste1
-    answer1: Teste1
-    answer2: Teste1
-    answer3: Teste1
-    answer4: Teste1
-    answer5: Teste1
-    questionSprite: {fileID: 0}
-  - level: 1
-    rightAnswer: 3
-    isImage: 0
-    question: Teste1
-    answer1: Teste1
-    answer2: Teste1
-    answer3: Teste1
-    answer4: Teste1
-    answer5: Teste1
-    questionSprite: {fileID: 0}
-  - level: 1
-    rightAnswer: 3
-    isImage: 0
-    question: Teste1
-    answer1: Teste1
-    answer2: Teste1
-    answer3: Teste1
-    answer4: Teste1
-    answer5: Teste1
-    questionSprite: {fileID: 0}
-  - level: 1
-    rightAnswer: 3
-    isImage: 0
-    question: Teste1
-    answer1: Teste1
-    answer2: Teste1
-    answer3: Teste1
-    answer4: Teste1
-    answer5: Teste1
-    questionSprite: {fileID: 0}
-  - level: 1
-    rightAnswer: 3
-    isImage: 0
-    question: Teste1
-    answer1: Teste1
-    answer2: Teste1
-    answer3: Teste1
-    answer4: Teste1
-    answer5: Teste1
-    questionSprite: {fileID: 0}
-  - level: 1
+  - level: 3
     rightAnswer: 3
     isImage: 0
     question: Teste1
@@ -1276,6 +331,7 @@ MonoBehaviour:
   answer3Text: {fileID: 2114510438}
   answer4Text: {fileID: 1117711456}
   answer5Text: {fileID: 1732361225}
+  nextButton: {fileID: 700646860}
   pointsImage: {fileID: 0}
   pointSprites: []
   historinhaPanel: {fileID: 1441534828}
@@ -1364,8 +420,8 @@ MonoBehaviour:
   onValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: GetQuestions, Assembly-CSharp
+      - m_Target: {fileID: 62137596}
+        m_TargetAssemblyTypeName: Quiz, Assembly-CSharp
         m_MethodName: SelectAnswer
         m_Mode: 3
         m_Arguments:
@@ -1436,10 +492,10 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 14
+    m_FontSize: 30
     m_FontStyle: 0
-    m_BestFit: 1
-    m_MinSize: 10
+    m_BestFit: 0
+    m_MinSize: 3
     m_MaxSize: 40
     m_Alignment: 4
     m_AlignByGeometry: 0
@@ -1447,7 +503,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Toggle
+  m_Text: Resposta 2
 --- !u!222 &133016069
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1854,16 +910,16 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 422334098}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 2139890403}
-  m_RootOrder: 2
+  m_Father: {fileID: 62137593}
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.6203895, y: 0.10015557}
   m_AnchorMax: {x: 0.6203895, y: 0.10015557}
-  m_AnchoredPosition: {x: -1, y: 3.4000244}
+  m_AnchoredPosition: {x: 1.5881195, y: 3.4000244}
   m_SizeDelta: {x: 164.47449, y: 72.50929}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &422334100
@@ -1910,8 +966,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: 
+      - m_Target: {fileID: 62137596}
+        m_TargetAssemblyTypeName: Quiz, Assembly-CSharp
         m_MethodName: PreviousQuestion
         m_Mode: 1
         m_Arguments:
@@ -2163,7 +1219,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.24968448, g: 0.120016046, b: 0.8773585, a: 1}
+  m_Color: {r: 0.21960786, g: 0.21960786, b: 0.21960786, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -2172,7 +1228,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: e3265ab4bf004d28a9537516768c1c75, type: 3}
-    m_FontSize: 40
+    m_FontSize: 30
     m_FontStyle: 2
     m_BestFit: 0
     m_MinSize: 0
@@ -2324,85 +1380,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 549821070}
   m_CullTransparentMesh: 0
---- !u!1 &596318331
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 596318332}
-  - component: {fileID: 596318333}
-  - component: {fileID: 596318334}
-  m_Layer: 5
-  m_Name: Placeholder
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &596318332
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 596318331}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 947842742}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -0.5}
-  m_SizeDelta: {x: 490, y: 521}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!222 &596318333
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 596318331}
-  m_CullTransparentMesh: 0
---- !u!114 &596318334
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 596318331}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 0.24968448, g: 0.120016046, b: 0.8773585, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_FontData:
-    m_Font: {fileID: 12800000, guid: e3265ab4bf004d28a9537516768c1c75, type: 3}
-    m_FontSize: 40
-    m_FontStyle: 2
-    m_BestFit: 0
-    m_MinSize: 2
-    m_MaxSize: 40
-    m_Alignment: 0
-    m_AlignByGeometry: 0
-    m_RichText: 1
-    m_HorizontalOverflow: 0
-    m_VerticalOverflow: 0
-    m_LineSpacing: 1
-  m_Text: 
 --- !u!1 &600433954
 GameObject:
   m_ObjectHideFlags: 0
@@ -2564,8 +1541,8 @@ MonoBehaviour:
   onValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: GetQuestions, Assembly-CSharp
+      - m_Target: {fileID: 62137596}
+        m_TargetAssemblyTypeName: Quiz, Assembly-CSharp
         m_MethodName: SelectAnswer
         m_Mode: 3
         m_Arguments:
@@ -2736,16 +1713,16 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 700646858}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 2139890403}
-  m_RootOrder: 3
+  m_Father: {fileID: 62137593}
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.80500007, y: 0.10015557}
   m_AnchorMax: {x: 0.80500007, y: 0.10015557}
-  m_AnchoredPosition: {x: -6, y: 3.4000244}
+  m_AnchoredPosition: {x: -4.9137573, y: 3.4000244}
   m_SizeDelta: {x: 164.47449, y: 72.50929}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &700646860
@@ -2792,8 +1769,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: 
+      - m_Target: {fileID: 62137596}
+        m_TargetAssemblyTypeName: Quiz, Assembly-CSharp
         m_MethodName: NextQuestion
         m_Mode: 1
         m_Arguments:
@@ -2841,294 +1818,6 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 700646858}
-  m_CullTransparentMesh: 0
---- !u!1 &794068052
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 794068053}
-  - component: {fileID: 794068056}
-  - component: {fileID: 794068055}
-  - component: {fileID: 794068054}
-  m_Layer: 5
-  m_Name: Next_Btn (1)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &794068053
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 794068052}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1507315718}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.7945434, y: 0.11150116}
-  m_AnchorMax: {x: 0.7945434, y: 0.11150116}
-  m_AnchoredPosition: {x: 7.1916504, y: -4.5999146}
-  m_SizeDelta: {x: 164.47449, y: 72.50929}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &794068054
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 794068052}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Navigation:
-    m_Mode: 3
-    m_WrapAround: 0
-    m_SelectOnUp: {fileID: 0}
-    m_SelectOnDown: {fileID: 0}
-    m_SelectOnLeft: {fileID: 0}
-    m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
-  m_Colors:
-    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
-    m_ColorMultiplier: 1
-    m_FadeDuration: 0.1
-  m_SpriteState:
-    m_HighlightedSprite: {fileID: 0}
-    m_PressedSprite: {fileID: 0}
-    m_SelectedSprite: {fileID: 0}
-    m_DisabledSprite: {fileID: 0}
-  m_AnimationTriggers:
-    m_NormalTrigger: Normal
-    m_HighlightedTrigger: Highlighted
-    m_PressedTrigger: Pressed
-    m_SelectedTrigger: Selected
-    m_DisabledTrigger: Disabled
-  m_Interactable: 1
-  m_TargetGraphic: {fileID: 794068055}
-  m_OnClick:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1162804798}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: GetInfo
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: SendAnswersToServer
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
---- !u!114 &794068055
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 794068052}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 4cd5b48e0cfb6b241bda7f797a4a14eb, type: 3}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &794068056
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 794068052}
-  m_CullTransparentMesh: 0
---- !u!1 &947842741
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 947842742}
-  - component: {fileID: 947842745}
-  - component: {fileID: 947842744}
-  - component: {fileID: 947842743}
-  m_Layer: 5
-  m_Name: Pergunta_InputText (1)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &947842742
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 947842741}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 1201503143}
-  - {fileID: 596318332}
-  - {fileID: 1959020650}
-  m_Father: {fileID: 1507315718}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.25536335, y: 0.57100004}
-  m_AnchorMax: {x: 0.25536335, y: 0.57100004}
-  m_AnchoredPosition: {x: -5.299988, y: 2.1210022}
-  m_SizeDelta: {x: 510.02747, y: 534.5538}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &947842743
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 947842741}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d199490a83bb2b844b9695cbf13b01ef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Navigation:
-    m_Mode: 3
-    m_WrapAround: 0
-    m_SelectOnUp: {fileID: 0}
-    m_SelectOnDown: {fileID: 0}
-    m_SelectOnLeft: {fileID: 0}
-    m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
-  m_Colors:
-    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_DisabledColor: {r: 1, g: 1, b: 1, a: 1}
-    m_ColorMultiplier: 1
-    m_FadeDuration: 0.1
-  m_SpriteState:
-    m_HighlightedSprite: {fileID: 0}
-    m_PressedSprite: {fileID: 0}
-    m_SelectedSprite: {fileID: 0}
-    m_DisabledSprite: {fileID: 0}
-  m_AnimationTriggers:
-    m_NormalTrigger: Normal
-    m_HighlightedTrigger: Highlighted
-    m_PressedTrigger: Pressed
-    m_SelectedTrigger: Selected
-    m_DisabledTrigger: Disabled
-  m_Interactable: 0
-  m_TargetGraphic: {fileID: 947842744}
-  m_TextComponent: {fileID: 1959020651}
-  m_Placeholder: {fileID: 596318334}
-  m_ContentType: 0
-  m_InputType: 0
-  m_AsteriskChar: 42
-  m_KeyboardType: 0
-  m_LineType: 0
-  m_HideMobileInput: 1
-  m_CharacterValidation: 0
-  m_CharacterLimit: 2400
-  m_OnEndEdit:
-    m_PersistentCalls:
-      m_Calls: []
-  m_OnValueChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_CaretColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
-  m_CustomCaretColor: 0
-  m_SelectionColor: {r: 0.65882355, g: 0.80784315, b: 1, a: 0.7529412}
-  m_Text: 
-  m_CaretBlinkRate: 0.85
-  m_CaretWidth: 1
-  m_ReadOnly: 1
-  m_ShouldActivateOnSelect: 1
---- !u!114 &947842744
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 947842741}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 10911, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &947842745
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 947842741}
   m_CullTransparentMesh: 0
 --- !u!1 &991525016
 GameObject:
@@ -3451,7 +2140,7 @@ RectTransform:
   m_Children:
   - {fileID: 1026764334}
   m_Father: {fileID: 1162804796}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 0.9843555}
@@ -3555,10 +2244,10 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 14
+    m_FontSize: 30
     m_FontStyle: 0
-    m_BestFit: 1
-    m_MinSize: 10
+    m_BestFit: 0
+    m_MinSize: 3
     m_MaxSize: 40
     m_Alignment: 4
     m_AlignByGeometry: 0
@@ -3566,7 +2255,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Toggle
+  m_Text: Resposta 4
 --- !u!222 &1117711457
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3663,7 +2352,7 @@ GameObject:
   - component: {fileID: 1122217225}
   - component: {fileID: 1122217224}
   m_Layer: 5
-  m_Name: Resposta_InputText (2)
+  m_Name: Resposta_aberta
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3682,12 +2371,12 @@ RectTransform:
   m_Children:
   - {fileID: 450184679}
   - {fileID: 2004229235}
-  m_Father: {fileID: 1507315718}
-  m_RootOrder: 3
+  m_Father: {fileID: 62137593}
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.74816865, y: 0.55120003}
   m_AnchorMax: {x: 0.74816865, y: 0.55120003}
-  m_AnchoredPosition: {x: -1.8999634, y: 16.121002}
+  m_AnchoredPosition: {x: -0.35144043, y: 16.121002}
   m_SizeDelta: {x: 544.92737, y: 534.5538}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1122217224
@@ -3888,7 +2577,6 @@ RectTransform:
   m_Children:
   - {fileID: 1441534829}
   - {fileID: 62137593}
-  - {fileID: 1507315718}
   - {fileID: 1110864800}
   - {fileID: 1843630425}
   - {fileID: 1863783415}
@@ -3969,213 +2657,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   answerInput: {fileID: 1122217224}
---- !u!1 &1201503142
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1201503143}
-  - component: {fileID: 1201503145}
-  - component: {fileID: 1201503144}
-  m_Layer: 5
-  m_Name: Image
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1201503143
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1201503142}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 947842742}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.000024319, y: -52.3}
-  m_SizeDelta: {x: 455.12753, y: 204.66913}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1201503144
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1201503142}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 0}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &1201503145
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1201503142}
-  m_CullTransparentMesh: 0
---- !u!1 &1207365652
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1207365653}
-  - component: {fileID: 1207365656}
-  - component: {fileID: 1207365655}
-  - component: {fileID: 1207365654}
-  m_Layer: 5
-  m_Name: Previous_Btn (1)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1207365653
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1207365652}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1507315718}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.6251948, y: 0.11150116}
-  m_AnchorMax: {x: 0.6251948, y: 0.11150116}
-  m_AnchoredPosition: {x: -6.8082275, y: -4.5999146}
-  m_SizeDelta: {x: 164.47449, y: 72.50929}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1207365654
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1207365652}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Navigation:
-    m_Mode: 3
-    m_WrapAround: 0
-    m_SelectOnUp: {fileID: 0}
-    m_SelectOnDown: {fileID: 0}
-    m_SelectOnLeft: {fileID: 0}
-    m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
-  m_Colors:
-    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
-    m_ColorMultiplier: 1
-    m_FadeDuration: 0.1
-  m_SpriteState:
-    m_HighlightedSprite: {fileID: 0}
-    m_PressedSprite: {fileID: 0}
-    m_SelectedSprite: {fileID: 0}
-    m_DisabledSprite: {fileID: 0}
-  m_AnimationTriggers:
-    m_NormalTrigger: Normal
-    m_HighlightedTrigger: Highlighted
-    m_PressedTrigger: Pressed
-    m_SelectedTrigger: Selected
-    m_DisabledTrigger: Disabled
-  m_Interactable: 1
-  m_TargetGraphic: {fileID: 1207365655}
-  m_OnClick:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: previousQuiz2
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
---- !u!114 &1207365655
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1207365652}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 7e8b2f181b8874d46b833445ea1bb114, type: 3}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &1207365656
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1207365652}
-  m_CullTransparentMesh: 0
 --- !u!1 &1292856406
 GameObject:
   m_ObjectHideFlags: 0
@@ -4205,12 +2686,12 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 2139890403}
-  m_RootOrder: 0
+  m_Father: {fileID: 62137593}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.41955903}
   m_AnchorMax: {x: 0.5, y: 0.41955903}
-  m_AnchoredPosition: {x: -327.09338, y: 56.38106}
+  m_AnchoredPosition: {x: -323.52582, y: 56.38106}
   m_SizeDelta: {x: 455.12753, y: 204.66913}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1292856408
@@ -4484,7 +2965,7 @@ MonoBehaviour:
   renderImg: {fileID: 0}
   currentLevel: 0
   currentIndex: 0
-  quizPanel: {fileID: 0}
+  quizPanel: {fileID: 62137592}
   loadingPanel: {fileID: 0}
 --- !u!114 &1441534831
 MonoBehaviour:
@@ -4599,59 +3080,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1484294953}
   m_CullTransparentMesh: 0
---- !u!1 &1507315717
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1507315718}
-  - component: {fileID: 1507315719}
-  m_Layer: 5
-  m_Name: QuizOpenAnswer
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!224 &1507315718
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1507315717}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 794068053}
-  - {fileID: 1207365653}
-  - {fileID: 947842742}
-  - {fileID: 1122217223}
-  m_Father: {fileID: 1162804796}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.011308562, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -3.5002441, y: 0}
-  m_SizeDelta: {x: 6, y: 0}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1507315719
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1507315717}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fcbda238424c68844899052c7f0a17ab, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  answerInput: {fileID: 1122217224}
 --- !u!1 &1663769393
 GameObject:
   m_ObjectHideFlags: 0
@@ -4711,10 +3139,10 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 14
+    m_FontSize: 30
     m_FontStyle: 0
-    m_BestFit: 1
-    m_MinSize: 10
+    m_BestFit: 0
+    m_MinSize: 3
     m_MaxSize: 40
     m_Alignment: 4
     m_AlignByGeometry: 0
@@ -4722,7 +3150,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: dasd
+  m_Text: Resposta 1
 --- !u!222 &1663769396
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4816,8 +3244,8 @@ MonoBehaviour:
   onValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: GetQuestions, Assembly-CSharp
+      - m_Target: {fileID: 62137596}
+        m_TargetAssemblyTypeName: Quiz, Assembly-CSharp
         m_MethodName: SelectAnswer
         m_Mode: 3
         m_Arguments:
@@ -4858,12 +3286,12 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 2139890403}
-  m_RootOrder: 1
+  m_Father: {fileID: 62137593}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -327.09344, y: 51.621044}
+  m_AnchoredPosition: {x: -323.52588, y: 51.621044}
   m_SizeDelta: {x: 458, y: 521}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1668056314
@@ -4896,10 +3324,10 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 14
+    m_FontSize: 40
     m_FontStyle: 0
-    m_BestFit: 1
-    m_MinSize: 10
+    m_BestFit: 0
+    m_MinSize: 4
     m_MaxSize: 113
     m_Alignment: 0
     m_AlignByGeometry: 0
@@ -5118,10 +3546,10 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 14
+    m_FontSize: 30
     m_FontStyle: 0
-    m_BestFit: 1
-    m_MinSize: 10
+    m_BestFit: 0
+    m_MinSize: 3
     m_MaxSize: 40
     m_Alignment: 4
     m_AlignByGeometry: 0
@@ -5129,7 +3557,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Toggle
+  m_Text: Resposta 5
 --- !u!222 &1732361226
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5223,8 +3651,8 @@ MonoBehaviour:
   onValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: GetQuestions, Assembly-CSharp
+      - m_Target: {fileID: 62137596}
+        m_TargetAssemblyTypeName: Quiz, Assembly-CSharp
         m_MethodName: SelectAnswer
         m_Mode: 3
         m_Arguments:
@@ -5434,7 +3862,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1162804796}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -5472,7 +3900,7 @@ RectTransform:
   m_Children:
   - {fileID: 1954199195}
   m_Father: {fileID: 1162804796}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -5602,8 +4030,8 @@ MonoBehaviour:
   onValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: GetQuestions, Assembly-CSharp
+      - m_Target: {fileID: 62137596}
+        m_TargetAssemblyTypeName: Quiz, Assembly-CSharp
         m_MethodName: SelectAnswer
         m_Mode: 3
         m_Arguments:
@@ -5694,85 +4122,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1954199194}
   m_CullTransparentMesh: 1
---- !u!1 &1959020649
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1959020650}
-  - component: {fileID: 1959020652}
-  - component: {fileID: 1959020651}
-  m_Layer: 5
-  m_Name: Text
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1959020650
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1959020649}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 947842742}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -0.5}
-  m_SizeDelta: {x: 490, y: 521}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1959020651
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1959020649}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 40
-    m_FontStyle: 0
-    m_BestFit: 0
-    m_MinSize: 3
-    m_MaxSize: 113
-    m_Alignment: 0
-    m_AlignByGeometry: 0
-    m_RichText: 0
-    m_HorizontalOverflow: 1
-    m_VerticalOverflow: 0
-    m_LineSpacing: 1
-  m_Text: 
---- !u!222 &1959020652
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1959020649}
-  m_CullTransparentMesh: 0
 --- !u!1 &2004229234
 GameObject:
   m_ObjectHideFlags: 0
@@ -5840,7 +4189,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 40
+    m_FontSize: 30
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
@@ -5911,10 +4260,10 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 14
+    m_FontSize: 30
     m_FontStyle: 0
-    m_BestFit: 1
-    m_MinSize: 10
+    m_BestFit: 0
+    m_MinSize: 3
     m_MaxSize: 40
     m_Alignment: 4
     m_AlignByGeometry: 0
@@ -5922,7 +4271,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Toggle
+  m_Text: Resposta 3
 --- !u!222 &2114510439
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5931,43 +4280,3 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2114510436}
   m_CullTransparentMesh: 0
---- !u!1 &2139890402
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2139890403}
-  m_Layer: 5
-  m_Name: Quiz
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &2139890403
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2139890402}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 1292856407}
-  - {fileID: 1668056313}
-  - {fileID: 422334099}
-  - {fileID: 700646859}
-  - {fileID: 50078079}
-  m_Father: {fileID: 62137593}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.011308562, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -3.5002441, y: 0}
-  m_SizeDelta: {x: 6, y: 0}
-  m_Pivot: {x: 0.5, y: 0.5}
