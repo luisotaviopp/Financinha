@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.Networking;
+using UnityEngine.SceneManagement;
 
 public class Quiz : MonoBehaviour
 {
@@ -47,6 +48,9 @@ public class Quiz : MonoBehaviour
     private int quiz_score = 0;
 
     public List<bool> rightAnswerList;
+
+    public GameObject finalPanel;
+    public GameObject loadingPanel;
 
     private void OnEnable()
     {
@@ -205,10 +209,19 @@ public class Quiz : MonoBehaviour
             }
 
             Debug.Log("Envia resultado e pergunta aberta para o servidor");
+
+            finalPanel.SetActive(true);
         }
         else
         {
             Debug.Log("Questao aberta esta nula");
         }
+    }
+
+    public void BackToMenu()
+    {
+        finalPanel.SetActive(false);
+        loadingPanel.SetActive(true);
+        SceneManager.LoadSceneAsync(0);
     }
 }

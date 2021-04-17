@@ -7,7 +7,7 @@ public class ApiConfig : MonoBehaviour
 
 	// USUARIOS
 	public static string REGISTER_URL 				= API_URL + "/user/create_user.php";            // Cadastrar jogador novo. *****
-	public static string LOGIN_URL 				= API_URL + "/user/login.php";                  // Logar.
+	public static string LOGIN_URL 				= API_URL + "/user/login.php";                      // Logar.
 	public static string LIST_USERS_URL 			= API_URL + "/user/search_user.php";            // Procurando um usuário
 	public static string UPDATE_SEMANADA 			= API_URL + "/user/update_semanada.php";        // Procurando um usuário
 
@@ -28,9 +28,9 @@ public class ApiConfig : MonoBehaviour
     public static string WALLET_TO_SAVINGS_URL      = API_URL + "/wallet/wallet_to_savings.php";    // LEGADO, SUBSTITUIDO PELO BANK OPERATION - Transferência -> carteira para cofrinho
 
     // CARTEIRA
-    public static string WALLET_EVENTS_URL           = API_URL + "/wallet/wallet_timeline.php";      // Pegar o extrato do jogador.
-    public static string WALLET_AMOUNT_URL           = API_URL + "/wallet/wallet_amount.php";        // Pegar o valor da carteira.
-    public static string WALLET_OPERATION_URL        = API_URL + "/wallet/wallet_operation.php";     // Inserindo grana na carteira -> post_value, post_reason
+    public static string WALLET_EVENTS_URL           = API_URL + "/wallet/wallet_timeline.php";     // Pegar o extrato do jogador.
+    public static string WALLET_AMOUNT_URL           = API_URL + "/wallet/wallet_amount.php";       // Pegar o valor da carteira.
+    public static string WALLET_OPERATION_URL        = API_URL + "/wallet/wallet_operation.php";    // Inserindo grana na carteira -> post_value, post_reason
 	public static string DELETE_WALLET_EVENT_URL 	= API_URL + "/wallet/delete_wallet_event.php";  // Transferência -> carteira para cofrinho
 
 	// REGRAS
@@ -55,15 +55,15 @@ public class ApiConfig : MonoBehaviour
 	public static string GET_CAUSE_URL 				= API_URL + "/objective/get_cause.php";         // Pegar causa
 
 	// QUIZZ - DESCONTINUADOS
-	public static string GET_QUESTIONS_BY_LEVEL     	= API_URL + "/quiz/get_questions_level.php";    // Pega as questões por level
+	public static string GET_QUESTIONS_BY_LEVEL     = API_URL + "/quiz/get_questions_level.php";    // Pega as questões por level
 	public static string INSERT_QUESTION_RESPONSES 	= API_URL + "/quiz/insert_selection.php";     	// Envia as respostas pro servidor	
 	
     // QUIZ - Esses estaao corretos.
     public static string INSERT_ANSWERS 		    = API_URL + "/quiz/insert_quiz_answers.php";	// Cadastrando as respostas para um level
-	public static string GET_NOTIFICATION	 		= API_URL + "/quiz/get_notifications.php";		    // Pegando o level que está com resposta cadastrada e esperando ser avaliada
-	public static string GET_OPEN_ANSWER	 		= API_URL + "/quiz/get_open_answer.php";		    // Pega a resposta da questão aberta
-	public static string EVALUATE_ANSWER	 		= API_URL + "/quiz/evaluate_answer.php";		    // Envia a nota do pai para o servidor
-	public static string GET_SCORE	 				= API_URL + "/quiz/get_level_score.php";		    // Pega a nota das questões + nota do pai
+	public static string GET_NOTIFICATION	 		= API_URL + "/quiz/get_notifications.php";		// Pegando o level que está com resposta cadastrada e esperando ser avaliada
+	public static string GET_OPEN_ANSWER	 		= API_URL + "/quiz/get_open_answer.php";        // Pega a resposta da questão aberta
+	public static string EVALUATE_ANSWER	 		= API_URL + "/quiz/evaluate_answer.php";	    // Envia a nota do pai para o servidor
+	public static string GET_SCORE	 				= API_URL + "/quiz/get_level_score.php";	    // Pega a nota das questões + nota do pai
 
 	// Apenas responsáveis -> Vendo as respostas para as perguntas
 

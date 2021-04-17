@@ -247,7 +247,7 @@ public class PigController : MonoBehaviour
 	{
 		WWWForm form = new WWWForm();
 		form.AddField("post_id", PlayerPrefs.GetInt("id_aprendiz"));
-        form.AddField("post_level", PlayerPrefs.GetInt("level"));
+        form.AddField("post_level", PlayerPrefs.GetInt("quiz_level_to_load"));
 
         UnityWebRequest www = UnityWebRequest.Post(ApiConfig.UPDATE_HABILITY, form);
         yield return www.SendWebRequest();

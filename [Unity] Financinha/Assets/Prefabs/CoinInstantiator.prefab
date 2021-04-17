@@ -43,8 +43,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b3122398a75eca40a4acfcdcb6b5e53, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentTimer: 10
-  timeToback: 14
+  currentTimer: 3
+  timeToback: 3
   coin: {fileID: 8268393018057924719, guid: b8df03d2279597d4389096061a359f43, type: 3}
   ypositive: 4
   ynegative: 0.5

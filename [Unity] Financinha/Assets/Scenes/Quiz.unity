@@ -274,10 +274,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   questions:
   - level: 1
-    rightAnswer: 3
+    rightAnswer: 1
     isImage: 0
     isOpenAnswer: 0
-    question: Questai 1, lvl1
+    question: Level 1 - Questao 1
     answer1: Teste1
     answer2: Teste2
     answer3: Teste3
@@ -285,10 +285,10 @@ MonoBehaviour:
     answer5: Teste5
     questionSprite: {fileID: 0}
   - level: 1
-    rightAnswer: 3
+    rightAnswer: 2
     isImage: 1
     isOpenAnswer: 0
-    question: Teste1
+    question: Level 1 - Questao 2
     answer1: Teste1
     answer2: Teste1
     answer3: Teste1
@@ -299,7 +299,7 @@ MonoBehaviour:
     rightAnswer: 3
     isImage: 0
     isOpenAnswer: 0
-    question: Teste1
+    question: Level 1 - Questao 3
     answer1: Teste1
     answer2: Teste1
     answer3: Teste1
@@ -307,10 +307,10 @@ MonoBehaviour:
     answer5: Teste1
     questionSprite: {fileID: 0}
   - level: 1
-    rightAnswer: 3
+    rightAnswer: 4
     isImage: 0
     isOpenAnswer: 0
-    question: Teste1
+    question: Level 1 - Questao 4
     answer1: Teste1
     answer2: Teste1
     answer3: Teste1
@@ -318,15 +318,631 @@ MonoBehaviour:
     answer5: Teste1
     questionSprite: {fileID: 0}
   - level: 1
-    rightAnswer: 3
+    rightAnswer: 5
     isImage: 0
-    isOpenAnswer: 1
-    question: QUESTAO ABERTA
+    isOpenAnswer: 0
+    question: Level 1 - Questao 5
     answer1: 
     answer2: 
     answer3: 
     answer4: 
     answer5: 
+    questionSprite: {fileID: 0}
+  - level: 1
+    rightAnswer: 5
+    isImage: 0
+    isOpenAnswer: 1
+    question: Level 1 - Questao Aberta
+    answer1: 
+    answer2: 
+    answer3: 
+    answer4: 
+    answer5: 
+    questionSprite: {fileID: 0}
+  - level: 2
+    rightAnswer: 5
+    isImage: 0
+    isOpenAnswer: 0
+    question: Level 2 - Questao 1
+    answer1: Level 2 - Questao 1
+    answer2: Level 2 - Questao 1
+    answer3: Level 2 - Questao 1
+    answer4: Level 2 - Questao 1
+    answer5: Level 2 - Questao 1
+    questionSprite: {fileID: 0}
+  - level: 2
+    rightAnswer: 5
+    isImage: 0
+    isOpenAnswer: 0
+    question: Level 2 - Questao 2
+    answer1: Level 2 - Questao 2
+    answer2: Level 2 - Questao 2
+    answer3: Level 2 - Questao 2
+    answer4: Level 2 - Questao 2
+    answer5: Level 2 - Questao 2
+    questionSprite: {fileID: 0}
+  - level: 2
+    rightAnswer: 5
+    isImage: 0
+    isOpenAnswer: 0
+    question: Level 2 - Questao 3
+    answer1: Level 2 - Questao 3
+    answer2: Level 2 - Questao 3
+    answer3: Level 2 - Questao 3
+    answer4: Level 2 - Questao 3
+    answer5: Level 2 - Questao 3
+    questionSprite: {fileID: 0}
+  - level: 2
+    rightAnswer: 5
+    isImage: 0
+    isOpenAnswer: 0
+    question: Level 2 - Questao 4
+    answer1: Level 2 - Questao 4
+    answer2: Level 2 - Questao 4
+    answer3: Level 2 - Questao 4
+    answer4: Level 2 - Questao 4
+    answer5: Level 2 - Questao 4
+    questionSprite: {fileID: 0}
+  - level: 2
+    rightAnswer: 5
+    isImage: 0
+    isOpenAnswer: 0
+    question: Level 2 - Questao 5
+    answer1: Level 2 - Questao 5
+    answer2: Level 2 - Questao 5
+    answer3: Level 2 - Questao 5
+    answer4: Level 2 - Questao 5
+    answer5: Level 2 - Questao 5
+    questionSprite: {fileID: 0}
+  - level: 2
+    rightAnswer: 5
+    isImage: 0
+    isOpenAnswer: 1
+    question: Level 2 - Questao Aberta
+    answer1: Level 2 - Questao Aberta
+    answer2: Level 2 - Questao Aberta
+    answer3: Level 2 - Questao Aberta
+    answer4: Level 2 - Questao Aberta
+    answer5: Level 2 - Questao Aberta
+    questionSprite: {fileID: 0}
+  - level: 3
+    rightAnswer: 5
+    isImage: 0
+    isOpenAnswer: 0
+    question: Level 3 - Questao 1
+    answer1: Level 3 - Questao 1
+    answer2: Level 3 - Questao 1
+    answer3: Level 3 - Questao 1
+    answer4: Level 3 - Questao 1
+    answer5: Level 3 - Questao 1
+    questionSprite: {fileID: 0}
+  - level: 3
+    rightAnswer: 5
+    isImage: 0
+    isOpenAnswer: 0
+    question: Level 3 - Questao 2
+    answer1: Level 3 - Questao 2
+    answer2: Level 3 - Questao 2
+    answer3: Level 3 - Questao 2
+    answer4: Level 3 - Questao 2
+    answer5: Level 3 - Questao 2
+    questionSprite: {fileID: 0}
+  - level: 3
+    rightAnswer: 5
+    isImage: 0
+    isOpenAnswer: 0
+    question: Level 3 - Questao 3
+    answer1: Level 3 - Questao 3
+    answer2: Level 3 - Questao 3
+    answer3: Level 3 - Questao 3
+    answer4: Level 3 - Questao 3
+    answer5: Level 3 - Questao 3
+    questionSprite: {fileID: 0}
+  - level: 3
+    rightAnswer: 5
+    isImage: 0
+    isOpenAnswer: 0
+    question: Level 3 - Questao 4
+    answer1: Level 3 - Questao 4
+    answer2: Level 3 - Questao 4
+    answer3: Level 3 - Questao 4
+    answer4: Level 3 - Questao 4
+    answer5: Level 3 - Questao 4
+    questionSprite: {fileID: 0}
+  - level: 3
+    rightAnswer: 5
+    isImage: 0
+    isOpenAnswer: 0
+    question: Level 3 - Questao 5
+    answer1: Level 3 - Questao 5
+    answer2: Level 3 - Questao 5
+    answer3: Level 3 - Questao 5
+    answer4: Level 3 - Questao 5
+    answer5: Level 3 - Questao 5
+    questionSprite: {fileID: 0}
+  - level: 3
+    rightAnswer: 5
+    isImage: 0
+    isOpenAnswer: 1
+    question: Level 3 - Questao Aberta
+    answer1: Level 3 - Questao Aberta
+    answer2: Level 3 - Questao Aberta
+    answer3: Level 3 - Questao Aberta
+    answer4: Level 3 - Questao Aberta
+    answer5: Level 3 - Questao Aberta
+    questionSprite: {fileID: 0}
+  - level: 4
+    rightAnswer: 5
+    isImage: 0
+    isOpenAnswer: 0
+    question: Level 4 - Questao 1
+    answer1: Level 4 - Questao 1
+    answer2: Level 4 - Questao 1
+    answer3: Level 4 - Questao 1
+    answer4: Level 4 - Questao 1
+    answer5: Level 4 - Questao 1
+    questionSprite: {fileID: 0}
+  - level: 4
+    rightAnswer: 5
+    isImage: 0
+    isOpenAnswer: 0
+    question: Level 4 - Questao 2
+    answer1: Level 4 - Questao 2
+    answer2: Level 4 - Questao 2
+    answer3: Level 4 - Questao 2
+    answer4: Level 4 - Questao 2
+    answer5: Level 4 - Questao 2
+    questionSprite: {fileID: 0}
+  - level: 4
+    rightAnswer: 5
+    isImage: 0
+    isOpenAnswer: 0
+    question: Level 4 - Questao 3
+    answer1: Level 4 - Questao 3
+    answer2: Level 4 - Questao 3
+    answer3: Level 4 - Questao 3
+    answer4: Level 4 - Questao 3
+    answer5: Level 4 - Questao 3
+    questionSprite: {fileID: 0}
+  - level: 4
+    rightAnswer: 5
+    isImage: 0
+    isOpenAnswer: 0
+    question: Level 4 - Questao 4
+    answer1: Level 4 - Questao 4
+    answer2: Level 4 - Questao 4
+    answer3: Level 4 - Questao 4
+    answer4: Level 4 - Questao 4
+    answer5: Level 4 - Questao 4
+    questionSprite: {fileID: 0}
+  - level: 4
+    rightAnswer: 5
+    isImage: 0
+    isOpenAnswer: 0
+    question: Level 4 - Questao 5
+    answer1: Level 4 - Questao 5
+    answer2: Level 4 - Questao 5
+    answer3: Level 4 - Questao 5
+    answer4: Level 4 - Questao 5
+    answer5: Level 4 - Questao 5
+    questionSprite: {fileID: 0}
+  - level: 4
+    rightAnswer: 5
+    isImage: 0
+    isOpenAnswer: 0
+    question: Level 4 - Questao 5
+    answer1: Level 4 - Questao 5
+    answer2: Level 4 - Questao 5
+    answer3: Level 4 - Questao 5
+    answer4: Level 4 - Questao 5
+    answer5: Level 4 - Questao 5
+    questionSprite: {fileID: 0}
+  - level: 4
+    rightAnswer: 5
+    isImage: 0
+    isOpenAnswer: 1
+    question: Level 4 - Questao Aberta
+    answer1: Level 4 - Questao Aberta
+    answer2: Level 4 - Questao Aberta
+    answer3: Level 4 - Questao Aberta
+    answer4: Level 4 - Questao Aberta
+    answer5: Level 4 - Questao Aberta
+    questionSprite: {fileID: 0}
+  - level: 5
+    rightAnswer: 5
+    isImage: 0
+    isOpenAnswer: 0
+    question: Level 5 - Questao 1
+    answer1: Level 5 - Questao 1
+    answer2: Level 5 - Questao 1
+    answer3: Level 5 - Questao 1
+    answer4: Level 5 - Questao 1
+    answer5: Level 5 - Questao 1
+    questionSprite: {fileID: 0}
+  - level: 5
+    rightAnswer: 5
+    isImage: 0
+    isOpenAnswer: 0
+    question: Level 5 - Questao 2
+    answer1: Level 5 - Questao 2
+    answer2: Level 5 - Questao 2
+    answer3: Level 5 - Questao 2
+    answer4: Level 5 - Questao 2
+    answer5: Level 5 - Questao 2
+    questionSprite: {fileID: 0}
+  - level: 5
+    rightAnswer: 5
+    isImage: 0
+    isOpenAnswer: 0
+    question: Level 5 - Questao 3
+    answer1: Level 5 - Questao 3
+    answer2: Level 5 - Questao 3
+    answer3: Level 5 - Questao 3
+    answer4: Level 5 - Questao 3
+    answer5: Level 5 - Questao 3
+    questionSprite: {fileID: 0}
+  - level: 5
+    rightAnswer: 5
+    isImage: 0
+    isOpenAnswer: 0
+    question: Level 5 - Questao 4
+    answer1: Level 5 - Questao 4
+    answer2: Level 5 - Questao 4
+    answer3: Level 5 - Questao 4
+    answer4: Level 5 - Questao 4
+    answer5: Level 5 - Questao 4
+    questionSprite: {fileID: 0}
+  - level: 5
+    rightAnswer: 5
+    isImage: 0
+    isOpenAnswer: 0
+    question: Level 5 - Questao 5
+    answer1: Level 5 - Questao 5
+    answer2: Level 5 - Questao 5
+    answer3: Level 5 - Questao 5
+    answer4: Level 5 - Questao 5
+    answer5: Level 5 - Questao 5
+    questionSprite: {fileID: 0}
+  - level: 5
+    rightAnswer: 5
+    isImage: 0
+    isOpenAnswer: 1
+    question: Level 5 - Questao Aberta
+    answer1: Level 5 - Questao Aberta
+    answer2: Level 5 - Questao Aberta
+    answer3: Level 5 - Questao Aberta
+    answer4: Level 5 - Questao Aberta
+    answer5: Level 5 - Questao Aberta
+    questionSprite: {fileID: 0}
+  - level: 6
+    rightAnswer: 5
+    isImage: 0
+    isOpenAnswer: 0
+    question: Level 6 - Questao 1
+    answer1: Level 6 - Questao 1
+    answer2: Level 6 - Questao 1
+    answer3: Level 6 - Questao 1
+    answer4: Level 6 - Questao 1
+    answer5: Level 6 - Questao 1
+    questionSprite: {fileID: 0}
+  - level: 6
+    rightAnswer: 5
+    isImage: 0
+    isOpenAnswer: 0
+    question: Level 6 - Questao 2
+    answer1: Level 6 - Questao 2
+    answer2: Level 6 - Questao 2
+    answer3: Level 6 - Questao 2
+    answer4: Level 6 - Questao 2
+    answer5: Level 6 - Questao 2
+    questionSprite: {fileID: 0}
+  - level: 6
+    rightAnswer: 5
+    isImage: 0
+    isOpenAnswer: 0
+    question: Level 6 - Questao 3
+    answer1: Level 6 - Questao 3
+    answer2: Level 6 - Questao 3
+    answer3: Level 6 - Questao 3
+    answer4: Level 6 - Questao 3
+    answer5: Level 6 - Questao 3
+    questionSprite: {fileID: 0}
+  - level: 6
+    rightAnswer: 5
+    isImage: 0
+    isOpenAnswer: 0
+    question: Level 6 - Questao 4
+    answer1: Level 6 - Questao 4
+    answer2: Level 6 - Questao 4
+    answer3: Level 6 - Questao 4
+    answer4: Level 6 - Questao 4
+    answer5: Level 6 - Questao 4
+    questionSprite: {fileID: 0}
+  - level: 6
+    rightAnswer: 5
+    isImage: 0
+    isOpenAnswer: 0
+    question: Level 6 - Questao 5
+    answer1: Level 6 - Questao 5
+    answer2: Level 6 - Questao 5
+    answer3: Level 6 - Questao 5
+    answer4: Level 6 - Questao 5
+    answer5: Level 6 - Questao 5
+    questionSprite: {fileID: 0}
+  - level: 6
+    rightAnswer: 5
+    isImage: 0
+    isOpenAnswer: 1
+    question: Level 6 - Questao Aberta
+    answer1: Level 6 - Questao Aberta
+    answer2: Level 6 - Questao Aberta
+    answer3: Level 6 - Questao Aberta
+    answer4: Level 6 - Questao Aberta
+    answer5: Level 6 - Questao Aberta
+    questionSprite: {fileID: 0}
+  - level: 7
+    rightAnswer: 5
+    isImage: 0
+    isOpenAnswer: 0
+    question: Level 7 - Questao 1
+    answer1: Level 7 - Questao 1
+    answer2: Level 7 - Questao 1
+    answer3: Level 7 - Questao 1
+    answer4: Level 7 - Questao 1
+    answer5: Level 7 - Questao 1
+    questionSprite: {fileID: 0}
+  - level: 7
+    rightAnswer: 5
+    isImage: 0
+    isOpenAnswer: 0
+    question: Level 7 - Questao 2
+    answer1: Level 7 - Questao 2
+    answer2: Level 7 - Questao 2
+    answer3: Level 7 - Questao 2
+    answer4: Level 7 - Questao 2
+    answer5: Level 7 - Questao 2
+    questionSprite: {fileID: 0}
+  - level: 7
+    rightAnswer: 5
+    isImage: 0
+    isOpenAnswer: 0
+    question: Level 7 - Questao 3
+    answer1: Level 7 - Questao 3
+    answer2: Level 7 - Questao 3
+    answer3: Level 7 - Questao 3
+    answer4: Level 7 - Questao 3
+    answer5: Level 7 - Questao 3
+    questionSprite: {fileID: 0}
+  - level: 7
+    rightAnswer: 5
+    isImage: 0
+    isOpenAnswer: 0
+    question: Level 7 - Questao 4
+    answer1: Level 7 - Questao 4
+    answer2: Level 7 - Questao 4
+    answer3: Level 7 - Questao 4
+    answer4: Level 7 - Questao 4
+    answer5: Level 7 - Questao 4
+    questionSprite: {fileID: 0}
+  - level: 7
+    rightAnswer: 5
+    isImage: 0
+    isOpenAnswer: 0
+    question: Level 7 - Questao 5
+    answer1: Level 7 - Questao 5
+    answer2: Level 7 - Questao 5
+    answer3: Level 7 - Questao 5
+    answer4: Level 7 - Questao 5
+    answer5: Level 7 - Questao 5
+    questionSprite: {fileID: 0}
+  - level: 7
+    rightAnswer: 5
+    isImage: 0
+    isOpenAnswer: 1
+    question: Level 7 - Questao Aberta
+    answer1: Level 7 - Questao Aberta
+    answer2: Level 7 - Questao Aberta
+    answer3: Level 7 - Questao Aberta
+    answer4: Level 7 - Questao Aberta
+    answer5: Level 7 - Questao Aberta
+    questionSprite: {fileID: 0}
+  - level: 8
+    rightAnswer: 5
+    isImage: 0
+    isOpenAnswer: 0
+    question: Level 8 - Questao 1
+    answer1: Level 8 - Questao 1
+    answer2: Level 8 - Questao 1
+    answer3: Level 8 - Questao 1
+    answer4: Level 8 - Questao 1
+    answer5: Level 8 - Questao 1
+    questionSprite: {fileID: 0}
+  - level: 8
+    rightAnswer: 5
+    isImage: 0
+    isOpenAnswer: 0
+    question: Level 8 - Questao 2
+    answer1: Level 8 - Questao 2
+    answer2: Level 8 - Questao 2
+    answer3: Level 8 - Questao 2
+    answer4: Level 8 - Questao 2
+    answer5: Level 8 - Questao 2
+    questionSprite: {fileID: 0}
+  - level: 8
+    rightAnswer: 5
+    isImage: 0
+    isOpenAnswer: 0
+    question: Level 8 - Questao 3
+    answer1: Level 8 - Questao 3
+    answer2: Level 8 - Questao 3
+    answer3: Level 8 - Questao 3
+    answer4: Level 8 - Questao 3
+    answer5: Level 8 - Questao 3
+    questionSprite: {fileID: 0}
+  - level: 8
+    rightAnswer: 5
+    isImage: 0
+    isOpenAnswer: 0
+    question: Level 8 - Questao 4
+    answer1: Level 8 - Questao 4
+    answer2: Level 8 - Questao 4
+    answer3: Level 8 - Questao 4
+    answer4: Level 8 - Questao 4
+    answer5: Level 8 - Questao 4
+    questionSprite: {fileID: 0}
+  - level: 8
+    rightAnswer: 5
+    isImage: 0
+    isOpenAnswer: 0
+    question: Level 8 - Questao 5
+    answer1: Level 8 - Questao 5
+    answer2: Level 8 - Questao 5
+    answer3: Level 8 - Questao 5
+    answer4: Level 8 - Questao 5
+    answer5: Level 8 - Questao 5
+    questionSprite: {fileID: 0}
+  - level: 8
+    rightAnswer: 5
+    isImage: 0
+    isOpenAnswer: 1
+    question: Level 8 - Questao Aberta
+    answer1: Level 8 - Questao Aberta
+    answer2: Level 8 - Questao Aberta
+    answer3: Level 8 - Questao Aberta
+    answer4: Level 8 - Questao Aberta
+    answer5: Level 8 - Questao Aberta
+    questionSprite: {fileID: 0}
+  - level: 9
+    rightAnswer: 5
+    isImage: 0
+    isOpenAnswer: 0
+    question: "Level 9 - Quest\xE3o 1"
+    answer1: "Level 9 - Quest\xE3o 1"
+    answer2: "Level 9 - Quest\xE3o 1"
+    answer3: "Level 9 - Quest\xE3o 1"
+    answer4: "Level 9 - Quest\xE3o 1"
+    answer5: "Level 9 - Quest\xE3o 1"
+    questionSprite: {fileID: 0}
+  - level: 9
+    rightAnswer: 5
+    isImage: 0
+    isOpenAnswer: 0
+    question: "Level 9 - Quest\xE3o 2"
+    answer1: "Level 9 - Quest\xE3o 2"
+    answer2: "Level 9 - Quest\xE3o 2"
+    answer3: "Level 9 - Quest\xE3o 2"
+    answer4: "Level 9 - Quest\xE3o 2"
+    answer5: "Level 9 - Quest\xE3o 2"
+    questionSprite: {fileID: 0}
+  - level: 9
+    rightAnswer: 5
+    isImage: 0
+    isOpenAnswer: 0
+    question: "Level 9 - Quest\xE3o 3"
+    answer1: "Level 9 - Quest\xE3o 3"
+    answer2: "Level 9 - Quest\xE3o 3"
+    answer3: "Level 9 - Quest\xE3o 3"
+    answer4: "Level 9 - Quest\xE3o 3"
+    answer5: "Level 9 - Quest\xE3o 3"
+    questionSprite: {fileID: 0}
+  - level: 9
+    rightAnswer: 5
+    isImage: 0
+    isOpenAnswer: 0
+    question: "Level 9 - Quest\xE3o 4"
+    answer1: "Level 9 - Quest\xE3o 4"
+    answer2: "Level 9 - Quest\xE3o 4"
+    answer3: "Level 9 - Quest\xE3o 4"
+    answer4: "Level 9 - Quest\xE3o 4"
+    answer5: "Level 9 - Quest\xE3o 4"
+    questionSprite: {fileID: 0}
+  - level: 9
+    rightAnswer: 5
+    isImage: 0
+    isOpenAnswer: 0
+    question: "Level 9 - Quest\xE3o 5"
+    answer1: "Level 9 - Quest\xE3o 5"
+    answer2: "Level 9 - Quest\xE3o 5"
+    answer3: "Level 9 - Quest\xE3o 5"
+    answer4: "Level 9 - Quest\xE3o 5"
+    answer5: "Level 9 - Quest\xE3o 5"
+    questionSprite: {fileID: 0}
+  - level: 9
+    rightAnswer: 5
+    isImage: 0
+    isOpenAnswer: 1
+    question: "Level 9 - Quest\xE3o Aberta"
+    answer1: "Level 9 - Quest\xE3o Aberta"
+    answer2: "Level 9 - Quest\xE3o Aberta"
+    answer3: "Level 9 - Quest\xE3o Aberta"
+    answer4: "Level 9 - Quest\xE3o Aberta"
+    answer5: "Level 9 - Quest\xE3o Aberta"
+    questionSprite: {fileID: 0}
+  - level: 10
+    rightAnswer: 5
+    isImage: 0
+    isOpenAnswer: 0
+    question: "Level 10 - Quest\xE3o 1"
+    answer1: "Level 10 - Quest\xE3o 1"
+    answer2: "Level 10 - Quest\xE3o 1"
+    answer3: "Level 10 - Quest\xE3o 1"
+    answer4: "Level 10 - Quest\xE3o 1"
+    answer5: "Level 10 - Quest\xE3o 1"
+    questionSprite: {fileID: 0}
+  - level: 10
+    rightAnswer: 5
+    isImage: 0
+    isOpenAnswer: 0
+    question: "Level 10 - Quest\xE3o 2"
+    answer1: "Level 10 - Quest\xE3o 2"
+    answer2: "Level 10 - Quest\xE3o 2"
+    answer3: "Level 10 - Quest\xE3o 2"
+    answer4: "Level 10 - Quest\xE3o 2"
+    answer5: "Level 10 - Quest\xE3o 2"
+    questionSprite: {fileID: 0}
+  - level: 10
+    rightAnswer: 5
+    isImage: 0
+    isOpenAnswer: 0
+    question: "Level 10 - Quest\xE3o 3"
+    answer1: "Level 10 - Quest\xE3o 3"
+    answer2: "Level 10 - Quest\xE3o 3"
+    answer3: "Level 10 - Quest\xE3o 3"
+    answer4: "Level 10 - Quest\xE3o 3"
+    answer5: "Level 10 - Quest\xE3o 3"
+    questionSprite: {fileID: 0}
+  - level: 10
+    rightAnswer: 5
+    isImage: 0
+    isOpenAnswer: 0
+    question: "Level 10 - Quest\xE3o 4"
+    answer1: "Level 10 - Quest\xE3o 4"
+    answer2: "Level 10 - Quest\xE3o 4"
+    answer3: "Level 10 - Quest\xE3o 4"
+    answer4: "Level 10 - Quest\xE3o 4"
+    answer5: "Level 10 - Quest\xE3o 4"
+    questionSprite: {fileID: 0}
+  - level: 10
+    rightAnswer: 5
+    isImage: 0
+    isOpenAnswer: 0
+    question: "Level 10 - Quest\xE3o 5"
+    answer1: "Level 10 - Quest\xE3o 5"
+    answer2: "Level 10 - Quest\xE3o 5"
+    answer3: "Level 10 - Quest\xE3o 5"
+    answer4: "Level 10 - Quest\xE3o 5"
+    answer5: "Level 10 - Quest\xE3o 5"
+    questionSprite: {fileID: 0}
+  - level: 10
+    rightAnswer: 5
+    isImage: 0
+    isOpenAnswer: 1
+    question: Level 10 - ULTIMA
+    answer1: Level 10 - ULTIMA
+    answer2: Level 10 - ULTIMA
+    answer3: Level 10 - ULTIMA
+    answer4: Level 10 - ULTIMA
+    answer5: Level 10 - ULTIMA
     questionSprite: {fileID: 0}
   levelQuestions: []
   questionImage: {fileID: 1292856408}
@@ -343,6 +959,9 @@ MonoBehaviour:
   answerButtons: {fileID: 50078078}
   openAnswerInput: {fileID: 1122217222}
   answerInput: {fileID: 1122217224}
+  rightAnswerList: 
+  finalPanel: {fileID: 1110864799}
+  loadingPanel: {fileID: 1863783414}
 --- !u!1 &82400715
 GameObject:
   m_ObjectHideFlags: 0
@@ -1937,8 +2556,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: -200.4563, y: 0.06225586}
-  m_SizeDelta: {x: 401.08725, y: 702.12445}
+  m_AnchoredPosition: {x: -624.08, y: 0.06225586}
+  m_SizeDelta: {x: 1248.3, y: 702.1245}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1026764335
 MonoBehaviour:
@@ -1984,8 +2603,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: 
+      - m_Target: {fileID: 62137596}
+        m_TargetAssemblyTypeName: Quiz, Assembly-CSharp
         m_MethodName: BackToMenu
         m_Mode: 1
         m_Arguments:
@@ -2638,14 +3257,96 @@ MonoBehaviour:
   - {fileID: 21300000, guid: b3bcce3d1cac73f44adeab526cf80733, type: 3}
   - {fileID: 21300000, guid: 2c55fff8ae60cce45b01ae7ec6bef2e9, type: 3}
   - {fileID: 21300000, guid: 20c92cbd7c6647b4f88b7215aacb2a75, type: 3}
-  cutscene3: []
-  cutscene4: []
-  cutscene5: []
-  cutscene6: []
-  cutscene7: []
-  cutscene8: []
-  cutscene9: []
-  cutscene10: []
+  cutscene3:
+  - {fileID: 21300000, guid: 672a8a05f4c6a3247a0a7993915aa7d2, type: 3}
+  - {fileID: 21300000, guid: 58aa0d9b6c68e83459ad9bd62439dabd, type: 3}
+  - {fileID: 21300000, guid: 54c660dc7ca9b6a4d836e75027554985, type: 3}
+  - {fileID: 21300000, guid: 8a056c0ca8c2377489905b27a1f14cfc, type: 3}
+  - {fileID: 21300000, guid: 1598e59b9c2553341b016fad255891d2, type: 3}
+  - {fileID: 21300000, guid: cd5e1e3c09cd24e41a72f9aabf9f3d95, type: 3}
+  - {fileID: 21300000, guid: 93479407ede68a847a4727b94e1f94aa, type: 3}
+  - {fileID: 21300000, guid: 42960f71236ff884e9378bd4825c11c3, type: 3}
+  - {fileID: 21300000, guid: fe8e13be88117684795d0590ed66b444, type: 3}
+  - {fileID: 21300000, guid: 95b75207c65757642a25b0c9277b28f9, type: 3}
+  - {fileID: 21300000, guid: 45763ed788b6ea94eab751dcec6fb30d, type: 3}
+  - {fileID: 21300000, guid: c040b9c27078aca45b134d353ab46107, type: 3}
+  - {fileID: 21300000, guid: 14459120d6f816a48a631647f87cd413, type: 3}
+  cutscene4:
+  - {fileID: 21300000, guid: 76bfed3a3583ecd4e8114b6de485b7eb, type: 3}
+  - {fileID: 21300000, guid: b3b8d2fc28ae0e349953b22e28e90482, type: 3}
+  - {fileID: 21300000, guid: 688083558803e404d974acc97797dbb6, type: 3}
+  - {fileID: 21300000, guid: 5648693edf8cd1744aeb3f0d56188bd6, type: 3}
+  - {fileID: 21300000, guid: 7ff5133d67132ec4a90313144a300a55, type: 3}
+  - {fileID: 21300000, guid: 65aae8fa85a352e4bada29822f6d5b76, type: 3}
+  - {fileID: 21300000, guid: 16131eefd314b0846bc5cdfb3f64c59f, type: 3}
+  - {fileID: 21300000, guid: 978965b3765b7bb409127cdf03c955db, type: 3}
+  - {fileID: 21300000, guid: 82a0d1302f5f1af45a90608ff4b07f92, type: 3}
+  - {fileID: 21300000, guid: d9826189364c49145a6a827abf32d6c2, type: 3}
+  cutscene5:
+  - {fileID: 21300000, guid: 92aaf623d58e8a24088849a6154ac1d4, type: 3}
+  - {fileID: 21300000, guid: 9287a117357a194449dcf4f99b6fe5fb, type: 3}
+  - {fileID: 21300000, guid: 00a5f9511c733904682baedce11911bf, type: 3}
+  - {fileID: 21300000, guid: 7c0b712bc6c91754ca84ba81ca571a3a, type: 3}
+  - {fileID: 21300000, guid: 986832c8d87421d4eafa3bc8c1a325ba, type: 3}
+  - {fileID: 21300000, guid: 144cb5e8c286acd428145ed1741161be, type: 3}
+  - {fileID: 21300000, guid: c40c731dae137514f81183320add1ff6, type: 3}
+  - {fileID: 21300000, guid: 627a7e62375188842aac71598030a440, type: 3}
+  - {fileID: 21300000, guid: 83de5e7d9ecf8ea4788e64dafcde77df, type: 3}
+  - {fileID: 21300000, guid: b6a2d2afc6fadac498ff03561d8970dd, type: 3}
+  cutscene6:
+  - {fileID: 21300000, guid: 8a0334bec35489746aa2336a045e28a8, type: 3}
+  - {fileID: 21300000, guid: 5927fb6b3f44fd448a2f7ee569f62579, type: 3}
+  - {fileID: 21300000, guid: 77eeb6b48b618544089636f7225f810c, type: 3}
+  - {fileID: 21300000, guid: e56c76799f4b0d04ca9a44baffaeb4dc, type: 3}
+  - {fileID: 21300000, guid: 80f3fe1f0a9f9fe4ba0fbc9a9ba87e3f, type: 3}
+  - {fileID: 21300000, guid: d2bf09387eb967d449f00aa59bbf40b9, type: 3}
+  - {fileID: 21300000, guid: a653672b92e9c3a4eace694febc4ca72, type: 3}
+  - {fileID: 21300000, guid: d412b84f7698c384eb8f16bcf4e25a39, type: 3}
+  - {fileID: 21300000, guid: d6eaa172330c9b24183b7c3d9d535257, type: 3}
+  - {fileID: 21300000, guid: 8c8fd7c0ca4718440b3c1fc7ed55570c, type: 3}
+  - {fileID: 21300000, guid: 63c64ccca5bf58540b705597409de037, type: 3}
+  - {fileID: 21300000, guid: d67a2cfb7dd026b4c965502863e7b7d2, type: 3}
+  - {fileID: 21300000, guid: 23aaca966790fc4409c267f88e276795, type: 3}
+  cutscene7:
+  - {fileID: 21300000, guid: 5d8a8452b7e63ba4eb4e55cb4ed385dc, type: 3}
+  - {fileID: 21300000, guid: c6c81b2e86d09094fa9b5a02d5557446, type: 3}
+  - {fileID: 21300000, guid: 9e1fe71e9e39b2a44b9545163d8c3b9f, type: 3}
+  - {fileID: 21300000, guid: 17eb8bd1bce854e4fbe40a0d7e39da18, type: 3}
+  - {fileID: 21300000, guid: 58f8e29641be7654ebc3685e08f3e312, type: 3}
+  - {fileID: 21300000, guid: 5873acede304b0240b4c238f4fcc0c75, type: 3}
+  - {fileID: 21300000, guid: 056c013a5f16fb94082e9ca5ba459792, type: 3}
+  - {fileID: 21300000, guid: 1958a87943d77004ca0ce0e7e16e1df7, type: 3}
+  - {fileID: 21300000, guid: c046cc1661139ad48941851e23aa5a18, type: 3}
+  - {fileID: 21300000, guid: 9ed5a658aaa355f42809f81104d341d8, type: 3}
+  - {fileID: 21300000, guid: 830c3487a53aaba4695470e65d3814aa, type: 3}
+  - {fileID: 21300000, guid: fc5b1e17feffa7b4aa937276a19bb5aa, type: 3}
+  - {fileID: 21300000, guid: 510e9821694f7434db14b8669b48eb34, type: 3}
+  - {fileID: 21300000, guid: e67ebf97446445344baf592f5416a9b9, type: 3}
+  - {fileID: 21300000, guid: d7414d5bfadda68489ca6dc5cc6a5c68, type: 3}
+  cutscene8:
+  - {fileID: 21300000, guid: 8cf2268980db5f54a8e8e21fd24b185b, type: 3}
+  - {fileID: 21300000, guid: f9263a641c2dd2a45b8b08119be7dacf, type: 3}
+  - {fileID: 21300000, guid: 44e6e7695a6fdb54f94004ccb12f6397, type: 3}
+  - {fileID: 21300000, guid: 3204185b52f079d46b1e9e6d2bc3525b, type: 3}
+  - {fileID: 21300000, guid: 56972d30dd25f7a49b9748b8511dd1f1, type: 3}
+  - {fileID: 21300000, guid: 37b335094ee0de240b2576d6eda3f527, type: 3}
+  - {fileID: 21300000, guid: 738e914808cbbdb40b28e488f54fc174, type: 3}
+  - {fileID: 21300000, guid: b128aa829e3337a46acce957365fa4dd, type: 3}
+  - {fileID: 21300000, guid: 7a5c0c7e1be5ad34e8169df8fc40d432, type: 3}
+  - {fileID: 21300000, guid: c2816d9cafa34e34b8af93b66c068209, type: 3}
+  - {fileID: 21300000, guid: 8baee6961c2e9dc49a73a4eb5acf134f, type: 3}
+  - {fileID: 21300000, guid: 7072b95416c2cd24cbc64f925d6ae359, type: 3}
+  - {fileID: 21300000, guid: ec318aa66d7123940b248262c812a462, type: 3}
+  - {fileID: 21300000, guid: 2f55d999d2516eb4392c3c6174b36a29, type: 3}
+  - {fileID: 21300000, guid: 9b0e730ca8cf4464dbf4a5293d867b95, type: 3}
+  cutscene9:
+  - {fileID: 21300000, guid: 8cf2268980db5f54a8e8e21fd24b185b, type: 3}
+  - {fileID: 21300000, guid: f9263a641c2dd2a45b8b08119be7dacf, type: 3}
+  - {fileID: 21300000, guid: 9b0e730ca8cf4464dbf4a5293d867b95, type: 3}
+  cutscene10:
+  - {fileID: 21300000, guid: 8cf2268980db5f54a8e8e21fd24b185b, type: 3}
+  - {fileID: 21300000, guid: f9263a641c2dd2a45b8b08119be7dacf, type: 3}
+  - {fileID: 21300000, guid: 9b0e730ca8cf4464dbf4a5293d867b95, type: 3}
   currentCutscene: []
   renderImg: {fileID: 425106374}
   currentLevel: 0
@@ -2664,7 +3365,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fcbda238424c68844899052c7f0a17ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  answerInput: {fileID: 1122217224}
 --- !u!1 &1292856406
 GameObject:
   m_ObjectHideFlags: 0

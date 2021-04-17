@@ -39,6 +39,7 @@ public class WalletOperation : MonoBehaviour
             reasonInput.text = "";
             valueInput.text = "";
 
+            GameObject.Find("Canvas").GetComponent<AudioManager>().PlayCoinSound();
             GameObject.Find("UIManager").GetComponent<UIManager>().OpenCarteira();
         }
     }

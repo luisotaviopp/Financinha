@@ -39,6 +39,38 @@ public class Cutscenes : MonoBehaviour
                 currentCutscene = cutscene2;
                 LoadCutscene();
                 break;
+            case 3:
+                currentCutscene = cutscene3;
+                LoadCutscene();
+                break;
+            case 4:
+                currentCutscene = cutscene4;
+                LoadCutscene();
+                break;
+            case 5:
+                currentCutscene = cutscene5;
+                LoadCutscene();
+                break;
+            case 6:
+                currentCutscene = cutscene6;
+                LoadCutscene();
+                break;
+            case 7:
+                currentCutscene = cutscene7;
+                LoadCutscene();
+                break;
+            case 8:
+                currentCutscene = cutscene8;
+                LoadCutscene();
+                break;
+            case 9:
+                currentCutscene = cutscene9;
+                LoadCutscene();
+                break;
+            case 10:
+                currentCutscene = cutscene10;
+                LoadCutscene();
+                break;
 
             default:
                 currentCutscene = cutscene1;
